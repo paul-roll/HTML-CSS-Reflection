@@ -258,7 +258,7 @@ th {
   padding: 0;
 }
 
-/* line 27, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/stylesheet.scss */
+/* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
 .flex-container {
   margin-left: auto;
   margin-right: auto;
@@ -267,7 +267,7 @@ th {
   justify-content: space-around;
 }
 
-/* line 37, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/stylesheet.scss */
+/* line 15, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
 .flex-both {
   display: flex;
   flex-flow: row nowrap;
@@ -275,23 +275,23 @@ th {
 }
 
 @media (max-width: 768px) {
-  /* line 37, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/stylesheet.scss */
+  /* line 15, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
   .flex-both {
     flex-wrap: wrap;
   }
 }
 
-/* line 49, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/stylesheet.scss */
+/* line 27, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
 .flex-item {
   width: 225px;
 }
 
-/* line 57, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/stylesheet.scss */
+/* line 35, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
 footer ul {
   padding-left: 0;
 }
 
-/* line 61, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/stylesheet.scss */
+/* line 39, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
 footer ul li {
   text-align: left;
   list-style-type: none;
