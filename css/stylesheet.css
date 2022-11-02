@@ -260,11 +260,24 @@ th {
 
 /* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
 footer {
-  max-width: 1260px;
+  background-color: #333645;
+  color: white;
 }
 
-/* line 9, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
+/* line 8, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 11, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* line 17, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
 .flex-container {
+  max-width: 1260px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -272,7 +285,7 @@ footer {
   justify-content: space-around;
 }
 
-/* line 19, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
+/* line 29, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
 .flex-both {
   display: flex;
   flex-flow: row nowrap;
@@ -280,23 +293,23 @@ footer {
 }
 
 @media (max-width: 768px) {
-  /* line 19, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
+  /* line 29, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
   .flex-both {
     flex-wrap: wrap;
   }
 }
 
-/* line 31, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
+/* line 41, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
 .flex-item {
   width: 225px;
 }
 
-/* line 39, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
+/* line 49, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
 footer ul {
   padding-left: 0;
 }
 
-/* line 43, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
+/* line 53, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
 footer ul li {
   text-align: left;
   list-style-type: none;

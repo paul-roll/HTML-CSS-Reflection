@@ -3,10 +3,20 @@
 // ==========================================================================
 
 footer {
-    max-width: $brkpoint-lg;
+    background-color: $color-footer;
+    color: white;
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 .flex-container {
+    max-width: $brkpoint-lg;
+
     margin-left: auto;
     margin-right: auto;
 
