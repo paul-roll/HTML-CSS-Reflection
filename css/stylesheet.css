@@ -260,18 +260,25 @@ th {
 
 /* line 26, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/stylesheet.scss */
 footer {
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   gap: 10px;
+  max-width: 768px;
 }
 
-/* line 34, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/stylesheet.scss */
-footer p {
+/* line 38, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/stylesheet.scss */
+footer ul {
   border: 1px solid black;
-  text-align: center;
   flex-grow: 1;
-  min-width: 225px;
+  text-align: left;
+}
+
+/* line 43, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/stylesheet.scss */
+footer ul li {
+  list-style-type: none;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */

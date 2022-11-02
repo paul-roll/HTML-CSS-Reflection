@@ -24,16 +24,23 @@
 @import "states/index";
 
 footer {
+    margin-left: auto;
+    margin-right: auto;
+
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     //align-content: center;
     gap: 10px;
+    max-width: 768px;
 }
 
-footer p {
+footer ul {
     border: 1px solid black;
-    text-align: center;
     flex-grow: 1;
-    min-width: 225px;
+    //min-width: 225px;
+    text-align: left;
+    li {
+        list-style-type: none; 
+    }
 }
