@@ -258,4 +258,20 @@ th {
   padding: 0;
 }
 
+/* line 26, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/stylesheet.scss */
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* line 34, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/stylesheet.scss */
+footer p {
+  border: 1px solid black;
+  text-align: center;
+  flex-grow: 1;
+  min-width: 225px;
+}
+
 /*# sourceMappingURL=stylesheet.css.map */

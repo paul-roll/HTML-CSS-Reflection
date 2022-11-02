@@ -22,3 +22,18 @@
 // States
 // ==========================================================================
 @import "states/index";
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    //align-content: center;
+    gap: 10px;
+}
+
+footer p {
+    border: 1px solid black;
+    text-align: center;
+    flex-grow: 1;
+    min-width: 225px;
+}
