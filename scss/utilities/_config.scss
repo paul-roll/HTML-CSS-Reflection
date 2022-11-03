@@ -2,7 +2,6 @@
 // Global Config
 // ==========================================================================
 
-
 // Breakpoints
 $brkpoint-sm    : 768px;
 $brkpoint-md    : 992px;
@@ -15,7 +14,7 @@ $color-alto: #DDDDDD;
 
 $color-header-bg: $color-white;
 $color-nav-bg: $color-tuna;
-//$color-carousel-bg: unknwon-concealed;
+$color-carousel-bg: $color-tuna; //unknwon-concealed;
 $color-services-bg: $color-white;
 $color-testimonials-bg: $color-tuna;
 $color-news-bg: $color-white;

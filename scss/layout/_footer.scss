@@ -1,4 +1,6 @@
-
+// ==========================================================================
+// Footer Layout
+// ==========================================================================
 
 footer {
     background-color: $color-footer-bg;
@@ -18,21 +20,6 @@ footer {
         text-decoration: none;
         &:hover {
             text-decoration: underline;
-        }
-    }
-    .wrapper {
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-left: auto;
-        margin-right: auto;
-        @media (min-width: $brkpoint-sm) {
-            max-width: $brkpoint-sm;
-        }
-        @media (min-width: $brkpoint-md) {
-            max-width: $brkpoint-md;
-        }
-        @media (min-width: $brkpoint-lg) {
-            max-width: $brkpoint-lg;
         }
     }
     .flex-container {

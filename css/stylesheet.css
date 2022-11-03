@@ -258,76 +258,123 @@ th {
   padding: 0;
 }
 
-/* line 3, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
-footer {
-  background-color: #333645;
-  color: white;
-}
-
-/* line 6, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
-footer h4 {
-  text-transform: uppercase;
-}
-
-/* line 9, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
-footer ul {
-  padding: 0;
-}
-
-/* line 11, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
-footer ul li {
-  text-align: left;
-  list-style-type: none;
-}
-
-/* line 16, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
-footer a {
-  color: white;
-  text-decoration: none;
-}
-
-/* line 19, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* line 23, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
-footer .wrapper {
+/* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
+.wrapper {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* line 11, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
+.wrapper p {
+  margin: 0;
+}
+
 @media (min-width: 768px) {
-  /* line 23, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
-  footer .wrapper {
+  /* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
+  .wrapper {
     max-width: 768px;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 23, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
-  footer .wrapper {
+  /* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
+  .wrapper {
     max-width: 992px;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 23, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
-  footer .wrapper {
+  /* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
+  .wrapper {
     max-width: 1260px;
   }
 }
 
-/* line 38, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
+/* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_header.scss */
+.nav {
+  background-color: #FFFFFF;
+  color: #333645;
+}
+
+/* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
+.nav {
+  background-color: #333645;
+  color: #FFFFFF;
+}
+
+/* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
+.carousel {
+  background-color: #333645;
+  color: #FFFFFF;
+}
+
+/* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_services.scss */
+.services {
+  background-color: #FFFFFF;
+  color: #333645;
+}
+
+/* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_testimonials.scss */
+.testimonials {
+  background-color: #333645;
+  color: #FFFFFF;
+}
+
+/* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_news.scss */
+.news {
+  background-color: #FFFFFF;
+  color: #333645;
+}
+
+/* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_email.scss */
+.email {
+  background-color: #DDDDDD;
+  color: #333645;
+}
+
+/* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
+footer {
+  background-color: #333645;
+  color: white;
+}
+
+/* line 8, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
+footer h4 {
+  text-transform: uppercase;
+}
+
+/* line 11, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
+footer ul {
+  padding: 0;
+}
+
+/* line 13, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
+footer ul li {
+  text-align: left;
+  list-style-type: none;
+}
+
+/* line 18, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 21, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* line 25, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
 footer .flex-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
 }
 
-/* line 44, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
+/* line 31, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
 footer .flex-both {
   display: flex;
   flex-flow: row nowrap;
@@ -335,18 +382,18 @@ footer .flex-both {
 }
 
 @media (max-width: 768px) {
-  /* line 44, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
+  /* line 31, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
   footer .flex-both {
     flex-wrap: wrap;
   }
 }
 
-/* line 52, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
+/* line 39, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
 footer .flex-item {
   width: 225px;
 }
 
-/* line 55, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
+/* line 42, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
 footer .bottom {
   display: flex;
   margin-bottom: 0;
