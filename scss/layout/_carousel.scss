@@ -11,4 +11,18 @@
     background-size: cover;
 
     color: $color-white;
+
+    input {
+        background-color: $color-software--light;
+    }
+
+    text-align: center;
+
+    @media (min-width: $brkpoint-md) {
+        //text turns left-aligned here.
+    }
+    @media (min-width: $brkpoint-lg) {
+
+    }
+
 }
