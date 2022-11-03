@@ -332,11 +332,31 @@ th {
   justify-content: space-around;
 }
 
-/* line 18, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
+/* line 19, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
+.nav i {
+  padding-bottom: 15px;
+}
+
+/* line 23, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
 .nav li {
   text-align: center;
   list-style-type: none;
-  flex-grow: 1;
+}
+
+/* line 26, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
+.nav li ul {
+  padding-left: 0;
+  text-transform: uppercase;
+}
+
+/* line 29, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
+.nav li ul :first-child {
+  font-size: 0.8em;
+}
+
+/* line 32, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
+.nav li ul :last-child {
+  font-size: 1.2em;
 }
 
 /* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */

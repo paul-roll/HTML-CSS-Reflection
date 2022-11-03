@@ -15,9 +15,25 @@
         display: flex;
         justify-content: space-around;
     }
+
+    i {
+        padding-bottom: 15px;
+    }
+
     li {
         text-align: center;
         list-style-type: none;
-        flex-grow: 1;
+        ul {
+            padding-left: 0;
+            text-transform: uppercase;
+            :first-child {
+                font-size: 0.8em;
+            }
+            :last-child {
+                font-size: 1.2em;
+            }
+        }
     }
+
+
 }
