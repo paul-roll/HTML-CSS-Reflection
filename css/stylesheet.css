@@ -430,6 +430,74 @@ nav li ul :last-child {
   color: #333645;
 }
 
+/* line 9, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_services.scss */
+.services .flex-container1 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+@media (min-width: 992px) {
+  /* line 9, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_services.scss */
+  .services .flex-container1 {
+    flex-direction: row;
+  }
+}
+
+/* line 18, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_services.scss */
+.services .flex-item1 {
+  flex-grow: 1;
+  border: 1px solid black;
+}
+
+/* line 23, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_services.scss */
+.services .flex-container2 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  /* line 23, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_services.scss */
+  .services .flex-container2 {
+    flex-direction: row;
+  }
+}
+
+/* line 32, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_services.scss */
+.services .flex-item2 {
+  border: 1px solid black;
+}
+
+@media (min-width: 768px) {
+  /* line 32, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_services.scss */
+  .services .flex-item2 {
+    width: 345px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 32, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_services.scss */
+  .services .flex-item2 {
+    width: 455px;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 32, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_services.scss */
+  .services .flex-item2 {
+    width: 270px;
+  }
+}
+
+/* line 47, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_services.scss */
+.services ul li {
+  text-align: left;
+  list-style-type: none;
+}
+
 /* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_testimonials.scss */
 .testimonials {
   background-color: #333645;

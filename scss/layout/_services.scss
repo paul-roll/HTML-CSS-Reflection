@@ -5,4 +5,48 @@
 .services {
     background-color: $color-services-bg;
     color: $color-tuna;
+
+    .flex-container1 {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        gap: 30px;
+        @media (min-width: $brkpoint-md) {
+            flex-direction: row;
+        }
+    }
+    .flex-item1 {
+        flex-grow: 1;
+        border: 1px solid black;
+    }
+
+    .flex-container2 {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        gap: 30px;
+        @media (min-width: $brkpoint-sm) {
+            flex-direction: row;
+        }
+    }
+    .flex-item2 {
+        border: 1px solid black;
+        @media (min-width: $brkpoint-sm) {
+            width: 345px;
+        }
+        @media (min-width: $brkpoint-md) {
+            width: 455px;
+        }
+        @media (min-width: $brkpoint-lg) {
+            width: 270px;
+        }
+    }
+    
+
+    ul {
+        li{
+            text-align: left;
+            list-style-type: none; 
+        }
+    }
 }
