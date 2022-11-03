@@ -4,9 +4,20 @@
 
 .nav {
     display: none;
+    background-color: $color-nav-bg;
+    color: $color-white;
+
     @media (min-width: $brkpoint-md) {
         display: block;
-        background-color: $color-nav-bg;
-        color: $color-white;
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: space-around;
+    }
+    li {
+        width: 99px;
+        text-align: center;
+        list-style-type: none; 
     }
 }

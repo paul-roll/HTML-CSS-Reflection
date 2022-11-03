@@ -315,15 +315,28 @@ th {
 /* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
 .nav {
   display: none;
+  background-color: #333645;
+  color: #FFFFFF;
 }
 
 @media (min-width: 992px) {
   /* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
   .nav {
     display: block;
-    background-color: #333645;
-    color: #FFFFFF;
   }
+}
+
+/* line 14, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
+.nav .flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* line 18, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
+.nav li {
+  width: 99px;
+  text-align: center;
+  list-style-type: none;
 }
 
 /* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
