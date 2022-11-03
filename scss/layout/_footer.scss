@@ -1,9 +1,11 @@
 
 
 footer {
-    box-sizing: border-box;
     background-color: $color-footer-bg;
     color: white;
+    h4 {
+        text-transform: uppercase;
+    }
     ul {
         padding: 0;
         li{
