@@ -296,24 +296,24 @@ ul {
 }
 
 /* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_header.scss */
-.header {
+header {
   background-color: #FFFFFF;
   color: #333645;
 }
 
 /* line 15, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_header.scss */
-.header .logo {
+header .logo {
   display: inline-block;
   font-size: 2.5em;
 }
 
 /* line 25, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_header.scss */
-.header .right {
+header .right {
   float: right;
 }
 
 /* line 35, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_header.scss */
-.header input {
+header input {
   width: 100%;
 }
 
