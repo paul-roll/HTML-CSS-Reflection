@@ -266,6 +266,7 @@ th {
 /* line 8, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
 .wrapper {
   padding: 15px;
+  margin: auto;
 }
 
 @media (min-width: 768px) {
