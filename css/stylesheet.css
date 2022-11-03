@@ -300,13 +300,24 @@ th {
 
 /* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
 .nav {
-  background-color: #333645;
-  color: #FFFFFF;
+  display: none;
+}
+
+@media (min-width: 992px) {
+  /* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
+  .nav {
+    display: block;
+    background-color: #333645;
+    color: #FFFFFF;
+  }
 }
 
 /* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
 .carousel {
+  height: 550px;
   background-color: #333645;
+  background-image: url(http://placeimg.com/640/480/tech);
+  background-size: cover;
   color: #FFFFFF;
 }
 

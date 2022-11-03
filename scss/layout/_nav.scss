@@ -3,6 +3,10 @@
 // ==========================================================================
 
 .nav {
-    background-color: $color-nav-bg;
-    color: $color-white;
+    display: none;
+    @media (min-width: $brkpoint-md) {
+        display: block;
+        background-color: $color-nav-bg;
+        color: $color-white;
+    }
 }

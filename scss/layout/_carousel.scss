@@ -3,6 +3,12 @@
 // ==========================================================================
 
 .carousel {
+    height: 550px;
+
+
     background-color: $color-carousel-bg;
+    background-image: url(http://placeimg.com/640/480/tech);
+    background-size: cover;
+
     color: $color-white;
 }
