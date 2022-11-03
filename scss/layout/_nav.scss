@@ -16,8 +16,8 @@
         justify-content: space-around;
     }
     li {
-        width: 99px;
         text-align: center;
-        list-style-type: none; 
+        list-style-type: none;
+        flex-grow: 1;
     }
 }

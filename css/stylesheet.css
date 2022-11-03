@@ -334,9 +334,9 @@ th {
 
 /* line 18, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
 .nav li {
-  width: 99px;
   text-align: center;
   list-style-type: none;
+  flex-grow: 1;
 }
 
 /* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
