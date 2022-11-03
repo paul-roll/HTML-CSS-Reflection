@@ -53,8 +53,10 @@ footer {
         width: 225px;
     }
     .bottom {
+        display: flex;
         margin-bottom: 0;
         padding-bottom: 2em;
+        justify-content: space-between;
     }
     
 }

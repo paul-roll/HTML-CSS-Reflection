@@ -348,8 +348,10 @@ footer .flex-item {
 
 /* line 55, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
 footer .bottom {
+  display: flex;
   margin-bottom: 0;
   padding-bottom: 2em;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */
