@@ -12,11 +12,18 @@
 
     color: $color-white;
 
+    text-align: center;
+
+    .flex-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     input {
         background-color: $color-software--light;
     }
-
-    text-align: center;
 
     @media (min-width: $brkpoint-md) {
         //text turns left-aligned here.
