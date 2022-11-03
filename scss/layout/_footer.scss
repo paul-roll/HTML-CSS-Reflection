@@ -25,15 +25,14 @@ footer {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-    
+        @media (min-width: $brkpoint-lg) {
+            justify-content: space-between;
+        }
     }
     .flex-both {
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         justify-content: center;
-        @media (max-width: $brkpoint-sm) {
-            flex-wrap: wrap;
-        }
     }
     .flex-item {
         width: 225px;
