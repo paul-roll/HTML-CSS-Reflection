@@ -294,15 +294,20 @@ th {
 .header {
   background-color: #FFFFFF;
   color: #333645;
-  text-align: right;
 }
 
-/* line 11, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_header.scss */
-.header img {
-  float: left;
+/* line 15, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_header.scss */
+.header .logo {
+  display: inline-block;
+  font-size: 2.5em;
 }
 
-/* line 14, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_header.scss */
+/* line 25, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_header.scss */
+.header .right {
+  float: right;
+}
+
+/* line 35, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_header.scss */
 .header input {
   width: 100%;
 }

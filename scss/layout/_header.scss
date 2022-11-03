@@ -6,11 +6,32 @@
     background-color: $color-header-bg;
     color: $color-tuna;
 
-    text-align: right;
 
-    img {
-        float: left;
+    // img {
+    //     float: left;
+    //     //width: 100%;
+    // }
+
+    .logo {
+        display: inline-block;
+        font-size: 2.5em;
     }
+
+    i {
+        
+        //vertical-align: middle;
+    }
+
+    .right {
+        //height: 70px;
+        //display: inline-block;
+        //vertical-align: middle;
+        float: right;
+        
+        //text-align: right;
+        //margin-left: auto;
+    }
+
     input {
         width: 100%;
     }
