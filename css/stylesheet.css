@@ -265,8 +265,8 @@ th {
 
 /* line 8, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
 .wrapper {
-  padding: 15px;
-  margin: auto;
+  padding: 20px;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -330,31 +330,67 @@ th {
 .nav .flex-container {
   display: flex;
   justify-content: space-around;
+  margin: 0;
 }
 
-/* line 19, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
+/* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
 .nav i {
   padding-bottom: 15px;
 }
 
-/* line 23, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
+/* line 24, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
+.nav .software {
+  color: #67809F;
+}
+
+/* line 27, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
+.nav .support {
+  color: #4183D7;
+}
+
+/* line 30, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
+.nav .marketing {
+  color: #2ECC71;
+}
+
+/* line 33, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
+.nav .tservices {
+  color: #D64541;
+}
+
+/* line 36, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
+.nav .design {
+  color: #926FB1;
+}
+
+/* line 39, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
+.nav .security {
+  color: #F62459;
+}
+
+/* line 42, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
+.nav .course {
+  color: #CE4125;
+}
+
+/* line 47, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
 .nav li {
   text-align: center;
   list-style-type: none;
 }
 
-/* line 26, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
+/* line 50, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
 .nav li ul {
   padding-left: 0;
   text-transform: uppercase;
 }
 
-/* line 29, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
+/* line 53, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
 .nav li ul :first-child {
   font-size: 0.8em;
 }
 
-/* line 32, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
+/* line 56, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
 .nav li ul :last-child {
   font-size: 1.2em;
 }

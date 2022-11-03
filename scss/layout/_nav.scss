@@ -14,11 +14,35 @@
     .flex-container {
         display: flex;
         justify-content: space-around;
+        margin: 0;
     }
 
     i {
         padding-bottom: 15px;
     }
+
+    .software {
+        color: $color-software--light;
+    }
+    .support {
+        color: $color-support--light;
+    }
+    .marketing {
+        color: $color-marketing--light;
+    }
+    .tservices {
+        color: $color-services--light;
+    }
+    .design {
+        color: $color-design--light;
+    }
+    .security {
+        color: $color-security--light;
+    }
+    .course {
+        color: $color-course--light;
+    }
+
 
     li {
         text-align: center;
