@@ -497,7 +497,7 @@ nav li ul :last-child {
   margin: 0;
   display: flex;
   flex-flow: column wrap;
-  gap: 30px;
+  gap: 0 30px;
 }
 
 @media (min-width: 1260px) {

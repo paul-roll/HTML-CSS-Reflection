@@ -54,7 +54,7 @@
         margin: 0;
         display: flex;
         flex-flow: column wrap;
-        gap: 30px;
+        gap: 0 30px;
         &:first-child {
             .flex-item {
                 @media (min-width: $breakpoint-lg) {
