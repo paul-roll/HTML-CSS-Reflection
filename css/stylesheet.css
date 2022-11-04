@@ -404,7 +404,7 @@ nav li ul :last-child {
 /* line 36, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
 .carousel p {
   font-size: 20px;
-  font-face: Poppins, sans-serif;
+  font-family: Poppins, sans-serif;
   font-weight: 600;
   margin: 0 0 10px 0;
 }
