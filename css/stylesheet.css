@@ -347,7 +347,7 @@ nav .flex-container {
 /* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
 nav i {
   padding-bottom: 10px;
-  font-size: 1.2em;
+  font-size: 23px;
 }
 
 /* line 25, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
@@ -363,12 +363,13 @@ nav li ul {
 
 /* line 30, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
 nav li ul :first-child {
-  font-size: 0.8em;
+  font-size: 10px;
 }
 
 /* line 33, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
 nav li ul :last-child {
-  font-size: 1.2em;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 /* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
