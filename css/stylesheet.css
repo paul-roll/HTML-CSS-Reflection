@@ -266,37 +266,38 @@ th {
 
 /* line 8, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
 html {
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.4px;
 }
 
-/* line 12, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
+/* line 13, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
 .wrapper {
   padding: 15px;
   margin: 0 auto;
 }
 
 @media (min-width: 768px) {
-  /* line 12, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
+  /* line 13, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
   .wrapper {
     max-width: 750px;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 12, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
+  /* line 13, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
   .wrapper {
     max-width: 970px;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 12, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
+  /* line 13, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
   .wrapper {
     max-width: 1200px;
   }
 }
 
-/* line 27, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
+/* line 28, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
 ul {
   padding: 0;
 }
@@ -354,22 +355,22 @@ nav i {
 nav li {
   text-align: center;
   list-style-type: none;
+  line-height: 1em;
 }
 
-/* line 28, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
+/* line 29, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
 nav li ul {
   text-transform: uppercase;
 }
 
-/* line 30, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
+/* line 31, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
 nav li ul :first-child {
   font-size: 10px;
 }
 
-/* line 33, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
+/* line 34, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
 nav li ul :last-child {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
 }
 
 /* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
