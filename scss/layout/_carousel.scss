@@ -7,20 +7,12 @@
 
 
     background-color: $color-carousel-bg;
-    background-image: url(http://placeimg.com/640/480/tech);
+    background-image: url(../img/carousel.jpg);
     background-size: cover;
 
     color: $color-white;
 
     text-align: center;
-
-    h1 {
-        font-size: 40px;
-        font-family: Poppins, sans-serif;
-        @media (min-width: $breakpoint-md) {
-            font-size: 64px;
-        }
-    }
 
     .flex-container {
         height: 100%;
@@ -29,15 +21,46 @@
         justify-content: center;
         align-items: center;
     }
-    input {
+
+    h1 {
+        font-size: 40px;
+        font-family: Poppins, sans-serif;
+        margin: 0 0 20px 0;
+        @media (min-width: $breakpoint-md) {
+            font-size: 64px;
+            text-align: left;
+            width: 90%;
+        }
+    }
+
+    p {
+        font-size: 20px;
+        font-face: Poppins, sans-serif;
+        font-weight: 600;
+        margin: 0 0 10px 0;
+        @media (min-width: $breakpoint-md) {
+            font-size: 26px;
+            text-align: left;
+            width: 90%;
+        }
+    }
+
+    .button {
+        margin-top: 30px;
+        font-size: 20px;
+        font-family: Poppins, sans-serif;
+        padding: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: 0;
+        line-height: 50px;
         background-color: $color-bespoke-software--light;
+
+        @media (min-width: $breakpoint-md) {
+            margin-left: 5%;
+            margin-right: auto;
+        }
     }
 
-    @media (min-width: $breakpoint-md) {
-        //text turns left-aligned here.
-    }
-    @media (min-width: $breakpoint-lg) {
-
-    }
 
 }

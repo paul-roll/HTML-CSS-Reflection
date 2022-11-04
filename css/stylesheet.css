@@ -266,7 +266,7 @@ th {
 
 /* line 8, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
 .wrapper {
-  padding: 20px;
+  padding: 15px;
   margin: 0 auto;
 }
 
@@ -370,26 +370,13 @@ nav li ul :last-child {
 .carousel {
   height: 550px;
   background-color: #333645;
-  background-image: url(http://placeimg.com/640/480/tech);
+  background-image: url(../img/carousel.jpg);
   background-size: cover;
   color: #FFFFFF;
   text-align: center;
 }
 
 /* line 17, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
-.carousel h1 {
-  font-size: 40px;
-  font-family: Poppins, sans-serif;
-}
-
-@media (min-width: 992px) {
-  /* line 17, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
-  .carousel h1 {
-    font-size: 64px;
-  }
-}
-
-/* line 25, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
 .carousel .flex-container {
   height: 100%;
   display: flex;
@@ -398,9 +385,58 @@ nav li ul :last-child {
   align-items: center;
 }
 
-/* line 32, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
-.carousel input {
+/* line 25, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
+.carousel h1 {
+  font-size: 40px;
+  font-family: Poppins, sans-serif;
+  margin: 0 0 20px 0;
+}
+
+@media (min-width: 992px) {
+  /* line 25, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
+  .carousel h1 {
+    font-size: 64px;
+    text-align: left;
+    width: 90%;
+  }
+}
+
+/* line 36, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
+.carousel p {
+  font-size: 20px;
+  font-face: Poppins, sans-serif;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+@media (min-width: 992px) {
+  /* line 36, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
+  .carousel p {
+    font-size: 26px;
+    text-align: left;
+    width: 90%;
+  }
+}
+
+/* line 48, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
+.carousel .button {
+  margin-top: 30px;
+  font-size: 20px;
+  font-family: Poppins, sans-serif;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 0;
+  line-height: 50px;
   background-color: #67809F;
+}
+
+@media (min-width: 992px) {
+  /* line 48, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
+  .carousel .button {
+    margin-left: 5%;
+    margin-right: auto;
+  }
 }
 
 /* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_services.scss */
