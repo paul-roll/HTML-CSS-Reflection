@@ -265,33 +265,38 @@ th {
 }
 
 /* line 8, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
+html {
+  font-family: Poppins, sans-serif;
+}
+
+/* line 12, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
 .wrapper {
   padding: 15px;
   margin: 0 auto;
 }
 
 @media (min-width: 768px) {
-  /* line 8, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
+  /* line 12, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
   .wrapper {
     max-width: 750px;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 8, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
+  /* line 12, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
   .wrapper {
     max-width: 970px;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 8, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
+  /* line 12, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
   .wrapper {
     max-width: 1200px;
   }
 }
 
-/* line 23, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
+/* line 27, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
 ul {
   padding: 0;
 }
@@ -388,7 +393,6 @@ nav li ul :last-child {
 /* line 25, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
 .carousel h1 {
   font-size: 40px;
-  font-family: Poppins, sans-serif;
   margin: 0 0 20px 0;
 }
 
@@ -401,16 +405,15 @@ nav li ul :last-child {
   }
 }
 
-/* line 36, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
+/* line 35, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
 .carousel p {
   font-size: 20px;
-  font-family: Poppins, sans-serif;
   font-weight: 600;
   margin: 0 0 10px 0;
 }
 
 @media (min-width: 992px) {
-  /* line 36, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
+  /* line 35, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
   .carousel p {
     font-size: 26px;
     text-align: left;
@@ -418,11 +421,10 @@ nav li ul :last-child {
   }
 }
 
-/* line 48, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
+/* line 46, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
 .carousel .button {
   margin-top: 30px;
   font-size: 20px;
-  font-family: Poppins, sans-serif;
   padding: 5px;
   padding-left: 20px;
   padding-right: 20px;
@@ -432,13 +434,13 @@ nav li ul :last-child {
   border-radius: 3px;
 }
 
-/* line 60, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
+/* line 57, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
 .carousel .button:hover {
   background-color: #526781;
 }
 
 @media (min-width: 992px) {
-  /* line 48, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
+  /* line 46, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
   .carousel .button {
     margin-left: 5%;
     margin-right: auto;
