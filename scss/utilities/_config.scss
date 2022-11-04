@@ -21,22 +21,32 @@ $color-news-bg: $color-white;
 $color-email-bg: $color-alto;
 $color-footer-bg: $color-tuna;
 
-$color-software--light: #67809F;
-$color-software--dark: #526781;
-$color-support--light: #4183D7;
-$color-support--dark: #286ABD;
-$color-marketing--light: #2ECC71;
-$color-marketing--dark: #25A25A;
-$color-services--light: #D64541;
-$color-services--dark: #BC2C28;
-$color-design--light: #926FB1;
-$color-design--dark: #79539A;
-$color-security--light: #F62459;
-$color-security--dark: #DE093F;
-$color-course--light: #CE4125;
-$color-course--dark: #A3331D;
+$color-bespoke-software--light: #67809F;
+$color-bespoke-software--dark: #526781;
+$color-it-support--light: #4183D7;
+$color-it-support--dark: #286ABD;
+$color-digital-marketing--light: #2ECC71;
+$color-digital-marketing--dark: #25A25A;
+$color-telecoms-services--light: #D64541;
+$color-telecoms-services--dark: #BC2C28;
+$color-web-design--light: #926FB1;
+$color-web-design--dark: #79539A;
+$color-cyber-security--light: #F62459;
+$color-cyber-security--dark: #DE093F;
+$color-developer-course--light: #CE4125;
+$color-developer-course--dark: #A3331D;
 
 $color-facebook: #3b5998;
 $color-twitter: #00ACED;
 $color-instagram: #D93175;
 $color-linkedin: #0077B5;
+
+$icons: (
+    'bespoke-software': fa-grip-vertical,
+    'it-support': fa-display, 
+    'digital-Marketing': fa-chart-line,
+    'telecoms-Services': fa-phone-volume,
+    'web-design': fa-code,
+    'cyber-security': fa-shield-halved,
+    'developer-course': fa-graduation-cap,
+);
