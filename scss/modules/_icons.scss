@@ -5,7 +5,7 @@
 @each $icon, $class in $icons {
     i.#{$icon}::before {
         content: $class;
-
+        
         color: map-get($icon-colors, $icon);
     }
 }
