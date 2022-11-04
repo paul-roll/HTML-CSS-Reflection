@@ -27,7 +27,7 @@ footer {
     .flex-container {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-around;
+        justify-content: center;
         @media (min-width: $breakpoint-lg) {
             justify-content: space-between;
         }
@@ -36,6 +36,13 @@ footer {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
+        @media (min-width: $breakpoint-sm) {
+            width: 100%;
+            justify-content: space-evenly;
+        }
+        @media (min-width: $breakpoint-lg) {
+            width: inherit;
+        }
     }
     .flex-item {
         width: 225px;

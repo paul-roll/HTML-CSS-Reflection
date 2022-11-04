@@ -598,7 +598,7 @@ footer a:hover {
 footer .flex-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 @media (min-width: 1260px) {
@@ -615,12 +615,27 @@ footer .flex-both {
   justify-content: center;
 }
 
-/* line 40, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
+@media (min-width: 768px) {
+  /* line 35, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
+  footer .flex-both {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 35, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
+  footer .flex-both {
+    width: inherit;
+  }
+}
+
+/* line 47, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
 footer .flex-item {
   width: 225px;
 }
 
-/* line 43, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
+/* line 50, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_footer.scss */
 footer .bottom {
   display: flex;
   margin-bottom: 0;
