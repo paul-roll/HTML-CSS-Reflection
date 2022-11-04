@@ -501,15 +501,16 @@ nav li ul :last-child {
   border: 1px solid lightgrey;
   border-radius: 15px;
   padding: 15px;
+  box-shadow: 0 0 40px #e6e6e6;
 }
 
-/* line 50, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_services.scss */
+/* line 51, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_services.scss */
 .services ul li {
   text-align: center;
   list-style-type: none;
 }
 
-/* line 56, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_services.scss */
+/* line 57, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_services.scss */
 .services i {
   font-size: 32px;
 }
