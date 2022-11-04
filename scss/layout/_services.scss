@@ -7,44 +7,43 @@
     color: $color-tuna;
 
     .flex-container {
-        &--1 {
-            display: flex;
-            flex-flow: column wrap;
+        margin: 0;
+        display: flex;
+        flex-flow: column wrap;
+        gap: 30px;
+        &:first-child {
+            .flex-item {
+                @media (min-width: $breakpoint-lg) {
+                    min-width: 25%;
+                }
+            }
             @media (min-width: $breakpoint-md) {
                 flex-direction: row;
             }
         }
-        &--2 {
-            display: flex;
-            flex-flow: column wrap;
+        &:last-child {
+            .flex-item {
+                @media (min-width: $breakpoint-sm) {
+                    min-width: 40%;
+                }
+                @media (min-width: $breakpoint-lg) {
+                    min-width: 20%;
+                }
+            }
             @media (min-width: $breakpoint-sm) {
                 flex-direction: row;
             }
         }
     }
     .flex-item {
-        &--1 {
-            flex: 1 0;
-            @media (min-width: $breakpoint-lg) {
-                min-width: 25%;
-            }
-        }
-        &--2 {
-            flex: 1 0;
-            @media (min-width: $breakpoint-sm) {
-                min-width: 40%;
-            }
-            @media (min-width: $breakpoint-lg) {
-                min-width: 20%;
-            }
-        }
+        margin: 15px 0;
+        flex: 1 0;
+        border: 1px solid lightgrey;
+        border-radius: 15px;
+        padding: 15px;
     }
 
-    // border: 1px solid lightgrey;
-    // border-radius: 15px;
-    // margin-left: 15px;
-    // margin-right: 15px;
-    // padding: 15px;
+
 
     
     ul {
