@@ -9,36 +9,35 @@
     .flex-container1 {
         display: flex;
         flex-flow: column wrap;
-        justify-content: space-between;
-        gap: 30px;
         @media (min-width: $breakpoint-md) {
             flex-direction: row;
         }
     }
     .flex-item1 {
-        flex-grow: 1;
-        border: 1px solid black;
+        flex: 1 0;
+        @media (min-width: $breakpoint-md) {
+        }
+        @media (min-width: $breakpoint-lg) {
+            min-width: 25%;
+        }
     }
 
     .flex-container2 {
         display: flex;
         flex-flow: column wrap;
-        justify-content: space-between;
-        gap: 30px;
         @media (min-width: $breakpoint-sm) {
             flex-direction: row;
         }
     }
     .flex-item2 {
-        border: 1px solid black;
+        flex: 1 0;
         @media (min-width: $breakpoint-sm) {
-            width: 345px;
+            min-width: 40%;
         }
         @media (min-width: $breakpoint-md) {
-            width: 455px;
         }
         @media (min-width: $breakpoint-lg) {
-            width: 270px;
+            min-width: 20%;
         }
     }
     

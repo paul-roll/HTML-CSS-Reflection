@@ -273,21 +273,21 @@ th {
 @media (min-width: 768px) {
   /* line 8, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
   .wrapper {
-    max-width: 768px;
+    max-width: 750px;
   }
 }
 
 @media (min-width: 992px) {
   /* line 8, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
   .wrapper {
-    max-width: 992px;
+    max-width: 970px;
   }
 }
 
 @media (min-width: 1260px) {
   /* line 8, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_base.scss */
   .wrapper {
-    max-width: 1260px;
+    max-width: 1200px;
   }
 }
 
@@ -455,8 +455,6 @@ nav li ul :last-child {
 .services .flex-container1 {
   display: flex;
   flex-flow: column wrap;
-  justify-content: space-between;
-  gap: 30px;
 }
 
 @media (min-width: 992px) {
@@ -466,22 +464,26 @@ nav li ul :last-child {
   }
 }
 
-/* line 18, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_services.scss */
+/* line 16, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_services.scss */
 .services .flex-item1 {
-  flex-grow: 1;
-  border: 1px solid black;
+  flex: 1 0;
 }
 
-/* line 23, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_services.scss */
+@media (min-width: 1260px) {
+  /* line 16, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_services.scss */
+  .services .flex-item1 {
+    min-width: 25%;
+  }
+}
+
+/* line 25, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_services.scss */
 .services .flex-container2 {
   display: flex;
   flex-flow: column wrap;
-  justify-content: space-between;
-  gap: 30px;
 }
 
 @media (min-width: 768px) {
-  /* line 23, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_services.scss */
+  /* line 25, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_services.scss */
   .services .flex-container2 {
     flex-direction: row;
   }
@@ -489,31 +491,24 @@ nav li ul :last-child {
 
 /* line 32, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_services.scss */
 .services .flex-item2 {
-  border: 1px solid black;
+  flex: 1 0;
 }
 
 @media (min-width: 768px) {
   /* line 32, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_services.scss */
   .services .flex-item2 {
-    width: 345px;
-  }
-}
-
-@media (min-width: 992px) {
-  /* line 32, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_services.scss */
-  .services .flex-item2 {
-    width: 455px;
+    min-width: 40%;
   }
 }
 
 @media (min-width: 1260px) {
   /* line 32, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_services.scss */
   .services .flex-item2 {
-    width: 270px;
+    min-width: 20%;
   }
 }
 
-/* line 47, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_services.scss */
+/* line 46, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_services.scss */
 .services ul li {
   text-align: center;
   list-style-type: none;

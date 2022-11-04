@@ -10,13 +10,13 @@
     margin: 0 auto;
 
     @media (min-width: $breakpoint-sm) {
-        max-width: $breakpoint-sm;
+        max-width: $breakpoint-sm - 18px;
     }
     @media (min-width: $breakpoint-md) {
-        max-width: $breakpoint-md;
+        max-width: $breakpoint-md - 22px;
     }
     @media (min-width: $breakpoint-lg) {
-        max-width: $breakpoint-lg;
+        max-width: $breakpoint-lg - 60px;
     }
 }
 
