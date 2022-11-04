@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 8, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/base/_normalize.scss */
 html {
   font-family: sans-serif;
@@ -345,57 +346,22 @@ nav i {
 }
 
 /* line 25, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
-nav .bespoke-software {
-  color: #67809F;
-}
-
-/* line 28, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
-nav .it-support {
-  color: #4183D7;
-}
-
-/* line 31, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
-nav .digital-marketing {
-  color: #2ECC71;
-}
-
-/* line 34, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
-nav .telecoms-services {
-  color: #D64541;
-}
-
-/* line 37, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
-nav .web-design {
-  color: #926FB1;
-}
-
-/* line 40, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
-nav .cyber-security {
-  color: #F62459;
-}
-
-/* line 43, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
-nav .developer-course {
-  color: #CE4125;
-}
-
-/* line 48, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
 nav li {
   text-align: center;
   list-style-type: none;
 }
 
-/* line 51, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
+/* line 28, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
 nav li ul {
   text-transform: uppercase;
 }
 
-/* line 53, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
+/* line 30, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
 nav li ul :first-child {
   font-size: 0.8em;
 }
 
-/* line 56, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
+/* line 33, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_Nav.scss */
 nav li ul :last-child {
   font-size: 1.2em;
 }
@@ -576,6 +542,48 @@ footer .bottom {
   margin-bottom: 0;
   padding-bottom: 2em;
   justify-content: space-between;
+}
+
+/* line 6, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/modules/_icons.scss */
+i.bespoke-software::before {
+  content: "";
+  color: #67809F;
+}
+
+/* line 6, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/modules/_icons.scss */
+i.it-support::before {
+  content: "";
+  color: #4183D7;
+}
+
+/* line 6, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/modules/_icons.scss */
+i.digital-marketing::before {
+  content: "";
+  color: #2ECC71;
+}
+
+/* line 6, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/modules/_icons.scss */
+i.telecoms-services::before {
+  content: "";
+  color: #D64541;
+}
+
+/* line 6, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/modules/_icons.scss */
+i.web-design::before {
+  content: "";
+  color: #926FB1;
+}
+
+/* line 6, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/modules/_icons.scss */
+i.cyber-security::before {
+  content: "";
+  color: #F62459;
+}
+
+/* line 6, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/modules/_icons.scss */
+i.developer-course::before {
+  content: "";
+  color: #CE4125;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */

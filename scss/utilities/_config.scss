@@ -42,11 +42,20 @@ $color-instagram: #D93175;
 $color-linkedin: #0077B5;
 
 $icons: (
-    'bespoke-software': fa-grip-vertical,
-    'it-support': fa-display, 
-    'digital-Marketing': fa-chart-line,
-    'telecoms-Services': fa-phone-volume,
-    'web-design': fa-code,
-    'cyber-security': fa-shield-halved,
-    'developer-course': fa-graduation-cap,
+    'bespoke-software': "\f58e",    //fa-grip-vertical,
+    'it-support': "\e163",          //fa-display, 
+    'digital-marketing': "\f201",   //fa-chart-line,
+    'telecoms-services': "\f2a0",   //fa-phone-volume,
+    'web-design': "\f121",          //fa-code,
+    'cyber-security': "\f3ed",      //fa-shield-halved,
+    'developer-course': "\f19d",    //fa-graduation-cap,
 );
+$icon-colors: (
+    'bespoke-software': $color-bespoke-software--light,
+    'it-support': $color-it-support--light, 
+    'digital-marketing': $color-digital-marketing--light,
+    'telecoms-services': $color-telecoms-services--light,
+    'web-design': $color-web-design--light,
+    'cyber-security': $color-cyber-security--light,
+    'developer-course': $color-developer-course--light,
+)
