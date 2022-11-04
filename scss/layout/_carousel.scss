@@ -55,6 +55,11 @@
         border: 0;
         line-height: 50px;
         background-color: $color-bespoke-software--light;
+        border-radius: 3px;
+
+        &:hover {
+            background-color: $color-bespoke-software--dark;
+        }
 
         @media (min-width: $breakpoint-md) {
             margin-left: 5%;

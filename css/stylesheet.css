@@ -429,6 +429,12 @@ nav li ul :last-child {
   border: 0;
   line-height: 50px;
   background-color: #67809F;
+  border-radius: 3px;
+}
+
+/* line 60, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
+.carousel .button:hover {
+  background-color: #526781;
 }
 
 @media (min-width: 992px) {
