@@ -494,7 +494,7 @@ nav li ul :last-child {
 
 /* line 47, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_services.scss */
 .services ul li {
-  text-align: left;
+  text-align: center;
   list-style-type: none;
 }
 
