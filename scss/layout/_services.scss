@@ -6,6 +6,50 @@
     background-color: $color-services-bg;
     color: $color-tuna;
 
+    ul {
+        li{
+            text-align: center;
+            list-style-type: none; 
+        }
+    }
+
+    i {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 20.8px;
+        font-weight: 400;
+    }
+    p {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .button {
+        // margin-top: 30px;
+        font-size: 17px;
+        padding: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border: 0;
+        line-height: 35px;
+        color: $color-white;
+        background-color: $color-bespoke-software--light;
+        border-radius: 3px;
+        text-transform: uppercase;
+
+        // &:hover {
+        //     background-color: $color-bespoke-software--dark;
+        // }
+
+        // @media (min-width: $breakpoint-md) {
+        //     margin-left: 5%;
+        //     margin-right: auto;
+        // }
+    }
+
+
     .flex-container {
         margin: 0;
         display: flex;
@@ -40,21 +84,8 @@
         flex: 1 0;
         border: 1px solid lightgrey;
         border-radius: 15px;
-        padding: 15px;
+        padding: 30px;
         box-shadow:0 0 40px darken(white, 10%);
     }
 
-
-
-    
-    ul {
-        li{
-            text-align: center;
-            list-style-type: none; 
-        }
-    }
-
-    i {
-        font-size: 32px;
-    }
 }
