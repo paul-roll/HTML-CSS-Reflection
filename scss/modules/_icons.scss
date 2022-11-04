@@ -3,9 +3,20 @@
 // ==========================================================================
 
 @each $icon, $class in $icons {
-    i.#{$icon}::before {
-        content: $class;
+    .#{$icon} {
+        & i::before {
+            color: map-get($icon-colors, $icon);
+            content: $class;
+        }
+        & i.circle::before {
+            line-height: 62px;
+            display: block;
+            border-radius: 50%;
+            width: 65px;
+            height: 65px;
+            background: map-get($icon-colors, $icon);
+            color: $color-white;
+        }
         
-        color: map-get($icon-colors, $icon);
     }
 }
