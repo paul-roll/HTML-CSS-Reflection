@@ -7,7 +7,7 @@ nav {
     background-color: $color-nav-bg;
     color: $color-white;
 
-    @media (min-width: $brkpoint-md) {
+    @media (min-width: $breakpoint-md) {
         display: block;
     }
 

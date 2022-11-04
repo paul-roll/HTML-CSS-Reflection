@@ -14,6 +14,14 @@
 
     text-align: center;
 
+    h1 {
+        font-size: 40px;
+        font-family: Poppins, sans-serif;
+        @media (min-width: $breakpoint-md) {
+            font-size: 64px;
+        }
+    }
+
     .flex-container {
         height: 100%;
         display: flex;
@@ -25,10 +33,10 @@
         background-color: $color-bespoke-software--light;
     }
 
-    @media (min-width: $brkpoint-md) {
+    @media (min-width: $breakpoint-md) {
         //text turns left-aligned here.
     }
-    @media (min-width: $brkpoint-lg) {
+    @media (min-width: $breakpoint-lg) {
 
     }
 

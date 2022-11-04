@@ -25,7 +25,7 @@ footer {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-        @media (min-width: $brkpoint-lg) {
+        @media (min-width: $breakpoint-lg) {
             justify-content: space-between;
         }
     }

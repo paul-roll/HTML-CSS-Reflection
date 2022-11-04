@@ -11,7 +11,7 @@
         flex-flow: column wrap;
         justify-content: space-between;
         gap: 30px;
-        @media (min-width: $brkpoint-md) {
+        @media (min-width: $breakpoint-md) {
             flex-direction: row;
         }
     }
@@ -25,19 +25,19 @@
         flex-flow: column wrap;
         justify-content: space-between;
         gap: 30px;
-        @media (min-width: $brkpoint-sm) {
+        @media (min-width: $breakpoint-sm) {
             flex-direction: row;
         }
     }
     .flex-item2 {
         border: 1px solid black;
-        @media (min-width: $brkpoint-sm) {
+        @media (min-width: $breakpoint-sm) {
             width: 345px;
         }
-        @media (min-width: $brkpoint-md) {
+        @media (min-width: $breakpoint-md) {
             width: 455px;
         }
-        @media (min-width: $brkpoint-lg) {
+        @media (min-width: $breakpoint-lg) {
             width: 270px;
         }
     }

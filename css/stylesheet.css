@@ -377,6 +377,19 @@ nav li ul :last-child {
 }
 
 /* line 17, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
+.carousel h1 {
+  font-size: 40px;
+  font-family: Poppins, sans-serif;
+}
+
+@media (min-width: 992px) {
+  /* line 17, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
+  .carousel h1 {
+    font-size: 64px;
+  }
+}
+
+/* line 25, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
 .carousel .flex-container {
   height: 100%;
   display: flex;
@@ -385,7 +398,7 @@ nav li ul :last-child {
   align-items: center;
 }
 
-/* line 24, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
+/* line 32, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/layout/_carousel.scss */
 .carousel input {
   background-color: #67809F;
 }
