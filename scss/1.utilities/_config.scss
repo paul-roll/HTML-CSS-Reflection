@@ -15,27 +15,20 @@ $color-grey: #999AA2;
 
 $color-header-bg: $color-white;
 $color-nav-bg: $color-tuna;
-$color-carousel-bg: $color-tuna; //unknwon-concealed;
+$color-carousel-bg: $color-tuna; //unknown-concealed;
 $color-services-bg: $color-white;
 $color-testimonials-bg: $color-tuna;
 $color-news-bg: $color-white;
 $color-email-bg: $color-alto;
 $color-footer-bg: $color-tuna;
 
-$color-bespoke-software--light: #67809F;
-$color-bespoke-software--dark: #526781;
-$color-it-support--light: #4183D7;
-$color-it-support--dark: #286ABD;
-$color-digital-marketing--light: #2ECC71;
-$color-digital-marketing--dark: #25A25A;
-$color-telecoms-services--light: #D64541;
-$color-telecoms-services--dark: #BC2C28;
-$color-web-design--light: #926FB1;
-$color-web-design--dark: #79539A;
-$color-cyber-security--light: #F62459;
-$color-cyber-security--dark: #DE093F;
-$color-developer-course--light: #CE4125;
-$color-developer-course--dark: #A3331D;
+$color-bespoke-software: #67809F;
+$color-it-support: #4183D7;
+$color-digital-marketing: #2ECC71;
+$color-telecoms-services: #D64541;
+$color-web-design: #926FB1;
+$color-cyber-security: #F62459;
+$color-developer-course: #CE4125;
 
 $color-facebook: #3b5998;
 $color-twitter: #00ACED;
@@ -52,11 +45,11 @@ $icons: (
     'developer-course': "\f19d",    //fa-graduation-cap,
 );
 $icon-colors: (
-    'bespoke-software': $color-bespoke-software--light,
-    'it-support': $color-it-support--light, 
-    'digital-marketing': $color-digital-marketing--light,
-    'telecoms-services': $color-telecoms-services--light,
-    'web-design': $color-web-design--light,
-    'cyber-security': $color-cyber-security--light,
-    'developer-course': $color-developer-course--light,
+    'bespoke-software': $color-bespoke-software,
+    'it-support': $color-it-support, 
+    'digital-marketing': $color-digital-marketing,
+    'telecoms-services': $color-telecoms-services,
+    'web-design': $color-web-design,
+    'cyber-security': $color-cyber-security,
+    'developer-course': $color-developer-course,
 )

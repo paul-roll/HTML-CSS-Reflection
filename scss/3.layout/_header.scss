@@ -13,9 +13,9 @@
 
     .btn.support {
         white-space: nowrap;
-        @include btn($color-white, $color-it-support--light, 18px, 10px);
+        @include btn($color-white, $color-it-support, 18px, 10px);
         &:hover {
-            background-color: $color-it-support--dark;
+            background-color: darken($color-it-support, 10%);
         }
     }
 
