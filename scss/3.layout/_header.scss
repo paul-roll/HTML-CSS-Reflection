@@ -79,9 +79,12 @@ header {
     }
 
     .logo {
-        padding:0 ;
+        padding:0 10px 0 0 ;
         margin-right: auto;
         max-width: 402px;
         width: inherit;
+        @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - 1) {
+            max-width: 345px;
+        }
     }
 }
