@@ -28,3 +28,42 @@ html {
 ul {
     padding: 0;
 }
+
+
+
+.hidden {
+    display: none;
+}
+
+.hide-sm {
+    @media (min-width: $breakpoint-sm) {
+        display: none;
+    }
+}
+.show-sm {
+    @media (min-width: $breakpoint-sm) {
+        display: inherit;
+    } 
+}
+
+.hide-md {
+    @media (min-width: $breakpoint-md) {
+        display: none;
+    } 
+}
+.show-md {
+    @media (min-width: $breakpoint-md) {
+        display: inherit;
+    } 
+}
+
+.show-lg {
+    @media (min-width: $breakpoint-lg) {
+        display: inherit;
+    }   
+}
+.hide-lg {
+    @media (min-width: $breakpoint-lg) {
+        display: none;
+    } 
+}

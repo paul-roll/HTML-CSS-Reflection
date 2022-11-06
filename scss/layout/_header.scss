@@ -18,21 +18,51 @@ header {
     }
 
     i {
-        
-        //vertical-align: middle;
-    }
+        font-size: 32px;
+        padding: 10px;
 
-    .right {
-        //height: 70px;
-        //display: inline-block;
-        //vertical-align: middle;
-        float: right;
-        
-        //text-align: right;
-        //margin-left: auto;
+        &.fa-bars,
+        &.fa-magnifying-glass {
+            color: $color-white;
+            padding-right: 0;
+            &:before {
+                background: $color-tuna;
+                line-height: 55px;
+                display: block;
+                border-radius: 3px;
+                width: 63px;
+                height: 56px;
+                color: $color-white;
+            }
+        }
     }
 
     input {
         width: 100%;
+    }
+
+    .flex-container {
+
+        // margin: 0;
+        display: flex;
+        align-items: center;
+        // flex-flow: column wrap;
+        // gap: 0 30px;
+        width: 100%;
+        > * {
+            padding: 10px;
+            //border: 1px solid black;
+            text-align: center;
+        }
+    }
+    // 1-767:       Logo(1-402),    Phone,                                          Menu,   Search-L
+    // 768-991:     Logo(345),                                           Search-M,  Menu
+    // 992-1259:    Logo(375),             (Support, Contact, Search-S),            Menu
+    // 1260+:       Logo(370)               Support, Contact,            Search-M,  Menu
+
+    .logo {
+        margin-right: auto;
+        max-width: 402px;
+        width: inherit;
     }
 }
