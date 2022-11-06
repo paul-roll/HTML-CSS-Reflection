@@ -3,4 +3,16 @@
 // ==========================================================================
 
 
-
+@mixin btn($color, $background-color) {
+    display: inline-block;
+    font-size: 17px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 0;
+    line-height: 35px;
+    color: $color;
+    background-color: $background-color;
+    border-radius: 3px;
+    text-transform: uppercase;
+}

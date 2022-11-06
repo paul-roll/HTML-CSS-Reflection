@@ -26,27 +26,10 @@
         font-weight: 400;
     }
 
-    .button {
-        // margin-top: 30px;
-        font-size: 17px;
-        padding: 5px;
-        padding-left: 15px;
-        padding-right: 15px;
-        border: 0;
-        line-height: 35px;
-        color: $color-white;
-        background-color: $color-bespoke-software--light;
-        border-radius: 3px;
-        text-transform: uppercase;
-
-        // &:hover {
-        //     background-color: $color-bespoke-software--dark;
-        // }
-
-        // @media (min-width: $breakpoint-md) {
-        //     margin-left: 5%;
-        //     margin-right: auto;
-        // }
+    @each $service, $color in $icon-colors {
+        .#{$service} .btn {
+            @include btn($color-white, $color);
+        }
     }
 
 
