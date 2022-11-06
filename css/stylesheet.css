@@ -467,12 +467,13 @@ header .search input {
 
 /* line 56, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
 header .search input.wide {
+  margin-top: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
   background: #E5E5E5;
 }
 
-/* line 62, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
+/* line 63, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
 header .search .wide-btn {
   font-size: 20px;
   position: absolute;
@@ -480,21 +481,22 @@ header .search .wide-btn {
   right: 10px;
 }
 
-/* line 70, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
+/* line 71, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
 header .flex-container {
   display: flex;
   align-items: center;
   width: 100%;
 }
 
-/* line 74, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
+/* line 75, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
 header .flex-container > * {
   padding: 10px;
   text-align: center;
 }
 
-/* line 80, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
+/* line 81, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
 header .logo {
+  padding: 0;
   margin-right: auto;
   max-width: 402px;
   width: inherit;
