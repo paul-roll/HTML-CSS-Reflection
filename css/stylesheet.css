@@ -355,38 +355,67 @@ header {
   color: #333645;
 }
 
-/* line 15, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
-header .logo {
-  display: inline-block;
-  font-size: 2.5em;
-}
-
-/* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
-header i {
+/* line 9, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
+header .fa-phone {
   font-size: 32px;
   padding: 10px;
 }
 
-/* line 24, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
-header i.fa-bars, header i.fa-magnifying-glass {
+/* line 14, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
+header .btn.fa-bars {
+  display: inline-block;
+  font-size: 32px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 0;
+  line-height: 35px;
   color: #FFFFFF;
-  padding-right: 0;
-}
-
-/* line 28, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
-header i.fa-bars:before, header i.fa-magnifying-glass:before {
-  background: #333645;
-  line-height: 55px;
-  display: block;
+  background-color: #333645;
   border-radius: 3px;
-  width: 63px;
-  height: 56px;
-  color: #FFFFFF;
+  text-transform: uppercase;
 }
 
-/* line 40, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
+/* line 16, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
+header .btn.fa-bars:hover {
+  background-color: #1d1f28;
+}
+
+/* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
+header .btn.fa-magnifying-glass {
+  display: inline-block;
+  font-size: 32px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 0;
+  line-height: 35px;
+  color: #FFFFFF;
+  background-color: #999AA2;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+/* line 22, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
+header .btn.fa-magnifying-glass:hover {
+  background-color: #7e808a;
+}
+
+@media (min-width: 768px) and (max-width: 991px), (min-width: 1260px) {
+  /* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
+  header .btn.fa-magnifying-glass {
+    border-radius: 0 3px 3px 0;
+  }
+}
+
+/* line 35, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
 header input {
+  font-size: 14px;
   width: 100%;
+  padding-left: 15px;
+  border: 1px solid #cecfd3;
+  color: #4d4e55;
+  box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 /* line 44, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
@@ -396,13 +425,13 @@ header .flex-container {
   width: 100%;
 }
 
-/* line 52, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
+/* line 48, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
 header .flex-container > * {
   padding: 10px;
   text-align: center;
 }
 
-/* line 63, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
+/* line 54, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
 header .logo {
   margin-right: auto;
   max-width: 402px;

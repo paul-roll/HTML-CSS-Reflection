@@ -6,59 +6,50 @@ header {
     background-color: $color-header-bg;
     color: $color-tuna;
 
-
-    // img {
-    //     float: left;
-    //     //width: 100%;
-    // }
-
-    .logo {
-        display: inline-block;
-        font-size: 2.5em;
-    }
-
-    i {
+    .fa-phone {
         font-size: 32px;
         padding: 10px;
+    }
 
-        &.fa-bars,
-        &.fa-magnifying-glass {
-            color: $color-white;
-            padding-right: 0;
-            &:before {
-                background: $color-tuna;
-                line-height: 55px;
-                display: block;
-                border-radius: 3px;
-                width: 63px;
-                height: 56px;
-                color: $color-white;
-            }
+    .btn.fa-bars {
+        @include btn($color-white, $color-tuna, 32px, 10px);
+        &:hover {
+            background-color: darken($color-tuna, 10%);
+        }
+    }
+    .btn.fa-magnifying-glass {
+        @include btn($color-white, $color-grey, 32px, 10px);
+        &:hover {
+            background-color: darken($color-grey, 10%);
+        }
+        // border-radius: 0 50% 50% 0;
+        // @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg - 1) {
+        //     border-radius: 50%;
+        // }
+        @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - 1),
+        (min-width: $breakpoint-lg) {
+            border-radius: 0 3px 3px 0;
         }
     }
 
     input {
+        font-size: 14px;
         width: 100%;
+        padding-left: 15px;
+        border: 1px solid lighten($color-grey, 20%);
+        color: darken($color-grey, 30%);
+        box-shadow: inset 0 0 1px 1px rgba(0,0,0,.075);
     }
 
     .flex-container {
-
-        // margin: 0;
         display: flex;
         align-items: center;
-        // flex-flow: column wrap;
-        // gap: 0 30px;
         width: 100%;
         > * {
             padding: 10px;
-            //border: 1px solid black;
             text-align: center;
         }
     }
-    // 1-767:       Logo(1-402),    Phone,                                          Menu,   Search-L
-    // 768-991:     Logo(345),                                           Search-M,  Menu
-    // 992-1259:    Logo(375),             (Support, Contact, Search-S),            Menu
-    // 1260+:       Logo(370)               Support, Contact,            Search-M,  Menu
 
     .logo {
         margin-right: auto;
