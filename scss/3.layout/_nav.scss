@@ -15,6 +15,17 @@ nav {
         display: flex;
         justify-content: space-around;
         margin: 0;
+
+        @each $service, $color in $icon-colors {
+            .#{$service} {
+                &:hover {
+                    background: $color;
+                    i::before {
+                        color: $color-white;
+                    }
+                }
+            }
+        }
     }
 
     i {
@@ -22,7 +33,7 @@ nav {
         font-size: 23px;
     }
 
-    li {
+     li {
         text-align: center;
         list-style-type: none;
         line-height: 1em;
