@@ -11,6 +11,22 @@ header {
         padding: 10px;
     }
 
+    .btn.support {
+        white-space: nowrap;
+        @include btn($color-white, $color-it-support--light, 18px, 10px);
+        &:hover {
+            background-color: $color-it-support--dark;
+        }
+    }
+
+    .btn.contact {
+        white-space: nowrap;
+        @include btn($color-white, $color-grey, 18px, 10px);
+        &:hover {
+            background-color: darken($color-grey, 10%);
+        }
+    }
+
     .btn.fa-bars {
         @include btn($color-white, $color-tuna, 32px, 10px);
         &:hover {
@@ -22,10 +38,6 @@ header {
         &:hover {
             background-color: darken($color-grey, 10%);
         }
-        // border-radius: 0 50% 50% 0;
-        // @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg - 1) {
-        //     border-radius: 50%;
-        // }
         @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - 1),
         (min-width: $breakpoint-lg) {
             border-radius: 0 3px 3px 0;
