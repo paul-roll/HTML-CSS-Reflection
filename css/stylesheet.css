@@ -350,19 +350,19 @@ ul {
 }
 
 /* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
-header {
+.header {
   background-color: #FFFFFF;
   color: #333645;
 }
 
 /* line 9, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
-header .fa-phone {
+.header .fa-phone {
   font-size: 32px;
   padding: 10px;
 }
 
 /* line 14, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
-header .btn.support {
+.header .btn.support {
   white-space: nowrap;
   display: inline-block;
   font-size: 18px;
@@ -378,12 +378,12 @@ header .btn.support {
 }
 
 /* line 17, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
-header .btn.support:hover {
+.header .btn.support:hover {
   background-color: #286ABD;
 }
 
 /* line 22, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
-header .btn.contact {
+.header .btn.contact {
   white-space: nowrap;
   display: inline-block;
   font-size: 18px;
@@ -399,12 +399,12 @@ header .btn.contact {
 }
 
 /* line 25, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
-header .btn.contact:hover {
+.header .btn.contact:hover {
   background-color: #7e808a;
 }
 
 /* line 30, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
-header .btn.fa-bars {
+.header .btn.fa-bars {
   display: inline-block;
   font-size: 32px;
   padding: 10px;
@@ -419,12 +419,12 @@ header .btn.fa-bars {
 }
 
 /* line 32, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
-header .btn.fa-bars:hover {
+.header .btn.fa-bars:hover {
   background-color: #1d1f28;
 }
 
 /* line 36, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
-header .btn.fa-magnifying-glass {
+.header .btn.fa-magnifying-glass {
   display: inline-block;
   font-size: 32px;
   padding: 10px;
@@ -439,24 +439,24 @@ header .btn.fa-magnifying-glass {
 }
 
 /* line 38, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
-header .btn.fa-magnifying-glass:hover {
+.header .btn.fa-magnifying-glass:hover {
   background-color: #7e808a;
 }
 
 @media (min-width: 768px) and (max-width: 991px), (min-width: 1260px) {
   /* line 36, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
-  header .btn.fa-magnifying-glass {
+  .header .btn.fa-magnifying-glass {
     border-radius: 0 3px 3px 0;
   }
 }
 
 /* line 47, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
-header .search {
+.header .search {
   position: relative;
 }
 
 /* line 49, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
-header .search input {
+.header .search input {
   font-size: 14px;
   width: 100%;
   padding-left: 15px;
@@ -466,7 +466,7 @@ header .search input {
 }
 
 /* line 56, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
-header .search input.wide {
+.header .search input.wide {
   margin-top: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -474,7 +474,7 @@ header .search input.wide {
 }
 
 /* line 63, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
-header .search .wide-btn {
+.header .search .wide-btn {
   font-size: 20px;
   position: absolute;
   top: 13px;
@@ -482,20 +482,20 @@ header .search .wide-btn {
 }
 
 /* line 71, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
-header .flex-container {
+.header .flex-container {
   display: flex;
   align-items: center;
   width: 100%;
 }
 
 /* line 75, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
-header .flex-container > * {
+.header .flex-container > * {
   padding: 10px;
   text-align: center;
 }
 
 /* line 81, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
-header .logo {
+.header .logo {
   padding: 0 10px 0 0;
   margin-right: auto;
   max-width: 402px;
@@ -504,7 +504,7 @@ header .logo {
 
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 81, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
-  header .logo {
+  .header .logo {
     max-width: 345px;
   }
 }
