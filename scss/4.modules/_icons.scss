@@ -4,11 +4,11 @@
 
 @each $icon, $class in $icons {
     .#{$icon} {
-        & i::before {
+        & > i::before {
             color: map-get($icon-colors, $icon);
             content: $class;
         }
-        & i.circle::before {
+        & > i.circle::before {
             line-height: 62px;
             display: block;
             border-radius: 50%;
