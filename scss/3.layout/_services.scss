@@ -17,10 +17,32 @@
         font-size: 32px;
     }
 
-    h2 {
+    h1 {
+        margin: 0;
         font-size: 43.2px;
         font-weight: 600;
+        @media (min-width: $breakpoint-sm) {
+            float: left;
+        }
     }
+
+    h2 {
+        font-size: 26px;
+        font-weight: 600;
+        text-align: center;
+        @media (min-width: $breakpoint-sm) {
+            text-align: right;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-tuna;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
     h3 {
         font-size: 20.8px;
         font-weight: 400;
