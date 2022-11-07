@@ -5,4 +5,80 @@
 .testimonials {
     background-color: $color-testimonials-bg;
     color: $color-white;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        @media (min-width: $breakpoint-md) {
+            flex-direction: row;
+            gap: 30px;
+        }
+        .flex-item {
+            flex: 1 0;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-white;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    p {
+        &:first-of-type {
+            font-weight: bold;
+        }
+    }
+
+    .fa-star {
+        font-size: 50px;
+        color: $color-star;
+    }
+
+    blockquote {
+        margin-left: 0;
+        margin-right: 0;
+        font-style: italic;
+        font-size: 20.8px;
+        font-weight: bold;
+    }
+    cite {
+        font-size: 17.6px;
+        font-weight: bold;
+        font-style: normal;
+        color: $color-grey;
+    }
+
+    .btn {
+        &.more {
+            @include btn($color-white, darken($color-tuna, 5%), 20px, 10px, 30px);
+            border-radius: 6px;
+            &:hover {
+                background: darken($color-tuna, 15%)
+            }
+        }
+        &.google {
+            @include btn($color-white, darken($color-it-support, 5%), 20px, 10px, 30px);
+            border-radius: 6px;
+            margin: 4px;
+            &:hover {
+                background: darken($color-it-support, 15%)
+            }
+        }
+        &.trustpilot {
+            @include btn($color-white, darken($color-digital-marketing, 5%), 20px, 10px, 30px);
+            border-radius: 6px;
+            margin: 4px;
+            &:hover {
+                background: darken($color-digital-marketing, 15%)
+            }
+        }
+    }
+
+    h1 {
+        font-size: 36px;
+        font-weight: 600;
+    }
 }

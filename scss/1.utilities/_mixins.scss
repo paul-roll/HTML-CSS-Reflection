@@ -3,14 +3,14 @@
 // ==========================================================================
 
 
-@mixin btn($color, $background-color, $font-size: 17px, $padding: 5px) {
+@mixin btn($color, $background-color, $font-size: 17px, $padding1: 5px, $padding2: 15px) {
     display: inline-block;
     //font-size: 17px;
     font-size: $font-size;
     //padding: 5px;
-    padding: $padding;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: $padding1 $padding2;
+    // padding-left: 15px;
+    // padding-right: 15px;
     border: 0;
     line-height: 35px;
     color: $color;
