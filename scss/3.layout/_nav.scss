@@ -3,6 +3,7 @@
 // ==========================================================================
 
 nav {
+    position: relative;
     display: none;
     background-color: $color-nav-bg;
     color: $color-white;
@@ -18,7 +19,6 @@ nav {
 
         @each $service, $color in $icon-colors {
             .#{$service} {
-                position:relative;
                 width: 100%;
                 padding-top: 15px;
                 margin-top: -15px;
@@ -31,33 +31,46 @@ nav {
                     }
                     .arrow-down {
                         display: inherit;
+                        border-top-color: $color;
+                    }
+                    .nav-panel {
+                        display: inherit;
+                        background: darken($color, 10%);
                     }
                 }
             }
         }
     }
 
-
     .arrow-down {
         position: absolute;
+        z-index: 1;
         @media (max-width: $breakpoint-lg - 1) {
             $w: ($wrapper-md - 30px) / 7;
             width: $w; 
-            bottom: - $w / 4 + 1;
+            bottom: -$w / 4 + 1;
             height: 0;
             border-left: $w / 2 solid transparent;
             border-right: $w / 2 solid transparent;
-            border-top: $w / 4 solid $color-bespoke-software;
+            border-top: $w / 4 solid;
         }
         @media (min-width: $breakpoint-lg) {
             $w: ($wrapper-lg - 30px) / 7;
             width: $w; 
-            bottom: - $w / 4 + 1;
+            bottom: -$w / 4 + 1;
             height: 0;
             border-left: $w / 2 solid transparent;
             border-right: $w / 2 solid transparent;
-            border-top: $w / 4 solid $color-bespoke-software;
+            border-top: $w / 4 solid;
         }
+    }
+    
+    .nav-panel {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        bottom: -200px;
     }
 
     i {

@@ -508,6 +508,7 @@ ul {
 
 /* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
 nav {
+  position: relative;
   display: none;
   background-color: #333645;
   color: #FFFFFF;
@@ -520,16 +521,15 @@ nav {
   }
 }
 
-/* line 14, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+/* line 15, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
 nav .flex-container {
   display: flex;
   justify-content: space-around;
   margin: 0;
 }
 
-/* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+/* line 21, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
 nav .flex-container .bespoke-software {
-  position: relative;
   width: 100%;
   padding-top: 15px;
   margin-top: -15px;
@@ -550,11 +550,17 @@ nav .flex-container .bespoke-software:hover i::before {
 /* line 32, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
 nav .flex-container .bespoke-software:hover .arrow-down {
   display: inherit;
+  border-top-color: #67809F;
 }
 
-/* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+/* line 36, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+nav .flex-container .bespoke-software:hover .nav-panel {
+  display: inherit;
+  background: #526781;
+}
+
+/* line 21, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
 nav .flex-container .it-support {
-  position: relative;
   width: 100%;
   padding-top: 15px;
   margin-top: -15px;
@@ -575,11 +581,17 @@ nav .flex-container .it-support:hover i::before {
 /* line 32, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
 nav .flex-container .it-support:hover .arrow-down {
   display: inherit;
+  border-top-color: #4183D7;
 }
 
-/* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+/* line 36, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+nav .flex-container .it-support:hover .nav-panel {
+  display: inherit;
+  background: #286abd;
+}
+
+/* line 21, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
 nav .flex-container .digital-marketing {
-  position: relative;
   width: 100%;
   padding-top: 15px;
   margin-top: -15px;
@@ -600,11 +612,17 @@ nav .flex-container .digital-marketing:hover i::before {
 /* line 32, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
 nav .flex-container .digital-marketing:hover .arrow-down {
   display: inherit;
+  border-top-color: #2ECC71;
 }
 
-/* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+/* line 36, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+nav .flex-container .digital-marketing:hover .nav-panel {
+  display: inherit;
+  background: #25a25a;
+}
+
+/* line 21, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
 nav .flex-container .telecoms-services {
-  position: relative;
   width: 100%;
   padding-top: 15px;
   margin-top: -15px;
@@ -625,11 +643,17 @@ nav .flex-container .telecoms-services:hover i::before {
 /* line 32, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
 nav .flex-container .telecoms-services:hover .arrow-down {
   display: inherit;
+  border-top-color: #D64541;
 }
 
-/* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+/* line 36, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+nav .flex-container .telecoms-services:hover .nav-panel {
+  display: inherit;
+  background: #bc2c28;
+}
+
+/* line 21, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
 nav .flex-container .web-design {
-  position: relative;
   width: 100%;
   padding-top: 15px;
   margin-top: -15px;
@@ -650,11 +674,17 @@ nav .flex-container .web-design:hover i::before {
 /* line 32, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
 nav .flex-container .web-design:hover .arrow-down {
   display: inherit;
+  border-top-color: #926FB1;
 }
 
-/* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+/* line 36, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+nav .flex-container .web-design:hover .nav-panel {
+  display: inherit;
+  background: #79539a;
+}
+
+/* line 21, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
 nav .flex-container .cyber-security {
-  position: relative;
   width: 100%;
   padding-top: 15px;
   margin-top: -15px;
@@ -675,11 +705,17 @@ nav .flex-container .cyber-security:hover i::before {
 /* line 32, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
 nav .flex-container .cyber-security:hover .arrow-down {
   display: inherit;
+  border-top-color: #F62459;
 }
 
-/* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+/* line 36, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+nav .flex-container .cyber-security:hover .nav-panel {
+  display: inherit;
+  background: #de093f;
+}
+
+/* line 21, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
 nav .flex-container .developer-course {
-  position: relative;
   width: 100%;
   padding-top: 15px;
   margin-top: -15px;
@@ -700,61 +736,78 @@ nav .flex-container .developer-course:hover i::before {
 /* line 32, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
 nav .flex-container .developer-course:hover .arrow-down {
   display: inherit;
+  border-top-color: #CE4125;
 }
 
-/* line 41, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+/* line 36, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+nav .flex-container .developer-course:hover .nav-panel {
+  display: inherit;
+  background: #a3331d;
+}
+
+/* line 45, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
 nav .arrow-down {
   position: absolute;
+  z-index: 1;
 }
 
 @media (max-width: 1259px) {
-  /* line 41, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+  /* line 45, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
   nav .arrow-down {
     width: 134.28571px;
     bottom: -32.57143px;
     height: 0;
     border-left: 67.14286px solid transparent;
     border-right: 67.14286px solid transparent;
-    border-top: 33.57143px solid #67809F;
+    border-top: 33.57143px solid;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 41, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+  /* line 45, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
   nav .arrow-down {
     width: 167.14286px;
     bottom: -40.78571px;
     height: 0;
     border-left: 83.57143px solid transparent;
     border-right: 83.57143px solid transparent;
-    border-top: 41.78571px solid #67809F;
+    border-top: 41.78571px solid;
   }
 }
 
-/* line 63, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+/* line 68, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+nav .nav-panel {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  bottom: -200px;
+}
+
+/* line 76, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
 nav i {
   padding-bottom: 10px;
   font-size: 23px;
 }
 
-/* line 68, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+/* line 81, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
 nav li {
   text-align: center;
   list-style-type: none;
   line-height: 1em;
 }
 
-/* line 72, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+/* line 85, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
 nav li ul {
   text-transform: uppercase;
 }
 
-/* line 74, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+/* line 87, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
 nav li ul :first-child {
   font-size: 10px;
 }
 
-/* line 77, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+/* line 90, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
 nav li ul :last-child {
   font-size: 18px;
 }
