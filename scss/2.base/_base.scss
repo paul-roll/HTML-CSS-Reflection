@@ -15,13 +15,13 @@ html {
     margin: 0 auto;
 
     @media (min-width: $breakpoint-sm) {
-        max-width: $breakpoint-sm - 18px;
+        max-width: $wrapper-sm;
     }
     @media (min-width: $breakpoint-md) {
-        max-width: $breakpoint-md - 22px;
+        max-width: $wrapper-md;
     }
     @media (min-width: $breakpoint-lg) {
-        max-width: $breakpoint-lg - 60px;
+        max-width: $wrapper-lg;
     }
 }
 

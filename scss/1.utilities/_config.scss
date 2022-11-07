@@ -6,6 +6,11 @@
 $breakpoint-sm    : 768px;
 $breakpoint-md    : 992px;
 $breakpoint-lg    : 1260px;
+// Margins
+$wrapper-sm       : $breakpoint-sm - 18px;
+$wrapper-md       : $breakpoint-md - 22px;
+$wrapper-lg       : $breakpoint-lg - 60px;
+
 
 // Colors
 $color-white: #FFFFFF;

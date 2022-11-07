@@ -18,6 +18,12 @@ nav {
 
         @each $service, $color in $icon-colors {
             .#{$service} {
+                position:relative;
+                width: 100%;
+                padding-top: 15px;
+                margin-top: -15px;
+                padding-bottom: 15px;
+                margin-bottom: -15px;
                 &:hover {
                     background: $color;
                     i::before {
@@ -31,13 +37,27 @@ nav {
         }
     }
 
+
     .arrow-down {
         position: absolute;
-        width: 0; 
-        height: 0;
-        border-left: 50px solid transparent;
-        border-right: 50px solid transparent;
-        border-top: 25px solid $color-bespoke-software;
+        @media (max-width: $breakpoint-lg - 1) {
+            $w: ($wrapper-md - 30px) / 7;
+            width: $w; 
+            bottom: - $w / 4 + 1;
+            height: 0;
+            border-left: $w / 2 solid transparent;
+            border-right: $w / 2 solid transparent;
+            border-top: $w / 4 solid $color-bespoke-software;
+        }
+        @media (min-width: $breakpoint-lg) {
+            $w: ($wrapper-lg - 30px) / 7;
+            width: $w; 
+            bottom: - $w / 4 + 1;
+            height: 0;
+            border-left: $w / 2 solid transparent;
+            border-right: $w / 2 solid transparent;
+            border-top: $w / 4 solid $color-bespoke-software;
+        }
     }
 
     i {
