@@ -27,12 +27,18 @@
     }
 
     @each $service, $color in $icon-colors {
-        .#{$service} .btn {
-            @include btn($color-white, $color);
+        .#{$service} {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .btn {
+                margin-top: auto;
+                @include btn($color-white, $color);
+            }
         }
     }
 
-
+    
     .flex-container {
         margin: 0;
         display: flex;
