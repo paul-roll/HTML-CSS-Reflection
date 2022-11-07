@@ -17,6 +17,10 @@
         font-size: 32px;
     }
 
+    h2 {
+        font-size: 43.2px;
+        font-weight: 600;
+    }
     h3 {
         font-size: 20.8px;
         font-weight: 400;
@@ -44,7 +48,7 @@
         display: flex;
         flex-flow: column wrap;
         gap: 0 30px;
-        &:first-child {
+        &:first-of-type {
             .flex-item {
                 @media (min-width: $breakpoint-lg) {
                     min-width: 25%;
@@ -54,7 +58,7 @@
                 flex-direction: row;
             }
         }
-        &:last-child {
+        &:last-of-type {
             .flex-item {
                 @media (min-width: $breakpoint-sm) {
                     min-width: 40%;
