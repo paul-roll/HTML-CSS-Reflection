@@ -44,20 +44,10 @@
     }
 
     .button {
+        @include btn($color-white, $color-bespoke-software, 20px, 5px, 20px);
+        @include btn-hover($color-bespoke-software);
         margin-top: 30px;
-        font-size: 20px;
-        padding: 5px;
-        padding-left: 20px;
-        padding-right: 20px;
-        border: 0;
         line-height: 50px;
-        background-color: $color-bespoke-software;
-        border-radius: 3px;
-
-        &:hover {
-            background-color: darken($color-bespoke-software, 10%);
-        }
-
         @media (min-width: $breakpoint-md) {
             margin-left: 5%;
             margin-right: auto;

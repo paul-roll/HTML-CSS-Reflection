@@ -14,30 +14,22 @@
     .btn.support {
         white-space: nowrap;
         @include btn($color-white, $color-it-support, 18px, 10px);
-        &:hover {
-            background-color: darken($color-it-support, 10%);
-        }
+        @include btn-hover($color-it-support);
     }
 
     .btn.contact {
         white-space: nowrap;
         @include btn($color-white, $color-grey, 18px, 10px);
-        &:hover {
-            background-color: darken($color-grey, 10%);
-        }
+        @include btn-hover($color-grey);
     }
 
     .btn.fa-bars {
         @include btn($color-white, $color-tuna, 32px, 10px);
-        &:hover {
-            background-color: darken($color-tuna, 10%);
-        }
+        @include btn-hover($color-tuna);
     }
     .btn.fa-magnifying-glass {
         @include btn($color-white, $color-grey, 32px, 10px);
-        &:hover {
-            background-color: darken($color-grey, 10%);
-        }
+        @include btn-hover($color-grey);
         @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - 1),
         (min-width: $breakpoint-lg) {
             border-radius: 0 3px 3px 0;

@@ -46,26 +46,20 @@
     .btn {
         &.more {
             @include btn($color-white, darken($color-tuna, 5%), 20px, 10px, 30px);
+            @include btn-hover(darken($color-tuna, 5%));
             border-radius: 6px;
-            &:hover {
-                background: darken($color-tuna, 15%)
-            }
         }
         &.google {
             @include btn($color-white, darken($color-it-support, 5%), 20px, 10px, 30px);
+            @include btn-hover(darken($color-it-support, 5%));
             border-radius: 6px;
             margin: 4px;
-            &:hover {
-                background: darken($color-it-support, 15%)
-            }
         }
         &.trustpilot {
             @include btn($color-white, darken($color-digital-marketing, 5%), 20px, 10px, 30px);
+            @include btn-hover(darken($color-digital-marketing, 5%));
             border-radius: 6px;
             margin: 4px;
-            &:hover {
-                background: darken($color-digital-marketing, 15%)
-            }
         }
     }
 

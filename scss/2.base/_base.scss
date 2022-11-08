@@ -11,7 +11,9 @@ html {
 }
 
 a {
-    color: white;
+    padding: 0;
+    width: inherit;
+    color: inherit;
     text-decoration: none;
     &:hover {
         text-decoration: underline;
