@@ -1560,6 +1560,37 @@ nav li > ul :last-child {
   color: #333645;
 }
 
+/* line 9, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_email.scss */
+.email #name, .email #email {
+  width: 100%;
+}
+
+/* line 13, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_email.scss */
+.email #subscribe {
+  display: inline-block;
+  font-size: 17px;
+  padding: 5px 15px;
+  border: 0;
+  line-height: 35px;
+  color: #FFFFFF;
+  background-color: #333645;
+  border-radius: 3px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 21, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
+.email #subscribe:hover {
+  background-color: #1d1f28;
+  text-decoration: none;
+}
+
+/* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_email.scss */
+.email label a {
+  text-decoration: underline;
+}
+
 /* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_footer.scss */
 footer {
   background-color: #333645;

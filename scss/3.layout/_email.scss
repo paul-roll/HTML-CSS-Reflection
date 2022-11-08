@@ -5,4 +5,20 @@
 .email {
     background-color: $color-email-bg;
     color: $color-tuna;
+
+    #name, #email {
+        width: 100%;
+    }
+
+    #subscribe {
+        @include btn($color-white, $color-tuna);
+        @include btn-hover($color-tuna);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    label a {
+        text-decoration: underline;
+    }
+
 }
