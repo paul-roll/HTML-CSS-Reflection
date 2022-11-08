@@ -5,4 +5,23 @@
 .news {
     background-color: $color-news-bg;
     color: $color-tuna;
+
+    .news-image {
+        width: 100%;
+    }
+
+    .news-item {
+        border: 1px solid black;
+        margin-top: 30px;
+    }
+
+    @each $class, $color in $icon-colors {
+        .#{$class} .button {
+            @include btn($color-white, map-get($icon-colors, $class));
+        }
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
 }

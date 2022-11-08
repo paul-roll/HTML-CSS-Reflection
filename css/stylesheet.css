@@ -1554,6 +1554,113 @@ nav li > ul :last-child {
   color: #333645;
 }
 
+/* line 9, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_news.scss */
+.news .news-image {
+  width: 100%;
+}
+
+/* line 13, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_news.scss */
+.news .news-item {
+  border: 1px solid black;
+  margin-top: 30px;
+}
+
+/* line 19, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_news.scss */
+.news .bespoke-software .button {
+  display: inline-block;
+  font-size: 17px;
+  padding: 5px 15px;
+  border: 0;
+  line-height: 35px;
+  color: #FFFFFF;
+  background-color: #67809F;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+/* line 19, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_news.scss */
+.news .it-support .button {
+  display: inline-block;
+  font-size: 17px;
+  padding: 5px 15px;
+  border: 0;
+  line-height: 35px;
+  color: #FFFFFF;
+  background-color: #4183D7;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+/* line 19, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_news.scss */
+.news .digital-marketing .button {
+  display: inline-block;
+  font-size: 17px;
+  padding: 5px 15px;
+  border: 0;
+  line-height: 35px;
+  color: #FFFFFF;
+  background-color: #2ECC71;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+/* line 19, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_news.scss */
+.news .telecoms-services .button {
+  display: inline-block;
+  font-size: 17px;
+  padding: 5px 15px;
+  border: 0;
+  line-height: 35px;
+  color: #FFFFFF;
+  background-color: #D64541;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+/* line 19, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_news.scss */
+.news .web-design .button {
+  display: inline-block;
+  font-size: 17px;
+  padding: 5px 15px;
+  border: 0;
+  line-height: 35px;
+  color: #FFFFFF;
+  background-color: #926FB1;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+/* line 19, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_news.scss */
+.news .cyber-security .button {
+  display: inline-block;
+  font-size: 17px;
+  padding: 5px 15px;
+  border: 0;
+  line-height: 35px;
+  color: #FFFFFF;
+  background-color: #F62459;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+/* line 19, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_news.scss */
+.news .developer-course .button {
+  display: inline-block;
+  font-size: 17px;
+  padding: 5px 15px;
+  border: 0;
+  line-height: 35px;
+  color: #FFFFFF;
+  background-color: #CE4125;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+/* line 24, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_news.scss */
+.news a:hover {
+  text-decoration: none;
+}
+
 /* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_email.scss */
 .email {
   background-color: #DDDDDD;
