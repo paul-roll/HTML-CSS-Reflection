@@ -805,21 +805,43 @@ nav .nav-flex {
 }
 
 /* line 60, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
-nav .nav-flex li {
+nav .nav-flex a {
   text-align: left;
   font-size: 19.2px;
   flex: 1 0;
   min-width: 30%;
+  line-height: 1.1em;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 15px;
+  align-items: center;
 }
 
-/* line 68, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+/* line 71, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+nav .nav-flex a p {
+  flex: 1 0;
+  margin: 0;
+}
+
+/* line 78, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 82, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+nav a:hover p {
+  text-decoration: underline;
+}
+
+/* line 88, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
 nav .arrow-down {
   position: absolute;
   z-index: 1;
 }
 
 @media (max-width: 1259px) {
-  /* line 68, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+  /* line 88, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
   nav .arrow-down {
     width: 134.28571px;
     bottom: -32.57143px;
@@ -831,7 +853,7 @@ nav .arrow-down {
 }
 
 @media (min-width: 1260px) {
-  /* line 68, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+  /* line 88, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
   nav .arrow-down {
     width: 167.14286px;
     bottom: -40.78571px;
@@ -842,7 +864,7 @@ nav .arrow-down {
   }
 }
 
-/* line 91, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+/* line 111, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
 nav .nav-panel {
   position: absolute;
   left: 0;
@@ -850,24 +872,24 @@ nav .nav-panel {
   top: 100%;
 }
 
-/* line 98, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+/* line 118, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
 nav li {
   text-align: center;
   list-style-type: none;
   line-height: 1em;
 }
 
-/* line 102, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+/* line 122, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
 nav li > ul {
   text-transform: uppercase;
 }
 
-/* line 104, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+/* line 124, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
 nav li > ul :first-child {
   font-size: 10px;
 }
 
-/* line 107, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
+/* line 127, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_Nav.scss */
 nav li > ul :last-child {
   font-size: 18px;
 }
