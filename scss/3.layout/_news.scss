@@ -16,8 +16,13 @@
     }
 
     @each $class, $color in $icon-colors {
-        .#{$class} .button {
-            @include btn($color-white, map-get($icon-colors, $class));
+        .#{$class} {
+            .button {
+                @include btn($color-white, map-get($icon-colors, $class));
+            }
+            h3 {
+                color: map-get($icon-colors, $class);
+            }
         }
     }
 
