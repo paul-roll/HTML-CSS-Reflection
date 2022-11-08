@@ -33,6 +33,24 @@
         }
     }
 
+    .flex-container {
+        @media (min-width: $breakpoint-sm) {
+            display: flex;
+            gap: 30px;
+            a {
+                flex: 1 0;
+            }
+            a:last-of-type {
+                display: none;
+            }
+        }
+        @media (min-width: $breakpoint-lg) {
+            a:last-of-type {
+                display: inherit;
+            }
+        }
+    }
+
     .news-item {
         border: 1px solid lighten($color-grey, 20%);
         margin-top: 15px;
