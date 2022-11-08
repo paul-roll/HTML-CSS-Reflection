@@ -18,14 +18,6 @@
         }
     }
 
-    a {
-        text-decoration: none;
-        color: $color-white;
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-
     p {
         &:first-of-type {
             font-weight: bold;

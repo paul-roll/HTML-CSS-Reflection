@@ -10,6 +10,14 @@ html {
     letter-spacing: 0.4px;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 .wrapper {
     padding: 15px;
     margin: 0 auto;

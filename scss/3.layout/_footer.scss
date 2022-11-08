@@ -17,13 +17,6 @@ footer {
             font-size: 13px;
         }
     }
-    a {
-        color: white;
-        text-decoration: none;
-        &:hover {
-            text-decoration: underline;
-        }
-    }
     .flex-container {
         display: flex;
         flex-flow: row wrap;
