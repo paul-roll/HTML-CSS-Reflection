@@ -1591,14 +1591,20 @@ nav li > ul :last-child {
   text-decoration: underline;
 }
 
+/* line 24, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_email.scss */
+.email .required::after {
+  content: ' *';
+  color: #D24D57;
+}
+
 @media (min-width: 992px) {
-  /* line 24, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_email.scss */
+  /* line 29, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_email.scss */
   .email .email-flex-container {
     display: flex;
     gap: 30px;
   }
-  /* line 28, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_email.scss */
-  .email .email-flex-container label {
+  /* line 33, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_email.scss */
+  .email .email-flex-container > div {
     flex: 1 0;
   }
 }

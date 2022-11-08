@@ -21,11 +21,16 @@
         text-decoration: underline;
     }
 
+    .required::after {
+        content: ' *';
+        color: $color-chestnut-rose;
+    }
+
     .email-flex-container {
         @media (min-width: $breakpoint-md) {
             display: flex;
             gap: 30px;
-            label {
+            > div {
                 flex: 1 0;
             }
         }
