@@ -510,15 +510,19 @@ ul {
 
 /* line 76, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
 .header .logo {
-  padding: 0 10px 0 0;
   margin-right: auto;
   max-width: 402px;
+}
+
+/* line 79, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
+.header .logo img {
+  padding: 0 10px 0 0;
   width: inherit;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 76, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
-  .header .logo {
+  /* line 79, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
+  .header .logo img {
     max-width: 345px;
   }
 }
