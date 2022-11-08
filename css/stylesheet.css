@@ -1591,6 +1591,18 @@ nav li > ul :last-child {
   text-decoration: underline;
 }
 
+@media (min-width: 992px) {
+  /* line 24, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_email.scss */
+  .email .email-flex-container {
+    display: flex;
+    gap: 30px;
+  }
+  /* line 28, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_email.scss */
+  .email .email-flex-container label {
+    flex: 1 0;
+  }
+}
+
 /* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_footer.scss */
 footer {
   background-color: #333645;

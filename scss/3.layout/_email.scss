@@ -21,4 +21,13 @@
         text-decoration: underline;
     }
 
+    .email-flex-container {
+        @media (min-width: $breakpoint-md) {
+            display: flex;
+            gap: 30px;
+            label {
+                flex: 1 0;
+            }
+        }
+    }
 }
