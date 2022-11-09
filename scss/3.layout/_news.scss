@@ -80,8 +80,7 @@
         max-width: 100%;
         gap: 40px;
         img {
-            min-width: 0;
-            flex-shrink: 1;
+            width: 100%;
             filter: grayscale(100%);
             &:hover {
                 filter: inherit;
