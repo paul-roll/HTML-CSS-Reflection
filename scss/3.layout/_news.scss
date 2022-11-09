@@ -82,6 +82,10 @@
         img {
             min-width: 0;
             flex-shrink: 1;
+            filter: grayscale(100%);
+            &:hover {
+                filter: inherit;
+            }
         }
     }
 
