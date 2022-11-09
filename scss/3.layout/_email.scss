@@ -6,9 +6,46 @@
     background-color: $color-email-bg;
     color: $color-tuna;
 
-    #name, #email {
-        width: 100%;
+    h2 {
+        font-size: 32px;
+        font-weight: 400;
     }
+    label {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    input[type=text] {
+        height: 47px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    // input[type=checkbox] {
+    //     // float: left;
+    //     width: 32px;
+    //     height: 32px;
+    //     &:active {
+    //         background-color: red;
+    //     }
+    // }
+
+    #checkbox {
+        float: left;
+        margin: auto;
+        width: 32px;
+        height: 32px;
+        margin-right: 20px;
+        &:checked {
+            accent-color: $color-tuna; 
+        }
+    }
+    .checkbox {
+        cursor: pointer;
+    }
+
+    .checkboxwrapper {
+        margin-left: 50px;
+    }
+
 
     #subscribe {
         @include btn($color-white, $color-tuna);

@@ -321,48 +321,59 @@ ul {
   padding: 0;
 }
 
-/* line 49, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_base.scss */
+/* line 47, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_base.scss */
+input[type=text] {
+  width: 100%;
+  padding: 5px 15px;
+  font-size: 14px;
+  line-height: 22px;
+  border: 1px solid #cecfd3;
+  color: #4d4e55;
+  box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+/* line 58, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_base.scss */
 .hidden {
   display: none;
 }
 
 @media (min-width: 768px) {
-  /* line 53, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_base.scss */
+  /* line 62, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_base.scss */
   .hide-sm {
     display: none;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 58, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_base.scss */
+  /* line 67, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_base.scss */
   .show-sm {
     display: inherit;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 64, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_base.scss */
+  /* line 73, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_base.scss */
   .hide-md {
     display: none;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 69, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_base.scss */
+  /* line 78, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_base.scss */
   .show-md {
     display: inherit;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 75, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_base.scss */
+  /* line 84, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_base.scss */
   .show-lg {
     display: inherit;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 80, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_base.scss */
+  /* line 89, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_base.scss */
   .hide-lg {
     display: none;
   }
@@ -471,16 +482,6 @@ ul {
 }
 
 /* line 41, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
-.header .search input {
-  font-size: 14px;
-  width: 100%;
-  padding-left: 15px;
-  border: 1px solid #cecfd3;
-  color: #4d4e55;
-  box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.075);
-}
-
-/* line 48, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
 .header .search input.wide {
   margin-top: 10px;
   padding-top: 10px;
@@ -488,7 +489,7 @@ ul {
   background: #E5E5E5;
 }
 
-/* line 55, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
+/* line 47, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
 .header .search .wide-btn {
   font-size: 20px;
   position: absolute;
@@ -496,38 +497,38 @@ ul {
   right: 10px;
 }
 
-/* line 63, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
+/* line 55, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
 .header .flex-container {
   display: flex;
   align-items: center;
   width: 100%;
 }
 
-/* line 67, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
+/* line 59, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
 .header .flex-container > * {
   padding: 10px;
   text-align: center;
 }
 
-/* line 71, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
+/* line 63, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
 .header .flex-container > :last-child {
   padding-right: 0;
 }
 
-/* line 76, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
+/* line 68, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
 .header .logo {
   margin-right: auto;
   max-width: 402px;
 }
 
-/* line 79, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
+/* line 71, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
 .header .logo img {
   padding: 0 10px 0 0;
   width: inherit;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 79, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
+  /* line 71, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
   .header .logo img {
     max-width: 345px;
   }
@@ -1806,11 +1807,49 @@ nav li > ul :last-child {
 }
 
 /* line 9, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_email.scss */
-.email #name, .email #email {
-  width: 100%;
+.email h2 {
+  font-size: 32px;
+  font-weight: 400;
 }
 
 /* line 13, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_email.scss */
+.email label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* line 17, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_email.scss */
+.email input[type=text] {
+  height: 47px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/* line 31, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_email.scss */
+.email #checkbox {
+  float: left;
+  margin: auto;
+  width: 32px;
+  height: 32px;
+  margin-right: 20px;
+}
+
+/* line 37, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_email.scss */
+.email #checkbox:checked {
+  accent-color: #333645;
+}
+
+/* line 41, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_email.scss */
+.email .checkbox {
+  cursor: pointer;
+}
+
+/* line 45, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_email.scss */
+.email .checkboxwrapper {
+  margin-left: 50px;
+}
+
+/* line 50, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_email.scss */
 .email #subscribe {
   display: inline-block;
   font-size: 17px;
@@ -1831,24 +1870,24 @@ nav li > ul :last-child {
   text-decoration: none;
 }
 
-/* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_email.scss */
+/* line 57, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_email.scss */
 .email label a {
   text-decoration: underline;
 }
 
-/* line 24, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_email.scss */
+/* line 61, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_email.scss */
 .email .required::after {
   content: ' *';
   color: #D24D57;
 }
 
 @media (min-width: 992px) {
-  /* line 29, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_email.scss */
+  /* line 66, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_email.scss */
   .email .email-flex-container {
     display: flex;
     gap: 30px;
   }
-  /* line 33, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_email.scss */
+  /* line 70, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_email.scss */
   .email .email-flex-container > div {
     flex: 1 0;
   }
