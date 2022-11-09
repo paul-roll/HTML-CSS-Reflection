@@ -73,6 +73,21 @@
         }
     }
 
+    .news-footer {
+        margin: 30px 10px;
+        display: flex;
+        justify-content: space-around;
+        max-width: 100%;
+        gap: 40px;
+        img {
+            min-width: 0;
+            flex-shrink: 1;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
     h1 {
         margin: 0;
         font-size: 43.2px;
