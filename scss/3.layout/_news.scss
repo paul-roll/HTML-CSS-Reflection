@@ -37,15 +37,15 @@
         @media (min-width: $breakpoint-sm) {
             display: flex;
             gap: 30px;
-            a {
+            > div {
                 flex: 1 0;
             }
-            a:last-of-type {
+            > div:last-of-type {
                 display: none;
             }
         }
         @media (min-width: $breakpoint-lg) {
-            a:last-of-type {
+            > div:last-of-type {
                 display: inherit;
             }
         }
@@ -55,10 +55,6 @@
         border: 1px solid lighten($color-grey, 20%);
         margin-top: 15px;
         margin-bottom: 30px;
-        > div {
-            width: 90%;
-            margin: auto;
-        }
     }
 
     h1 {
