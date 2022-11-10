@@ -20,16 +20,12 @@
 
     h1 {
         margin: 0;
-        font-size: 43.2px;
-        font-weight: 600;
         @media (min-width: $breakpoint-sm) {
             float: left;
         }
     }
 
-    h2 {
-        font-size: 26px;
-        font-weight: 600;
+    .viewall {
         text-align: center;
         @media (min-width: $breakpoint-sm) {
             text-align: right;
@@ -39,10 +35,7 @@
     a {
         color: $color-tuna;
     }
-    h3 {
-        font-size: 20.8px;
-        font-weight: 400;
-    }
+    
     p {
         font-size: 13px;
         font-weight: 400;
@@ -99,7 +92,7 @@
         flex: 1 0;
         border: 1px solid lightgrey;
         border-radius: 15px;
-        padding: 30px;
+        padding: 25px;
         box-shadow:0 0 40px darken(white, 10%);
 
         @each $service, $color in $service-colors {

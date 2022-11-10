@@ -115,14 +115,13 @@
                     left: calc(50% - (#{$w} / 2));
                     background-color: $color-tuna;
                     text-align: center;
-                    h3, p, hr {
+                    h4, p, hr {
                         margin: 15px 0;
                         padding: 0 10px;
                         color: $color-white;
                     }
-                    h3 {
+                    h4 {
                         font-size: 18px;
-                        font-weight: 400;
                     }
                     hr {
                         border-width: 3px;
@@ -136,24 +135,19 @@
 
     h1 {
         margin: 0;
-        font-size: 43.2px;
-        font-weight: 600;
         @media (min-width: $breakpoint-sm) {
             float: left;
         }
     }
 
-    h2 {
-        font-size: 26px;
-        font-weight: 600;
+    .viewall {
         text-align: center;
         @media (min-width: $breakpoint-sm) {
             text-align: right;
         }
     }
 
-    h3 {
-        font-size: 16px;
+    h4 {
         min-height: 48px;
     }
 
@@ -167,7 +161,7 @@
             .button {
                 @include btn($color-white, map-get($service-colors, $class));
             }
-            h3 {
+            h4 {
                 color: map-get($service-colors, $class);
             }
             .newstag {
