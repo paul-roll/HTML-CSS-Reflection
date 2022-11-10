@@ -2101,51 +2101,52 @@ footer .bottom {
   display: flex;
   margin-bottom: 0;
   padding-bottom: 2em;
-  justify-content: space-between;
   font-size: 13px;
+  gap: 5px;
 }
 
 /* line 50, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_footer.scss */
 footer .social-media {
-  display: flex;
   margin: 0;
+  margin-left: auto;
+  display: flex;
 }
 
-/* line 53, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_footer.scss */
+/* line 54, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_footer.scss */
 footer .social-media a {
   height: 40px;
 }
 
-/* line 56, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_footer.scss */
+/* line 57, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_footer.scss */
 footer .social-media img {
   padding: 10px;
   border-radius: 0;
 }
 
-/* line 60, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_footer.scss */
+/* line 61, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_footer.scss */
 footer .social-media a:hover {
   text-decoration: none;
 }
 
-/* line 63, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_footer.scss */
+/* line 64, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_footer.scss */
 footer .social-media a:hover.facebook {
   border-radius: 50%;
   background-color: #3b5998;
 }
 
-/* line 63, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_footer.scss */
+/* line 64, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_footer.scss */
 footer .social-media a:hover.twitter {
   border-radius: 50%;
   background-color: #00ACED;
 }
 
-/* line 63, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_footer.scss */
+/* line 64, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_footer.scss */
 footer .social-media a:hover.instagram {
   border-radius: 50%;
   background-color: #D93175;
 }
 
-/* line 63, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_footer.scss */
+/* line 64, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_footer.scss */
 footer .social-media a:hover.linkedin {
   border-radius: 50%;
   background-color: #0077B5;
