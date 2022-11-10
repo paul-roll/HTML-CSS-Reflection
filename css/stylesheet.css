@@ -533,18 +533,18 @@ input[type=text]:focus {
 
 /* line 77, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
 .header .logo {
+  padding: 0 10px 0 0;
   margin-right: auto;
   max-width: 402px;
 }
 
-/* line 80, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
+/* line 81, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
 .header .logo img {
-  padding: 0 10px 0 0;
   width: inherit;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 80, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
+  /* line 81, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_header.scss */
   .header .logo img {
     max-width: 345px;
   }
@@ -959,7 +959,8 @@ nav li > ul :last-child {
 /* line 25, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_carousel.scss */
 .carousel h1 {
   font-size: 40px;
-  margin: 0 0 20px 0;
+  margin: 0;
+  width: 100%;
 }
 
 @media (min-width: 992px) {
@@ -967,7 +968,6 @@ nav li > ul :last-child {
   .carousel h1 {
     font-size: 64px;
     text-align: left;
-    width: 90%;
   }
 }
 
@@ -975,7 +975,8 @@ nav li > ul :last-child {
 .carousel p {
   font-size: 20px;
   font-weight: 600;
-  margin: 0 0 10px 0;
+  width: 100%;
+  margin: 10px 0;
 }
 
 @media (min-width: 992px) {
@@ -983,7 +984,6 @@ nav li > ul :last-child {
   .carousel p {
     font-size: 26px;
     text-align: left;
-    width: 90%;
   }
 }
 
@@ -1011,7 +1011,6 @@ nav li > ul :last-child {
 @media (min-width: 992px) {
   /* line 46, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_carousel.scss */
   .carousel .button {
-    margin-left: 5%;
     margin-right: auto;
   }
 }
