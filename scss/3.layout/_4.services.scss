@@ -91,6 +91,10 @@
         }
     }
     .flex-item {
+        position: relative;
+        transition: top 0.5s, background-color 0.5s, color 0.5s;
+        top: 0;
+
         margin: 15px 0;
         flex: 1 0;
         border: 1px solid lightgrey;
@@ -101,14 +105,18 @@
         @each $service, $color in $service-colors {
             &.#{$service} {
                 &:hover {
-                    background: $color;
+                    top: -10px;
+                    background-color: $color;
                     color: $color-white;
                     i::before {
                         color: $color;
-                        background: $color-white;
+                        background-color: $color-white;
                     }
                     .btn {
                         @include btn($color, $color-white);
+                    }
+                    h3 {
+                        color: $color-white;
                     }
                 }
 

@@ -57,6 +57,11 @@
         margin-bottom: 30px;
         box-shadow:0 0 40px darken(white, 10%);
         position: relative;
+        transition: top 0.5s;
+        top: 0;
+        &:hover {
+            top: -10px;
+        }
     }
 
     .newstag {
