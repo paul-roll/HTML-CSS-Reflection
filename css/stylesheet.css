@@ -1459,6 +1459,25 @@ nav li > ul :last-child {
   text-transform: uppercase;
 }
 
+/* line 118, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_services.scss */
+.services .services-footer {
+  display: flex;
+  justify-content: space-around;
+  gap: 100px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+/* line 124, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_services.scss */
+.services .services-footer .services-footer-item {
+  filter: grayscale(1);
+}
+
+/* line 126, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_services.scss */
+.services .services-footer .services-footer-item:hover {
+  filter: grayscale(0);
+}
+
 /* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_testimonials.scss */
 .testimonials {
   background-color: #333645;
