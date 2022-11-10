@@ -2,10 +2,10 @@
 // Icons
 // ==========================================================================
 
-@each $icon, $class in $icons {
+@each $icon, $class in $service-icons {
     .#{$icon} {
         & > i::before {
-            color: map-get($icon-colors, $icon);
+            color: map-get($service-colors, $icon);
             content: $class;
         }
         & > i.circle::before {
@@ -14,7 +14,7 @@
             border-radius: 50%;
             width: 65px;
             height: 65px;
-            background: map-get($icon-colors, $icon);
+            background: map-get($service-colors, $icon);
             color: $color-white;
         }
         

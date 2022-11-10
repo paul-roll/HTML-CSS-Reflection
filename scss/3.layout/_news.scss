@@ -156,16 +156,16 @@
         color: darken($color-grey, 20%);
     }
 
-    @each $class, $color in $icon-colors {
+    @each $class, $color in $service-colors {
         .#{$class} {
             .button {
-                @include btn($color-white, map-get($icon-colors, $class));
+                @include btn($color-white, map-get($service-colors, $class));
             }
             h3 {
-                color: map-get($icon-colors, $class);
+                color: map-get($service-colors, $class);
             }
             .newstag {
-                background-color: map-get($icon-colors, $class);
+                background-color: map-get($service-colors, $class);
             }
         }
     }

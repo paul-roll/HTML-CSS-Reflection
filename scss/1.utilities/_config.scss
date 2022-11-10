@@ -44,7 +44,14 @@ $color-twitter: #00ACED;
 $color-instagram: #D93175;
 $color-linkedin: #0077B5;
 
-$icons: (
+$social-colors: (
+    'facebook': $color-facebook,
+    'twitter': $color-twitter,
+    'instagram': $color-instagram,
+    'linkedin': $color-linkedin,
+);
+
+$service-icons: (
     'bespoke-software': "\f58e",    //fa-grip-vertical,
     'it-support': "\e163",          //fa-display, 
     'digital-marketing': "\f201",   //fa-chart-line,
@@ -53,7 +60,7 @@ $icons: (
     'cyber-security': "\f3ed",      //fa-shield-halved,
     'developer-course': "\f19d",    //fa-graduation-cap,
 );
-$icon-colors: (
+$service-colors: (
     'bespoke-software': $color-bespoke-software,
     'it-support': $color-it-support, 
     'digital-marketing': $color-digital-marketing,

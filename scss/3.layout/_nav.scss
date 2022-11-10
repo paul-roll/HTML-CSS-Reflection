@@ -25,7 +25,7 @@ nav {
         display: flex;
         justify-content: space-around;
         margin: 0;
-        @each $service, $color in $icon-colors {
+        @each $service, $color in $service-colors {
             .#{$service} {
                 width: 100%;
                 padding-top: 15px;

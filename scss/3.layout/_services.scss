@@ -47,7 +47,7 @@
         font-weight: 400;
     }
 
-    @each $service, $color in $icon-colors {
+    @each $service, $color in $service-colors {
         .#{$service} {
             display: flex;
             flex-direction: column;
@@ -97,7 +97,7 @@
         padding: 30px;
         box-shadow:0 0 40px darken(white, 10%);
 
-        @each $service, $color in $icon-colors {
+        @each $service, $color in $service-colors {
             &.#{$service} {
                 &:hover {
                     background: $color;

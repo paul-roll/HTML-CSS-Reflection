@@ -47,5 +47,24 @@ footer {
         justify-content: space-between;
         font-size: 13px;
     }
-    
+    .social-media {
+        display: flex;
+        margin: 0;
+        a {
+            height: 40px;
+        }
+        img {
+            padding: 10px;
+            border-radius: 0;
+        }
+        a:hover {
+            text-decoration: none;
+            @each $social, $color in $social-colors {
+                &.#{$social} {
+                    border-radius: 50%;
+                    background-color: $color;
+                }
+            }
+        }
+    }
 }
