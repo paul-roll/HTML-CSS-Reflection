@@ -5,6 +5,7 @@
 .testimonials {
     background-color: $color-testimonials-bg;
     color: $color-white;
+    line-height: 30px;
 
     .wrapper {
         display: flex;
@@ -18,7 +19,13 @@
         }
     }
 
+    h1 {
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
     p {
+        margin-bottom: 25px;
         &:first-of-type {
             font-weight: bold;
         }
@@ -48,23 +55,22 @@
             @include btn($color-white, darken($color-tuna, 5%), 20px, 10px, 30px);
             @include btn-hover(darken($color-tuna, 5%));
             border-radius: 6px;
+            margin-bottom: 40px;
         }
         &.google {
             @include btn($color-white, darken($color-it-support, 5%), 20px, 10px, 30px);
             @include btn-hover(darken($color-it-support, 5%));
             border-radius: 6px;
             margin: 4px;
+            margin-top: 55px;
         }
         &.trustpilot {
             @include btn($color-white, darken($color-digital-marketing, 5%), 20px, 10px, 30px);
             @include btn-hover(darken($color-digital-marketing, 5%));
             border-radius: 6px;
             margin: 4px;
+            margin-top: 20px;
+            margin-bottom: 40px;
         }
-    }
-
-    h1 {
-        font-size: 36px;
-        font-weight: 600;
     }
 }

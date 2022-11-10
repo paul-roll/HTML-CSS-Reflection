@@ -1482,39 +1482,52 @@ nav li > ul :last-child {
 .testimonials {
   background-color: #333645;
   color: #FFFFFF;
+  line-height: 30px;
 }
 
-/* line 9, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_testimonials.scss */
+/* line 10, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_testimonials.scss */
 .testimonials .wrapper {
   display: flex;
   flex-direction: column;
 }
 
 @media (min-width: 992px) {
-  /* line 9, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_testimonials.scss */
+  /* line 10, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_testimonials.scss */
   .testimonials .wrapper {
     flex-direction: row;
     gap: 30px;
   }
 }
 
-/* line 16, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_testimonials.scss */
+/* line 17, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_testimonials.scss */
 .testimonials .wrapper .flex-item {
   flex: 1 0;
 }
 
 /* line 22, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_testimonials.scss */
+.testimonials h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+/* line 27, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_testimonials.scss */
+.testimonials p {
+  margin-bottom: 25px;
+}
+
+/* line 29, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_testimonials.scss */
 .testimonials p:first-of-type {
   font-weight: bold;
 }
 
-/* line 27, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_testimonials.scss */
+/* line 34, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_testimonials.scss */
 .testimonials .fa-star {
   font-size: 50px;
   color: #FFA500;
 }
 
-/* line 32, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_testimonials.scss */
+/* line 39, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_testimonials.scss */
 .testimonials blockquote {
   margin-left: 0;
   margin-right: 0;
@@ -1523,7 +1536,7 @@ nav li > ul :last-child {
   font-weight: bold;
 }
 
-/* line 39, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_testimonials.scss */
+/* line 46, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_testimonials.scss */
 .testimonials cite {
   font-size: 17.6px;
   font-weight: bold;
@@ -1531,7 +1544,7 @@ nav li > ul :last-child {
   color: #999AA2;
 }
 
-/* line 47, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_testimonials.scss */
+/* line 54, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_testimonials.scss */
 .testimonials .btn.more {
   display: inline-block;
   font-size: 20px;
@@ -1543,6 +1556,7 @@ nav li > ul :last-child {
   border-radius: 3px;
   text-transform: uppercase;
   border-radius: 6px;
+  margin-bottom: 40px;
 }
 
 /* line 21, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
@@ -1551,7 +1565,7 @@ nav li > ul :last-child {
   text-decoration: none;
 }
 
-/* line 52, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_testimonials.scss */
+/* line 60, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_testimonials.scss */
 .testimonials .btn.google {
   display: inline-block;
   font-size: 20px;
@@ -1564,6 +1578,7 @@ nav li > ul :last-child {
   text-transform: uppercase;
   border-radius: 6px;
   margin: 4px;
+  margin-top: 55px;
 }
 
 /* line 21, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
@@ -1572,7 +1587,7 @@ nav li > ul :last-child {
   text-decoration: none;
 }
 
-/* line 58, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_testimonials.scss */
+/* line 67, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_testimonials.scss */
 .testimonials .btn.trustpilot {
   display: inline-block;
   font-size: 20px;
@@ -1585,18 +1600,14 @@ nav li > ul :last-child {
   text-transform: uppercase;
   border-radius: 6px;
   margin: 4px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 /* line 21, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
 .testimonials .btn.trustpilot:hover {
   background-color: #208e4e;
   text-decoration: none;
-}
-
-/* line 66, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_testimonials.scss */
-.testimonials h1 {
-  font-size: 36px;
-  font-weight: 600;
 }
 
 /* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_news.scss */
