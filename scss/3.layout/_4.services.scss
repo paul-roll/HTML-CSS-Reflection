@@ -36,11 +36,6 @@
         color: $color-tuna;
     }
     
-    p {
-        font-size: 13px;
-        font-weight: 400;
-    }
-
     @each $service, $color in $service-colors {
         .#{$service} {
             display: flex;
