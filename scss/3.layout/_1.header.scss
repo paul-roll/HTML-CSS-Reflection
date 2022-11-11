@@ -30,7 +30,7 @@
     .btn.fa-magnifying-glass {
         @include btn($color-white, $color-grey, 32px, 10px);
         @include btn-hover($color-grey);
-        @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - 1),
+        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1)),
         (min-width: $breakpoint-lg) {
             border-radius: 0 3px 3px 0;
         }
@@ -80,7 +80,7 @@
         max-width: 402px;
         img {
             width: inherit;
-            @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - 1) {
+            @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1)) {
                 max-width: 345px;
             }
         }
