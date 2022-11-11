@@ -22,17 +22,20 @@ nav {
     .flex-container {
         display: flex;
         justify-content: space-around;
-        margin: 0;
+        margin: -15px 0;
+        .nav-top {
+            padding: 15px 0;
+        }
         @each $service, $color in $service-colors {
             .#{$service} {
                 width: 100%;
-                padding-top: 15px;
-                margin-top: -15px;
-                padding-bottom: 15px;
-                margin-bottom: -15px;
-                > i {
+                > a > div > i {
                     padding-bottom: 10px;
                     font-size: 23px;
+                    @include icon($service);
+                }
+                > a {
+                    text-decoration: none;
                 }
                 &:hover {
                     background: $color;

@@ -23,3 +23,10 @@
         text-decoration: none;
     }
 }
+
+@mixin icon($service) {
+    &::before {
+        color: map-get($service-colors, $service);
+        content: map-get($service-icons, $service);
+    }
+}
