@@ -90,41 +90,43 @@
         }
         .news-footer-item {
             position: relative;
-            &:hover div {
-                display: inherit;
-                &.arrow {
-                    position: absolute;
-                    height: 0;
-                    left: calc(50% - 50px);
-                    $w: 100px;
-                    width: $w; 
-                    left: calc(50% - ($w / 2));
-                    bottom: calc(100% + 15px);
-                    border-left: $w / 2 solid transparent;
-                    border-right: $w / 2 solid transparent;
-                    border-top: $w / 2 solid;
+            &:hover {
+                .arrow, .box {
+                    display: inherit;
                 }
-                &.box {
-                    position: absolute;
-                    bottom: calc(100% + 65px);
-                    $w: 240px;
-                    width: $w;
-                    left: calc(50% - (#{$w} / 2));
-                    background-color: $color-tuna;
-                    text-align: center;
-                    h4, p, hr {
-                        margin: 15px 0;
-                        padding: 0 10px;
-                        color: $color-white;
-                    }
-                    h4 {
-                        font-size: 18px;
-                    }
-                    hr {
-                        border-width: 3px;
-                        width: 1%;
-                        margin: 0 auto;
-                    }
+            }
+            .arrow {
+                position: absolute;
+                height: 0;
+                left: calc(50% - 50px);
+                $w: 100px;
+                width: $w; 
+                left: calc(50% - ($w / 2));
+                bottom: calc(100% + 15px);
+                border-left: $w / 2 solid transparent;
+                border-right: $w / 2 solid transparent;
+                border-top: $w / 2 solid;
+            }
+            .box {
+                position: absolute;
+                bottom: calc(100% + 65px);
+                $w: 240px;
+                width: $w;
+                left: calc(50% - (#{$w} / 2));
+                background-color: $color-tuna;
+                text-align: center;
+                h4, p, hr {
+                    margin: 15px 0;
+                    padding: 0 10px;
+                    color: $color-white;
+                }
+                h4 {
+                    font-size: 18px;
+                }
+                hr {
+                    border-width: 3px;
+                    width: 1%;
+                    margin: 0 auto;
                 }
             }
         }
@@ -144,7 +146,7 @@
         }
     }
 
-    h4 {
+    .news-item h4 {
         min-height: 48px;
     }
 
