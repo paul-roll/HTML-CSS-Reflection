@@ -7,9 +7,9 @@
 
 
     background-color: $color-carousel-bg;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/carousel.jpg);
-    @media (min-width: $breakpoint-md) {
-        background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)), url(../img/carousel.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/carousel.jpg);              // Apply a 50% darken to the whole background
+    @media (min-width: $breakpoint-md) {                                                                            // At screen width 992+
+        background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)), url(../img/carousel.jpg);        // Fade in black from black on the left side
     }
     background-size: cover;
 
@@ -29,9 +29,9 @@
         line-height: 80px;
         margin: 0;
         width: 100%;
-        @media (min-width: $breakpoint-md) {
-            font-size: 64px;
-            text-align: left;
+        @media (min-width: $breakpoint-md) {    // At screen width 992+
+            font-size: 64px;                        // Bump the font size up
+            text-align: left;                       // and align to the left
         }
     }
 
@@ -40,9 +40,9 @@
         font-weight: 600;
         width: 100%;
         margin: 10px 0;
-        @media (min-width: $breakpoint-md) {
-            font-size: 26px;
-            text-align: left;
+        @media (min-width: $breakpoint-md) {    // At screen width 992+
+            font-size: 26px;                        // Bump the font size up
+            text-align: left;                       // and align to the left
         }
     }
 
@@ -50,8 +50,8 @@
         @include btn($color-white, $color-bespoke-software, 20px, 5px, 20px, true);
         margin-top: 30px;
         line-height: 50px;
-        @media (min-width: $breakpoint-md) {
-            margin-right: auto;
+        @media (min-width: $breakpoint-md) {    // At screen width 992+
+            margin-right: auto;                     // Align to the left
         }
     }
 }

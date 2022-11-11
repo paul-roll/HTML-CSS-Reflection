@@ -18,17 +18,17 @@
         font-size: 32px;
     }
 
-    h1 {
+    h1 {        // #TODO: MERGE (DUPLICATE IN NEWS)
         margin: 0;
-        @media (min-width: $breakpoint-sm) {
-            float: left;
+        @media (min-width: $breakpoint-sm) {        // At screen width 768+
+            float: left;                                // Float the header left
         }
     }
 
-    .viewall {
+    .viewall {  // #TODO: MERGE (DUPLICATE IN NEWS)
         text-align: center;
-        @media (min-width: $breakpoint-sm) {
-            text-align: right;
+        @media (min-width: $breakpoint-sm) {        // At screen width 768+
+            text-align: right;                          // Align the view-all button to the right
         }
     }
 
@@ -54,27 +54,19 @@
         display: flex;
         flex-flow: column wrap;
         gap: 0 30px;
-        &:first-of-type {
-            .flex-item {
-                @media (min-width: $breakpoint-lg) {
-                    min-width: 25%;
-                }
-            }
-            @media (min-width: $breakpoint-md) {
-                flex-direction: row;
+        &:first-of-type {                               // first set of 3
+            @media (min-width: $breakpoint-md) {        // At screen width 992+
+                flex-direction: row;                        // Change direction (from column) to row
             }
         }
-        &:last-of-type {
+        &:last-of-type {                                                                        // last set of 4
             .flex-item {
-                @media (min-width: $breakpoint-sm) {
-                    min-width: 40%;
-                }
-                @media (min-width: $breakpoint-lg) {
-                    min-width: 20%;
+                @media (min-width: $breakpoint-sm) AND (max-width: ($breakpoint-lg - 1)) {        // At screen width 768-1259
+                    min-width: 40%;                                                                     // Make sure not to place 3 items on a single row
                 }
             }
-            @media (min-width: $breakpoint-sm) {
-                flex-direction: row;
+            @media (min-width: $breakpoint-sm) {                                                  // At screen width 768+
+                flex-direction: row;                                                                    // Change direction (from column) to row
             }
         }
     }

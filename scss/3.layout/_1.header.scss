@@ -11,8 +11,8 @@
         display: flex;
         align-items: center;
         width: 100%;
+        gap: 20px;
         > * {
-            padding: 10px;
             text-align: center;
         }
         > :last-child {
@@ -20,7 +20,6 @@
         }
     }
 }
-
 
 .btn {
     &.phone {
@@ -43,9 +42,9 @@
     }
     &.fa-magnifying-glass {
         @include btn($color-white, $color-grey, 32px, 10px, $hover: true);
-        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1)),
-        (min-width: $breakpoint-lg) {
-            border-radius: 0 3px 3px 0;
+        @media (min-width: $breakpoint-sm) AND (max-width: ($breakpoint-md - 1)),   // At screen width 768-991
+        (min-width: $breakpoint-lg) {                                               // OR 1260+
+            border-radius: 0 3px 3px 0;                                                 // Square off the corners that connect to the search box
         }
     }
 }
@@ -71,14 +70,13 @@
 }
 
 .logo {
-    padding:0 10px 0 0 ;
     margin-right: auto;
     max-width: 402px;
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1)) {  // At screen width 768-991
+        max-width: 345px;                                                           // Cap the logo size to allow bigger search bar
+    }
     img {
         width: inherit;
-        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1)) {
-            max-width: 345px;
-        }
     }
 }
 

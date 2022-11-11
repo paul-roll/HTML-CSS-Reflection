@@ -51,12 +51,14 @@
     }
 
     .email-flex-container {
-        @media (min-width: $breakpoint-md) {
-            display: flex;
-            gap: 30px;
-            > div {
-                flex: 1 0;
-            }
+        display: flex;
+        flex-direction: column;
+        gap: 10px 30px;
+        > div {
+            flex: 1 0;
+        }
+        @media (min-width: $breakpoint-md) {        // At screen width 992+
+            flex-direction: row;                        // Change direction (from column) to row
         }
     }
 }

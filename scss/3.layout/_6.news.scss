@@ -34,24 +34,21 @@
     }
 
     .flex-container {
-        @media (min-width: $breakpoint-sm) {
-            display: flex;
-            gap: 30px;
-            > div {
-                flex: 1 0;
-            }
-            > div:last-of-type {
-                display: none;
-            }
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        @media (min-width: $breakpoint-sm) {        // At screen width 768+
+            flex-direction: row;                        // Change direction (from column) to row
         }
-        @media (min-width: $breakpoint-lg) {
-            > div:last-of-type {
-                display: block;
+        @media (min-width: $breakpoint-sm) AND (max-width: ($breakpoint-lg - 1)) {      // At screen width 768-1259
+            .news-item:last-of-type {                                                       // Hide the 3rd news card
+                display: none;
             }
         }
     }
 
     .news-item {
+        flex: 1 0;
         border: 1px solid lighten($color-grey, 20%);
         margin-top: 15px;
         margin-bottom: 30px;
@@ -133,17 +130,17 @@
         }
     }
 
-    h1 {
+    h1 {        // #TODO: MERGE (DUPLICATE IN SERVICES)
         margin: 0;
-        @media (min-width: $breakpoint-sm) {
-            float: left;
+        @media (min-width: $breakpoint-sm) {        // At screen width 768+
+            float: left;                                // Float the header left
         }
     }
 
-    .viewall {
+    .viewall {  // #TODO: MERGE (DUPLICATE IN SERVICES)
         text-align: center;
-        @media (min-width: $breakpoint-sm) {
-            text-align: right;
+        @media (min-width: $breakpoint-sm) {        // At screen width 768+
+            text-align: right;                          // Align the view-all button to the right
         }
     }
 

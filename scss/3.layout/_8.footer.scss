@@ -18,20 +18,17 @@ footer {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        @media (min-width: $breakpoint-lg) {
-            justify-content: space-between;
+        @media (min-width: $breakpoint-lg) {        // At screen width 1260+
+            justify-content: space-between;             // Change flex layout to better meet screen margin
         }
     }
-    .flex-both {
+    .flex-inner-container {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        @media (min-width: $breakpoint-sm) {
-            width: 100%;
-            justify-content: space-evenly;
-        }
-        @media (min-width: $breakpoint-lg) {
-            width: inherit;
+        @media (min-width: $breakpoint-sm) AND (max-width: ($breakpoint-lg - 1)) {  // At screen width 768-1259
+            width: 100%;                                                                // Make each inner section take up the full width
+            justify-content: space-evenly;                                              // Spread the content out to cover the area
         }
     }
     .flex-item {

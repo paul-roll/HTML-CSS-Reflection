@@ -8,8 +8,8 @@ nav {
     background-color: $color-nav-bg;
     color: $color-white;
 
-    @media (min-width: $breakpoint-md) {
-        display: block;
+    @media (min-width: $breakpoint-md) {    // At screen width 992+
+        display: block;                         // Unhide the NAV section
     }
 
     h2 {
@@ -89,8 +89,8 @@ nav {
     .arrow-down {
         position: absolute;
         z-index: 1;
-        @media (max-width: ($breakpoint-lg - 1)) {
-            $w: ($wrapper-md - 30px) / 7;
+        @media (max-width: ($breakpoint-lg - 1)) {      // At screen width 1-1259
+            $w: ($wrapper-md - 30px) / 7;                   // Calculate triangle for medium width layout
             width: $w; 
             bottom: -$w / 4 + 1;
             height: 0;
@@ -98,8 +98,8 @@ nav {
             border-right: $w / 2 solid transparent;
             border-top: $w / 4 solid;
         }
-        @media (min-width: $breakpoint-lg) {
-            $w: ($wrapper-lg - 30px) / 7;
+        @media (min-width: $breakpoint-lg) {            // At screen width 1260+
+            $w: ($wrapper-lg - 30px) / 7;                   // Calculate triangle for large width layout
             width: $w; 
             bottom: -$w / 4 + 1;
             height: 0;

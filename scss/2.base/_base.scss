@@ -87,39 +87,39 @@ input[type=text] {
 }
 
 
-.hidden {
+.hidden {       // Hide at screen width 1+
     display: none;
 }
 
-.hide-sm {
+.hide-sm {      // Hide at screen width 768+
     @media (min-width: $breakpoint-sm) {
         display: none;
     }
 }
-.show-sm {
+.show-sm {      // Show (inherit) at screen width 768+
     @media (min-width: $breakpoint-sm) {
         display: inherit;
     } 
 }
 
-.hide-md {
+.hide-md {      // Hide at screen width 992+
     @media (min-width: $breakpoint-md) {
         display: none;
     } 
 }
-.show-md {
+.show-md {      // Show (inherit) at screen width 992+
     @media (min-width: $breakpoint-md) {
         display: inherit;
     } 
 }
 
-.show-lg {
-    @media (min-width: $breakpoint-lg) {
-        display: inherit;
-    }   
-}
-.hide-lg {
+.hide-lg {      // Hide at screen width 1260+
     @media (min-width: $breakpoint-lg) {
         display: none;
     } 
+}
+.show-lg {      // Show (inherit) at screen width 1260+
+    @media (min-width: $breakpoint-lg) {
+        display: inherit;
+    }   
 }

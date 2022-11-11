@@ -10,9 +10,9 @@
     .wrapper {
         display: flex;
         flex-direction: column;
-        @media (min-width: $breakpoint-md) {
-            flex-direction: row;
-            gap: 30px;
+        gap: 30px;
+        @media (min-width: $breakpoint-md) {        // At screen width 992+
+            flex-direction: row;                        // Change direction (from column) to row
         }
         .flex-item {
             flex: 1 0;
@@ -39,8 +39,9 @@
         margin-left: 0;
         margin-right: 0;
         font-style: italic;
-        font-size: 20.8px;
-        font-weight: bold;
+        p {
+            font-size: 20.8px;
+        }
     }
     cite {
         font-size: 17.6px;
@@ -53,7 +54,6 @@
         &.more {
             @include btn($color-white, darken($color-tuna, 5%), 20px, 10px, 30px, true);
             border-radius: 6px;
-            margin-bottom: 40px;
         }
         &.google {
             @include btn($color-white, darken($color-it-support, 5%), 20px, 10px, 30px, true);
