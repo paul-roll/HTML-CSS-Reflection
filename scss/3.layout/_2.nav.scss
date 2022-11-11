@@ -13,8 +13,8 @@ nav {
     }
 
     h2 {
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 40px;
+        margin-bottom: 40px;
         text-align: left;
     }
    
@@ -115,19 +115,18 @@ nav {
         width: 100%;
         top: 100%;
     }
-
-    li, a {
-        text-align: center;
-        line-height: 1em;
-    }
 }
 
-.nav-top ul {
-    text-transform: uppercase;
-    :first-child {
-        font-size: 10px;
-    }
-    :last-child {
-        font-size: 18px;
+.nav-top {
+    text-align: center;
+    ul {
+        text-transform: uppercase;
+        line-height: 1em;
+        :first-child {
+            font-size: 10px;
+        }
+        :last-child {
+            font-size: 18px;
+        }
     }
 }
