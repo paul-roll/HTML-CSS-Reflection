@@ -4,16 +4,15 @@
 
 footer {
     @include section-colors("footer");
+
     h4 {
         text-transform: uppercase;
     }
-    ul {
-        li{
-            text-align: left;
-            font-size: 13px;
-        }
+    li {
+        font-size: 13px;
     }
-    .flex-container {
+
+    .flex-container {       // flex container with 2 groups inside, services and offices
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
@@ -21,27 +20,31 @@ footer {
             justify-content: space-between;             // Change flex layout to better meet screen margin
         }
     }
-    .flex-inner-container {
+
+    .flex-inner-container {     // flex items   //also flex container
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
         @media (min-width: $breakpoint-sm) AND (max-width: ($breakpoint-lg - 1)) {  // At screen width 768-1259
-            width: 100%;                                                                // Make each inner section take up the full width
-            justify-content: space-evenly;                                              // Spread the content out to cover the area
+            width: 100%;                                                                // Make each outer section take up the full width
+            justify-content: space-evenly;                                              // Spread the inner content out to cover the area
         }
     }
-    .flex-item {
+
+    .flex-item {                // each footer flex item
         width: 225px;
     }
-    .bottom {
+
+    .bottom {                   // flex container for copyright and social media
         display: flex;
         margin-bottom: 0;
         padding-bottom: 2em;
         gap: 5px;
     }
-    .social-media {
+
+    .social-media {             // another flex container to group all the social media icons together
         margin: 0;
-        margin-left: auto;
+        margin-left: auto;      // push the icons to the right
         display: flex;
         a {
             height: 40px;
@@ -52,7 +55,7 @@ footer {
         }
         a:hover {
             text-decoration: none;
-            @each $social, $color in $social-colors {
+            @each $social, $color in $social-colors {   // loop through the social media color map
                 &.#{$social} {
                     border-radius: 50%;
                     background-color: $color;

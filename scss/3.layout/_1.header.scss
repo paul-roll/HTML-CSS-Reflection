@@ -6,50 +6,47 @@
 .header {   //using a class instead so that the header may include nav for sticky header
     @include section-colors("header");
 
-    .flex-container {
+    .flex-container {   // the header flex container
         display: flex;
         align-items: center;
         width: 100%;
         gap: 20px;
-        > * {
+        > * {           // all flex items inside this flex container
             text-align: center;
-        }
-        > :last-child {
-            padding-right: 0;
         }
     }
 }
 
 .btn {
-    &.phone {
+    &.phone {   // the phone button on screens below sm
         font-size: 32px;
         padding: 10px;
         &:hover {
             color: darken($color-tuna, 10%);
         }
     }
-    &.support {
+    &.support { // the support button on screens above md
         white-space: nowrap;
         @include btn($color-white, map-get($service-colors, "it-support"), 18px, 10px, $hover: true);
     }
-    &.contact {
+    &.contact { // the contact button on screens above md
         white-space: nowrap;
         @include btn($color-white, $color-grey, 18px, 10px, $hover: true);
     }
-    &.fa-bars {
-        @include btn($color-white, $color-tuna, 32px, 10px, $hover: true);
-    }
-    &.fa-magnifying-glass {
+    &.fa-magnifying-glass { // the search button on screens above sm
         @include btn($color-white, $color-grey, 32px, 10px, $hover: true);
         @media (min-width: $breakpoint-sm) AND (max-width: ($breakpoint-md - 1)),   // At screen width 768-991
         (min-width: $breakpoint-lg) {                                               // OR 1260+
-            border-radius: 0 3px 3px 0;                                                 // Square off the corners that connect to the search box
+            border-radius: 0 3px 3px 0;                                                 // Square off the corners that connect to the search box on these screen sizes
         }
+    }
+    &.fa-bars { // the menu button
+        @include btn($color-white, $color-tuna, 32px, 10px, $hover: true);
     }
 }
 
-.searchbar {
-    position: relative;
+.searchbar {    // both header search bars
+    position: relative;     // used to position the button on narrow screen searchbar
     input.wide {
         margin-top: 10px;
         padding-top: 10px;
@@ -58,7 +55,7 @@
     }
 }
 
-#search1 button {
+#search1 button {   // the search button on screens below sm
     position: absolute;
     font-size: 20px;
     top: 10px;
@@ -79,8 +76,8 @@
     }
 }
 
-//remove padding to let the icon inside take up the full area.
-button {
+
+button {    //remove padding to let the icon inside buttons take up the full area.
     padding: 0;
     border-width: 0;
 }

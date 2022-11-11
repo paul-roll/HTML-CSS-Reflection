@@ -5,14 +5,16 @@
 .news {
     @include section-colors("news");
 
-    .news-image {
+    @include h1-viewall();
+
+    .news-image {       // resize image to be 100% of its container width
         width: 100%;
     }
 
     .icon {
         float: left;
         padding: 20px;
-        padding-left: 0;
+        padding-left: 0;    // remove left padding to keep in line with margins
     }
 
     hr {
@@ -22,45 +24,44 @@
     }
 
     ul {
-        list-style-type: none;
         margin: 30px;
         li {
             font-size: 14px;
-            &:first-child {
+            &:first-child {     // make the 'posted by...' bold
                 font-weight: bold;
             }
         }
     }
 
-    .flex-container {
+    .flex-container {       // flex container for news cards
         display: flex;
         flex-direction: column;
         gap: 30px;
         @media (min-width: $breakpoint-sm) {        // At screen width 768+
             flex-direction: row;                        // Change direction (from column) to row
         }
-        @media (min-width: $breakpoint-sm) AND (max-width: ($breakpoint-lg - 1)) {      // At screen width 768-1259
-            .news-item:last-of-type {                                                       // Hide the 3rd news card
-                display: none;
-            }
-        }
     }
 
-    .news-item {
+    .news-item {        // flex items for news cards
         flex: 1 0;
         border: 1px solid lighten($color-grey, 20%);
         margin-top: 15px;
         margin-bottom: 30px;
         box-shadow:0 0 40px darken(white, 10%);
         position: relative;
-        transition: top 0.5s;
-        top: 0;
+        transition: top 0.5s;   // transition effect
+        top: 0;                 // transition startpoint
         &:hover {
-            top: -10px;
+            top: -10px;         // transition endpoint
+        }
+        @media (min-width: $breakpoint-sm) AND (max-width: ($breakpoint-lg - 1)) {      // At screen width 768-1259
+            &:last-of-type {                                                                // Hide the 3rd news card
+                display: none;
+            }
         }
     }
 
-    .newstag {
+    .newstag {                              // tag in the top right of each news item
         text-transform: uppercase;
         position: absolute;
         top: 10px;
@@ -74,83 +75,82 @@
         }
     }
 
-    .news-footer {
+    .news-footer {                          // flex container for the news footer (clients)
         margin: 30px 10px;
         display: flex;
         justify-content: space-around;
         max-width: 100%;
         gap: 40px;
         img {
-            width: 100%;
-            filter: grayscale(100%);
+            width: 100%;            // resize images to be the size of its container
+            filter: grayscale(1);   // greyscale filter by default
             &:hover {
-                filter: inherit;
+                filter: none;       // remove filter on hover
             }
         }
-        .news-footer-item {
+        > div {                             // each flex item 
             position: relative;
             &:hover {
                 .arrow, .box {
-                    display: inherit;
+                    display: block;         // on hover show the arrow and box classes for this group
                 }
             }
-            .arrow {
-                position: absolute;
-                height: 0;
-                left: calc(50% - 50px);
-                $w: 100px;
-                width: $w; 
-                left: calc(50% - ($w / 2));
-                bottom: calc(100% + 15px);
-                border-left: $w / 2 solid transparent;
-                border-right: $w / 2 solid transparent;
-                border-top: $w / 2 solid;
+        }
+        $arrow-width: 100px;                                    // define width of the arrow
+        .arrow {
+            position: absolute;
+            height: 0;
+            left: calc(50% - (#{$arrow-width} / 2));            // center: place it in the middle of the relative then offset by half the width of itself
+            width: $arrow-width;
+            bottom: calc(100% + 15px);                          // place it on the top edge of the relative, plus an extra 15px
+            border-left: $arrow-width / 2 solid transparent;
+            border-right: $arrow-width / 2 solid transparent;
+            border-top: $arrow-width / 2 solid;
+        }
+        .box {
+            position: absolute;
+            bottom: calc(100% + (#{$arrow-width} / 2) + 15px);  // place it on the top edge of the relative, plus half the width of arrow plus an extra 15px
+            $box-width: 240px;                                  // define width of the box
+            width: $box-width;
+            left: calc(50% - (#{$box-width} / 2));              // center: place it in the middle of the relative then offset by half the width of itself
+            background-color: $color-tuna;
+            text-align: center;
+            h4, p, hr {
+                margin: 15px 0;
+                padding: 0 10px;
+                color: $color-white;
             }
-            .box {
-                position: absolute;
-                bottom: calc(100% + 65px);
-                $w: 240px;
-                width: $w;
-                left: calc(50% - (#{$w} / 2));
-                background-color: $color-tuna;
-                text-align: center;
-                h4, p, hr {
-                    margin: 15px 0;
-                    padding: 0 10px;
-                    color: $color-white;
-                }
-                h4 {
-                    font-size: 18px;
-                }
-                hr {
-                    border-width: 3px;
-                    width: 1%;
-                    margin: 0 auto;
-                }
+            h4 {
+                font-size: 18px;
+            }
+            hr {
+                border-width: 3px;
+                width: 1%;
+                margin: 0 auto;
             }
         }
     }
 
-    @include h1-viewall();
+    
 
     .news-item h4 {
-        min-height: 48px;
+        min-height: 48px;   // make single line titles have the same dimensions as double lines
     }
 
     p {
         color: darken($color-grey, 20%);
     }
 
-    @each $class, $color in $service-colors {
-        .#{$class} {
+    @each $service, $color in $service-colors {     // Loop through each service to assign colors
+        .#{$service} {
             .button {
-                @include btn($color-white, map-get($service-colors, $class));
+                @include btn($color-white, $color);
             }
             h4 {
-                color: map-get($service-colors, $class);
+                color: $color;
             }
             .newstag {
-                background-color: map-get($service-colors, $class);
+                background-color: $color;
             }
         }
     }

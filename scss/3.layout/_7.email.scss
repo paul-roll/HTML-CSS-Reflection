@@ -9,28 +9,47 @@
         font-size: 16px;
         font-weight: 600;
     }
-    input[type=text] {
+
+    input[type=text] {      // style for text boxes only
         height: 47px;
         margin-top: 5px;
         margin-bottom: 10px;
     }
 
-    #checkbox {
-        float: left;
-        margin: auto;
-        width: 32px;
-        height: 32px;
-        margin-right: 20px;
-        &:checked {
-            accent-color: $color-tuna; 
+    .flex-container {       // flex container for the name and email form parts
+        display: flex;
+        flex-direction: column;
+        gap: 10px 30px;
+        > div {             // flex items
+            flex: 1 0;
         }
-    }
-    .checkbox {
-        cursor: pointer;
+        @media (min-width: $breakpoint-md) {        // At screen width 992+
+            flex-direction: row;                        // Change direction (from column) to row
+        }
     }
 
     .checkboxwrapper {
-        margin-left: 50px;
+        display: flex;
+        #checkbox {             // style the checkbox
+            cursor: pointer;
+            align-self: center; 
+            width: 32px;
+            height: 32px;
+            margin-right: 20px;
+            &:checked {
+                accent-color: $color-tuna;      // color when checked
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        label {
+            cursor: pointer;
+            flex: 1 0;      // make the label dynamic so that the checkbox size can remain fixed.
+            a {
+                text-decoration: underline;
+            }
+        }
     }
 
 
@@ -40,24 +59,8 @@
         margin-bottom: 20px;
     }
 
-    label a {
-        text-decoration: underline;
-    }
-
-    .required::after {
+    label.required::after {      // inject a rose asterix after the labels with a required class
         content: ' *';
         color: $color-chestnut-rose;
-    }
-
-    .email-flex-container {
-        display: flex;
-        flex-direction: column;
-        gap: 10px 30px;
-        > div {
-            flex: 1 0;
-        }
-        @media (min-width: $breakpoint-md) {        // At screen width 992+
-            flex-direction: row;                        // Change direction (from column) to row
-        }
     }
 }

@@ -6,7 +6,7 @@
     @include section-colors("testimonials");
     line-height: 30px;
 
-    .wrapper {
+    .wrapper {                  // using the wrapper class as a flex container
         display: flex;
         flex-direction: column;
         gap: 30px;
@@ -21,10 +21,11 @@
     h2 {
         margin-bottom: 40px;
     }
+    
     p {
         font-size: 16px;
         margin-bottom: 25px;
-        &:first-of-type {
+        &:first-of-type {           // make first <p> bold
             font-weight: bold;
         }
     }
@@ -52,20 +53,20 @@
     .btn {
         &.more {
             @include btn($color-white, darken($color-tuna, 5%), 20px, 10px, 30px, true);
-            border-radius: 6px;
+            border-radius: 6px;     // uses smoother corners than the mixin
         }
         &.google {
             @include btn($color-white, darken(map-get($service-colors, "it-support"), 5%), 20px, 10px, 30px, true);
-            border-radius: 6px;
+            border-radius: 6px;     // uses smoother corners than the mixin
             margin: 4px;
-            margin-top: 55px;
+            margin-top: 55px;       // margin between google button and content
         }
         &.trustpilot {
             @include btn($color-white, darken(map-get($service-colors, "digital-marketing"), 5%), 20px, 10px, 30px, true);
-            border-radius: 6px;
+            border-radius: 6px;     // uses smoother corners than the mixin
             margin: 4px;
-            margin-top: 20px;
-            margin-bottom: 40px;
+            margin-top: 20px;       // margin between trustpilot button and google button
+            margin-bottom: 40px;    // margin between trustpilot button and end of section
         }
     }
 }

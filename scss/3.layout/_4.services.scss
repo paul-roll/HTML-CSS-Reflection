@@ -2,40 +2,12 @@
 // Services Layout
 // ==========================================================================
 
+
 .services {
     @include section-colors("services");
 
-    ul {
-        a{
-            text-align: center;
-            list-style-type: none;
-            text-decoration: none;
-        }
-    }
-
-    i {
-        font-size: 32px;
-    }
-
     @include h1-viewall();
 
-    a {
-        color: $color-tuna;
-    }
-    
-    @each $service, $color in $service-colors {
-        .#{$service} {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            .btn {
-                margin-top: auto;
-                @include btn($color-white, $color);
-            }
-        }
-    }
-
-    
     .flex-container {
         margin: 0;
         display: flex;
@@ -57,10 +29,11 @@
             }
         }
     }
-    .flex-item {
+
+    .flex-item {    // each service card
         position: relative;
-        transition: top 0.5s, background-color 0.5s, color 0.5s;
-        top: 0;
+        transition: top 0.5s, background-color 0.5s, color 0.5s;    // attributes to transition on :hover
+        top: 0;                                                     // setting initial value for the transition
 
         margin: 15px 0;
         flex: 1 0;
@@ -69,12 +42,39 @@
         padding: 25px;
         box-shadow:0 0 40px darken(white, 10%);
 
-        @each $service, $color in $service-colors {
+        text-align: center;
+        text-decoration: none;
+
+        display: flex;              // each service card is also a flex container
+        flex-direction: column;
+        align-items: center;
+
+        @each $service, $color in $service-colors {       // Loop through each service to assign colors and icons
             &.#{$service} {
-                &:hover {
-                    top: -10px;
-                    background-color: $color;
+                i::before {             // set the icon font size, content and map its color, convert to mixin later
+                    font-size: 32px;
+                    color: $color;
+                    content: map-get($service-icons, $service);
+                }
+                > i.circle::before {    // if the icon has the circle class
+                    line-height: 62px;
+                    display: block;
+                    border-radius: 50%;
+                    width: 65px;
+                    height: 65px;
+                    background: $color;
                     color: $color-white;
+                }
+
+                .btn {
+                    @include btn($color-white, $color);
+                }
+
+                &:hover {
+                    top: -10px;                                                 // transition
+                    background-color: $color;                                   // transition
+                    color: $color-white;                                        // transition
+
                     i::before {
                         color: $color;
                         background-color: $color-white;
@@ -83,27 +83,27 @@
                         @include btn($color, $color-white);
                     }
                     h3 {
-                        color: $color-white;
+                        color: $color-white;                                    // prevent from being included in transition
                     }
                 }
-
             }
         }
-    }
 
-    .services-footer {
-        display: flex;
-        overflow: hidden;
-        width: 100%;
-        justify-content: space-around;
-        gap: 100px;
-        margin-top: 30px;
-        margin-bottom: 50px;
-        .services-footer-item {
-            filter: grayscale(1);
-            &:hover {
-                filter: grayscale(0);
-            }
+    }
+}
+
+
+.services-footer {      // flex container for the services footer (awards). replace with a carousel later?
+    display: flex;
+    overflow: hidden;   // prevent scroll bars
+    justify-content: space-around;
+    gap: 100px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    div {                       // each flex item
+        filter: grayscale(1);       // greyscale filter by default
+        &:hover {
+            filter: none;           // remove filter on hover
         }
     }
 }

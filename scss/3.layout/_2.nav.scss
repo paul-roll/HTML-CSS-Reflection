@@ -12,116 +12,101 @@ nav {
         display: block;                         // Unhide the NAV section
     }
 
-    h2 {
-        margin-top: 40px;
-        margin-bottom: 40px;
-        text-align: left;
-    }
-   
-
-    .flex-container {
+    .flex-container {       // Main nav flexbox for the 7 hover buttons/panels
         display: flex;
         justify-content: space-around;
         margin: -15px 0;
-        .nav-top {
-            padding: 15px 0;
-        }
         @each $service, $color in $service-colors {
             .#{$service} {
                 width: 100%;
-                > a > div > i {
+                .nav-top i {    // only icons from the nav-top section
                     padding-bottom: 10px;
                     font-size: 23px;
                     @include icon($service);
                 }
-                > a {
-                    text-decoration: none;
-                }
                 &:hover {
                     background: $color;
-                    i::before {
-                        color: $color-white;
+                    a {
+                        text-decoration: none;  // remove the underline effect from all nav links
                     }
-                    .arrow-down {
-                        display: inherit;
-                        border-top-color: $color;
+                    i::before {
+                        color: $color-white;    // set the hovered nav icon to white
+                    }
+                    .nav-arrow {
+                        display: inherit;           // unhide the arrow
+                        border-top-color: $color;       // and set its color
                     }
                     .nav-panel {
-                        display: inherit;
-                        background: darken($color, 10%);
+                        display: inherit;                   // unhide the nav panel
+                        background: darken($color, 10%);        // and darken it
                     }
                 }
             }
         }
     }
-    .nav-flex {
+
+    .flex-inner-container {     // inner nav flexbox for all the links inside nav panels
         display: flex;
         flex-flow: row wrap;
         gap: 30px;
         margin-bottom: 20px;
-        a {
+        a {                     // each <a> is also a flex box to help align the icon
             text-align: left;
             flex: 1 0;
-            min-width: 30%;
-            line-height: 1.1em;
+            min-width: 30%;         // force 3 items per row
+            line-height: 1.1em;     // remove the gap between multi-line <p> links
 
             display: flex;
             flex-flow: row wrap;
             gap: 15px;
             align-items: center;
-            &:hover {
-                text-decoration: none;
-                p {
-                    text-decoration: underline;
-                }
-            }
-            p, i {
-                font-size: 19.2px;
-            }
-            p {
-                flex: 1 0;
-                margin: 0;
-            }
-        }
-    }
 
-
-    .arrow-down {
-        position: absolute;
-        z-index: 1;
-        @media (max-width: ($breakpoint-lg - 1)) {      // At screen width 1-1259
-            $w: ($wrapper-md - 30px) / 7;                   // Calculate triangle for medium width layout
-            width: $w; 
-            bottom: -$w / 4 + 1;
-            height: 0;
-            border-left: $w / 2 solid transparent;
-            border-right: $w / 2 solid transparent;
-            border-top: $w / 4 solid;
+            &:hover p {     // put the hover underline effect on the <p> only
+                text-decoration: underline;
+            }
         }
-        @media (min-width: $breakpoint-lg) {            // At screen width 1260+
-            $w: ($wrapper-lg - 30px) / 7;                   // Calculate triangle for large width layout
-            width: $w; 
-            bottom: -$w / 4 + 1;
-            height: 0;
-            border-left: $w / 2 solid transparent;
-            border-right: $w / 2 solid transparent;
-            border-top: $w / 4 solid;
+        p {                 // let the <p> tags grow to fill the remainder of the area
+            flex: 1 0;
+            margin: 0;
         }
-    }
-    
-    .nav-panel {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        top: 100%;
+        i {                 // fix the icon areas so that the <p> all start in line
+            width: 20px;
+        }
+        i, p {
+            font-size: 19.2px;
+        }
     }
 }
 
-.nav-top {
+.nav-arrow {
+    position: absolute;
+    z-index: 1;                                 // put this above the panel
+    @media (max-width: ($breakpoint-lg - 1)) {      // At screen width 1-1259
+        $w: ($wrapper-md - 30px) / 7;                   // w is equal to $wrapper-md minus the 15px padding x2 and divided by 7
+        width: $w; 
+        bottom: -$w / 4 + 1;
+        height: 0;
+        border-left: $w / 2 solid transparent;
+        border-right: $w / 2 solid transparent;
+        border-top: $w / 4 solid;
+    }
+    @media (min-width: $breakpoint-lg) {            // At screen width 1260+
+        $w: ($wrapper-lg - 30px) / 7;                   // w is equal to $wrapper-lg minus the 15px padding x2 and divided by 7
+        width: $w; 
+        bottom: -$w / 4 + 1;
+        height: 0;
+        border-left: $w / 2 solid transparent;
+        border-right: $w / 2 solid transparent;
+        border-top: $w / 4 solid;
+    }
+}
+
+.nav-top {                  // for styling the top nav part without affecting the panel
+    padding: 15px 0;            // added a negative margin in flex-container so that they could be added as padding here so that it goes inside the <a>
     text-align: center;
     ul {
         text-transform: uppercase;
-        line-height: 1em;
+        line-height: 1em;       // reduce the gap between the two words on nav buttons
         :first-child {
             font-size: 10px;
         }
@@ -130,3 +115,11 @@ nav {
         }
     }
 }
+
+.nav-panel {               // for styling the nav panel only
+    position: absolute;         // relative to the nav element
+    left: 0;                    // right up against the left side of viewport
+    width: 100%;                // take up full width of viewport
+    top: 100%;                  // place the top 100% away from the top of the nav so that it begins right where the nav ends
+}
+
