@@ -84,7 +84,7 @@ nav {
     .arrow-down {
         position: absolute;
         z-index: 1;
-        @media (max-width: $breakpoint-lg - 1) {
+        @media (max-width: ($breakpoint-lg - 1)) {
             $w: ($wrapper-md - 30px) / 7;
             width: $w; 
             bottom: -$w / 4 + 1;
@@ -111,7 +111,7 @@ nav {
         top: 100%;
     }
 
-    li {
+    li, a {
         text-align: center;
         list-style-type: none;
         line-height: 1em;

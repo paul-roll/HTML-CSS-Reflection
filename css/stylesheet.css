@@ -938,24 +938,24 @@ nav .nav-panel {
 }
 
 /* line 114, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_2.Nav.scss */
-nav li {
+nav li, nav a {
   text-align: center;
   list-style-type: none;
   line-height: 1em;
 }
 
 /* line 118, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_2.Nav.scss */
-nav li > ul {
+nav li > ul, nav a > ul {
   text-transform: uppercase;
 }
 
 /* line 120, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_2.Nav.scss */
-nav li > ul :first-child {
+nav li > ul :first-child, nav a > ul :first-child {
   font-size: 10px;
 }
 
 /* line 123, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_2.Nav.scss */
-nav li > ul :last-child {
+nav li > ul :last-child, nav a > ul :last-child {
   font-size: 18px;
 }
 
