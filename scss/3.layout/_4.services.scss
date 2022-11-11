@@ -3,7 +3,7 @@
 // ==========================================================================
 
 .services {
-    background-color: $color-services-bg;
+    background-color: map-get($background-colors, "services");
     color: $color-tuna;
 
     ul {

@@ -3,7 +3,7 @@
 // ==========================================================================
 
 .testimonials {
-    background-color: $color-testimonials-bg;
+    background-color: map-get($background-colors, "testimonials");
     color: $color-white;
     line-height: 30px;
 

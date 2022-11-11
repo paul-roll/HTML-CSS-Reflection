@@ -3,7 +3,7 @@
 // ==========================================================================
 
 .email {
-    background-color: $color-email-bg;
+    background-color: map-get($background-colors, "email");
     color: $color-tuna;
 
     label {

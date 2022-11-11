@@ -3,7 +3,7 @@
 // ==========================================================================
 
 .news {
-    background-color: $color-news-bg;
+    background-color: map-get($background-colors, "news");
     color: $color-tuna;
 
     .news-image {

@@ -1057,7 +1057,7 @@ nav .nav-panel {
   }
 }
 
-/* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_3.carousel.scss */
+/* line 19, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_3.carousel.scss */
 .carousel .flex-container {
   height: 100%;
   display: flex;
@@ -1066,7 +1066,7 @@ nav .nav-panel {
   align-items: center;
 }
 
-/* line 28, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_3.carousel.scss */
+/* line 27, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_3.carousel.scss */
 .carousel h1 {
   line-height: 80px;
   margin: 0;
@@ -1074,14 +1074,14 @@ nav .nav-panel {
 }
 
 @media (min-width: 992px) {
-  /* line 28, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_3.carousel.scss */
+  /* line 27, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_3.carousel.scss */
   .carousel h1 {
     font-size: 64px;
     text-align: left;
   }
 }
 
-/* line 38, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_3.carousel.scss */
+/* line 37, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_3.carousel.scss */
 .carousel p {
   font-size: 20px;
   font-weight: 600;
@@ -1090,14 +1090,14 @@ nav .nav-panel {
 }
 
 @media (min-width: 992px) {
-  /* line 38, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_3.carousel.scss */
+  /* line 37, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_3.carousel.scss */
   .carousel p {
     font-size: 26px;
     text-align: left;
   }
 }
 
-/* line 49, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_3.carousel.scss */
+/* line 48, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_3.carousel.scss */
 .carousel .button {
   display: inline-block;
   font-size: 20px;
@@ -1120,7 +1120,7 @@ nav .nav-panel {
 }
 
 @media (min-width: 992px) {
-  /* line 49, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_3.carousel.scss */
+  /* line 48, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_3.carousel.scss */
   .carousel .button {
     margin-right: auto;
   }

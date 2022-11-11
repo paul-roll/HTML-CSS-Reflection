@@ -5,7 +5,7 @@
 nav {
     position: relative;
     display: none;
-    background-color: $color-nav-bg;
+    background-color: map-get($background-colors, "nav");
     color: $color-white;
 
     @media (min-width: $breakpoint-md) {    // At screen width 992+

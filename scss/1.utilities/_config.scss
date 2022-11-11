@@ -32,20 +32,32 @@ $color-cerulean: #00ACED;
 $color-deep-cerulean: #0077B5;
 $color-cerise: #D93175;
 
-$color-header-bg: $color-white;
-$color-nav-bg: $color-tuna;
-$color-carousel-bg: $color-tuna; //unknown-concealed;
-$color-services-bg: $color-white;
-$color-testimonials-bg: $color-tuna;
-$color-news-bg: $color-white;
-$color-email-bg: $color-alto;
-$color-footer-bg: $color-tuna;
+$background-colors: (
+    'header':       $color-white,
+    'nav':          $color-tuna,
+    'carousel':     $color-tuna, // unknown as its concealed
+    'services':     $color-white,
+    'testimonials': $color-tuna,
+    'news':         $color-white,
+    'email':        $color-alto,
+    'footer':       $color-tuna,
+);
 
 $social-colors: (
     'facebook': $color-chambray,
     'twitter': $color-cerulean,
     'instagram': $color-cerise,
     'linkedin': $color-deep-cerulean,
+);
+
+$service-colors: (
+    'bespoke-software': $color-hoki,
+    'it-support': $color-havelock-blue, 
+    'digital-marketing': $color-shamrock,
+    'telecoms-services': $color-valencia,
+    'web-design': $color-wisteria,
+    'cyber-security': $color-radical-red,
+    'developer-course': $color-punch,
 );
 
 $service-icons: (
@@ -57,12 +69,3 @@ $service-icons: (
     'cyber-security': "\f3ed",      //fa-shield-halved,
     'developer-course': "\f19d",    //fa-graduation-cap,
 );
-$service-colors: (
-    'bespoke-software': $color-hoki,
-    'it-support': $color-havelock-blue, 
-    'digital-marketing': $color-shamrock,
-    'telecoms-services': $color-valencia,
-    'web-design': $color-wisteria,
-    'cyber-security': $color-radical-red,
-    'developer-course': $color-punch,
-)
