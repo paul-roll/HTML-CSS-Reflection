@@ -1591,18 +1591,20 @@ nav .nav-panel {
 /* line 107, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .services-footer {
   display: flex;
+  overflow: hidden;
+  width: 100%;
   justify-content: space-around;
   gap: 100px;
   margin-top: 30px;
   margin-bottom: 50px;
 }
 
-/* line 113, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
+/* line 115, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .services-footer .services-footer-item {
   filter: grayscale(1);
 }
 
-/* line 115, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
+/* line 117, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .services-footer .services-footer-item:hover {
   filter: grayscale(0);
 }
