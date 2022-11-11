@@ -2,11 +2,11 @@
 // Global Config
 // ==========================================================================
 
-// Breakpoints                                  // Used with media queries to control layout
+// Breakpoints  // Used with media queries to control layout
 $breakpoint-sm    : 768px;
 $breakpoint-md    : 992px;
 $breakpoint-lg    : 1260px;
-// Margins                                      // Used with wrapper to keep content within bounds
+// Margins      // Used with wrapper to keep content within bounds
 $wrapper-sm       : $breakpoint-sm - 18px;      
 $wrapper-md       : $breakpoint-md - 22px;
 $wrapper-lg       : $breakpoint-lg - 60px;
@@ -32,6 +32,7 @@ $color-cerulean: #00ACED;
 $color-deep-cerulean: #0077B5;
 $color-cerise: #D93175;
 
+// Maps
 $background-colors: (
     'header':       $color-white,
     'nav':          $color-tuna,
@@ -44,28 +45,28 @@ $background-colors: (
 );
 
 $social-colors: (
-    'facebook': $color-chambray,
-    'twitter': $color-cerulean,
-    'instagram': $color-cerise,
-    'linkedin': $color-deep-cerulean,
+    'facebook':     $color-chambray,
+    'twitter':      $color-cerulean,
+    'instagram':    $color-cerise,
+    'linkedin':     $color-deep-cerulean,
 );
 
 $service-colors: (
-    'bespoke-software': $color-hoki,
-    'it-support': $color-havelock-blue, 
-    'digital-marketing': $color-shamrock,
-    'telecoms-services': $color-valencia,
-    'web-design': $color-wisteria,
-    'cyber-security': $color-radical-red,
-    'developer-course': $color-punch,
+    'bespoke-software':     $color-hoki,
+    'it-support':           $color-havelock-blue, 
+    'digital-marketing':    $color-shamrock,
+    'telecoms-services':    $color-valencia,
+    'web-design':           $color-wisteria,
+    'cyber-security':       $color-radical-red,
+    'developer-course':     $color-punch,
 );
 
 $service-icons: (
-    'bespoke-software': "\f58e",    //fa-grip-vertical,
-    'it-support': "\e163",          //fa-display, 
-    'digital-marketing': "\f201",   //fa-chart-line,
-    'telecoms-services': "\f2a0",   //fa-phone-volume,
-    'web-design': "\f121",          //fa-code,
-    'cyber-security': "\f3ed",      //fa-shield-halved,
-    'developer-course': "\f19d",    //fa-graduation-cap,
+    'bespoke-software':     "\f58e",    // fa-grip-vertical
+    'it-support':           "\e163",    // fa-display
+    'digital-marketing':    "\f201",    // fa-chart-line
+    'telecoms-services':    "\f2a0",    // fa-phone-volume
+    'web-design':           "\f121",    // fa-code
+    'cyber-security':       "\f3ed",    // fa-shield-halved
+    'developer-course':     "\f19d",    // fa-graduation-cap
 );
