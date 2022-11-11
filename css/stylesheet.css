@@ -374,48 +374,53 @@ input[type=text]:focus {
   box-shadow: 0 0 10px 1px rgba(91, 192, 222, 0.75);
 }
 
-/* line 90, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_base.scss */
+/* line 89, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_base.scss */
+:focus {
+  outline-style: dotted;
+}
+
+/* line 93, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_base.scss */
 .hidden {
   display: none;
 }
 
 @media (min-width: 768px) {
-  /* line 94, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_base.scss */
+  /* line 97, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_base.scss */
   .hide-sm {
     display: none;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 99, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_base.scss */
+  /* line 102, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_base.scss */
   .show-sm {
     display: inherit;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 105, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_base.scss */
+  /* line 108, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_base.scss */
   .hide-md {
     display: none;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 110, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_base.scss */
+  /* line 113, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_base.scss */
   .show-md {
     display: inherit;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 116, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_base.scss */
+  /* line 119, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_base.scss */
   .hide-lg {
     display: none;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 121, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_base.scss */
+  /* line 124, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_base.scss */
   .show-lg {
     display: inherit;
   }
@@ -472,7 +477,7 @@ input[type=text]:focus {
 }
 
 /* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
-.btn.support:hover {
+.btn.support:hover, .btn.support:focus {
   background-color: #286abd;
   text-decoration: none;
 }
@@ -493,7 +498,7 @@ input[type=text]:focus {
 }
 
 /* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
-.btn.contact:hover {
+.btn.contact:hover, .btn.contact:focus {
   background-color: #7e808a;
   text-decoration: none;
 }
@@ -513,7 +518,7 @@ input[type=text]:focus {
 }
 
 /* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
-.btn.fa-bars:hover {
+.btn.fa-bars:hover, .btn.fa-bars:focus {
   background-color: #1d1f28;
   text-decoration: none;
 }
@@ -533,7 +538,7 @@ input[type=text]:focus {
 }
 
 /* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
-.btn.fa-magnifying-glass:hover {
+.btn.fa-magnifying-glass:hover, .btn.fa-magnifying-glass:focus {
   background-color: #7e808a;
   text-decoration: none;
 }
@@ -1109,7 +1114,7 @@ nav .nav-panel {
 }
 
 /* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
-.carousel .button:hover {
+.carousel .button:hover, .carousel .button:focus {
   background-color: #526781;
   text-decoration: none;
 }
@@ -1693,7 +1698,7 @@ nav .nav-panel {
 }
 
 /* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
-.testimonials .btn.more:hover {
+.testimonials .btn.more:hover, .testimonials .btn.more:focus {
   background-color: #121419;
   text-decoration: none;
 }
@@ -1716,7 +1721,7 @@ nav .nav-panel {
 }
 
 /* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
-.testimonials .btn.google:hover {
+.testimonials .btn.google:hover, .testimonials .btn.google:focus {
   background-color: #235ea8;
   text-decoration: none;
 }
@@ -1740,7 +1745,7 @@ nav .nav-panel {
 }
 
 /* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
-.testimonials .btn.trustpilot:hover {
+.testimonials .btn.trustpilot:hover, .testimonials .btn.trustpilot:focus {
   background-color: #208e4e;
   text-decoration: none;
 }
@@ -2180,7 +2185,7 @@ nav .nav-panel {
 }
 
 /* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
-.email #subscribe:hover {
+.email #subscribe:hover, .email #subscribe:focus {
   background-color: #1d1f28;
   text-decoration: none;
 }
