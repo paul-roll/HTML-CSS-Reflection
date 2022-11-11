@@ -2,12 +2,12 @@
 // Global Config
 // ==========================================================================
 
-// Breakpoints
+// Breakpoints                                  // Used with media queries to control layout
 $breakpoint-sm    : 768px;
 $breakpoint-md    : 992px;
 $breakpoint-lg    : 1260px;
-// Margins
-$wrapper-sm       : $breakpoint-sm - 18px;
+// Margins                                      // Used with wrapper to keep content within bounds
+$wrapper-sm       : $breakpoint-sm - 18px;      
 $wrapper-md       : $breakpoint-md - 22px;
 $wrapper-lg       : $breakpoint-lg - 60px;
 
@@ -20,6 +20,17 @@ $color-grey: #999AA2;
 $color-star: #FFA500;
 $color-chestnut-rose: #D24D57;
 $color-viking: #5BC0DE;
+$color-hoki: #67809F;
+$color-havelock-blue: #4183D7;
+$color-shamrock: #2ECC71;
+$color-valencia: #D64541;
+$color-wisteria: #926FB1;
+$color-radical-red: #F62459;
+$color-punch: #CE4125;
+$color-chambray: #3B5998;
+$color-cerulean: #00ACED;
+$color-deep-cerulean: #0077B5;
+$color-cerise: #D93175;
 
 $color-header-bg: $color-white;
 $color-nav-bg: $color-tuna;
@@ -30,25 +41,11 @@ $color-news-bg: $color-white;
 $color-email-bg: $color-alto;
 $color-footer-bg: $color-tuna;
 
-
-$color-bespoke-software: #67809F;
-$color-it-support: #4183D7;
-$color-digital-marketing: #2ECC71;
-$color-telecoms-services: #D64541;
-$color-web-design: #926FB1;
-$color-cyber-security: #F62459;
-$color-developer-course: #CE4125;
-
-$color-facebook: #3b5998;
-$color-twitter: #00ACED;
-$color-instagram: #D93175;
-$color-linkedin: #0077B5;
-
 $social-colors: (
-    'facebook': $color-facebook,
-    'twitter': $color-twitter,
-    'instagram': $color-instagram,
-    'linkedin': $color-linkedin,
+    'facebook': $color-chambray,
+    'twitter': $color-cerulean,
+    'instagram': $color-cerise,
+    'linkedin': $color-deep-cerulean,
 );
 
 $service-icons: (
@@ -61,11 +58,11 @@ $service-icons: (
     'developer-course': "\f19d",    //fa-graduation-cap,
 );
 $service-colors: (
-    'bespoke-software': $color-bespoke-software,
-    'it-support': $color-it-support, 
-    'digital-marketing': $color-digital-marketing,
-    'telecoms-services': $color-telecoms-services,
-    'web-design': $color-web-design,
-    'cyber-security': $color-cyber-security,
-    'developer-course': $color-developer-course,
+    'bespoke-software': $color-hoki,
+    'it-support': $color-havelock-blue, 
+    'digital-marketing': $color-shamrock,
+    'telecoms-services': $color-valencia,
+    'web-design': $color-wisteria,
+    'cyber-security': $color-radical-red,
+    'developer-course': $color-punch,
 )

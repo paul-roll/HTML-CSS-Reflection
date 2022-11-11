@@ -31,7 +31,7 @@
     }
     &.support {
         white-space: nowrap;
-        @include btn($color-white, $color-it-support, 18px, 10px, $hover: true);
+        @include btn($color-white, map-get($service-colors, "it-support"), 18px, 10px, $hover: true);
     }
     &.contact {
         white-space: nowrap;

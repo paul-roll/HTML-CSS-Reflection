@@ -56,13 +56,13 @@
             border-radius: 6px;
         }
         &.google {
-            @include btn($color-white, darken($color-it-support, 5%), 20px, 10px, 30px, true);
+            @include btn($color-white, darken(map-get($service-colors, "it-support"), 5%), 20px, 10px, 30px, true);
             border-radius: 6px;
             margin: 4px;
             margin-top: 55px;
         }
         &.trustpilot {
-            @include btn($color-white, darken($color-digital-marketing, 5%), 20px, 10px, 30px, true);
+            @include btn($color-white, darken(map-get($service-colors, "digital-marketing"), 5%), 20px, 10px, 30px, true);
             border-radius: 6px;
             margin: 4px;
             margin-top: 20px;
