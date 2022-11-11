@@ -18,19 +18,7 @@
         font-size: 32px;
     }
 
-    h1 {        // #TODO: MERGE (DUPLICATE IN NEWS)
-        margin: 0;
-        @media (min-width: $breakpoint-sm) {        // At screen width 768+
-            float: left;                                // Float the header left
-        }
-    }
-
-    .viewall {  // #TODO: MERGE (DUPLICATE IN NEWS)
-        text-align: center;
-        @media (min-width: $breakpoint-sm) {        // At screen width 768+
-            text-align: right;                          // Align the view-all button to the right
-        }
-    }
+    @include h1-viewall();
 
     a {
         color: $color-tuna;

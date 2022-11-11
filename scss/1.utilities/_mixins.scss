@@ -30,3 +30,18 @@
         content: map-get($service-icons, $service);
     }
 }
+
+@mixin h1-viewall() {
+    h1 {
+        margin: 0;
+        @media (min-width: $breakpoint-sm) {        // At screen width 768+
+            float: left;                                // Float the header left
+        }
+    }
+    .viewall {  // #TODO: MERGE (DUPLICATE IN SERVICES)
+        text-align: center;
+        @media (min-width: $breakpoint-sm) {        // At screen width 768+
+            text-align: right;                          // Align the view-all button to the right
+        }
+    }
+}
