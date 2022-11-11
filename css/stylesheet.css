@@ -421,19 +421,19 @@ input[type=text]:focus {
   }
 }
 
-/* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+/* line 7, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
 .header {
   background-color: #FFFFFF;
   color: #333645;
 }
 
-/* line 9, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+/* line 11, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
 .header .fa-phone {
   font-size: 32px;
   padding: 10px;
 }
 
-/* line 14, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+/* line 15, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
 .header .btn.support {
   white-space: nowrap;
   display: inline-block;
@@ -453,7 +453,7 @@ input[type=text]:focus {
   text-decoration: none;
 }
 
-/* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+/* line 21, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
 .header .btn.contact {
   white-space: nowrap;
   display: inline-block;
@@ -473,7 +473,7 @@ input[type=text]:focus {
   text-decoration: none;
 }
 
-/* line 26, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+/* line 27, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
 .header .btn.fa-bars {
   display: inline-block;
   font-size: 32px;
@@ -492,7 +492,7 @@ input[type=text]:focus {
   text-decoration: none;
 }
 
-/* line 30, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+/* line 31, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
 .header .btn.fa-magnifying-glass {
   display: inline-block;
   font-size: 32px;
@@ -512,20 +512,45 @@ input[type=text]:focus {
 }
 
 @media (min-width: 768px) and (max-width: 991px), (min-width: 1260px) {
-  /* line 30, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+  /* line 31, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
   .header .btn.fa-magnifying-glass {
     border-radius: 0 3px 3px 0;
   }
 }
 
-/* line 39, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
-.header button {
-  padding: 0;
-  border-width: 0;
+/* line 42, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+.header .flex-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
-/* line 44, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
-.header #search1 button {
+/* line 46, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+.header .flex-container > * {
+  padding: 10px;
+  text-align: center;
+}
+
+/* line 50, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+.header .flex-container > :last-child {
+  padding-right: 0;
+}
+
+/* line 56, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+.searchbar {
+  position: relative;
+}
+
+/* line 58, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+.searchbar input.wide {
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #E5E5E5;
+}
+
+/* line 66, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+#search1 button {
   position: absolute;
   font-size: 20px;
   top: 10px;
@@ -535,54 +560,29 @@ input[type=text]:focus {
   background-color: transparent;
 }
 
-/* line 54, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
-.header .search {
-  position: relative;
-}
-
-/* line 56, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
-.header .search input.wide {
-  margin-top: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background: #E5E5E5;
-}
-
-/* line 64, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
-.header .flex-container {
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-
-/* line 68, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
-.header .flex-container > * {
-  padding: 10px;
-  text-align: center;
-}
-
-/* line 72, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
-.header .flex-container > :last-child {
-  padding-right: 0;
-}
-
-/* line 77, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
-.header .logo {
+/* line 76, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+.logo {
   padding: 0 10px 0 0;
   margin-right: auto;
   max-width: 402px;
 }
 
-/* line 81, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
-.header .logo img {
+/* line 80, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+.logo img {
   width: inherit;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 81, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
-  .header .logo img {
+  /* line 80, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+  .logo img {
     max-width: 345px;
   }
+}
+
+/* line 89, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+button {
+  padding: 0;
+  border-width: 0;
 }
 
 /* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_2.Nav.scss */

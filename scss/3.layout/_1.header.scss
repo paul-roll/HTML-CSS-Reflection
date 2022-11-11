@@ -2,6 +2,8 @@
 // Header Layout
 // ==========================================================================
 
+
+//using a header class instead of the header element so that the header-element may include the nav for later use with sticky header.
 .header {
     background-color: $color-header-bg;
     color: $color-tuna;
@@ -10,7 +12,6 @@
         font-size: 32px;
         padding: 10px;
     }
-
     .btn.support {
         white-space: nowrap;
         @include btn($color-white, $color-it-support, 18px, 10px);
@@ -36,30 +37,7 @@
         }
     }
 
-    button {
-        padding: 0;
-        border-width: 0;
-    }
 
-    #search1 button {
-        position: absolute;
-        font-size: 20px;
-        top: 10px;
-        right: 0;
-        width: 44px;
-        height: 44px;
-        background-color: transparent;
-    }
-    
-    .search {
-        position: relative;
-        input.wide {
-            margin-top: 10px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            background: #E5E5E5;
-        }
-    }
 
     .flex-container {
         display: flex;
@@ -73,16 +51,43 @@
             padding-right: 0;
         }
     }
+}
 
-    .logo {
-        padding:0 10px 0 0 ;
-        margin-right: auto;
-        max-width: 402px;
-        img {
-            width: inherit;
-            @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1)) {
-                max-width: 345px;
-            }
+.searchbar {
+    position: relative;
+    input.wide {
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: #E5E5E5;
+    }
+}
+
+#search1 button {
+    position: absolute;
+    font-size: 20px;
+    top: 10px;
+    right: 0;
+    width: 44px;
+    height: 44px;
+    background-color: transparent;
+}
+
+.logo {
+    padding:0 10px 0 0 ;
+    margin-right: auto;
+    max-width: 402px;
+    img {
+        width: inherit;
+        @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1)) {
+            max-width: 345px;
         }
     }
 }
+
+//remove padding to let the icon inside take up the full area.
+button {
+    padding: 0;
+    border-width: 0;
+}
+
