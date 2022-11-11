@@ -15,14 +15,6 @@
         margin-top: 5px;
         margin-bottom: 10px;
     }
-    // input[type=checkbox] {
-    //     // float: left;
-    //     width: 32px;
-    //     height: 32px;
-    //     &:active {
-    //         background-color: red;
-    //     }
-    // }
 
     #checkbox {
         float: left;
@@ -44,8 +36,7 @@
 
 
     #subscribe {
-        @include btn($color-white, $color-tuna);
-        @include btn-hover($color-tuna);
+        @include btn($color-white, $color-tuna, $hover: true);
         margin-top: 20px;
         margin-bottom: 20px;
     }

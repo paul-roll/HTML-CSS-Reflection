@@ -47,8 +47,7 @@
     }
 
     .button {
-        @include btn($color-white, $color-bespoke-software, 20px, 5px, 20px);
-        @include btn-hover($color-bespoke-software);
+        @include btn($color-white, $color-bespoke-software, 20px, 5px, 20px, true);
         margin-top: 30px;
         line-height: 50px;
         @media (min-width: $breakpoint-md) {

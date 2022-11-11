@@ -421,20 +421,43 @@ input[type=text]:focus {
   }
 }
 
-/* line 7, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+/* line 6, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
 .header {
   background-color: #FFFFFF;
   color: #333645;
 }
 
-/* line 11, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
-.header .fa-phone {
+/* line 10, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+.header .flex-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* line 14, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+.header .flex-container > * {
+  padding: 10px;
+  text-align: center;
+}
+
+/* line 18, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+.header .flex-container > :last-child {
+  padding-right: 0;
+}
+
+/* line 26, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+.btn.phone {
   font-size: 32px;
   padding: 10px;
 }
 
-/* line 15, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
-.header .btn.support {
+/* line 29, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+.btn.phone:hover {
+  color: #1d1f28;
+}
+
+/* line 33, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+.btn.support {
   white-space: nowrap;
   display: inline-block;
   font-size: 18px;
@@ -445,16 +468,17 @@ input[type=text]:focus {
   background-color: #4183D7;
   border-radius: 3px;
   text-transform: uppercase;
+  border: true;
 }
 
-/* line 21, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
-.header .btn.support:hover {
+/* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
+.btn.support:hover {
   background-color: #286abd;
   text-decoration: none;
 }
 
-/* line 21, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
-.header .btn.contact {
+/* line 37, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+.btn.contact {
   white-space: nowrap;
   display: inline-block;
   font-size: 18px;
@@ -465,16 +489,17 @@ input[type=text]:focus {
   background-color: #999AA2;
   border-radius: 3px;
   text-transform: uppercase;
+  border: true;
 }
 
-/* line 21, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
-.header .btn.contact:hover {
+/* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
+.btn.contact:hover {
   background-color: #7e808a;
   text-decoration: none;
 }
 
-/* line 27, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
-.header .btn.fa-bars {
+/* line 41, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+.btn.fa-bars {
   display: inline-block;
   font-size: 32px;
   padding: 10px 15px;
@@ -484,16 +509,17 @@ input[type=text]:focus {
   background-color: #333645;
   border-radius: 3px;
   text-transform: uppercase;
+  border: true;
 }
 
-/* line 21, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
-.header .btn.fa-bars:hover {
+/* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
+.btn.fa-bars:hover {
   background-color: #1d1f28;
   text-decoration: none;
 }
 
-/* line 31, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
-.header .btn.fa-magnifying-glass {
+/* line 44, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+.btn.fa-magnifying-glass {
   display: inline-block;
   font-size: 32px;
   padding: 10px 15px;
@@ -503,45 +529,28 @@ input[type=text]:focus {
   background-color: #999AA2;
   border-radius: 3px;
   text-transform: uppercase;
+  border: true;
 }
 
-/* line 21, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
-.header .btn.fa-magnifying-glass:hover {
+/* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
+.btn.fa-magnifying-glass:hover {
   background-color: #7e808a;
   text-decoration: none;
 }
 
 @media (min-width: 768px) and (max-width: 991px), (min-width: 1260px) {
-  /* line 31, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
-  .header .btn.fa-magnifying-glass {
+  /* line 44, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+  .btn.fa-magnifying-glass {
     border-radius: 0 3px 3px 0;
   }
 }
 
-/* line 42, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
-.header .flex-container {
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-
-/* line 46, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
-.header .flex-container > * {
-  padding: 10px;
-  text-align: center;
-}
-
-/* line 50, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
-.header .flex-container > :last-child {
-  padding-right: 0;
-}
-
-/* line 56, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+/* line 53, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
 .searchbar {
   position: relative;
 }
 
-/* line 58, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+/* line 55, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
 .searchbar input.wide {
   margin-top: 10px;
   padding-top: 10px;
@@ -549,7 +558,7 @@ input[type=text]:focus {
   background: #E5E5E5;
 }
 
-/* line 66, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+/* line 63, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
 #search1 button {
   position: absolute;
   font-size: 20px;
@@ -560,26 +569,26 @@ input[type=text]:focus {
   background-color: transparent;
 }
 
-/* line 76, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+/* line 73, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
 .logo {
   padding: 0 10px 0 0;
   margin-right: auto;
   max-width: 402px;
 }
 
-/* line 80, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+/* line 77, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
 .logo img {
   width: inherit;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 80, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+  /* line 77, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
   .logo img {
     max-width: 345px;
   }
 }
 
-/* line 89, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
+/* line 86, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
 button {
   padding: 0;
   border-width: 0;
@@ -1095,11 +1104,12 @@ nav .nav-panel {
   background-color: #67809F;
   border-radius: 3px;
   text-transform: uppercase;
+  border: true;
   margin-top: 30px;
   line-height: 50px;
 }
 
-/* line 21, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
+/* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
 .carousel .button:hover {
   background-color: #526781;
   text-decoration: none;
@@ -1178,6 +1188,7 @@ nav .nav-panel {
   background-color: #67809F;
   border-radius: 3px;
   text-transform: uppercase;
+  border: false;
 }
 
 /* line 40, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
@@ -1199,6 +1210,7 @@ nav .nav-panel {
   background-color: #4183D7;
   border-radius: 3px;
   text-transform: uppercase;
+  border: false;
 }
 
 /* line 40, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
@@ -1220,6 +1232,7 @@ nav .nav-panel {
   background-color: #2ECC71;
   border-radius: 3px;
   text-transform: uppercase;
+  border: false;
 }
 
 /* line 40, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
@@ -1241,6 +1254,7 @@ nav .nav-panel {
   background-color: #D64541;
   border-radius: 3px;
   text-transform: uppercase;
+  border: false;
 }
 
 /* line 40, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
@@ -1262,6 +1276,7 @@ nav .nav-panel {
   background-color: #926FB1;
   border-radius: 3px;
   text-transform: uppercase;
+  border: false;
 }
 
 /* line 40, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
@@ -1283,6 +1298,7 @@ nav .nav-panel {
   background-color: #F62459;
   border-radius: 3px;
   text-transform: uppercase;
+  border: false;
 }
 
 /* line 40, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
@@ -1304,6 +1320,7 @@ nav .nav-panel {
   background-color: #CE4125;
   border-radius: 3px;
   text-transform: uppercase;
+  border: false;
 }
 
 /* line 52, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
@@ -1386,6 +1403,7 @@ nav .nav-panel {
   background-color: #FFFFFF;
   border-radius: 3px;
   text-transform: uppercase;
+  border: false;
 }
 
 /* line 106, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
@@ -1417,6 +1435,7 @@ nav .nav-panel {
   background-color: #FFFFFF;
   border-radius: 3px;
   text-transform: uppercase;
+  border: false;
 }
 
 /* line 106, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
@@ -1448,6 +1467,7 @@ nav .nav-panel {
   background-color: #FFFFFF;
   border-radius: 3px;
   text-transform: uppercase;
+  border: false;
 }
 
 /* line 106, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
@@ -1479,6 +1499,7 @@ nav .nav-panel {
   background-color: #FFFFFF;
   border-radius: 3px;
   text-transform: uppercase;
+  border: false;
 }
 
 /* line 106, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
@@ -1510,6 +1531,7 @@ nav .nav-panel {
   background-color: #FFFFFF;
   border-radius: 3px;
   text-transform: uppercase;
+  border: false;
 }
 
 /* line 106, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
@@ -1541,6 +1563,7 @@ nav .nav-panel {
   background-color: #FFFFFF;
   border-radius: 3px;
   text-transform: uppercase;
+  border: false;
 }
 
 /* line 106, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
@@ -1572,6 +1595,7 @@ nav .nav-panel {
   background-color: #FFFFFF;
   border-radius: 3px;
   text-transform: uppercase;
+  border: false;
 }
 
 /* line 106, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
@@ -1674,17 +1698,18 @@ nav .nav-panel {
   background-color: #282b36;
   border-radius: 3px;
   text-transform: uppercase;
+  border: true;
   border-radius: 6px;
   margin-bottom: 40px;
 }
 
-/* line 21, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
+/* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
 .testimonials .btn.more:hover {
   background-color: #121419;
   text-decoration: none;
 }
 
-/* line 59, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_5.testimonials.scss */
+/* line 58, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_5.testimonials.scss */
 .testimonials .btn.google {
   display: inline-block;
   font-size: 20px;
@@ -1695,18 +1720,19 @@ nav .nav-panel {
   background-color: #2c75d2;
   border-radius: 3px;
   text-transform: uppercase;
+  border: true;
   border-radius: 6px;
   margin: 4px;
   margin-top: 55px;
 }
 
-/* line 21, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
+/* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
 .testimonials .btn.google:hover {
   background-color: #235ea8;
   text-decoration: none;
 }
 
-/* line 66, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_5.testimonials.scss */
+/* line 64, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_5.testimonials.scss */
 .testimonials .btn.trustpilot {
   display: inline-block;
   font-size: 20px;
@@ -1717,13 +1743,14 @@ nav .nav-panel {
   background-color: #29b765;
   border-radius: 3px;
   text-transform: uppercase;
+  border: true;
   border-radius: 6px;
   margin: 4px;
   margin-top: 20px;
   margin-bottom: 40px;
 }
 
-/* line 21, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
+/* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
 .testimonials .btn.trustpilot:hover {
   background-color: #208e4e;
   text-decoration: none;
@@ -1943,6 +1970,7 @@ nav .nav-panel {
   background-color: #67809F;
   border-radius: 3px;
   text-transform: uppercase;
+  border: false;
 }
 
 /* line 163, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_6.news.scss */
@@ -1966,6 +1994,7 @@ nav .nav-panel {
   background-color: #4183D7;
   border-radius: 3px;
   text-transform: uppercase;
+  border: false;
 }
 
 /* line 163, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_6.news.scss */
@@ -1989,6 +2018,7 @@ nav .nav-panel {
   background-color: #2ECC71;
   border-radius: 3px;
   text-transform: uppercase;
+  border: false;
 }
 
 /* line 163, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_6.news.scss */
@@ -2012,6 +2042,7 @@ nav .nav-panel {
   background-color: #D64541;
   border-radius: 3px;
   text-transform: uppercase;
+  border: false;
 }
 
 /* line 163, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_6.news.scss */
@@ -2035,6 +2066,7 @@ nav .nav-panel {
   background-color: #926FB1;
   border-radius: 3px;
   text-transform: uppercase;
+  border: false;
 }
 
 /* line 163, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_6.news.scss */
@@ -2058,6 +2090,7 @@ nav .nav-panel {
   background-color: #F62459;
   border-radius: 3px;
   text-transform: uppercase;
+  border: false;
 }
 
 /* line 163, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_6.news.scss */
@@ -2081,6 +2114,7 @@ nav .nav-panel {
   background-color: #CE4125;
   border-radius: 3px;
   text-transform: uppercase;
+  border: false;
 }
 
 /* line 163, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_6.news.scss */
@@ -2117,7 +2151,7 @@ nav .nav-panel {
   margin-bottom: 10px;
 }
 
-/* line 27, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_7.email.scss */
+/* line 19, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_7.email.scss */
 .email #checkbox {
   float: left;
   margin: auto;
@@ -2126,22 +2160,22 @@ nav .nav-panel {
   margin-right: 20px;
 }
 
-/* line 33, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_7.email.scss */
+/* line 25, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_7.email.scss */
 .email #checkbox:checked {
   accent-color: #333645;
 }
 
-/* line 37, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_7.email.scss */
+/* line 29, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_7.email.scss */
 .email .checkbox {
   cursor: pointer;
 }
 
-/* line 41, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_7.email.scss */
+/* line 33, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_7.email.scss */
 .email .checkboxwrapper {
   margin-left: 50px;
 }
 
-/* line 46, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_7.email.scss */
+/* line 38, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_7.email.scss */
 .email #subscribe {
   display: inline-block;
   font-size: 17px;
@@ -2152,34 +2186,35 @@ nav .nav-panel {
   background-color: #333645;
   border-radius: 3px;
   text-transform: uppercase;
+  border: true;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-/* line 21, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
+/* line 20, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_mixins.scss */
 .email #subscribe:hover {
   background-color: #1d1f28;
   text-decoration: none;
 }
 
-/* line 53, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_7.email.scss */
+/* line 44, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_7.email.scss */
 .email label a {
   text-decoration: underline;
 }
 
-/* line 57, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_7.email.scss */
+/* line 48, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_7.email.scss */
 .email .required::after {
   content: ' *';
   color: #D24D57;
 }
 
 @media (min-width: 992px) {
-  /* line 62, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_7.email.scss */
+  /* line 53, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_7.email.scss */
   .email .email-flex-container {
     display: flex;
     gap: 30px;
   }
-  /* line 66, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_7.email.scss */
+  /* line 57, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_7.email.scss */
   .email .email-flex-container > div {
     flex: 1 0;
   }

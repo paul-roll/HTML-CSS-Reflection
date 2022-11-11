@@ -51,21 +51,18 @@
 
     .btn {
         &.more {
-            @include btn($color-white, darken($color-tuna, 5%), 20px, 10px, 30px);
-            @include btn-hover(darken($color-tuna, 5%));
+            @include btn($color-white, darken($color-tuna, 5%), 20px, 10px, 30px, true);
             border-radius: 6px;
             margin-bottom: 40px;
         }
         &.google {
-            @include btn($color-white, darken($color-it-support, 5%), 20px, 10px, 30px);
-            @include btn-hover(darken($color-it-support, 5%));
+            @include btn($color-white, darken($color-it-support, 5%), 20px, 10px, 30px, true);
             border-radius: 6px;
             margin: 4px;
             margin-top: 55px;
         }
         &.trustpilot {
-            @include btn($color-white, darken($color-digital-marketing, 5%), 20px, 10px, 30px);
-            @include btn-hover(darken($color-digital-marketing, 5%));
+            @include btn($color-white, darken($color-digital-marketing, 5%), 20px, 10px, 30px, true);
             border-radius: 6px;
             margin: 4px;
             margin-top: 20px;

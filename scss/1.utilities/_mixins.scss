@@ -5,7 +5,7 @@
 
 
 
-@mixin btn($color, $background-color, $font-size: 17px, $padding1: 5px, $padding2: 15px) {
+@mixin btn($color, $background-color, $font-size: 17px, $padding1: 5px, $padding2: 15px, $hover: false) {
     display: inline-block;
     font-size: $font-size;
     padding: $padding1 $padding2;
@@ -15,12 +15,12 @@
     background-color: $background-color;
     border-radius: 3px;
     text-transform: uppercase;
-}
-
-@mixin btn-hover($background-color) {
-    &:hover {
-        background-color: darken($background-color, 10%);
-        text-decoration: none;
+    border: $hover;
+    @if $hover {
+        &:hover {
+            background-color: darken($background-color, 10%);
+            text-decoration: none;
+        }
     }
 }
 
