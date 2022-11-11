@@ -44,6 +44,17 @@ $background-colors: (
     'footer':       $color-tuna,
 );
 
+$section-colors: (
+    'header':       $color-tuna,
+    'nav':          $color-white,
+    'carousel':     $color-white,
+    'services':     $color-tuna,
+    'testimonials': $color-white,
+    'news':         $color-tuna,
+    'email':        $color-tuna,
+    'footer':       $color-white,
+);
+
 $social-colors: (
     'facebook':     $color-chambray,
     'twitter':      $color-cerulean,

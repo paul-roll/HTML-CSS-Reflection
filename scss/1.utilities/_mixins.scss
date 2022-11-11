@@ -45,3 +45,8 @@
         }
     }
 }
+
+@mixin section-colors($section) {
+    background-color: map-get($background-colors, $section);
+    color: map-get($section-colors, $section);
+}

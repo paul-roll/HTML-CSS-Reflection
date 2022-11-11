@@ -3,8 +3,7 @@
 // ==========================================================================
 
 .testimonials {
-    background-color: map-get($background-colors, "testimonials");
-    color: $color-white;
+    @include section-colors("testimonials");
     line-height: 30px;
 
     .wrapper {

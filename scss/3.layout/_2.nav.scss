@@ -3,10 +3,10 @@
 // ==========================================================================
 
 nav {
+    @include section-colors("nav");
+
     position: relative;
     display: none;
-    background-color: map-get($background-colors, "nav");
-    color: $color-white;
 
     @media (min-width: $breakpoint-md) {    // At screen width 992+
         display: block;                         // Unhide the NAV section

@@ -4,8 +4,7 @@
 
 
 .header {   //using a class instead so that the header may include nav for sticky header
-    background-color: map-get($background-colors, "header");
-    color: $color-tuna;
+    @include section-colors("header");
 
     .flex-container {
         display: flex;

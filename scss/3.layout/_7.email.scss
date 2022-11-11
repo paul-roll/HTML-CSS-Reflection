@@ -3,8 +3,7 @@
 // ==========================================================================
 
 .email {
-    background-color: map-get($background-colors, "email");
-    color: $color-tuna;
+    @include section-colors("email");
 
     label {
         font-size: 16px;

@@ -3,8 +3,7 @@
 // ==========================================================================
 
 footer {
-    background-color: map-get($background-colors, "footer");
-    color: white;
+    @include section-colors("footer");
     h4 {
         text-transform: uppercase;
     }

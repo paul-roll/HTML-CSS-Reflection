@@ -3,8 +3,7 @@
 // ==========================================================================
 
 .news {
-    background-color: map-get($background-colors, "news");
-    color: $color-tuna;
+    @include section-colors("news");
 
     .news-image {
         width: 100%;

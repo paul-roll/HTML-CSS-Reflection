@@ -3,16 +3,15 @@
 // ==========================================================================
 
 .carousel {
+    @include section-colors("carousel");
     height: 550px;
 
-    background-color: map-get($background-colors, "carousel");
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/carousel.jpg);              // Apply a 50% darken to the whole background
     @media (min-width: $breakpoint-md) {                                                                            // At screen width 992+
         background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)), url(../img/carousel.jpg);        // Fade in black from black on the left side
     }
     background-size: cover;
 
-    color: $color-white;
 
     text-align: center;
 

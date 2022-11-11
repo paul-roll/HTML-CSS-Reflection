@@ -3,8 +3,7 @@
 // ==========================================================================
 
 .services {
-    background-color: map-get($background-colors, "services");
-    color: $color-tuna;
+    @include section-colors("services");
 
     ul {
         a{
