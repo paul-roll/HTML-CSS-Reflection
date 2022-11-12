@@ -43,7 +43,7 @@
         }
     }
 
-    .button {
+    .btn {
         @include btn($color-white, map-get($service-colors, "bespoke-software"), 1.25em, 5px, 20px, true); // 20px
         margin-top: 30px;
         line-height: 2.5em; // 50px(/20px)

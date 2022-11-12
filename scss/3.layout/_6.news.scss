@@ -86,7 +86,7 @@
 
     @each $service, $color in $service-colors {     // Loop through each service to assign colors
         .#{$service} {
-            .button {
+            .btn {
                 @include btn($color-white, $color);
             }
             h4 {

@@ -1094,7 +1094,7 @@ button {
 }
 
 /* line 46, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_3.carousel.scss */
-.carousel .button {
+.carousel .btn {
   display: inline-block;
   font-size: 1.25em;
   padding: 5px 20px;
@@ -1109,19 +1109,19 @@ button {
 }
 
 /* line 18, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_2.mixins.scss */
-.carousel .button:active {
+.carousel .btn:active {
   box-shadow: inset 2px 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
 /* line 22, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_2.mixins.scss */
-.carousel .button:hover, .carousel .button:focus {
+.carousel .btn:hover, .carousel .btn:focus {
   background-color: #526781;
   text-decoration: none;
 }
 
 @media (min-width: 992px) {
   /* line 46, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_3.carousel.scss */
-  .carousel .button {
+  .carousel .btn {
     margin-right: auto;
   }
 }
@@ -2005,7 +2005,7 @@ button {
 }
 
 /* line 89, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_6.news.scss */
-.news .bespoke-software .button {
+.news .bespoke-software .btn {
   display: inline-block;
   font-size: 1.0625em;
   padding: 5px 15px;
@@ -2018,7 +2018,7 @@ button {
 }
 
 /* line 18, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_2.mixins.scss */
-.news .bespoke-software .button:active {
+.news .bespoke-software .btn:active {
   box-shadow: inset 2px 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -2033,7 +2033,7 @@ button {
 }
 
 /* line 89, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_6.news.scss */
-.news .it-support .button {
+.news .it-support .btn {
   display: inline-block;
   font-size: 1.0625em;
   padding: 5px 15px;
@@ -2046,7 +2046,7 @@ button {
 }
 
 /* line 18, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_2.mixins.scss */
-.news .it-support .button:active {
+.news .it-support .btn:active {
   box-shadow: inset 2px 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -2061,7 +2061,7 @@ button {
 }
 
 /* line 89, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_6.news.scss */
-.news .digital-marketing .button {
+.news .digital-marketing .btn {
   display: inline-block;
   font-size: 1.0625em;
   padding: 5px 15px;
@@ -2074,7 +2074,7 @@ button {
 }
 
 /* line 18, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_2.mixins.scss */
-.news .digital-marketing .button:active {
+.news .digital-marketing .btn:active {
   box-shadow: inset 2px 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -2089,7 +2089,7 @@ button {
 }
 
 /* line 89, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_6.news.scss */
-.news .telecoms-services .button {
+.news .telecoms-services .btn {
   display: inline-block;
   font-size: 1.0625em;
   padding: 5px 15px;
@@ -2102,7 +2102,7 @@ button {
 }
 
 /* line 18, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_2.mixins.scss */
-.news .telecoms-services .button:active {
+.news .telecoms-services .btn:active {
   box-shadow: inset 2px 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -2117,7 +2117,7 @@ button {
 }
 
 /* line 89, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_6.news.scss */
-.news .web-design .button {
+.news .web-design .btn {
   display: inline-block;
   font-size: 1.0625em;
   padding: 5px 15px;
@@ -2130,7 +2130,7 @@ button {
 }
 
 /* line 18, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_2.mixins.scss */
-.news .web-design .button:active {
+.news .web-design .btn:active {
   box-shadow: inset 2px 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -2145,7 +2145,7 @@ button {
 }
 
 /* line 89, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_6.news.scss */
-.news .cyber-security .button {
+.news .cyber-security .btn {
   display: inline-block;
   font-size: 1.0625em;
   padding: 5px 15px;
@@ -2158,7 +2158,7 @@ button {
 }
 
 /* line 18, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_2.mixins.scss */
-.news .cyber-security .button:active {
+.news .cyber-security .btn:active {
   box-shadow: inset 2px 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -2173,7 +2173,7 @@ button {
 }
 
 /* line 89, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_6.news.scss */
-.news .developer-course .button {
+.news .developer-course .btn {
   display: inline-block;
   font-size: 1.0625em;
   padding: 5px 15px;
@@ -2186,7 +2186,7 @@ button {
 }
 
 /* line 18, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_2.mixins.scss */
-.news .developer-course .button:active {
+.news .developer-course .btn:active {
   box-shadow: inset 2px 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
