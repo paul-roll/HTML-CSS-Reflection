@@ -598,7 +598,7 @@ button {
 
 /* line 10, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_2.Nav.scss */
 .nav .flex-container {
-  padding: 0;
+  padding: 0 15px;
   display: flex;
   justify-content: space-around;
 }
@@ -961,24 +961,24 @@ button {
 @media (max-width: 1259px) {
   /* line 76, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_2.Nav.scss */
   .nav-arrow {
-    width: 138.57143px;
-    bottom: -33.64286px;
+    width: 134.28571px;
+    bottom: -32.57143px;
     height: 0;
-    border-left: 69.28571px solid transparent;
-    border-right: 69.28571px solid transparent;
-    border-top: 34.64286px solid;
+    border-left: 67.14286px solid transparent;
+    border-right: 67.14286px solid transparent;
+    border-top: 33.57143px solid;
   }
 }
 
 @media (min-width: 1260px) {
   /* line 76, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_2.Nav.scss */
   .nav-arrow {
-    width: 171.42857px;
-    bottom: -41.85714px;
+    width: 167.14286px;
+    bottom: -40.78571px;
     height: 0;
-    border-left: 85.71429px solid transparent;
-    border-right: 85.71429px solid transparent;
-    border-top: 42.85714px solid;
+    border-left: 83.57143px solid transparent;
+    border-right: 83.57143px solid transparent;
+    border-top: 41.78571px solid;
   }
 }
 
