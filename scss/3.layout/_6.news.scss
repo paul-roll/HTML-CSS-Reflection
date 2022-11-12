@@ -73,65 +73,7 @@
         &:hover {
             text-decoration: underline;
         }
-    }
-
-    .news-footer {                          // flex container for the news footer (clients)
-        margin: 30px 10px;
-        display: flex;
-        justify-content: space-around;
-        max-width: 100%;
-        gap: 40px;
-        img {
-            width: 100%;            // resize images to be the size of its container
-            filter: grayscale(1);   // greyscale filter by default
-            &:hover {
-                filter: none;       // remove filter on hover
-            }
-        }
-        > div {                             // each flex item 
-            position: relative;
-            &:hover {
-                .arrow, .box {
-                    display: block;         // on hover show the arrow and box classes for this group
-                }
-            }
-        }
-        $arrow-width: 100px;                                    // define width of the arrow
-        .arrow {
-            position: absolute;
-            height: 0;
-            left: calc(50% - (#{$arrow-width} / 2));            // center: place it in the middle of the relative then offset by half the width of itself
-            width: $arrow-width;
-            bottom: calc(100% + 15px);                          // place it on the top edge of the relative, plus an extra 15px
-            border-left: $arrow-width / 2 solid transparent;
-            border-right: $arrow-width / 2 solid transparent;
-            border-top: $arrow-width / 2 solid;
-        }
-        .box {
-            position: absolute;
-            bottom: calc(100% + (#{$arrow-width} / 2) + 15px);  // place it on the top edge of the relative, plus half the width of arrow plus an extra 15px
-            $box-width: 240px;                                  // define width of the box
-            width: $box-width;
-            left: calc(50% - (#{$box-width} / 2));              // center: place it in the middle of the relative then offset by half the width of itself
-            background-color: $color-tuna;
-            text-align: center;
-            h4, p, hr {
-                margin: 15px 0;
-                padding: 0 10px;
-                color: $color-white;
-            }
-            h4 {
-                font-size: 18px;
-            }
-            hr {
-                border-width: 3px;
-                width: 1%;
-                margin: 0 auto;
-            }
-        }
-    }
-
-    
+    } 
 
     .news-item h4 {
         min-height: 48px;   // make single line titles have the same dimensions as double lines
@@ -159,4 +101,62 @@
         text-decoration: none;
     }
 
+}
+
+
+
+.news-footer .flex-container{                          // flex container for the news footer (clients)
+    margin: 30px 10px;
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    gap: 40px;
+    img {
+        width: 100%;            // resize images to be the size of its container
+        filter: grayscale(1);   // greyscale filter by default
+        &:hover {
+            filter: none;       // remove filter on hover
+        }
+    }
+    > div {                             // each flex item 
+        position: relative;
+        &:hover {
+            .arrow, .box {
+                display: block;         // on hover show the arrow and box classes for this group
+            }
+        }
+    }
+    $arrow-width: 100px;                                    // define width of the arrow
+    .arrow {
+        position: absolute;
+        height: 0;
+        left: calc(50% - (#{$arrow-width} / 2));            // center: place it in the middle of the relative then offset by half the width of itself
+        width: $arrow-width;
+        bottom: calc(100% + 15px);                          // place it on the top edge of the relative, plus an extra 15px
+        border-left: $arrow-width / 2 solid transparent;
+        border-right: $arrow-width / 2 solid transparent;
+        border-top: $arrow-width / 2 solid;
+    }
+    .box {
+        position: absolute;
+        bottom: calc(100% + (#{$arrow-width} / 2) + 15px);  // place it on the top edge of the relative, plus half the width of arrow plus an extra 15px
+        $box-width: 240px;                                  // define width of the box
+        width: $box-width;
+        left: calc(50% - (#{$box-width} / 2));              // center: place it in the middle of the relative then offset by half the width of itself
+        background-color: $color-tuna;
+        text-align: center;
+        h4, p, hr {
+            margin: 15px 0;
+            padding: 0 10px;
+            color: $color-white;
+        }
+        h4 {
+            font-size: 18px;
+        }
+        hr {
+            border-width: 3px;
+            width: 1%;
+            margin: 0 auto;
+        }
+    }
 }

@@ -47,7 +47,6 @@ a {
 .wrapper {
     padding: 15px;
     margin: 0 auto;
-
     @media (min-width: $breakpoint-sm) {
         max-width: $wrapper-sm;
     }

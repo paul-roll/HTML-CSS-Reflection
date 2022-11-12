@@ -5,7 +5,7 @@
 
 .header {   //using a class instead so that the header may include nav for sticky header
     @include section-colors("header");
-
+    
     .flex-container {   // the header flex container
         display: flex;
         align-items: center;

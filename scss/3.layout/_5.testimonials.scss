@@ -6,7 +6,7 @@
     @include section-colors("testimonials");
     line-height: 30px;
 
-    .wrapper {                  // using the wrapper class as a flex container
+    .flex-container {
         display: flex;
         flex-direction: column;
         gap: 30px;

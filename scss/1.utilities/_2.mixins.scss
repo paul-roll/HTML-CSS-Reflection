@@ -15,7 +15,6 @@
     background-color: $background-color;
     border-radius: 3px;
     text-transform: uppercase;
-    border: $hover;
     @if $hover {
         &:hover, &:focus {
             background-color: darken($background-color, 10%);
