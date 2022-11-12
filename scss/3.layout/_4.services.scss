@@ -57,7 +57,7 @@
                     content: map-get($service-icons, $service);     // mimic the way fontawesome injects codes into the ::before content to set icons
                 }
                 > i.circle::before {    // if the icon has the circle class
-                    line-height: 3.875em; // 62px
+                    line-height: 2em; // 64px(/32px)
                     display: block;
                     border-radius: 50%;
                     width: 65px;

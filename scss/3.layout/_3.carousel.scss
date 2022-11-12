@@ -23,7 +23,7 @@
     }
 
     h1 {
-        line-height: 5em; // 80px
+        line-height: 1.25em; // 80px(/64px)
         margin: 0;
         width: 100%;
         @media (min-width: $breakpoint-md) {    // At screen width 992+
@@ -46,7 +46,7 @@
     .button {
         @include btn($color-white, map-get($service-colors, "bespoke-software"), 1.25em, 5px, 20px, true); // 20px
         margin-top: 30px;
-        line-height: 3.125em; // 50px
+        line-height: 2.5em; // 50px(/20px)
         @media (min-width: $breakpoint-md) {    // At screen width 992+
             margin-right: auto;                     // Align to the left
         }

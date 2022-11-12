@@ -48,8 +48,8 @@
         a {                     // each <a> is also a flex box to help align the icon
             text-align: left;
             flex: 1 0;
-            min-width: 30%;         // force 3 items per row
-            line-height: 1.1em;     // remove the gap between multi-line <p> links
+            min-width: 30%;                 // force 3 items per row
+            line-height: 1.1em; // 17.6px   // remove the gap between multi-line <p> links
 
             display: flex;
             flex-flow: row wrap;
