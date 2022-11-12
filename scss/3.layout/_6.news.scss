@@ -54,9 +54,6 @@
         &:hover {
             top: -10px;         // transition endpoint
         }
-        a:hover {
-            text-decoration: none;
-        }
         @media (min-width: $breakpoint-sm) AND (max-width: ($breakpoint-lg - 1)) {      // At screen width 768-1259
             &:last-of-type {                                                                // Hide the 3rd news card
                 display: none;
@@ -64,7 +61,7 @@
         }
     }
 
-    .newstag {                              // tag in the top right of each news item
+    .news-tag {                              // tag in the top right of each news item
         text-transform: uppercase;
         position: absolute;
         top: 10px;
@@ -73,10 +70,11 @@
         font-size: 12px;
         font-weight: 600;
         color: $color-white;
-        &:hover {
-            text-decoration: underline;
-        }
-    } 
+    }
+
+    .news-card:hover {
+        text-decoration: none;      // remove hover underline from the card
+    }
 
     .news-item h4 {
         min-height: 48px;   // make single line titles have the same dimensions as double lines
@@ -94,7 +92,7 @@
             h4 {
                 color: $color;
             }
-            .newstag {
+            .news-tag {
                 background-color: $color;
             }
         }
