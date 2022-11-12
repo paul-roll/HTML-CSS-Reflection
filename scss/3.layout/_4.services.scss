@@ -51,10 +51,10 @@
 
         @each $service, $color in $service-colors {       // Loop through each service to assign colors and icons
             &.#{$service} {
-                i::before {             // set the icon font size, content and map its color, convert to mixin later
+                i::before {             // set the icon font size, content and map its color
                     font-size: 32px;
                     color: $color;
-                    content: map-get($service-icons, $service);
+                    content: map-get($service-icons, $service);     // mimic the way fontawesome injects codes into the ::before content to set icons
                 }
                 > i.circle::before {    // if the icon has the circle class
                     line-height: 62px;
