@@ -54,6 +54,9 @@
         &:hover {
             top: -10px;         // transition endpoint
         }
+        a:hover {
+            text-decoration: none;
+        }
         @media (min-width: $breakpoint-sm) AND (max-width: ($breakpoint-lg - 1)) {      // At screen width 768-1259
             &:last-of-type {                                                                // Hide the 3rd news card
                 display: none;
@@ -97,15 +100,11 @@
         }
     }
 
-    a:hover {
-        text-decoration: none;
-    }
-
 }
 
 
 
-.news-footer .flex-container{                          // flex container for the news footer (clients)
+.news-footer .flex-footer-container{                          // flex container for the news footer (clients)
     margin: 30px 10px;
     display: flex;
     justify-content: space-around;

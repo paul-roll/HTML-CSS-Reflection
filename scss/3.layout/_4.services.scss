@@ -8,7 +8,7 @@
 
     @include h1-viewall();
 
-    .flex-container {
+    .flex-container {       // turn the first 3 service cards and last 4 cards into two seperate flex containers
         margin: 0;
         display: flex;
         flex-flow: column wrap;
