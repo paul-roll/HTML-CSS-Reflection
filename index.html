@@ -18,42 +18,44 @@
     <header>
       <!-- Header -->
       <section class="header">
-        <div class="wrapper flex-container">
+        <div class="wrapper">
+          <div class="flex-container">
 
-          <a href="#" class="logo"><img src="img/netmatters-logo.png"></a>
+            <a href="#" class="logo"><img src="img/netmatters-logo.png"></a>
 
-          <div class="hide-sm">
-            <a href="#" class="btn phone"><i class="fa-solid fa-phone"></i></a>
+            <div class="hide-sm">
+              <a href="#" class="btn phone"><i class="fa-solid fa-phone"></i></a>
+            </div>
+
+            <div class="hidden show-md">
+              <a href="#" class="btn support"><i class="fa-solid fa-computer-mouse"></i></i> Support</a>
+            </div>
+
+            <div class="hidden show-md">
+              <a href="#" class="btn contact"><i class="fa-regular fa-paper-plane"></i> Contact</a>
+            </div>
+
+            <form class="hidden show-sm searchbar" id="search2">
+              <input class="hidden show-sm hide-md show-lg" type="text" placeholder="Search...">
+              <button type="submit" form="search2">
+                <i class="btn fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+
+            <div>
+              <a href="#"><i class="btn fa-solid fa-bars"></i></a>
+            </div>
+
           </div>
-
-          <div class="hidden show-md">
-            <a href="#" class="btn support"><i class="fa-solid fa-computer-mouse"></i></i> Support</a>
+          
+          <div class="hide-sm searchbar">
+            <form id="search1">
+              <input class="wide" type="text" placeholder="Search...">
+              <button type="submit" form="search1">
+                <i class="wide-btn fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
           </div>
-
-          <div class="hidden show-md">
-            <a href="#" class="btn contact"><i class="fa-regular fa-paper-plane"></i> Contact</a>
-          </div>
-
-          <form class="hidden show-sm searchbar" id="search2">
-            <input class="hidden show-sm hide-md show-lg" type="text" placeholder="Search...">
-            <button type="submit" form="search2">
-              <i class="btn fa-solid fa-magnifying-glass"></i>
-            </button>
-          </form>
-
-          <div>
-            <a href="#"><i class="btn fa-solid fa-bars"></i></a>
-          </div>
-
-        </div>
-        
-        <div class="hide-sm searchbar">
-          <form id="search1">
-            <input class="wide" type="text" placeholder="Search...">
-            <button type="submit" form="search1">
-              <i class="wide-btn fa-solid fa-magnifying-glass"></i>
-            </button>
-          </form>
         </div>
       </section>
 
