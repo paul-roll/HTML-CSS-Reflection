@@ -16,7 +16,7 @@
                 width: 100%;
                 .nav-top i {    // only icons from the nav-top section
                     padding-bottom: 10px;
-                    font-size: 23px;
+                    font-size: 1.4375em; // 23px
                     @include icon($service);
                 }
                 &:hover {
@@ -68,7 +68,7 @@
             width: 20px;
         }
         i, p {
-            font-size: 19.2px;
+            font-size: 1.2em; // 19.2px
         }
     }
 }
@@ -103,10 +103,10 @@
         text-transform: uppercase;
         line-height: 1em;       // reduce the gap between the two words on nav buttons
         :first-child {
-            font-size: 10px;
+            font-size: 0.625em; // 10px
         }
         :last-child {
-            font-size: 18px;
+            font-size: 1.125em; // 18px
         }
     }
 }

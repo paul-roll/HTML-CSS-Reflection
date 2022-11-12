@@ -23,30 +23,30 @@
     }
 
     h1 {
-        line-height: 80px;
+        line-height: 5em; // 80px
         margin: 0;
         width: 100%;
         @media (min-width: $breakpoint-md) {    // At screen width 992+
-            font-size: 64px;                        // Bump the font size up
+            font-size: 4em; // 64px                 // Bump the font size up
             text-align: left;                       // and align to the left
         }
     }
 
     p {
-        font-size: 20px;
+        font-size: 1.25em; // 20px
         font-weight: 600;
         width: 100%;
         margin: 10px 0;
         @media (min-width: $breakpoint-md) {    // At screen width 992+
-            font-size: 26px;                        // Bump the font size up
+            font-size: 1.625em; // 26px             // Bump the font size up
             text-align: left;                       // and align to the left
         }
     }
 
     .button {
-        @include btn($color-white, map-get($service-colors, "bespoke-software"), 20px, 5px, 20px, true);
+        @include btn($color-white, map-get($service-colors, "bespoke-software"), 1.25em, 5px, 20px, true); // 20px
         margin-top: 30px;
-        line-height: 50px;
+        line-height: 3.125em; // 50px
         @media (min-width: $breakpoint-md) {    // At screen width 992+
             margin-right: auto;                     // Align to the left
         }

@@ -4,7 +4,7 @@
 
 .testimonials {
     @include section-colors("testimonials");
-    line-height: 30px;
+    line-height: 1.875em; // 30px
 
     .flex-container {
         display: flex;
@@ -23,7 +23,7 @@
     }
     
     p {
-        font-size: 16px;
+        font-size: 1em; // 16px
         margin-bottom: 25px;
         &:first-of-type {           // make first <p> bold
             font-weight: bold;
@@ -31,7 +31,7 @@
     }
 
     .fa-star {
-        font-size: 50px;
+        font-size: 3.125em; // 50px
         color: $color-star;
     }
 
@@ -40,11 +40,11 @@
         margin-right: 0;
         font-style: italic;
         p {
-            font-size: 20.8px;
+            font-size: 1.3em; // 20.8px
         }
     }
     cite {
-        font-size: 17.6px;
+        font-size: 1.1em; // 17.6px
         font-weight: bold;
         font-style: normal;
         color: $color-grey;
@@ -52,17 +52,17 @@
 
     .btn {
         &.more {
-            @include btn($color-white, darken($color-tuna, 5%), 20px, 10px, 30px, true);
+            @include btn($color-white, darken($color-tuna, 5%), 1.25em, 10px, 30px, true); // 20px
             border-radius: 6px;     // uses smoother corners than the mixin
         }
         &.google {
-            @include btn($color-white, darken(map-get($service-colors, "it-support"), 5%), 20px, 10px, 30px, true);
+            @include btn($color-white, darken(map-get($service-colors, "it-support"), 5%), 1.25em, 10px, 30px, true); // 20px
             border-radius: 6px;     // uses smoother corners than the mixin
             margin: 4px;
             margin-top: 55px;       // margin between google button and content
         }
         &.trustpilot {
-            @include btn($color-white, darken(map-get($service-colors, "digital-marketing"), 5%), 20px, 10px, 30px, true);
+            @include btn($color-white, darken(map-get($service-colors, "digital-marketing"), 5%), 1.25em, 10px, 30px, true); // 20px
             border-radius: 6px;     // uses smoother corners than the mixin
             margin: 4px;
             margin-top: 20px;       // margin between trustpilot button and google button

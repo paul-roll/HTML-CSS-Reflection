@@ -5,12 +5,12 @@
 
 
 
-@mixin btn($color, $background-color, $font-size: 17px, $padding1: 5px, $padding2: 15px, $hover: false) {
+@mixin btn($color, $background-color, $font-size: 1.0625em, $padding1: 5px, $padding2: 15px, $hover: false) {   // $font-size: 17px
     display: inline-block;
     font-size: $font-size;
     padding: $padding1 $padding2;
     border: 0;
-    line-height: 35px;
+    line-height: 2.1875em; // 35px
     color: $color;
     background-color: $background-color;
     border-radius: 3px;

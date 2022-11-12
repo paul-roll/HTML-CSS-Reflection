@@ -19,7 +19,7 @@
 
 .btn {
     &.phone {   // the phone button on screens below sm
-        font-size: 32px;
+        font-size: 2em; // 32px
         padding: 10px;
         &:hover {
             color: darken($color-tuna, 10%);
@@ -27,21 +27,21 @@
     }
     &.support { // the support button on screens above md
         white-space: nowrap;
-        @include btn($color-white, map-get($service-colors, "it-support"), 18px, 10px, $hover: true);
+        @include btn($color-white, map-get($service-colors, "it-support"), 1.125em, 10px, $hover: true); // 18px
     }
     &.contact { // the contact button on screens above md
         white-space: nowrap;
-        @include btn($color-white, $color-grey, 18px, 10px, $hover: true);
+        @include btn($color-white, $color-grey, 1.125em, 10px, $hover: true); // 18px
     }
     &.fa-magnifying-glass { // the search button on screens above sm
-        @include btn($color-white, $color-grey, 32px, 10px, $hover: true);
+        @include btn($color-white, $color-grey, 2em, 10px, $hover: true); // 32px
         @media (min-width: $breakpoint-sm) AND (max-width: ($breakpoint-md - 1)),   // At screen width 768-991
         (min-width: $breakpoint-lg) {                                               // OR 1260+
             border-radius: 0 3px 3px 0;                                                 // Square off the corners that connect to the search box on these screen sizes
         }
     }
     &.fa-bars { // the menu button
-        @include btn($color-white, $color-tuna, 32px, 10px, $hover: true);
+        @include btn($color-white, $color-tuna, 2em, 10px, $hover: true); // 32px
     }
 }
 
@@ -57,7 +57,7 @@
 
 #search1 button {   // the search button on screens below sm
     position: absolute;
-    font-size: 20px;
+    font-size: 1.25em; // 20px
     top: 10px;
     right: 0;
     width: 44px;

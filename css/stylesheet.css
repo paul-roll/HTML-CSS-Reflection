@@ -270,33 +270,33 @@ html {
   letter-spacing: 0.4px;
 }
 
-/* line 14, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_2.base.scss */
+/* line 15, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_2.base.scss */
 h1 {
-  font-size: 42px;
+  font-size: 2.625em;
   font-weight: 600;
 }
 
 /* line 19, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_2.base.scss */
 h2 {
-  font-size: 34px;
+  font-size: 2.125em;
   font-weight: 600;
 }
 
 /* line 23, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_2.base.scss */
 h3 {
-  font-size: 22px;
+  font-size: 1.375em;
   font-weight: 400;
 }
 
 /* line 27, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_2.base.scss */
 h4 {
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 400;
 }
 
 /* line 31, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_2.base.scss */
 p {
-  font-size: 13px;
+  font-size: 0.8125em;
   font-weight: 400;
 }
 
@@ -365,8 +365,8 @@ li {
 input[type=text] {
   width: 100%;
   padding: 5px 15px;
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 0.875em;
+  line-height: 1.375em;
   border: 1px solid #cecfd3;
   color: #4d4e55;
   box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -451,7 +451,7 @@ input[type=text]:focus:not(.wide-search) {
 
 /* line 21, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
 .btn.phone {
-  font-size: 32px;
+  font-size: 2em;
   padding: 10px;
 }
 
@@ -464,10 +464,10 @@ input[type=text]:focus:not(.wide-search) {
 .btn.support {
   white-space: nowrap;
   display: inline-block;
-  font-size: 18px;
+  font-size: 1.125em;
   padding: 10px 15px;
   border: 0;
-  line-height: 35px;
+  line-height: 2.1875em;
   color: #FFFFFF;
   background-color: #4183D7;
   border-radius: 3px;
@@ -489,10 +489,10 @@ input[type=text]:focus:not(.wide-search) {
 .btn.contact {
   white-space: nowrap;
   display: inline-block;
-  font-size: 18px;
+  font-size: 1.125em;
   padding: 10px 15px;
   border: 0;
-  line-height: 35px;
+  line-height: 2.1875em;
   color: #FFFFFF;
   background-color: #999AA2;
   border-radius: 3px;
@@ -513,10 +513,10 @@ input[type=text]:focus:not(.wide-search) {
 /* line 36, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
 .btn.fa-magnifying-glass {
   display: inline-block;
-  font-size: 32px;
+  font-size: 2em;
   padding: 10px 15px;
   border: 0;
-  line-height: 35px;
+  line-height: 2.1875em;
   color: #FFFFFF;
   background-color: #999AA2;
   border-radius: 3px;
@@ -544,10 +544,10 @@ input[type=text]:focus:not(.wide-search) {
 /* line 43, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
 .btn.fa-bars {
   display: inline-block;
-  font-size: 32px;
+  font-size: 2em;
   padding: 10px 15px;
   border: 0;
-  line-height: 35px;
+  line-height: 2.1875em;
   color: #FFFFFF;
   background-color: #333645;
   border-radius: 3px;
@@ -581,7 +581,7 @@ input[type=text]:focus:not(.wide-search) {
 /* line 58, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
 #search1 button {
   position: absolute;
-  font-size: 20px;
+  font-size: 1.25em;
   top: 10px;
   right: 0;
   width: 44px;
@@ -635,7 +635,7 @@ button {
 /* line 17, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_2.Nav.scss */
 .nav .flex-container .bespoke-software .nav-top i {
   padding-bottom: 10px;
-  font-size: 23px;
+  font-size: 1.4375em;
 }
 
 /* line 30, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_2.mixins.scss */
@@ -679,7 +679,7 @@ button {
 /* line 17, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_2.Nav.scss */
 .nav .flex-container .it-support .nav-top i {
   padding-bottom: 10px;
-  font-size: 23px;
+  font-size: 1.4375em;
 }
 
 /* line 30, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_2.mixins.scss */
@@ -723,7 +723,7 @@ button {
 /* line 17, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_2.Nav.scss */
 .nav .flex-container .digital-marketing .nav-top i {
   padding-bottom: 10px;
-  font-size: 23px;
+  font-size: 1.4375em;
 }
 
 /* line 30, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_2.mixins.scss */
@@ -767,7 +767,7 @@ button {
 /* line 17, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_2.Nav.scss */
 .nav .flex-container .telecoms-services .nav-top i {
   padding-bottom: 10px;
-  font-size: 23px;
+  font-size: 1.4375em;
 }
 
 /* line 30, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_2.mixins.scss */
@@ -811,7 +811,7 @@ button {
 /* line 17, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_2.Nav.scss */
 .nav .flex-container .web-design .nav-top i {
   padding-bottom: 10px;
-  font-size: 23px;
+  font-size: 1.4375em;
 }
 
 /* line 30, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_2.mixins.scss */
@@ -855,7 +855,7 @@ button {
 /* line 17, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_2.Nav.scss */
 .nav .flex-container .cyber-security .nav-top i {
   padding-bottom: 10px;
-  font-size: 23px;
+  font-size: 1.4375em;
 }
 
 /* line 30, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_2.mixins.scss */
@@ -899,7 +899,7 @@ button {
 /* line 17, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_2.Nav.scss */
 .nav .flex-container .developer-course .nav-top i {
   padding-bottom: 10px;
-  font-size: 23px;
+  font-size: 1.4375em;
 }
 
 /* line 30, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_2.mixins.scss */
@@ -973,7 +973,7 @@ button {
 
 /* line 70, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_2.Nav.scss */
 .nav .flex-inner-container i, .nav .flex-inner-container p {
-  font-size: 19.2px;
+  font-size: 1.2em;
 }
 
 /* line 76, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_2.Nav.scss */
@@ -1020,12 +1020,12 @@ button {
 
 /* line 105, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_2.Nav.scss */
 .nav-top ul :first-child {
-  font-size: 10px;
+  font-size: 0.625em;
 }
 
 /* line 108, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_2.Nav.scss */
 .nav-top ul :last-child {
-  font-size: 18px;
+  font-size: 1.125em;
 }
 
 /* line 114, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_2.Nav.scss */
@@ -1064,7 +1064,7 @@ button {
 
 /* line 25, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_3.carousel.scss */
 .carousel h1 {
-  line-height: 80px;
+  line-height: 5em;
   margin: 0;
   width: 100%;
 }
@@ -1072,14 +1072,14 @@ button {
 @media (min-width: 992px) {
   /* line 25, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_3.carousel.scss */
   .carousel h1 {
-    font-size: 64px;
+    font-size: 4em;
     text-align: left;
   }
 }
 
 /* line 35, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_3.carousel.scss */
 .carousel p {
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: 600;
   width: 100%;
   margin: 10px 0;
@@ -1088,7 +1088,7 @@ button {
 @media (min-width: 992px) {
   /* line 35, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_3.carousel.scss */
   .carousel p {
-    font-size: 26px;
+    font-size: 1.625em;
     text-align: left;
   }
 }
@@ -1096,16 +1096,16 @@ button {
 /* line 46, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_3.carousel.scss */
 .carousel .button {
   display: inline-block;
-  font-size: 20px;
+  font-size: 1.25em;
   padding: 5px 20px;
   border: 0;
-  line-height: 35px;
+  line-height: 2.1875em;
   color: #FFFFFF;
   background-color: #67809F;
   border-radius: 3px;
   text-transform: uppercase;
   margin-top: 30px;
-  line-height: 50px;
+  line-height: 3.125em;
 }
 
 /* line 18, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_2.mixins.scss */
@@ -1205,14 +1205,14 @@ button {
 
 /* line 54, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .flex-item.bespoke-software i::before {
-  font-size: 32px;
+  font-size: 2em;
   color: #67809F;
   content: "";
 }
 
 /* line 59, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .flex-item.bespoke-software > i.circle::before {
-  line-height: 62px;
+  line-height: 3.875em;
   display: block;
   border-radius: 50%;
   width: 65px;
@@ -1224,10 +1224,10 @@ button {
 /* line 69, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .flex-item.bespoke-software .btn {
   display: inline-block;
-  font-size: 17px;
+  font-size: 1.0625em;
   padding: 5px 15px;
   border: 0;
-  line-height: 35px;
+  line-height: 2.1875em;
   color: #FFFFFF;
   background-color: #67809F;
   border-radius: 3px;
@@ -1255,10 +1255,10 @@ button {
 /* line 82, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .flex-item.bespoke-software:hover .btn {
   display: inline-block;
-  font-size: 17px;
+  font-size: 1.0625em;
   padding: 5px 15px;
   border: 0;
-  line-height: 35px;
+  line-height: 2.1875em;
   color: #67809F;
   background-color: #FFFFFF;
   border-radius: 3px;
@@ -1277,14 +1277,14 @@ button {
 
 /* line 54, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .flex-item.it-support i::before {
-  font-size: 32px;
+  font-size: 2em;
   color: #4183D7;
   content: "";
 }
 
 /* line 59, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .flex-item.it-support > i.circle::before {
-  line-height: 62px;
+  line-height: 3.875em;
   display: block;
   border-radius: 50%;
   width: 65px;
@@ -1296,10 +1296,10 @@ button {
 /* line 69, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .flex-item.it-support .btn {
   display: inline-block;
-  font-size: 17px;
+  font-size: 1.0625em;
   padding: 5px 15px;
   border: 0;
-  line-height: 35px;
+  line-height: 2.1875em;
   color: #FFFFFF;
   background-color: #4183D7;
   border-radius: 3px;
@@ -1327,10 +1327,10 @@ button {
 /* line 82, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .flex-item.it-support:hover .btn {
   display: inline-block;
-  font-size: 17px;
+  font-size: 1.0625em;
   padding: 5px 15px;
   border: 0;
-  line-height: 35px;
+  line-height: 2.1875em;
   color: #4183D7;
   background-color: #FFFFFF;
   border-radius: 3px;
@@ -1349,14 +1349,14 @@ button {
 
 /* line 54, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .flex-item.digital-marketing i::before {
-  font-size: 32px;
+  font-size: 2em;
   color: #2ECC71;
   content: "";
 }
 
 /* line 59, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .flex-item.digital-marketing > i.circle::before {
-  line-height: 62px;
+  line-height: 3.875em;
   display: block;
   border-radius: 50%;
   width: 65px;
@@ -1368,10 +1368,10 @@ button {
 /* line 69, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .flex-item.digital-marketing .btn {
   display: inline-block;
-  font-size: 17px;
+  font-size: 1.0625em;
   padding: 5px 15px;
   border: 0;
-  line-height: 35px;
+  line-height: 2.1875em;
   color: #FFFFFF;
   background-color: #2ECC71;
   border-radius: 3px;
@@ -1399,10 +1399,10 @@ button {
 /* line 82, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .flex-item.digital-marketing:hover .btn {
   display: inline-block;
-  font-size: 17px;
+  font-size: 1.0625em;
   padding: 5px 15px;
   border: 0;
-  line-height: 35px;
+  line-height: 2.1875em;
   color: #2ECC71;
   background-color: #FFFFFF;
   border-radius: 3px;
@@ -1421,14 +1421,14 @@ button {
 
 /* line 54, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .flex-item.telecoms-services i::before {
-  font-size: 32px;
+  font-size: 2em;
   color: #D64541;
   content: "";
 }
 
 /* line 59, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .flex-item.telecoms-services > i.circle::before {
-  line-height: 62px;
+  line-height: 3.875em;
   display: block;
   border-radius: 50%;
   width: 65px;
@@ -1440,10 +1440,10 @@ button {
 /* line 69, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .flex-item.telecoms-services .btn {
   display: inline-block;
-  font-size: 17px;
+  font-size: 1.0625em;
   padding: 5px 15px;
   border: 0;
-  line-height: 35px;
+  line-height: 2.1875em;
   color: #FFFFFF;
   background-color: #D64541;
   border-radius: 3px;
@@ -1471,10 +1471,10 @@ button {
 /* line 82, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .flex-item.telecoms-services:hover .btn {
   display: inline-block;
-  font-size: 17px;
+  font-size: 1.0625em;
   padding: 5px 15px;
   border: 0;
-  line-height: 35px;
+  line-height: 2.1875em;
   color: #D64541;
   background-color: #FFFFFF;
   border-radius: 3px;
@@ -1493,14 +1493,14 @@ button {
 
 /* line 54, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .flex-item.web-design i::before {
-  font-size: 32px;
+  font-size: 2em;
   color: #926FB1;
   content: "";
 }
 
 /* line 59, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .flex-item.web-design > i.circle::before {
-  line-height: 62px;
+  line-height: 3.875em;
   display: block;
   border-radius: 50%;
   width: 65px;
@@ -1512,10 +1512,10 @@ button {
 /* line 69, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .flex-item.web-design .btn {
   display: inline-block;
-  font-size: 17px;
+  font-size: 1.0625em;
   padding: 5px 15px;
   border: 0;
-  line-height: 35px;
+  line-height: 2.1875em;
   color: #FFFFFF;
   background-color: #926FB1;
   border-radius: 3px;
@@ -1543,10 +1543,10 @@ button {
 /* line 82, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .flex-item.web-design:hover .btn {
   display: inline-block;
-  font-size: 17px;
+  font-size: 1.0625em;
   padding: 5px 15px;
   border: 0;
-  line-height: 35px;
+  line-height: 2.1875em;
   color: #926FB1;
   background-color: #FFFFFF;
   border-radius: 3px;
@@ -1565,14 +1565,14 @@ button {
 
 /* line 54, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .flex-item.cyber-security i::before {
-  font-size: 32px;
+  font-size: 2em;
   color: #F62459;
   content: "";
 }
 
 /* line 59, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .flex-item.cyber-security > i.circle::before {
-  line-height: 62px;
+  line-height: 3.875em;
   display: block;
   border-radius: 50%;
   width: 65px;
@@ -1584,10 +1584,10 @@ button {
 /* line 69, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .flex-item.cyber-security .btn {
   display: inline-block;
-  font-size: 17px;
+  font-size: 1.0625em;
   padding: 5px 15px;
   border: 0;
-  line-height: 35px;
+  line-height: 2.1875em;
   color: #FFFFFF;
   background-color: #F62459;
   border-radius: 3px;
@@ -1615,10 +1615,10 @@ button {
 /* line 82, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .flex-item.cyber-security:hover .btn {
   display: inline-block;
-  font-size: 17px;
+  font-size: 1.0625em;
   padding: 5px 15px;
   border: 0;
-  line-height: 35px;
+  line-height: 2.1875em;
   color: #F62459;
   background-color: #FFFFFF;
   border-radius: 3px;
@@ -1637,14 +1637,14 @@ button {
 
 /* line 54, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .flex-item.developer-course i::before {
-  font-size: 32px;
+  font-size: 2em;
   color: #CE4125;
   content: "";
 }
 
 /* line 59, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .flex-item.developer-course > i.circle::before {
-  line-height: 62px;
+  line-height: 3.875em;
   display: block;
   border-radius: 50%;
   width: 65px;
@@ -1656,10 +1656,10 @@ button {
 /* line 69, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .flex-item.developer-course .btn {
   display: inline-block;
-  font-size: 17px;
+  font-size: 1.0625em;
   padding: 5px 15px;
   border: 0;
-  line-height: 35px;
+  line-height: 2.1875em;
   color: #FFFFFF;
   background-color: #CE4125;
   border-radius: 3px;
@@ -1687,10 +1687,10 @@ button {
 /* line 82, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services .flex-item.developer-course:hover .btn {
   display: inline-block;
-  font-size: 17px;
+  font-size: 1.0625em;
   padding: 5px 15px;
   border: 0;
-  line-height: 35px;
+  line-height: 2.1875em;
   color: #CE4125;
   background-color: #FFFFFF;
   border-radius: 3px;
@@ -1731,7 +1731,7 @@ button {
 .testimonials {
   background-color: #333645;
   color: #FFFFFF;
-  line-height: 30px;
+  line-height: 1.875em;
 }
 
 /* line 9, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_5.testimonials.scss */
@@ -1760,7 +1760,7 @@ button {
 
 /* line 25, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_5.testimonials.scss */
 .testimonials p {
-  font-size: 16px;
+  font-size: 1em;
   margin-bottom: 25px;
 }
 
@@ -1771,7 +1771,7 @@ button {
 
 /* line 33, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_5.testimonials.scss */
 .testimonials .fa-star {
-  font-size: 50px;
+  font-size: 3.125em;
   color: #FFA500;
 }
 
@@ -1784,12 +1784,12 @@ button {
 
 /* line 42, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_5.testimonials.scss */
 .testimonials blockquote p {
-  font-size: 20.8px;
+  font-size: 1.3em;
 }
 
 /* line 46, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_5.testimonials.scss */
 .testimonials cite {
-  font-size: 17.6px;
+  font-size: 1.1em;
   font-weight: bold;
   font-style: normal;
   color: #999AA2;
@@ -1798,10 +1798,10 @@ button {
 /* line 54, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_5.testimonials.scss */
 .testimonials .btn.more {
   display: inline-block;
-  font-size: 20px;
+  font-size: 1.25em;
   padding: 10px 30px;
   border: 0;
-  line-height: 35px;
+  line-height: 2.1875em;
   color: #FFFFFF;
   background-color: #282b36;
   border-radius: 3px;
@@ -1823,10 +1823,10 @@ button {
 /* line 58, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_5.testimonials.scss */
 .testimonials .btn.google {
   display: inline-block;
-  font-size: 20px;
+  font-size: 1.25em;
   padding: 10px 30px;
   border: 0;
-  line-height: 35px;
+  line-height: 2.1875em;
   color: #FFFFFF;
   background-color: #2c75d2;
   border-radius: 3px;
@@ -1850,10 +1850,10 @@ button {
 /* line 64, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_5.testimonials.scss */
 .testimonials .btn.trustpilot {
   display: inline-block;
-  font-size: 20px;
+  font-size: 1.25em;
   padding: 10px 30px;
   border: 0;
-  line-height: 35px;
+  line-height: 2.1875em;
   color: #FFFFFF;
   background-color: #29b765;
   border-radius: 3px;
@@ -1931,7 +1931,7 @@ button {
 
 /* line 28, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_6.news.scss */
 .news ul li {
-  font-size: 14px;
+  font-size: 0.875em;
 }
 
 /* line 30, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_6.news.scss */
@@ -1984,7 +1984,7 @@ button {
   top: 10px;
   right: 0;
   padding: 2px 10px;
-  font-size: 12px;
+  font-size: 0.75em;
   font-weight: 600;
   color: #FFFFFF;
 }
@@ -1996,7 +1996,7 @@ button {
 
 /* line 79, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_6.news.scss */
 .news .news-item h4 {
-  min-height: 48px;
+  min-height: 3em;
 }
 
 /* line 83, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_6.news.scss */
@@ -2007,10 +2007,10 @@ button {
 /* line 89, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_6.news.scss */
 .news .bespoke-software .button {
   display: inline-block;
-  font-size: 17px;
+  font-size: 1.0625em;
   padding: 5px 15px;
   border: 0;
-  line-height: 35px;
+  line-height: 2.1875em;
   color: #FFFFFF;
   background-color: #67809F;
   border-radius: 3px;
@@ -2035,10 +2035,10 @@ button {
 /* line 89, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_6.news.scss */
 .news .it-support .button {
   display: inline-block;
-  font-size: 17px;
+  font-size: 1.0625em;
   padding: 5px 15px;
   border: 0;
-  line-height: 35px;
+  line-height: 2.1875em;
   color: #FFFFFF;
   background-color: #4183D7;
   border-radius: 3px;
@@ -2063,10 +2063,10 @@ button {
 /* line 89, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_6.news.scss */
 .news .digital-marketing .button {
   display: inline-block;
-  font-size: 17px;
+  font-size: 1.0625em;
   padding: 5px 15px;
   border: 0;
-  line-height: 35px;
+  line-height: 2.1875em;
   color: #FFFFFF;
   background-color: #2ECC71;
   border-radius: 3px;
@@ -2091,10 +2091,10 @@ button {
 /* line 89, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_6.news.scss */
 .news .telecoms-services .button {
   display: inline-block;
-  font-size: 17px;
+  font-size: 1.0625em;
   padding: 5px 15px;
   border: 0;
-  line-height: 35px;
+  line-height: 2.1875em;
   color: #FFFFFF;
   background-color: #D64541;
   border-radius: 3px;
@@ -2119,10 +2119,10 @@ button {
 /* line 89, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_6.news.scss */
 .news .web-design .button {
   display: inline-block;
-  font-size: 17px;
+  font-size: 1.0625em;
   padding: 5px 15px;
   border: 0;
-  line-height: 35px;
+  line-height: 2.1875em;
   color: #FFFFFF;
   background-color: #926FB1;
   border-radius: 3px;
@@ -2147,10 +2147,10 @@ button {
 /* line 89, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_6.news.scss */
 .news .cyber-security .button {
   display: inline-block;
-  font-size: 17px;
+  font-size: 1.0625em;
   padding: 5px 15px;
   border: 0;
-  line-height: 35px;
+  line-height: 2.1875em;
   color: #FFFFFF;
   background-color: #F62459;
   border-radius: 3px;
@@ -2175,10 +2175,10 @@ button {
 /* line 89, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_6.news.scss */
 .news .developer-course .button {
   display: inline-block;
-  font-size: 17px;
+  font-size: 1.0625em;
   padding: 5px 15px;
   border: 0;
-  line-height: 35px;
+  line-height: 2.1875em;
   color: #FFFFFF;
   background-color: #CE4125;
   border-radius: 3px;
@@ -2261,7 +2261,7 @@ button {
 
 /* line 150, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_6.news.scss */
 .news-footer .flex-footer-container .box h4 {
-  font-size: 18px;
+  font-size: 1.125em;
 }
 
 /* line 153, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_6.news.scss */
@@ -2279,7 +2279,7 @@ button {
 
 /* line 8, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_7.email.scss */
 .email label {
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 600;
 }
 
@@ -2347,10 +2347,10 @@ button {
 /* line 56, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_7.email.scss */
 .email #subscribe {
   display: inline-block;
-  font-size: 17px;
+  font-size: 1.0625em;
   padding: 5px 15px;
   border: 0;
-  line-height: 35px;
+  line-height: 2.1875em;
   color: #FFFFFF;
   background-color: #333645;
   border-radius: 3px;
@@ -2389,7 +2389,7 @@ button {
 
 /* line 11, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_8.footer.scss */
 .footer li {
-  font-size: 13px;
+  font-size: 0.8125em;
 }
 
 /* line 15, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_8.footer.scss */
