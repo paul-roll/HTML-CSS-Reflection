@@ -15,6 +15,9 @@
     background-color: $background-color;
     border-radius: 3px;
     text-transform: uppercase;
+    &:active {
+        box-shadow: inset 2px 4px 4px 0px rgba(black, 0.1);
+    }
     @if $hover {
         &:hover, &:focus {
             background-color: darken($background-color, 10%);
