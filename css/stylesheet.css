@@ -357,6 +357,11 @@ li {
 }
 
 /* line 73, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_2.base.scss */
+:focus {
+  outline: 1px dotted;
+}
+
+/* line 77, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_2.base.scss */
 input[type=text] {
   width: 100%;
   padding: 5px 15px;
@@ -367,64 +372,59 @@ input[type=text] {
   box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
-/* line 81, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_2.base.scss */
+/* line 85, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_2.base.scss */
 input[type=text]:focus {
   outline: none;
 }
 
-/* line 83, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_2.base.scss */
+/* line 87, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_2.base.scss */
 input[type=text]:focus:not(.wide-search) {
   border: 1px solid #5BC0DE;
   box-shadow: 0 0 10px 1px rgba(91, 192, 222, 0.75);
 }
 
-/* line 90, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_2.base.scss */
-:focus {
-  outline-style: dotted;
-}
-
-/* line 94, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_2.base.scss */
+/* line 96, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_2.base.scss */
 .hidden {
   display: none;
 }
 
 @media (min-width: 768px) {
-  /* line 98, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_2.base.scss */
+  /* line 100, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_2.base.scss */
   .hide-sm {
     display: none;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 103, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_2.base.scss */
+  /* line 105, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_2.base.scss */
   .show-sm {
     display: inherit;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 109, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_2.base.scss */
+  /* line 111, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_2.base.scss */
   .hide-md {
     display: none;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 114, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_2.base.scss */
+  /* line 116, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_2.base.scss */
   .show-md {
     display: inherit;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 120, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_2.base.scss */
+  /* line 122, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_2.base.scss */
   .hide-lg {
     display: none;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 125, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_2.base.scss */
+  /* line 127, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/2.base/_2.base.scss */
   .show-lg {
     display: inherit;
   }

@@ -40,7 +40,7 @@
                 accent-color: $color-tuna;      // color when checked
             }
             &:focus {
-                outline: none;
+                outline: none;  // remove dotted outline from checkbox
             }
         }
         label {
