@@ -1040,7 +1040,6 @@ button {
 .carousel {
   background-color: #333645;
   color: #FFFFFF;
-  height: 550px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel.jpg);
   background-size: cover;
   text-align: center;
@@ -1053,8 +1052,9 @@ button {
   }
 }
 
-/* line 17, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_3.carousel.scss */
+/* line 16, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_3.carousel.scss */
 .carousel .flex-container {
+  min-height: 550px;
   height: 100%;
   display: flex;
   flex-direction: column;
