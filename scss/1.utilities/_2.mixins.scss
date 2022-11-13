@@ -26,14 +26,15 @@
     }
 }
 
-@mixin icon($service) {
+@mixin icon($service, $font-size) {     // used for the 7 different icons on nav and services
     &::before {
+        font-size: $font-size;
         color: map-get($service-colors, $service);
-        content: map-get($service-icons, $service);
+        content: map-get($service-icons, $service);     // mimic the way fontawesome classes inject codes into the ::before content
     }
 }
 
-@mixin h1-viewall() {
+@mixin h1-viewall() {   // used in services and news
     h1 {
         margin: 0;
         @media (min-width: $breakpoint-sm) {        // At screen width 768+
@@ -48,7 +49,7 @@
     }
 }
 
-@mixin section-colors($section) {
+@mixin section-colors($section) {   // used in every section
     background-color: map-get($background-colors, $section);
     color: map-get($section-colors, $section);
 }

@@ -16,8 +16,7 @@
                 width: 100%;
                 .nav-top i {    // only icons from the nav-top section
                     padding-bottom: 10px;
-                    font-size: 1.4375em; // 23px
-                    @include icon($service);
+                    @include icon($service, 1.4375em); // 23px
                 }
                 &:hover {
                     background: $color;
