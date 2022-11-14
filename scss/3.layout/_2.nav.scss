@@ -3,7 +3,7 @@
 // ==========================================================================
 
 .nav {
-    @include section-colors("nav");
+    @include section("nav");
 
     position: relative;
 

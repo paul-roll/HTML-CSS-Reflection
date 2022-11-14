@@ -4,7 +4,7 @@
 
 
 .services {
-    @include section-colors("services");
+    @include section("services");
 
     @include h1-viewall();
 

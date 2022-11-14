@@ -3,7 +3,7 @@
 // ==========================================================================
 
 .carousel {
-    @include section-colors("carousel");
+    @include section("carousel");
 
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/carousel.jpg);              // Apply a 50% darken to the whole background
     @media (min-width: $breakpoint-md) {                                                                            // At screen width 992+

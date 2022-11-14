@@ -3,7 +3,7 @@
 // ==========================================================================
 
 .news {
-    @include section-colors("news");
+    @include section("news");
 
     @include h1-viewall();
 

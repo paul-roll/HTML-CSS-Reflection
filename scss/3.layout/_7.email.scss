@@ -3,7 +3,7 @@
 // ==========================================================================
 
 .email {
-    @include section-colors("email");
+    @include section("email");
 
     label {
         font-size: 1em; // 16px

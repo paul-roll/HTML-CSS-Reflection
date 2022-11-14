@@ -49,7 +49,8 @@
     }
 }
 
-@mixin section-colors($section) {   // used in every section
+@mixin section($section) {   // used in every section
+    overflow: hidden;
     background-color: map-get($background-colors, $section);
     color: map-get($section-colors, $section);
 }
