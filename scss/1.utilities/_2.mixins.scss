@@ -50,7 +50,9 @@
 }
 
 @mixin section($section) {   // used in every section
-    // overflow: hidden;
+    @if ($section != 'nav') {
+        overflow: hidden;
+    }
     background-color: map-get($background-colors, $section);
     color: map-get($section-colors, $section);
 }

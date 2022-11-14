@@ -432,6 +432,7 @@ input[type=text]:focus:not(.wide-search) {
 
 /* line 6, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_1.header.scss */
 .header {
+  overflow: hidden;
   background-color: #FFFFFF;
   color: #333645;
 }
@@ -1038,6 +1039,7 @@ button {
 
 /* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_3.carousel.scss */
 .carousel {
+  overflow: hidden;
   background-color: #333645;
   color: #FFFFFF;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel.jpg);
@@ -1128,6 +1130,7 @@ button {
 
 /* line 6, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_4.services.scss */
 .services {
+  overflow: hidden;
   background-color: #FFFFFF;
   color: #333645;
 }
@@ -1729,6 +1732,7 @@ button {
 
 /* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_5.testimonials.scss */
 .testimonials {
+  overflow: hidden;
   background-color: #333645;
   color: #FFFFFF;
   line-height: 1.875em;
@@ -1877,6 +1881,7 @@ button {
 
 /* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_6.news.scss */
 .news {
+  overflow: hidden;
   background-color: #FFFFFF;
   color: #333645;
 }
@@ -2273,6 +2278,7 @@ button {
 
 /* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_7.email.scss */
 .email {
+  overflow: hidden;
   background-color: #DDDDDD;
   color: #333645;
 }
@@ -2378,6 +2384,7 @@ button {
 
 /* line 5, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/3.layout/_8.footer.scss */
 .footer {
+  overflow: hidden;
   background-color: #333645;
   color: #FFFFFF;
 }
