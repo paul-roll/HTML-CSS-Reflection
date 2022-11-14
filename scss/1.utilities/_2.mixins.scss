@@ -43,6 +43,7 @@
     }
     .viewall {
         text-align: center;
+        font-weight: bold;
         @media (min-width: $breakpoint-sm) {        // At screen width 768+
             text-align: right;                          // Align the view-all button to the right
         }

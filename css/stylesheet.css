@@ -1150,6 +1150,7 @@ button {
 /* line 44, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_2.mixins.scss */
 .services .viewall {
   text-align: center;
+  font-weight: bold;
 }
 
 @media (min-width: 768px) {
@@ -1901,6 +1902,7 @@ button {
 /* line 44, ../../Users/paulr/Desktop/Netmatters/HTML & CSS Reflection/scss/1.utilities/_2.mixins.scss */
 .news .viewall {
   text-align: center;
+  font-weight: bold;
 }
 
 @media (min-width: 768px) {
