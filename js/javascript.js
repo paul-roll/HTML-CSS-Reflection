@@ -1,1 +1,1 @@
-const header = document.getElementsByTagName("header")[0];
+// const header = document.getElementsByTagName("header")[0];
