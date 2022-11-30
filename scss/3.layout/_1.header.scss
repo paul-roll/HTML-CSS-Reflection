@@ -2,6 +2,10 @@
 // Header Layout
 // ==========================================================================
 
+.sticky {
+    z-index: 1;
+    position: sticky;
+}
 
 .header {   //using a class instead so that the header may include nav for sticky header
     @include section("header");
