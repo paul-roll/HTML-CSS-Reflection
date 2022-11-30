@@ -123,21 +123,22 @@
             }
         }
     }
+    
     $arrow-width: 100px;                                    // define width of the arrow
+    $box-width: 240px;                                      // define width of the box
     .arrow {
         position: absolute;
         height: 0;
         left: calc(50% - (#{$arrow-width} / 2));            // center: place it in the middle of the relative then offset by half the width of itself
         width: $arrow-width;
         bottom: calc(100% + 15px);                          // place it on the top edge of the relative, plus an extra 15px
-        border-left: $arrow-width / 2 solid transparent;
-        border-right: $arrow-width / 2 solid transparent;
-        border-top: $arrow-width / 2 solid;
+        border-left: ($arrow-width / 2) solid transparent;
+        border-right: ($arrow-width / 2) solid transparent;
+        border-top: ($arrow-width / 2) solid;
     }
     .box {
         position: absolute;
-        bottom: calc(100% + (#{$arrow-width} / 2) + 15px);  // place it on the top edge of the relative, plus half the width of arrow plus an extra 15px
-        $box-width: 240px;                                  // define width of the box
+        bottom: calc(100% + (#{$arrow-width} / 2) + 15px);  // place it on the top edge of the relative, plus half the width of arrow plus an extra 15px          
         width: $box-width;
         left: calc(50% - (#{$box-width} / 2));              // center: place it in the middle of the relative then offset by half the width of itself
         background-color: $color-tuna;

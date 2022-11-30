@@ -47,6 +47,9 @@
 
 .searchbar {    // both header search bars
     position: relative;     // used to position the button on narrow screen searchbar
+    &#search2 {
+        display: flex;
+    }
     input.wide-search {     // style for the narrow screen search bar
         margin-top: 10px;
         padding-top: 10px;
