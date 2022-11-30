@@ -25,3 +25,15 @@ window.onscroll = function() {
     }
     i = $(this).scrollTop();
 };
+
+
+//
+
+$(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        items: 1,
+        dots: true
+    })
+
+  });
