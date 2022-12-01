@@ -65,9 +65,26 @@
 .carousel {
     @include section("carousel");
 
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/carousel.jpg);              // Apply a 50% darken to the whole background
-    @media (min-width: $breakpoint-md) {                                                                            // At screen width 992+
-        background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)), url(../img/carousel.jpg);        // Fade in black from black on the left side
+    &.netmatters {
+        @include carouselbg("netmatters");
+    }
+    &.bespoke-software {
+        @include carouselbg("bespoke-software");
+    }
+    &.it-support {
+        @include carouselbg("it-support");
+    }
+    &.digital-marketing {
+        @include carouselbg("digital-marketing");
+    }
+    &.telecoms-services {
+        @include carouselbg("telecoms-services");
+    }
+    &.web-design {
+        @include carouselbg("web-design");
+    }
+    &.cyber-security {
+        @include carouselbg("cyber-security");
     }
 
     background-size: cover;

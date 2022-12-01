@@ -1368,19 +1368,95 @@ button {
   overflow: hidden;
   background-color: #333645;
   color: #FFFFFF;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel.jpg);
   background-size: cover;
   text-align: center;
 }
 
+/* line 68, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+.carousel.netmatters {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/carousel/netmatters.jpg");
+}
+
 @media (min-width: 992px) {
-  /* line 65, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
-  .carousel {
-    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url(../img/carousel.jpg);
+  /* line 68, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+  .carousel.netmatters {
+    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url("../img/carousel/netmatters.jpg");
   }
 }
 
-/* line 76, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+/* line 71, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+.carousel.bespoke-software {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/carousel/bespoke-software.jpg");
+}
+
+@media (min-width: 992px) {
+  /* line 71, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+  .carousel.bespoke-software {
+    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url("../img/carousel/bespoke-software.jpg");
+  }
+}
+
+/* line 74, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+.carousel.it-support {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/carousel/it-support.jpg");
+}
+
+@media (min-width: 992px) {
+  /* line 74, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+  .carousel.it-support {
+    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url("../img/carousel/it-support.jpg");
+  }
+}
+
+/* line 77, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+.carousel.digital-marketing {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/carousel/digital-marketing.jpg");
+}
+
+@media (min-width: 992px) {
+  /* line 77, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+  .carousel.digital-marketing {
+    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url("../img/carousel/digital-marketing.jpg");
+  }
+}
+
+/* line 80, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+.carousel.telecoms-services {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/carousel/telecoms-services.jpg");
+}
+
+@media (min-width: 992px) {
+  /* line 80, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+  .carousel.telecoms-services {
+    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url("../img/carousel/telecoms-services.jpg");
+  }
+}
+
+/* line 83, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+.carousel.web-design {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/carousel/web-design.jpg");
+}
+
+@media (min-width: 992px) {
+  /* line 83, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+  .carousel.web-design {
+    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url("../img/carousel/web-design.jpg");
+  }
+}
+
+/* line 86, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+.carousel.cyber-security {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/carousel/cyber-security.jpg");
+}
+
+@media (min-width: 992px) {
+  /* line 86, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+  .carousel.cyber-security {
+    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url("../img/carousel/cyber-security.jpg");
+  }
+}
+
+/* line 93, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
 .carousel .flex-container {
   min-height: 550px;
   height: 100%;
@@ -1390,7 +1466,7 @@ button {
   align-items: center;
 }
 
-/* line 85, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+/* line 102, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
 .carousel h1 {
   line-height: 1.25em;
   margin: 0;
@@ -1398,14 +1474,14 @@ button {
 }
 
 @media (min-width: 992px) {
-  /* line 85, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+  /* line 102, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
   .carousel h1 {
     font-size: 4em;
     text-align: left;
   }
 }
 
-/* line 95, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+/* line 112, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
 .carousel p {
   font-size: 1.25em;
   font-weight: 600;
@@ -1414,14 +1490,14 @@ button {
 }
 
 @media (min-width: 992px) {
-  /* line 95, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+  /* line 112, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
   .carousel p {
     font-size: 1.625em;
     text-align: left;
   }
 }
 
-/* line 106, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+/* line 123, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
 .carousel .btn {
   display: inline-block;
   font-size: 1.25em;
@@ -1448,7 +1524,7 @@ button {
 }
 
 @media (min-width: 992px) {
-  /* line 106, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+  /* line 123, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
   .carousel .btn {
     margin-right: auto;
   }

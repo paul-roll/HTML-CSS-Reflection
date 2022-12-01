@@ -57,3 +57,12 @@
     background-color: map-get($background-colors, $section);
     color: map-get($section-colors, $section);
 }
+
+@mixin carouselbg($image) {
+
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/carousel/#{$image}.jpg");              // Apply a 50% darken to the whole background
+    @media (min-width: $breakpoint-md) {                                                                            // At screen width 992+
+        background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)), url("../img/carousel/#{$image}.jpg");        // Fade in black from black on the left side
+    }
+
+}
