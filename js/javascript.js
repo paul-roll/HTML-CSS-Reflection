@@ -27,14 +27,16 @@ window.onscroll = function() {
 };
 
 
-//
-
 $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
         loop: true,
         items: 1,
         dots: true,
         autoplay: true
-    })
+    });
+});
 
-  });
+
+$(".hamburger").on("click", function() {
+    $(".hamburger").toggleClass("is-active");
+});
