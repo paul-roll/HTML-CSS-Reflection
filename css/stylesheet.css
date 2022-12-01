@@ -242,115 +242,101 @@
 
 /* line 1, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/hamburger.css */
 .hamburger {
-  padding: 15px 15px;
   display: inline-block;
-  cursor: pointer;
-  transition-property: opacity, filter;
-  transition-duration: 0.15s;
-  transition-timing-function: linear;
-  font: inherit;
-  color: inherit;
-  text-transform: none;
-  background-color: transparent;
+  font-size: 2em;
+  padding: 10px 15px;
   border: 0;
-  margin: 0;
-  overflow: visible;
+  line-height: 35px;
+  color: #FFFFFF;
+  background-color: #333645;
+  border-radius: 3px;
+  text-transform: uppercase;
 }
 
-/* line 15, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/hamburger.css */
-.hamburger:hover {
-  opacity: 0.7;
+/* line 18, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/_2.mixins.scss */
+.hamburger:active {
+  box-shadow: inset 2px 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
-/* line 17, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/hamburger.css */
-.hamburger.is-active:hover {
-  opacity: 0.7;
+/* line 22, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/_2.mixins.scss */
+.hamburger:hover, .hamburger:focus {
+  background-color: #1d1f28;
+  text-decoration: none;
 }
 
-/* line 19, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/hamburger.css */
-.hamburger.is-active .hamburger-inner,
-.hamburger.is-active .hamburger-inner::before,
-.hamburger.is-active .hamburger-inner::after {
-  background-color: #000;
-}
-
-/* line 24, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/hamburger.css */
+/* line 5, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/hamburger.css */
 .hamburger-box {
-  width: 40px;
-  height: 24px;
+  width: 33px;
+  height: 19px;
   display: inline-block;
   position: relative;
 }
 
-/* line 30, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/hamburger.css */
+/* line 12, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/hamburger.css */
 .hamburger-inner {
   display: block;
   top: 50%;
-  margin-top: -2px;
+  margin-top: -4px;
 }
 
-/* line 34, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/hamburger.css */
+/* line 18, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/hamburger.css */
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-  width: 40px;
+  width: 33px;
   height: 4px;
-  background-color: #000;
-  border-radius: 4px;
+  background-color: white;
   position: absolute;
-  transition-property: transform;
-  transition-duration: 0.15s;
-  transition-timing-function: ease;
 }
 
-/* line 43, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/hamburger.css */
+/* line 24, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/hamburger.css */
 .hamburger-inner::before, .hamburger-inner::after {
   content: "";
   display: block;
 }
 
-/* line 46, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/hamburger.css */
+/* line 28, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/hamburger.css */
 .hamburger-inner::before {
   top: -10px;
 }
 
-/* line 48, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/hamburger.css */
+/* line 31, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/hamburger.css */
 .hamburger-inner::after {
   bottom: -10px;
 }
 
 /*
-     * Spin
-     */
-/* line 54, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/hamburger.css */
+    * Spin
+*/
+/* line 38, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/hamburger.css */
 .hamburger--spin .hamburger-inner {
   transition-duration: 0.22s;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-/* line 57, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/hamburger.css */
+/* line 42, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/hamburger.css */
 .hamburger--spin .hamburger-inner::before {
   transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
 }
 
-/* line 59, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/hamburger.css */
+/* line 45, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/hamburger.css */
 .hamburger--spin .hamburger-inner::after {
   transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-/* line 62, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/hamburger.css */
+/* line 49, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/hamburger.css */
 .hamburger--spin.is-active .hamburger-inner {
   transform: rotate(225deg);
   transition-delay: 0.12s;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-/* line 66, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/hamburger.css */
+/* line 54, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/hamburger.css */
 .hamburger--spin.is-active .hamburger-inner::before {
   top: 0;
   opacity: 0;
   transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
 }
 
-/* line 70, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/hamburger.css */
+/* line 59, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/hamburger.css */
 .hamburger--spin.is-active .hamburger-inner::after {
   bottom: 0;
   transform: rotate(-90deg);
