@@ -39,4 +39,12 @@ $(document).ready(function(){
 
 $(".hamburger").on("click", function() {
     $(".hamburger").toggleClass("is-active");
+    if ($(".hamburger").hasClass("is-active")) {
+        $("body").css("margin-left", "-=200");
+        $(".sidebar").removeClass("hidden");
+    } else {
+        $("body").css("margin-left", "+=200");
+        $(".sidebar").addClass("hidden");
+    }
 });
+
