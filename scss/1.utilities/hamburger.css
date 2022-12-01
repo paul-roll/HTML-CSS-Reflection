@@ -3,6 +3,7 @@
 }
 
 .hamburger-box {
+    pointer-events: none;
     width: 33px;
     height: 19px;
     display: inline-block;

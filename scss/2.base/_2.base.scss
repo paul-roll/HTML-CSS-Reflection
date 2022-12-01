@@ -11,6 +11,11 @@ html {
     // font-size: 1em; // 16px
 }
 
+body {
+    &.hover-scroll-lock, &.sidebar-scroll-lock {
+        overflow-y: hidden;
+    }
+}
 
 h1 {
     font-size: 2.625em; // 42px
