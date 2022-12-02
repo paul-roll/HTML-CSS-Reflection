@@ -17,6 +17,21 @@ body {
     }
 }
 
+.tint {
+    &::before {
+        content: "";
+        background: black;
+        opacity: 0.4;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: 3;
+        cursor: pointer;
+    }
+}
+
 h1 {
     font-size: 2.625em; // 42px
     font-weight: 600;
