@@ -1,0 +1,64 @@
+// ==========================================================================
+// Cookies Layout
+// ==========================================================================
+
+.cookies {
+    &.popup {
+        
+        border-radius: 4px;
+
+        width: calc(100% - 60px);
+        z-index: 10;    /* Whatever needed to force to front (1 might do) */
+
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+
+       
+        h3, p, hr {
+            margin: 0;
+        }
+        h3{
+            padding: 15px 20px;
+            font-size: 1.625em;
+            color: $color-tuna;
+        }
+        p {
+            padding: 20px;
+            margin-bottom: 20px;
+            font-size: 1em;
+            color: lighten($color-tuna, 20%);
+        }
+        hr {
+            border: none;
+            border-bottom: 1px solid lighten($color-grey, 30%);
+        }
+        a {
+            color: $color-tuna;
+        }
+
+        .buttons {
+            text-align: center;
+            margin: 10px 0;
+        }
+        .btn {
+            &.settings {
+                @include btn(white, $color-grey, $font-size: 1.0625em, $padding1: 5px, $padding2: 15px, $hover: true);
+            }
+            &.accept {
+                @include btn(white, $color-wisteria, $font-size: 1.0625em, $padding1: 5px, $padding2: 15px, $hover: true);
+            }
+            margin: 10px;
+            width: calc(100% - 40px);
+            @media(min-width: $breakpoint-sm) {
+                width: calc(50% - 30px);
+            }
+        }
+
+        @media(min-width: $breakpoint-sm) {
+            width: 600px;
+        }
+    }
+}

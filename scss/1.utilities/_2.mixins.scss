@@ -6,6 +6,7 @@
 
 
 @mixin btn($color, $background-color, $font-size: 1.0625em, $padding1: 5px, $padding2: 15px, $hover: false) {   // $font-size: 17px
+    cursor: pointer;
     display: inline-block;
     font-size: $font-size;
     padding: $padding1 $padding2;

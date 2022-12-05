@@ -12,9 +12,13 @@ html {
 }
 
 body {
-    &.hover-scroll-lock, &.sidebar-scroll-lock {
+    &.hover-scroll-lock, &.scroll-lock {
         overflow-y: hidden;
     }
+}
+
+%tinted {
+
 }
 
 #page {
@@ -23,17 +27,21 @@ body {
         opacity: 0;
         transition: opacity 0.5s;
     }
+    &.lock::before {
+        background: black;
+        opacity: 0.4;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: 3;
+    }
     &.tint::before {
-            background: black;
-            opacity: 0.4;
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 100vh;
-            width: 100vw;
-            z-index: 3;
-            cursor: pointer;
-        }
+        @extend .lock::before;
+        cursor: pointer;
+    }
+
 }
 
 
