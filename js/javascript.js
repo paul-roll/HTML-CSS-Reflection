@@ -175,7 +175,7 @@ const cookies = [
     ["LinkedIn Corporation", "linkedin.com", ["", "https://www.linkedin.com/legal/user-agreement", "https://www.linkedin.com/legal/privacy-policy"]],
     ["Facebook Inc.", "facebook.com, facebook.net", ["Facebook is an online social networking service that enables its users to connect with friends and family as well as make new connections.", "https://www.facebook.com/legal/terms/update", "https://www.facebook.com/about/privacy/update"]],
     ["Google Inc.", "google.com, googletagmanager.com, google-analytics.com", ["", "https://policies.google.com/terms?fg=1", "https://policies.google.com/privacy?fg=1"]],
-    ["Lead Forensics", "https://www.leadforensics.com", ["Netmatters use a paid for software on our website which allows us access to information on the company you work for. This is done through the business' registered IP address and only allows us access to the information such as contact details, year founded, SIC codes and other information about the business. It also records the behaviour of the user from the company on the website, such as page views, time on the site, "goals" completed and other similar metrics. We use this data to help us improve lead generation through the website as this tool allows us access to see which businesses have visited the website but have not converted by calling, emailing or sending a contact form.", "https://www.leadforensics.com/terms-of-service", "https://www.leadforensics.com/privacy-policy"]],
+    ["Lead Forensics", "https://www.leadforensics.com", [`Netmatters use a paid for software on our website which allows us access to information on the company you work for. This is done through the business' registered IP address and only allows us access to the information such as contact details, year founded, SIC codes and other information about the business. It also records the behaviour of the user from the company on the website, such as page views, time on the site, "goals" completed and other similar metrics. We use this data to help us improve lead generation through the website as this tool allows us access to see which businesses have visited the website but have not converted by calling, emailing or sending a contact form.`, "https://www.leadforensics.com/terms-of-service", "https://www.leadforensics.com/privacy-policy"]],
     ["3CX", "https://netmatters.co.uk", ["Personal data to be processed and for the use of cookies in order to engage in a chat processed by Netmatters, for the purpose of Chat/Support for the time of 30 day(s) as per the GDPR.", "", ""]]
 ];
 
@@ -184,7 +184,7 @@ function populateCookiesTable() {
 
     for (let i = 0; i < cookies.length; i++) {
         html += `
-            <tr>
+            <tr class="">
                 <td>${cookies[i][0]}</td>
                 <td>${cookies[i][1]}</td>
                 <td>
