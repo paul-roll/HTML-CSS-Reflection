@@ -130,14 +130,15 @@
                 margin: 0;
             }
             th, td {
+                padding: 15px;
                 border: 1px solid white;
             }
             th {
+                text-align: left;
                 color: $color-white;
                 background-color: $color-grey;
             }
             td {
-                padding: 15px;
                 background-color: lighten($color-grey, 20%);
             }
         }

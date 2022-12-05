@@ -3610,23 +3610,24 @@ button {
 
 /* line 132, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
 .cookies.settings table th, .cookies.settings table td {
+  padding: 15px;
   border: 1px solid white;
 }
 
-/* line 135, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+/* line 136, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
 .cookies.settings table th {
+  text-align: left;
   color: #FFFFFF;
   background-color: #999AA2;
 }
 
-/* line 139, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+/* line 141, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
 .cookies.settings table td {
-  padding: 15px;
   background-color: #cecfd3;
 }
 
 @media (min-width: 992px) {
-  /* line 146, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+  /* line 147, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
   .cookies.settings .buttons {
     text-align: right;
   }
