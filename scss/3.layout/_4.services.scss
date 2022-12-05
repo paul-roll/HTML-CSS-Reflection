@@ -92,13 +92,10 @@
 
 
 .services-footer {      // flex container for the services footer (awards). replace with a carousel later?
-    display: flex;
-    overflow: hidden;   // prevent scroll bars
-    justify-content: space-around;
-    gap: 100px;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin: 50px 0;
     div {                       // each flex item
+        height: 70px;
+        padding: 0 20px;
         filter: grayscale(1);       // greyscale filter by default
         &:hover {
             filter: none;           // remove filter on hover

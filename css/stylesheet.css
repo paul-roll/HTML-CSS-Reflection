@@ -2399,20 +2399,17 @@ button {
 
 /* line 94, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_4.services.scss */
 .services-footer {
-  display: flex;
-  overflow: hidden;
-  justify-content: space-around;
-  gap: 100px;
-  margin-top: 30px;
-  margin-bottom: 50px;
+  margin: 50px 0;
 }
 
-/* line 101, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_4.services.scss */
+/* line 96, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_4.services.scss */
 .services-footer div {
+  height: 70px;
+  padding: 0 20px;
   filter: grayscale(1);
 }
 
-/* line 103, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_4.services.scss */
+/* line 100, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_4.services.scss */
 .services-footer div:hover {
   filter: none;
 }

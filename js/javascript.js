@@ -113,10 +113,19 @@ $("header").on("mouseleave", function() {
 
 
 $(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
+    $('.carousel.owl-carousel').owlCarousel({
         loop: true,
         items: 1,
         dots: true,
         autoplay: true
+    });
+    $('.services-footer.owl-carousel').owlCarousel({
+        loop: true,
+        items: 9,
+        dots: false,
+        autoplay: true,
+        autoWidth: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
     });
 });
