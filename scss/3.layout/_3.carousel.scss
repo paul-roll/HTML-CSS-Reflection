@@ -63,28 +63,64 @@
 
 
 .carousel {
+
+    .btn {
+        margin-top: 30px;
+        @media (min-width: $breakpoint-md) {    // At screen width 992+
+            margin-right: auto;                     // Align to the left
+        }
+    }
+
     @include section("carousel");
 
     &.netmatters {
         @include carouselbg("netmatters");
+        .btn {
+            @include btn($color-white, map-get($service-colors, "bespoke-software"), 1.25em, 5px, 20px, true);
+            line-height: 2.5em; // 50px(/20px)
+        }
     }
     &.bespoke-software {
         @include carouselbg("bespoke-software");
+        .btn {
+            @include btn($color-white, map-get($service-colors, "bespoke-software"), 1.25em, 5px, 20px, true);
+            line-height: 2.5em; // 50px(/20px)
+        }
     }
     &.it-support {
         @include carouselbg("it-support");
+        .btn {
+            @include btn($color-white, map-get($service-colors, "it-support"), 1.25em, 5px, 20px, true);
+            line-height: 2.5em; // 50px(/20px)
+        }
     }
     &.digital-marketing {
         @include carouselbg("digital-marketing");
+        .btn {
+            @include btn($color-white, map-get($service-colors, "digital-marketing"), 1.25em, 5px, 20px, true);
+            line-height: 2.5em; // 50px(/20px)
+        }
     }
     &.telecoms-services {
         @include carouselbg("telecoms-services");
+        .btn {
+            @include btn($color-white, map-get($service-colors, "telecoms-services"), 1.25em, 5px, 20px, true);
+            line-height: 2.5em; // 50px(/20px)
+        }
     }
     &.web-design {
         @include carouselbg("web-design");
+        .btn {
+            @include btn($color-white, map-get($service-colors, "web-design"), 1.25em, 5px, 20px, true);
+            line-height: 2.5em; // 50px(/20px)
+        }
     }
     &.cyber-security {
         @include carouselbg("cyber-security");
+        .btn {
+            @include btn($color-white, map-get($service-colors, "cyber-security"), 1.25em, 5px, 20px, true);
+            line-height: 2.5em; // 50px(/20px)
+        }
     }
 
     background-size: cover;
@@ -120,12 +156,4 @@
         }
     }
 
-    .btn {
-        @include btn($color-white, map-get($service-colors, "bespoke-software"), 1.25em, 5px, 20px, true); // 20px
-        margin-top: 30px;
-        line-height: 2.5em; // 50px(/20px)
-        @media (min-width: $breakpoint-md) {    // At screen width 992+
-            margin-right: auto;                     // Align to the left
-        }
-    }
 }

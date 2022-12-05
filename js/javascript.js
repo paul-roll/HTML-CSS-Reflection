@@ -27,16 +27,6 @@ window.onscroll = function() {
 };
 
 
-$(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        items: 1,
-        dots: true,
-        autoplay: true
-    });
-});
-
-
 function setMargins(value, hide) {
     if (hide) {
         $("body").css("margin-left", `+=${value}`);
@@ -119,4 +109,14 @@ $("header").on("mouseleave", function() {
     if ( $("header").hasClass("sticky") ) {
         $("body").removeClass("hover-scroll-lock");
     }
+});
+
+
+$(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        items: 1,
+        dots: true,
+        autoplay: true
+    });
 });
