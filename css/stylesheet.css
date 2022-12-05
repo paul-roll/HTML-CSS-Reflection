@@ -3391,64 +3391,13 @@ button {
   }
 }
 
-/* line 6, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
-.cookies.popup {
-  border-radius: 4px;
-  width: calc(100% - 60px);
-  z-index: 10;
-  /* Whatever needed to force to front (1 might do) */
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-}
-
-/* line 20, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
-.cookies.popup h3, .cookies.popup p, .cookies.popup hr {
-  margin: 0;
-}
-
-/* line 23, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
-.cookies.popup h3 {
-  padding: 15px 20px;
-  font-size: 1.625em;
+/* line 5, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+.cookies {
   color: #333645;
 }
 
-/* line 28, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
-.cookies.popup p {
-  padding: 20px;
-  margin-bottom: 20px;
-  font-size: 1em;
-  color: #5e6480;
-}
-
-/* line 34, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
-.cookies.popup hr {
-  border: none;
-  border-bottom: 1px solid #e9e9eb;
-}
-
-/* line 38, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
-.cookies.popup a {
-  color: #333645;
-}
-
-/* line 42, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
-.cookies.popup .buttons {
-  text-align: center;
-  margin: 10px 0;
-}
-
-/* line 46, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
-.cookies.popup .btn {
-  margin: 10px;
-  width: calc(100% - 40px);
-}
-
-/* line 47, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
-.cookies.popup .btn.settings {
+/* line 8, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+.cookies .btn.settings, .cookies .btn.detailed, .cookies .btn.cancel {
   cursor: pointer;
   display: inline-block;
   font-size: 1.0625em;
@@ -3462,18 +3411,18 @@ button {
 }
 
 /* line 19, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/_2.mixins.scss */
-.cookies.popup .btn.settings:active {
+.cookies .btn.settings:active, .cookies .btn.detailed:active, .cookies .btn.cancel:active {
   box-shadow: inset 2px 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
 /* line 23, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/_2.mixins.scss */
-.cookies.popup .btn.settings:hover, .cookies.popup .btn.settings:focus {
+.cookies .btn.settings:hover, .cookies .btn.settings:focus, .cookies .btn.detailed:hover, .cookies .btn.detailed:focus, .cookies .btn.cancel:hover, .cookies .btn.cancel:focus {
   background-color: #7e808a;
   text-decoration: none;
 }
 
-/* line 50, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
-.cookies.popup .btn.accept {
+/* line 11, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+.cookies .btn.accept, .cookies .btn.active {
   cursor: pointer;
   display: inline-block;
   font-size: 1.0625em;
@@ -3487,27 +3436,199 @@ button {
 }
 
 /* line 19, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/_2.mixins.scss */
-.cookies.popup .btn.accept:active {
+.cookies .btn.accept:active, .cookies .btn.active:active {
   box-shadow: inset 2px 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
 /* line 23, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/_2.mixins.scss */
-.cookies.popup .btn.accept:hover, .cookies.popup .btn.accept:focus {
+.cookies .btn.accept:hover, .cookies .btn.accept:focus, .cookies .btn.active:hover, .cookies .btn.active:focus {
   background-color: #79539a;
   text-decoration: none;
 }
 
+/* line 14, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+.cookies .btn.inactive {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.0625em;
+  padding: 5px 15px;
+  border: 0;
+  line-height: 35px;
+  color: #999AA2;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  text-transform: uppercase;
+  border: 1px solid #e9e9eb;
+}
+
+/* line 19, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/_2.mixins.scss */
+.cookies .btn.inactive:active {
+  box-shadow: inset 2px 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* line 18, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+.cookies .btn.detailed {
+  margin-bottom: 10px;
+}
+
+/* line 24, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+.cookies p, .cookies li {
+  color: #5e6480;
+}
+
+/* line 27, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+.cookies h2 {
+  font-size: 2.25em;
+  font-weight: 400;
+}
+
+/* line 31, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+.cookies h3 {
+  font-size: 1.625em;
+}
+
+/* line 34, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+.cookies h4 {
+  font-weight: bold;
+}
+
+/* line 37, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+.cookies a {
+  color: #333645;
+}
+
+/* line 41, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+.cookies.popup {
+  border-radius: 4px;
+  width: calc(100% - 60px);
+  z-index: 10;
+  /* Whatever needed to force to front (1 might do) */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+/* line 43, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+.cookies.popup .btn {
+  margin: 10px;
+  width: calc(100% - 40px);
+}
+
 @media (min-width: 768px) {
-  /* line 46, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+  /* line 43, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
   .cookies.popup .btn {
     width: calc(50% - 30px);
   }
 }
 
+/* line 63, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+.cookies.popup h3, .cookies.popup p, .cookies.popup hr {
+  margin: 0;
+}
+
+/* line 66, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+.cookies.popup h3 {
+  padding: 15px 20px;
+}
+
+/* line 69, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+.cookies.popup p {
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 1em;
+  color: #5e6480;
+}
+
+/* line 75, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+.cookies.popup hr {
+  border: none;
+  border-bottom: 1px solid #e9e9eb;
+}
+
+/* line 81, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+.cookies.popup .buttons {
+  text-align: center;
+  margin: 10px 0;
+}
+
 @media (min-width: 768px) {
-  /* line 6, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+  /* line 41, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
   .cookies.popup {
     width: 600px;
+  }
+}
+
+/* line 92, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+.cookies.settings {
+  overflow: auto;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: white;
+}
+
+/* line 105, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+.cookies.settings p {
+  font-size: 0.875em;
+}
+
+/* line 109, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+.cookies.settings .buttons {
+  margin-bottom: 30px;
+}
+
+/* line 111, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+.cookies.settings .buttons.final {
+  margin-top: 40px;
+}
+
+/* line 117, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+.cookies.settings ul {
+  margin-bottom: 10px;
+}
+
+/* line 121, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+.cookies.settings li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* line 126, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+.cookies.settings table {
+  width: 100%;
+}
+
+/* line 129, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+.cookies.settings table .buttons {
+  margin: 0;
+}
+
+/* line 132, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+.cookies.settings table th, .cookies.settings table td {
+  border: 1px solid white;
+}
+
+/* line 135, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+.cookies.settings table th {
+  color: #FFFFFF;
+  background-color: #999AA2;
+}
+
+/* line 139, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+.cookies.settings table td {
+  padding: 15px;
+  background-color: #cecfd3;
+}
+
+@media (min-width: 992px) {
+  /* line 146, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
+  .cookies.settings .buttons {
+    text-align: right;
   }
 }
 

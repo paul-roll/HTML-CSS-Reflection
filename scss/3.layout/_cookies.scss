@@ -3,8 +3,51 @@
 // ==========================================================================
 
 .cookies {
+
+    .btn {
+        &.settings, &.detailed, &.cancel {
+            @include btn(white, $color-grey, $font-size: 1.0625em, $padding1: 5px, $padding2: 15px, $hover: true);
+        }
+        &.accept, &.active {
+            @include btn(white, $color-wisteria, $font-size: 1.0625em, $padding1: 5px, $padding2: 15px, $hover: true);
+        }
+        &.inactive {
+            @include btn($color-grey, $color-white, $font-size: 1.0625em, $padding1: 5px, $padding2: 15px, $hover: false);
+            border: 1px solid lighten($color-grey, 30%);
+        }
+        &.detailed {
+            margin-bottom: 10px;
+        }
+    }
+
+    color: $color-tuna;
+    p, li {
+        color: lighten($color-tuna, 20%);
+    }
+    h2 {
+        font-size: 2.25em;
+        font-weight: 400;
+    }
+    h3 {
+        font-size: 1.625em;
+    }
+    h4 {
+        font-weight: bold;
+    }
+    a {
+        color: $color-tuna;
+    }
+
     &.popup {
         
+        .btn {
+            margin: 10px;
+            width: calc(100% - 40px);
+            @media(min-width: $breakpoint-sm) {
+                width: calc(50% - 30px);
+            }
+        }
+
         border-radius: 4px;
 
         width: calc(100% - 60px);
@@ -22,8 +65,6 @@
         }
         h3{
             padding: 15px 20px;
-            font-size: 1.625em;
-            color: $color-tuna;
         }
         p {
             padding: 20px;
@@ -35,30 +76,77 @@
             border: none;
             border-bottom: 1px solid lighten($color-grey, 30%);
         }
-        a {
-            color: $color-tuna;
-        }
+
 
         .buttons {
             text-align: center;
             margin: 10px 0;
         }
-        .btn {
-            &.settings {
-                @include btn(white, $color-grey, $font-size: 1.0625em, $padding1: 5px, $padding2: 15px, $hover: true);
-            }
-            &.accept {
-                @include btn(white, $color-wisteria, $font-size: 1.0625em, $padding1: 5px, $padding2: 15px, $hover: true);
-            }
-            margin: 10px;
-            width: calc(100% - 40px);
-            @media(min-width: $breakpoint-sm) {
-                width: calc(50% - 30px);
-            }
-        }
+
 
         @media(min-width: $breakpoint-sm) {
             width: 600px;
         }
     }
+
+    &.settings {
+        overflow: auto;
+
+        z-index: 10;
+
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100%;
+        
+        background-color: white;
+
+        p {
+            font-size: 0.875em;
+        }
+
+        .buttons {
+            margin-bottom: 30px;
+            &.final {
+                margin-top: 40px;
+            }
+        }
+
+
+        ul {
+            margin-bottom: 10px;
+        }
+
+        li {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        table {
+            width: 100%;
+            
+            .buttons {
+                margin: 0;
+            }
+            th, td {
+                border: 1px solid white;
+            }
+            th {
+                color: $color-white;
+                background-color: $color-grey;
+            }
+            td {
+                padding: 15px;
+                background-color: lighten($color-grey, 20%);
+            }
+        }
+
+        @media (min-width: $breakpoint-md) {
+            .buttons {
+                text-align: right;
+            }
+        }
+    }
+
 }

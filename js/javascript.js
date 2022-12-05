@@ -112,6 +112,66 @@ $("header").on("mouseleave", function() {
 });
 
 
+$(".cookies .btn.accept").on("click", function() {
+    hideCookiePopup();
+    hideCookieSettings();
+    window.localStorage.setItem("cookies-accepted", true);
+});
+$(".cookies .btn.settings").on("click", function() {
+    hideCookiePopup();
+    showCookieSettings();
+});
+$(".cookies .btn.cancel").on("click", function() {
+    hideCookieSettings();
+    showCookiePopup();
+});
+
+$(".cookies .functional .disable").on("click", function() {
+    $(".cookies .functional .disable").removeClass("inactive").addClass("active");
+    $(".cookies .functional .enable").removeClass("active").addClass("inactive");
+});
+$(".cookies .functional .enable").on("click", function() {
+    $(".cookies .functional .disable").removeClass("active").addClass("inactive");
+    $(".cookies .functional .enable").removeClass("inactive").addClass("active");
+});
+
+$(".cookies .analytics .disable").on("click", function() {
+    $(".cookies .analytics .disable").removeClass("inactive").addClass("active");
+    $(".cookies .analytics .enable").removeClass("active").addClass("inactive");
+});
+$(".cookies .analytics .enable").on("click", function() {
+    $(".cookies .analytics .disable").removeClass("active").addClass("inactive");
+    $(".cookies .analytics .enable").removeClass("inactive").addClass("active");
+});
+
+
+
+function showCookieSettings() {
+    $(".cookies.settings").removeClass("hidden");
+    $("body").addClass("scroll-lock");
+    $("#page").addClass("lock");
+}
+function hideCookieSettings() {
+    $(".cookies.settings").addClass("hidden");
+    $("body").removeClass("scroll-lock");
+    $("#page").removeClass("lock");
+}
+
+function showCookiePopup() {
+    $(".cookies.popup").removeClass("hidden");
+    $("body").addClass("scroll-lock");
+    $("#page").addClass("lock");
+}
+
+function hideCookiePopup() {
+    $(".cookies.popup").addClass("hidden");
+    $("body").removeClass("scroll-lock");
+    $("#page").removeClass("lock");
+}
+
+
+
+
 $(document).ready(function(){
     $('.carousel.owl-carousel').owlCarousel({
         loop: true,
@@ -128,13 +188,8 @@ $(document).ready(function(){
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
     });
-    $(".cookies.popup").removeClass("hidden");
-    $("body").addClass("scroll-lock");
-    $("#page").addClass("lock");
-});
-
-$(".accept").on("click", function() {
-    $(".cookies.popup").addClass("hidden");
-    $("body").removeClass("scroll-lock");
-    $("#page").removeClass("lock");
+    window.localStorage.removeItem("cookies-accepted");//for testing
+    if (!window.localStorage.getItem("cookies-accepted")) {
+        showCookiePopup();
+    }
 });
