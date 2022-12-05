@@ -184,8 +184,8 @@ function populateCookiesTable() {
 
     for (let i = 0; i < cookies.length; i++) {
         html += `
-            <tr class="">
-                <td>${cookies[i][0]}</td>
+            <tr class="${i}">
+                <td class="toggle-on"><span>+ ${cookies[i][0]}</span></td>
                 <td>${cookies[i][1]}</td>
                 <td>
                     <div class="buttons">
@@ -198,6 +198,38 @@ function populateCookiesTable() {
     }
 
     $("table").append(html);
+
+    $("table .toggle-on span").on("click", function(e) {
+        const i = e.target.parentNode.parentNode.classList[0];
+        if ($(e.target.parentNode).hasClass("toggle-on")) {
+            expandCookie(i)
+            e.target.innerHTML = `- ${cookies[i][0]}`;
+            $(e.target.parentNode).addClass("toggle-off").removeClass("toggle-on");
+        } else {
+            $(`table .${i}`)[1].remove();
+            e.target.innerHTML = `+ ${cookies[i][0]}`;
+            $(e.target.parentNode).addClass("toggle-on").removeClass("toggle-off");
+        }
+    });
+}
+
+
+
+
+
+function expandCookie(i) {
+    let html = `<tr class="${i}"><td colspan=3>`;
+    if (`${cookies[i][2][0]}`) {
+        html += `<p>${cookies[i][2][0]}</p>`;
+    }
+    if (`${cookies[i][2][1]}`) {
+        html += `<a href="${cookies[i][2][1]}" target="_blank" class="btn basic">Terms & Conditions</a>`;
+    }
+    if (`${cookies[i][2][2]}`) {
+        html += `<a href="${cookies[i][2][2]}" target="_blank" class="btn basic">Privacy Policy</a>`;
+    }
+    html += `</td></tr>`;
+    $(`table .${i}`).after(html);
 }
 
 

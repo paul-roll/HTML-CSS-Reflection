@@ -5,14 +5,19 @@
 .cookies {
 
     .btn {
+        &.basic {
+            @include btn(white, $color-grey, 1em, 5px, 15px, $hover: true);
+            line-height: 20px;
+            margin-right: 10px;
+        }
         &.settings, &.detailed, &.cancel {
-            @include btn(white, $color-grey, $font-size: 1.0625em, $padding1: 5px, $padding2: 15px, $hover: true);
+            @include btn(white, $color-grey, 1.0625em, 5px, 15px, $hover: true);
         }
         &.accept, &.active {
-            @include btn(white, $color-wisteria, $font-size: 1.0625em, $padding1: 5px, $padding2: 15px, $hover: true);
+            @include btn(white, $color-wisteria, 1.0625em, 5px, 15px, $hover: true);
         }
         &.inactive {
-            @include btn($color-grey, $color-white, $font-size: 1.0625em, $padding1: 5px, $padding2: 15px, $hover: false);
+            @include btn($color-grey, $color-white, 1.0625em, 5px, 15px, $hover: false);
             border: 1px solid lighten($color-grey, 30%);
         }
         &.detailed {
@@ -126,6 +131,13 @@
         table {
             width: 100%;
             
+            .toggle-on, .toggle-off {
+                span {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
             .buttons {
                 margin: 0;
             }
@@ -140,6 +152,9 @@
             }
             td {
                 background-color: lighten($color-grey, 20%);
+            }
+            p {
+                font-size: 1em;
             }
         }
 
