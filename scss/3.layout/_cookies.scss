@@ -128,9 +128,18 @@
             margin-left: 20px;
         }
 
+        .table-wrapper {
+            overflow-x: scroll;
+        }
+
         table {
             width: 100%;
             
+            .toggle-col {
+                width: 230px;
+                min-width: 230px;
+            }
+
             .toggle-on, .toggle-off {
                 span {
                     &:hover {
