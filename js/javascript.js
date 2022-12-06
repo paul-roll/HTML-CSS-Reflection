@@ -26,19 +26,18 @@ window.onscroll = function() {
     p = $(this).scrollTop();
 };
 
+function setMargins(value) {
+    $("body").css("margin-left", `-=${value}`);
+    $("body").css("margin-right", `+=${value}`);
+    $(".sidebar").removeClass("hidden");
+    $("#page").addClass("tint");
+}
 
-function setMargins(value, hide) {
-    if (hide) {
-        $("body").css("margin-left", `+=${value}`);
-        $("body").css("margin-right", `-=${value}`);
-        $(".sidebar").addClass("hidden");
-        $("#page").removeClass("tint");
-    } else {
-        $("body").css("margin-left", `-=${value}`);
-        $("body").css("margin-right", `+=${value}`);
-        $(".sidebar").removeClass("hidden");
-        $("#page").addClass("tint");
-    }
+function resetMargins() {
+    $("body").css("margin-left", "0");
+    $("body").css("margin-right", "0");
+    $(".sidebar").addClass("hidden");
+    $("#page").removeClass("tint");
 }
 
 
@@ -49,23 +48,27 @@ if ($(window).outerWidth() >= breakpointMD) {
     sidebarWide = true;
 }
 
+function scrollBarWidth() {
+    return ($(window).outerWidth() - $(window).width());
+}
+
 function sidebarWidth() {
     if ($(window).outerWidth() < breakpointMD) {
         sidebarWide = false;
-        return 275;
+        return 275 - scrollBarWidth();
     } else {
         sidebarWide = true;
-        return 350;
+        return 350 - scrollBarWidth();
     }
 }
 
 $(window).on("resize", function() {
     if ($(".hamburger").hasClass("is-active")) {
         if ((sidebarWide) && ($(window).outerWidth() < breakpointMD)) {
-            setMargins(-75, false);
+            setMargins(-75);
             sidebarWide = false;
         } else if ((!sidebarWide) && ($(window).outerWidth() >= breakpointMD)) {
-            setMargins(75, false);
+            setMargins(75);
             sidebarWide = true;
         }
     }
@@ -77,14 +80,14 @@ $("body").on("click", function(e) {
     // clicks on tinted(disabled) page
     if ($(e.target).hasClass("tint")) {
         $(".hamburger").toggleClass("is-active");
-        setMargins(sidebarWidth(), true);
+        resetMargins();
         // $("body").removeClass("scroll-lock");
         scrollLock.enablePageScroll();
 
     // clicks on hamburger
     } else if ($(e.target).hasClass("hamburger")) {
         $(".hamburger").toggleClass("is-active");
-        setMargins(sidebarWidth(), false);
+        setMargins(sidebarWidth());
         // $("body").addClass("scroll-lock");
         scrollLock.disablePageScroll();
 
@@ -321,7 +324,6 @@ $(document).ready(function(){
         showCookiePopup();
     }
 
-    
 });
 
 function clear() {
