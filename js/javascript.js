@@ -99,13 +99,11 @@ $("body").on("click", function(e) {
 
 
 $("header").on("mouseenter", function() {
-    // console.log("debug: mouse-enter");
     if ( $("header").hasClass("sticky") ) {
         $("body").addClass("hover-scroll-lock");
     }
 });
 $("header").on("mouseleave", function() {
-    // console.log("debug: mouse-leave");
     if ( $("header").hasClass("sticky") ) {
         $("body").removeClass("hover-scroll-lock");
     }
@@ -223,11 +221,9 @@ function populateCookiesTable() {
 
     $(`.cookies table .detailed`).on("click", function(e) {
         if ($(e.target).hasClass("disable")) {
-            console.log("x");
             $(`.cookies .detailed.${e.target.classList[2]}.disable`).removeClass("inactive").addClass("active");
             $(`.cookies .detailed.${e.target.classList[2]}.enable`).removeClass("active").addClass("inactive");
         } else if ($(e.target).hasClass("enable")) {
-            console.log("y");
             $(`.cookies .detailed.${e.target.classList[2]}.disable`).removeClass("active").addClass("inactive");
             $(`.cookies .detailed.${e.target.classList[2]}.enable`).removeClass("inactive").addClass("active");
         }
@@ -267,9 +263,13 @@ $(document).ready(function(){
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
     });
-    window.localStorage.removeItem("cookies-accepted");//for testing
+    console.log("Type: clear(); To allow cookie popup on next load.")
     if (!window.localStorage.getItem("cookies-accepted")) {
         populateCookiesTable();
         showCookiePopup();
     }
 });
+
+function clear() {
+    window.localStorage.removeItem("cookies-accepted");
+}
