@@ -83,13 +83,8 @@ $("body").on("click", function(e) {
     // clicks on hamburger
     } else if ($(e.target).hasClass("hamburger")) {
         $(".hamburger").toggleClass("is-active");
-        // if ($(".hamburger").hasClass("is-active")) {
-            setMargins(sidebarWidth(), false);
-            $("body").addClass("scroll-lock");
-        // } else {
-        //     setMargins(sidebarWidth(), true);
-        //     $("body").removeClass("scroll-lock");
-        // }
+        setMargins(sidebarWidth(), false);
+        $("body").addClass("scroll-lock");
 
     // clicks not on sidebar
     } else if (($(".hamburger").hasClass("is-active")) && (!$(e.target).parents(".sidebar").length)) {
@@ -245,6 +240,56 @@ function expandCookie(i) {
     html += `</td></tr>`;
     $(`.cookies table tr.${i}`).after(html);
 }
+
+$("#search1 button").on("click", function() {
+    if ( $("#search1 input").val() ) {
+        alert(`do search: ${$("#search1 input").val()}`);
+        $("#search1 input").val("");
+    }
+});
+
+$("#search2 button").on("click", function() {
+
+    // do a search if there is input
+    if ( $("#search2 input").val() ) {
+        alert(`do search: ${$("#search2 input").val()}`);
+        $("#search2 input").val("");
+
+    } else if ((window.outerWidth >= 992) && (window.outerWidth < 1260)) {
+        // hide buttons, show input
+        if ( $("#search2 input").hasClass("show-lg") ) {
+            
+            $(".btn.support").fadeOut(function() {
+                $(".btn.support").removeAttr("style");
+            });
+            $(".btn.contact").fadeOut(function() {
+                $(".btn.contact").removeAttr("style");
+
+                $("#search2 input").fadeIn();
+                $(".btn.support").parent().removeClass("show-md").addClass("show-lg").removeAttr("style");
+                $(".btn.contact").parent().removeClass("show-md").addClass("show-lg").removeAttr("style");
+                $("#search2 input").removeClass("hide-md").removeClass("show-lg");
+            });
+            
+            
+        } else { // hide input, show buttons
+
+            $("#search2 input").fadeOut(function() {
+                $("#search2 input").removeAttr("style");
+                $(".btn.support").css("display", "none").fadeIn();
+                $(".btn.contact").css("display", "none").fadeIn();
+
+                $(".btn.support").parent().addClass("show-md").removeClass("show-lg");
+                $(".btn.contact").parent().addClass("show-md").removeClass("show-lg");
+                $("#search2 input").addClass("hide-md").addClass("show-lg");
+            });
+
+
+
+        }
+    }
+
+});
 
 
 $(document).ready(function(){
