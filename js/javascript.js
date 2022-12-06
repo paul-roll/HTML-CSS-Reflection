@@ -196,7 +196,7 @@ function populateCookiesTable() {
                     </div>
                 </td>
             </tr>
-        `
+        `;
     }
 
     $(".cookies table").append(html);
@@ -204,7 +204,7 @@ function populateCookiesTable() {
     $(".cookies table .toggle-on span").on("click", function(e) {
         const i = e.target.parentNode.parentNode.classList[0];
         if ($(e.target.parentNode).hasClass("toggle-on")) {
-            expandCookie(i)
+            expandCookie(i);
             e.target.innerHTML = `- ${cookies[i][0]}`;
             $(e.target.parentNode).addClass("toggle-off").removeClass("toggle-on");
         } else {
@@ -308,7 +308,7 @@ $(document).ready(function(){
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
     });
-    console.log("Type: clear(); To allow cookie popup on next load.")
+    console.log("Type: clear(); To allow cookie popup on next load.");
     if (!window.localStorage.getItem("cookies-accepted")) {
         populateCookiesTable();
         showCookiePopup();
