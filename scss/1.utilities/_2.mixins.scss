@@ -52,7 +52,7 @@
 }
 
 @mixin section($section) {   // used in every section
-    @if ($section != 'nav') {   // exclude nav as it needs to overflow its section to function properly
+    @if ( ($section != 'nav') OR ($section != 'carousel') ) {   // exclude nav as it needs to overflow its section to function properly
         overflow: hidden;   // prevent content from going past the edges of each section on narrow screens
     }
     background-color: map-get($background-colors, $section);
