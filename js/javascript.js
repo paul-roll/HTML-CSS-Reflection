@@ -138,11 +138,11 @@ $(".cookies .analytics .enable").on("click", function() {
 });
 
 $(".cookies .expand-detailed").on("click", function() {
-    if ( $(".cookies table").hasClass("hidden") ) {
-        $(".cookies table").removeClass("hidden");
+    if ( $(".cookies .table-wrapper").hasClass("hidden") ) {
+        $(".cookies .table-wrapper").removeClass("hidden");
         $(".cookies .expand-detailed").text("Hide detailed preferences");
     } else {
-        $(".cookies table").addClass("hidden");
+        $(".cookies .table-wrapper").addClass("hidden");
         $(".cookies .expand-detailed").text("Show detailed preferences");
     }
 });
