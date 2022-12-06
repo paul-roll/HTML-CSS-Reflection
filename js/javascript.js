@@ -78,13 +78,15 @@ $("body").on("click", function(e) {
     if ($(e.target).hasClass("tint")) {
         $(".hamburger").toggleClass("is-active");
         setMargins(sidebarWidth(), true);
-        $("body").removeClass("scroll-lock");
+        // $("body").removeClass("scroll-lock");
+        scrollLock.enablePageScroll();
 
     // clicks on hamburger
     } else if ($(e.target).hasClass("hamburger")) {
         $(".hamburger").toggleClass("is-active");
         setMargins(sidebarWidth(), false);
-        $("body").addClass("scroll-lock");
+        // $("body").addClass("scroll-lock");
+        scrollLock.disablePageScroll();
 
     // clicks not on sidebar
     } else if (($(".hamburger").hasClass("is-active")) && (!$(e.target).parents(".sidebar").length)) {
@@ -95,12 +97,14 @@ $("body").on("click", function(e) {
 
 $("header").on("mouseenter", function() {
     if ( $("header").hasClass("sticky") ) {
-        $("body").addClass("hover-scroll-lock");
+        // $("body").addClass("hover-scroll-lock");
+        scrollLock.disablePageScroll();
     }
 });
 $("header").on("mouseleave", function() {
     if ( $("header").hasClass("sticky") ) {
-        $("body").removeClass("hover-scroll-lock");
+        // $("body").removeClass("hover-scroll-lock");
+        scrollLock.enablePageScroll();
     }
 });
 
@@ -161,13 +165,15 @@ function hideCookieSettings() {
 
 function showCookiePopup() {
     $(".cookies.popup").removeClass("hidden");
-    $("body").addClass("scroll-lock");
+    // $("body").addClass("scroll-lock");
+    scrollLock.disablePageScroll();
     $("#page").addClass("lock");
 }
 
 function hideCookiePopup() {
     $(".cookies.popup").addClass("hidden");
-    $("body").removeClass("scroll-lock");
+    // $("body").removeClass("scroll-lock");
+    scrollLock.enablePageScroll();
     $("#page").removeClass("lock");
 }
 
@@ -293,6 +299,7 @@ $("#search2 button").on("click", function() {
 
 
 $(document).ready(function(){
+    
     $('.carousel.owl-carousel').owlCarousel({
         loop: true,
         items: 1,
@@ -313,8 +320,13 @@ $(document).ready(function(){
         populateCookiesTable();
         showCookiePopup();
     }
+
+    
 });
 
 function clear() {
     window.localStorage.removeItem("cookies-accepted");
 }
+
+
+
