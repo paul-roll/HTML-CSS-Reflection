@@ -144,6 +144,15 @@ $(".cookies .analytics .enable").on("click", function() {
     $(".cookies .analytics .enable").removeClass("inactive").addClass("active");
 });
 
+$(".cookies .expand-detailed").on("click", function() {
+    if ( $(".cookies table").hasClass("hidden") ) {
+        $(".cookies table").removeClass("hidden");
+        $(".cookies .expand-detailed").text("Hide detailed preferences");
+    } else {
+        $(".cookies table").addClass("hidden");
+        $(".cookies .expand-detailed").text("Show detailed preferences");
+    }
+});
 
 
 function showCookieSettings() {
@@ -197,22 +206,22 @@ function populateCookiesTable() {
         `
     }
 
-    $("table").append(html);
+    $(".cookies table").append(html);
 
-    $("table .toggle-on span").on("click", function(e) {
+    $(".cookies table .toggle-on span").on("click", function(e) {
         const i = e.target.parentNode.parentNode.classList[0];
         if ($(e.target.parentNode).hasClass("toggle-on")) {
             expandCookie(i)
             e.target.innerHTML = `- ${cookies[i][0]}`;
             $(e.target.parentNode).addClass("toggle-off").removeClass("toggle-on");
         } else {
-            $(`table tr.${i}`)[1].remove();
+            $(`.cookies table tr.${i}`)[1].remove();
             e.target.innerHTML = `+ ${cookies[i][0]}`;
             $(e.target.parentNode).addClass("toggle-on").removeClass("toggle-off");
         }
     });
 
-    $(`table .detailed`).on("click", function(e) {
+    $(`.cookies table .detailed`).on("click", function(e) {
         if ($(e.target).hasClass("disable")) {
             console.log("x");
             $(`.cookies .detailed.${e.target.classList[2]}.disable`).removeClass("inactive").addClass("active");
@@ -224,9 +233,6 @@ function populateCookiesTable() {
         }
     });
 }
-
-
-
 
 
 function expandCookie(i) {
@@ -241,7 +247,7 @@ function expandCookie(i) {
         html += `<a href="${cookies[i][2][2]}" target="_blank" class="btn basic">Privacy Policy</a>`;
     }
     html += `</td></tr>`;
-    $(`table tr.${i}`).after(html);
+    $(`.cookies table tr.${i}`).after(html);
 }
 
 
