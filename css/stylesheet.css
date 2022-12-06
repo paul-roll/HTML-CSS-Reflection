@@ -1461,7 +1461,7 @@ button {
 
 /* line 30, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
 .owl-theme .owl-nav.disabled + .owl-dots {
-  margin-top: 10px;
+  margin-top: -30px;
 }
 
 /* line 34, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
@@ -1469,7 +1469,7 @@ button {
   text-align: center;
   -webkit-tap-highlight-color: transparent;
   position: relative;
-  bottom: 75px;
+  bottom: 20px;
 }
 
 /* line 40, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
@@ -1560,19 +1560,31 @@ button {
   text-decoration: none;
 }
 
-/* line 83, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+@media (max-width: 430px) {
+  /* line 84, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+  .carousel.netmatters p {
+    font-size: 1.125em;
+  }
+  /* line 87, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+  .carousel.netmatters .btn {
+    margin-top: 0px;
+    margin-bottom: 45px;
+  }
+}
+
+/* line 93, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
 .carousel.bespoke-software {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/carousel/bespoke-software.jpg");
 }
 
 @media (min-width: 992px) {
-  /* line 83, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+  /* line 93, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
   .carousel.bespoke-software {
     background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url("../img/carousel/bespoke-software.jpg");
   }
 }
 
-/* line 85, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+/* line 95, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
 .carousel.bespoke-software .btn {
   cursor: pointer;
   display: inline-block;
@@ -1598,19 +1610,19 @@ button {
   text-decoration: none;
 }
 
-/* line 90, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+/* line 100, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
 .carousel.it-support {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/carousel/it-support.jpg");
 }
 
 @media (min-width: 992px) {
-  /* line 90, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+  /* line 100, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
   .carousel.it-support {
     background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url("../img/carousel/it-support.jpg");
   }
 }
 
-/* line 92, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+/* line 102, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
 .carousel.it-support .btn {
   cursor: pointer;
   display: inline-block;
@@ -1636,19 +1648,19 @@ button {
   text-decoration: none;
 }
 
-/* line 97, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+/* line 107, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
 .carousel.digital-marketing {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/carousel/digital-marketing.jpg");
 }
 
 @media (min-width: 992px) {
-  /* line 97, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+  /* line 107, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
   .carousel.digital-marketing {
     background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url("../img/carousel/digital-marketing.jpg");
   }
 }
 
-/* line 99, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+/* line 109, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
 .carousel.digital-marketing .btn {
   cursor: pointer;
   display: inline-block;
@@ -1674,19 +1686,19 @@ button {
   text-decoration: none;
 }
 
-/* line 104, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+/* line 114, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
 .carousel.telecoms-services {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/carousel/telecoms-services.jpg");
 }
 
 @media (min-width: 992px) {
-  /* line 104, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+  /* line 114, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
   .carousel.telecoms-services {
     background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url("../img/carousel/telecoms-services.jpg");
   }
 }
 
-/* line 106, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+/* line 116, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
 .carousel.telecoms-services .btn {
   cursor: pointer;
   display: inline-block;
@@ -1712,19 +1724,19 @@ button {
   text-decoration: none;
 }
 
-/* line 111, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+/* line 121, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
 .carousel.web-design {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/carousel/web-design.jpg");
 }
 
 @media (min-width: 992px) {
-  /* line 111, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+  /* line 121, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
   .carousel.web-design {
     background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url("../img/carousel/web-design.jpg");
   }
 }
 
-/* line 113, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+/* line 123, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
 .carousel.web-design .btn {
   cursor: pointer;
   display: inline-block;
@@ -1750,19 +1762,19 @@ button {
   text-decoration: none;
 }
 
-/* line 118, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+/* line 128, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
 .carousel.cyber-security {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/carousel/cyber-security.jpg");
 }
 
 @media (min-width: 992px) {
-  /* line 118, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+  /* line 128, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
   .carousel.cyber-security {
     background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url("../img/carousel/cyber-security.jpg");
   }
 }
 
-/* line 120, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+/* line 130, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
 .carousel.cyber-security .btn {
   cursor: pointer;
   display: inline-block;
@@ -1788,7 +1800,7 @@ button {
   text-decoration: none;
 }
 
-/* line 129, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+/* line 139, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
 .carousel .flex-container {
   min-height: 550px;
   height: 100%;
@@ -1798,7 +1810,7 @@ button {
   align-items: center;
 }
 
-/* line 138, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+/* line 148, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
 .carousel h1 {
   line-height: 1.25em;
   margin: 0;
@@ -1806,14 +1818,14 @@ button {
 }
 
 @media (min-width: 992px) {
-  /* line 138, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+  /* line 148, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
   .carousel h1 {
     font-size: 4em;
     text-align: left;
   }
 }
 
-/* line 148, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+/* line 158, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
 .carousel p {
   font-size: 1.25em;
   font-weight: 600;
@@ -1822,7 +1834,7 @@ button {
 }
 
 @media (min-width: 992px) {
-  /* line 148, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
+  /* line 158, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_3.carousel.scss */
   .carousel p {
     font-size: 1.625em;
     text-align: left;
