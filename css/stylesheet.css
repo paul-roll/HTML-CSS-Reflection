@@ -3424,7 +3424,7 @@ button {
 }
 
 /* line 13, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
-.cookies .btn.settings, .cookies .btn.detailed, .cookies .btn.cancel {
+.cookies .btn.settings, .cookies .btn.expand-detailed, .cookies .btn.cancel {
   cursor: pointer;
   display: inline-block;
   font-size: 1.0625em;
@@ -3438,12 +3438,12 @@ button {
 }
 
 /* line 19, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/_2.mixins.scss */
-.cookies .btn.settings:active, .cookies .btn.detailed:active, .cookies .btn.cancel:active {
+.cookies .btn.settings:active, .cookies .btn.expand-detailed:active, .cookies .btn.cancel:active {
   box-shadow: inset 2px 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
 /* line 23, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/1.utilities/_2.mixins.scss */
-.cookies .btn.settings:hover, .cookies .btn.settings:focus, .cookies .btn.detailed:hover, .cookies .btn.detailed:focus, .cookies .btn.cancel:hover, .cookies .btn.cancel:focus {
+.cookies .btn.settings:hover, .cookies .btn.settings:focus, .cookies .btn.expand-detailed:hover, .cookies .btn.expand-detailed:focus, .cookies .btn.cancel:hover, .cookies .btn.cancel:focus {
   background-color: #7e808a;
   text-decoration: none;
 }
@@ -3494,7 +3494,7 @@ button {
 }
 
 /* line 23, ../../Users/paulr/Desktop/Netmatters/Netmatters Reflection/scss/3.layout/_cookies.scss */
-.cookies .btn.detailed {
+.cookies .btn.expand-detailed {
   margin-bottom: 10px;
 }
 

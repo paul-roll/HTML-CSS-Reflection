@@ -10,7 +10,7 @@
             line-height: 20px;
             margin-right: 10px;
         }
-        &.settings, &.detailed, &.cancel {
+        &.settings, &.expand-detailed, &.cancel {
             @include btn(white, $color-grey, 1.0625em, 5px, 15px, $hover: true);
         }
         &.accept, &.active {
@@ -20,7 +20,7 @@
             @include btn($color-grey, $color-white, 1.0625em, 5px, 15px, $hover: false);
             border: 1px solid lighten($color-grey, 30%);
         }
-        &.detailed {
+        &.expand-detailed {
             margin-bottom: 10px;
         }
     }

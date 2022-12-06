@@ -189,8 +189,8 @@ function populateCookiesTable() {
                 <td>${cookies[i][1]}</td>
                 <td>
                     <div class="buttons">
-                        <div class="btn disable active">Disable</div>
-                        <div class="btn enable inactive">Enable</div>
+                        <div class="btn detailed ${i} disable active">Disable</div>
+                        <div class="btn detailed ${i} enable inactive">Enable</div>
                     </div>
                 </td>
             </tr>
@@ -206,9 +206,21 @@ function populateCookiesTable() {
             e.target.innerHTML = `- ${cookies[i][0]}`;
             $(e.target.parentNode).addClass("toggle-off").removeClass("toggle-on");
         } else {
-            $(`table .${i}`)[1].remove();
+            $(`table tr.${i}`)[1].remove();
             e.target.innerHTML = `+ ${cookies[i][0]}`;
             $(e.target.parentNode).addClass("toggle-on").removeClass("toggle-off");
+        }
+    });
+
+    $(`table .detailed`).on("click", function(e) {
+        if ($(e.target).hasClass("disable")) {
+            console.log("x");
+            $(`.cookies .detailed.${e.target.classList[2]}.disable`).removeClass("inactive").addClass("active");
+            $(`.cookies .detailed.${e.target.classList[2]}.enable`).removeClass("active").addClass("inactive");
+        } else if ($(e.target).hasClass("enable")) {
+            console.log("y");
+            $(`.cookies .detailed.${e.target.classList[2]}.disable`).removeClass("active").addClass("inactive");
+            $(`.cookies .detailed.${e.target.classList[2]}.enable`).removeClass("inactive").addClass("active");
         }
     });
 }
@@ -229,7 +241,7 @@ function expandCookie(i) {
         html += `<a href="${cookies[i][2][2]}" target="_blank" class="btn basic">Privacy Policy</a>`;
     }
     html += `</td></tr>`;
-    $(`table .${i}`).after(html);
+    $(`table tr.${i}`).after(html);
 }
 
 
