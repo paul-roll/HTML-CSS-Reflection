@@ -63,7 +63,7 @@
 
 
 .carousel {
-
+    width: 100vw;
     .btn {
         margin-top: 30px;
         @media (min-width: $breakpoint-md) {    // At screen width 992+

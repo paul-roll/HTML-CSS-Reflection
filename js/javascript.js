@@ -297,7 +297,7 @@ $(document).ready(function(){
         loop: true,
         items: 1,
         dots: true,
-        autoplay: true
+        autoplay: true,
     });
     $('.services-footer.owl-carousel').owlCarousel({
         loop: true,
