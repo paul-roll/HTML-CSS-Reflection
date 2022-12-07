@@ -3,8 +3,9 @@
 // ==========================================================================
 
 const header = document.getElementsByTagName("header")[0]; // pointer to the page header
-let sidebarWide = false;
-const cookies = [
+let lastScollPosition = $(this).scrollTop(); // used with Event: Page Scroll; to track the position of the scroll between function calls
+let sidebarWide = false; // remember the sidebar state, used in; function: sidebarWidth and Event: page resize
+const cookies = [ // All the data for the cookies table, pretend it was generated.
     ["Hotjar Ltd", "hotjar.com", ["", "https://www.hotjar.com/legal/policies/terms-of-service", "https://www.hotjar.com/legal/policies/privacy"]],
     ["LinkedIn Corporation", "linkedin.com", ["", "https://www.linkedin.com/legal/user-agreement", "https://www.linkedin.com/legal/privacy-policy"]],
     ["Facebook Inc.", "facebook.com, facebook.net", ["Facebook is an online social networking service that enables its users to connect with friends and family as well as make new connections.", "https://www.facebook.com/legal/terms/update", "https://www.facebook.com/about/privacy/update"]],
@@ -33,7 +34,6 @@ function headerSlideOut() {
 }
 
 // Event: Page Scroll
-let lastScollPosition = $(this).scrollTop(); // track the position of the scroll between function calls
 window.onscroll = function() {
     if ((header.classList.contains("sticky")) && ($(this).scrollTop() === 0)) {
         header.classList.remove("sticky");
@@ -57,6 +57,7 @@ $("header").on("mouseleave", function() {
         scrollLock.enablePageScroll();
     }
 });
+
 
 // ==========================================================================
 // Sidebar
@@ -132,8 +133,6 @@ $("body").on("click", function(e) {
         e.preventDefault();
     }
 });
-
-
 
 
 // ==========================================================================
@@ -340,7 +339,7 @@ $("#search2 button").on("click", function() {
 // Testing
 // ==========================================================================
 
-// Function: To allow cookie popup on next load.
+// Console Function: To allow cookie popup on next load.
 function clear() {
     window.localStorage.removeItem("cookies-accepted");
 }
