@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    &.hover-scroll-lock, &.scroll-lock {
+    &.scroll-lock {
         overflow-y: hidden;
     }
 }
