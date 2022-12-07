@@ -310,16 +310,6 @@ $("#search2 button").on("click", function() {
 
 
 // ==========================================================================
-// Testing
-// ==========================================================================
-
-// Console Function: To allow cookie popup on next load.
-function clear() {
-    window.localStorage.removeItem("cookies-accepted");
-}
-
-
-// ==========================================================================
 // Core Events
 // ==========================================================================
 
@@ -379,3 +369,13 @@ $(document).ready(function(){
         sidebarWide = true;
     }
 });
+
+
+// ==========================================================================
+// Testing
+// ==========================================================================
+
+// Console Function: To allow cookie popup on next load.
+function clear() {
+    window.localStorage.removeItem("cookies-accepted");
+}
