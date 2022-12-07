@@ -33,8 +33,8 @@ function headerSlideOut() {
     
 }
 
-// Event: Page Scroll
-window.onscroll = function() {
+// Function: track scolling to slide header and apply sticky class, used when page scroll event triggers
+function scrollHeader() {
     if ((header.classList.contains("sticky")) && ($(this).scrollTop() === 0)) {
         header.classList.remove("sticky");
     } else if ( (!header.classList.contains("sticky")) && ($(this).scrollTop() < lastScollPosition) && ($(this).scrollTop() > header.offsetHeight) ) {
@@ -43,7 +43,7 @@ window.onscroll = function() {
         headerSlideOut();
     }
     lastScollPosition = $(this).scrollTop();
-};
+}
 
 // Event: Mouse over header
 $("header").on("mouseenter", function() {
@@ -95,8 +95,8 @@ function sidebarWidth() {
     }
 }
 
-// Event: Page resize
-$(window).on("resize", function() {
+// Function: Resize the sidebar, used when page resize event triggers
+function resizeSidebar() {
     if ($(".hamburger").hasClass("is-active")) {
         if ((sidebarWide) && ($(window).outerWidth() < 992)) {
             setMargins(-75);
@@ -106,33 +106,7 @@ $(window).on("resize", function() {
             sidebarWide = true;
         }
     }
-});
-
-
-// ==========================================================================
-// Hamburger / Tinted Page
-// ==========================================================================
-
-// Event: Page clicks
-$("body").on("click", function(e) {
-    
-    // clicks on tinted(disabled) page
-    if ($(e.target).hasClass("tint")) {
-        $(".hamburger").toggleClass("is-active");
-        resetMargins();
-        scrollLock.enablePageScroll();
-
-    // clicks on hamburger
-    } else if ($(e.target).hasClass("hamburger")) {
-        $(".hamburger").toggleClass("is-active");
-        setMargins(sidebarWidth());
-        scrollLock.disablePageScroll();
-
-    // clicks not on sidebar
-    } else if (($(".hamburger").hasClass("is-active")) && (!$(e.target).parents(".sidebar").length)) {
-        e.preventDefault();
-    }
-});
+}
 
 
 // ==========================================================================
@@ -343,6 +317,38 @@ $("#search2 button").on("click", function() {
 function clear() {
     window.localStorage.removeItem("cookies-accepted");
 }
+
+
+// ==========================================================================
+// Core Events
+// ==========================================================================
+
+// Event: Page clicks
+$("body").on("click", function(e) {
+    
+    // clicks on tinted(disabled) page
+    if ($(e.target).hasClass("tint")) {
+        $(".hamburger").removeClass("is-active");
+        resetMargins();
+        scrollLock.enablePageScroll();
+
+    // clicks on hamburger
+    } else if ($(e.target).hasClass("hamburger")) {
+        $(".hamburger").addClass("is-active");
+        setMargins(sidebarWidth());
+        scrollLock.disablePageScroll();
+    }
+});
+
+// Event: Page resize
+$(window).on("resize", function() {
+    resizeSidebar();
+});
+
+// Event: Page Scroll
+window.onscroll = function() {
+    scrollHeader();
+};
 
 
 // ==========================================================================
