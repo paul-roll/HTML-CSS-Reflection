@@ -5,6 +5,10 @@
 .email {
     @include section("email");
 
+    h2 {
+        font-weight: 400;
+    }
+
     label {
         font-size: 1em; // 16px
         font-weight: 600;
@@ -31,19 +35,35 @@
     .checkboxwrapper {
         display: flex;
         #checkbox {             // style the checkbox
-            cursor: pointer;
-            align-self: center; 
-            width: 32px;
-            height: 32px;
-            margin-right: 20px;
-            &:checked {
-                accent-color: $color-tuna;      // color when checked
-            }
-            &:focus {
-                outline: none;  // remove dotted outline from checkbox
-            }
+            display: none;
         }
-        label {
+
+        #checkbox + *::before {
+            cursor: pointer;
+            margin-right: 20px;
+            padding: 5px;
+            content: "";
+            display: inline-block;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 3px;
+            border-style: solid;
+            border-width: 3px;
+            border-color: $color-tuna;
+        }
+
+        #checkbox:checked + *::before {
+            content: "\f00c";
+            color: white;
+            text-align: center;
+            background: $color-tuna;
+            border-color: $color-tuna;
+          }
+          #checkbox:checked + * {
+            color: $color-tuna;
+          }
+
+        .checkbox-label {
             cursor: pointer;
             flex: 1 0;      // make the label dynamic so that the checkbox size can remain fixed.
             a {
@@ -56,7 +76,7 @@
     #subscribe {
         @include btn($color-white, $color-tuna, $hover: true);
         margin-top: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 35px;
     }
 
     label.required::after {      // inject a rose asterix after the labels with a required class

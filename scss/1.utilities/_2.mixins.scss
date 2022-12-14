@@ -38,11 +38,14 @@
 @mixin h1-viewall() {   // used in services and news
     h1 {
         margin: 0;
+        margin-top: 35px;
         @media (min-width: $breakpoint-sm) {        // At screen width 768+
             float: left;                                // Float the header left
         }
     }
     .viewall {
+        font-size: 1.6em;
+        margin-top: 45px;
         text-align: center;
         font-weight: bold;
         @media (min-width: $breakpoint-sm) {        // At screen width 768+
