@@ -5,6 +5,13 @@
 .footer {
     @include section("footer");
 
+
+    div.hr {
+        margin-top: 20px;
+        border: none;
+        border-bottom: 1px solid $color-grey;
+    }
+
     h4 {
         text-transform: uppercase;
     }
