@@ -336,9 +336,9 @@ $(window).on("resize", function() {
 });
 
 // Event: Page Scroll
-window.onscroll = function() {
+$("body").on("scroll", function() {
     scrollHeader();
-};
+});
 
 
 // ==========================================================================
