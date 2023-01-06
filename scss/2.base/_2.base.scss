@@ -9,9 +9,13 @@ html {
     font-family: 'Poppins', sans-serif;
     letter-spacing: 0.4px;
     // font-size: 1em; // 16px
+    overflow: hidden;
+    height: 100%;
 }
 
 body {
+    overflow:auto;
+    height: 100%;
     &.scroll-lock {
         overflow-y: hidden;
     }
