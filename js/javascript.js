@@ -1,7 +1,10 @@
 // ==========================================================================
 // Variables
 // ==========================================================================
-
+let scrollLocked = {
+    "header": false,
+    "sidebar": false,
+};
 const header = document.getElementsByTagName("header")[0]; // pointer to the page header
 let lastScollPosition = $("body").scrollTop(); // used with Event: Page Scroll; to track the position of the scroll between function calls
 let sidebarWide = false; // remember the sidebar state, used in; function: sidebarWidth and Event: page resize
@@ -14,6 +17,14 @@ const cookies = [ // All the data for the cookies table, pretend it was generate
     ["3CX", "https://netmatters.co.uk", ["Personal data to be processed and for the use of cookies in order to engage in a chat processed by Netmatters, for the purpose of Chat/Support for the time of 30 day(s) as per the GDPR.", "", ""]]
 ];
 
+function scrollLock(type, state) {
+    scrollLocked[type] = state;
+    if (scrollLocked["header"] || scrollLocked["sidebar"]) {
+        $("body").disablescroll();
+    } else {
+        $("body").disablescroll("undo");
+    }
+}
 
 // ==========================================================================
 // Header
@@ -35,29 +46,31 @@ function headerSlideOut() {
 
 // Function: track scolling to slide header and apply sticky class, used when page scroll event triggers
 function scrollHeader() {
-    if ((header.classList.contains("sticky")) && ($("body").scrollTop() === 0)) {
-        header.classList.remove("sticky");
-    } else if ( (!header.classList.contains("sticky")) && ($("body").scrollTop() < lastScollPosition) && ($("body").scrollTop() > header.offsetHeight) ) {
-        headerSlideIn();
-    } else if ( ($("header").css("top") === "0px") && ($("body").scrollTop() > lastScollPosition) ) {
-        headerSlideOut();
+    if (!scrollLocked["header"] && !scrollLocked["sidebar"]) {
+        if ((header.classList.contains("sticky")) && ($("body").scrollTop() === 0)) {
+            header.classList.remove("sticky");
+        } else if ( (!header.classList.contains("sticky")) && ($("body").scrollTop() < lastScollPosition) && ($("body").scrollTop() > header.offsetHeight) ) {
+            headerSlideIn();
+        } else if ( ($("header").css("top") === "0px") && ($("body").scrollTop() > lastScollPosition) ) {
+            headerSlideOut();
+        }
+        lastScollPosition = $("body").scrollTop();
     }
-    lastScollPosition = $("body").scrollTop();
+
 }
 
 // Event: Mouse over header
 $("header").on("mouseenter", function() {
     if ( $("header").hasClass("sticky") ) {
-        // scrollLock.disablePageScroll();
+        scrollLock("header", true);
     }
 });
 // Event: Mouse leave header
 $("header").on("mouseleave", function() {
     if ( $("header").hasClass("sticky") ) {
-        // scrollLock.enablePageScroll();
+        scrollLock("header", false);
     }
 });
-
 
 // ==========================================================================
 // Sidebar
@@ -181,13 +194,13 @@ function hideCookieSettings() {
 // Function: Show the cookies popup
 function showCookiePopup() {
     $(".cookies.popup").removeClass("hidden");
-    // scrollLock.disablePageScroll();
+    $("body").disablescroll();
     $("#page").addClass("lock");
 }
 // Function: Hide the cookies popup
 function hideCookiePopup() {
     $(".cookies.popup").addClass("hidden");
-    // scrollLock.enablePageScroll();
+    $("body").disablescroll("undo");
     $("#page").removeClass("lock");
 }
 
@@ -320,13 +333,13 @@ $("body").on("click", function(e) {
     if ($(e.target).hasClass("tint")) {
         $(".hamburger").removeClass("is-active");
         resetMargins();
-        // scrollLock.enablePageScroll();
+        scrollLock("sidebar", false);
 
     // clicks on hamburger
     } else if ($(e.target).hasClass("hamburger")) {
         $(".hamburger").addClass("is-active");
         setMargins(sidebarWidth());
-        // scrollLock.disablePageScroll();
+        scrollLock("sidebar", true);
     }
 });
 
