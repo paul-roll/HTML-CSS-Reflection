@@ -48,13 +48,13 @@ function scrollHeader() {
 // Event: Mouse over header
 $("header").on("mouseenter", function() {
     if ( $("header").hasClass("sticky") ) {
-        scrollLock.disablePageScroll();
+        // scrollLock.disablePageScroll();
     }
 });
 // Event: Mouse leave header
 $("header").on("mouseleave", function() {
     if ( $("header").hasClass("sticky") ) {
-        scrollLock.enablePageScroll();
+        // scrollLock.enablePageScroll();
     }
 });
 
@@ -181,13 +181,13 @@ function hideCookieSettings() {
 // Function: Show the cookies popup
 function showCookiePopup() {
     $(".cookies.popup").removeClass("hidden");
-    scrollLock.disablePageScroll();
+    // scrollLock.disablePageScroll();
     $("#page").addClass("lock");
 }
 // Function: Hide the cookies popup
 function hideCookiePopup() {
     $(".cookies.popup").addClass("hidden");
-    scrollLock.enablePageScroll();
+    // scrollLock.enablePageScroll();
     $("#page").removeClass("lock");
 }
 
@@ -320,13 +320,13 @@ $("body").on("click", function(e) {
     if ($(e.target).hasClass("tint")) {
         $(".hamburger").removeClass("is-active");
         resetMargins();
-        scrollLock.enablePageScroll();
+        // scrollLock.enablePageScroll();
 
     // clicks on hamburger
     } else if ($(e.target).hasClass("hamburger")) {
         $(".hamburger").addClass("is-active");
         setMargins(sidebarWidth());
-        scrollLock.disablePageScroll();
+        // scrollLock.disablePageScroll();
     }
 });
 
