@@ -33,12 +33,12 @@ function scrollLock(type, state) {
 // Function: Slide the header onto the screen
 function headerSlideIn() {
     header.classList.add("sticky");
-    $("header").stop().css("top", "-100%").animate({"top": "0"}, 300);
+    $("header").stop().css("top", "-100%").animate({"top": "0"}, 750);
 }
 
 // Function: Slide the header off the screen and unset its sticky class
 function headerSlideOut() {
-    $("header").stop().css("top", "0").animate({"top": "-100%"}, 300, function() {
+    $("header").stop().css("top", "0").animate({"top": "-100%"}, 750, function() {
         header.classList.remove("sticky");
     });
     
