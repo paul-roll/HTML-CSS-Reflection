@@ -3,7 +3,7 @@
 // ==========================================================================
 
 const header = document.getElementsByTagName("header")[0]; // pointer to the page header
-let lastScollPosition = $(this).scrollTop(); // used with Event: Page Scroll; to track the position of the scroll between function calls
+let lastScollPosition = $("body").scrollTop(); // used with Event: Page Scroll; to track the position of the scroll between function calls
 let sidebarWide = false; // remember the sidebar state, used in; function: sidebarWidth and Event: page resize
 const cookies = [ // All the data for the cookies table, pretend it was generated.
     ["Hotjar Ltd", "hotjar.com", ["", "https://www.hotjar.com/legal/policies/terms-of-service", "https://www.hotjar.com/legal/policies/privacy"]],
@@ -35,14 +35,14 @@ function headerSlideOut() {
 
 // Function: track scolling to slide header and apply sticky class, used when page scroll event triggers
 function scrollHeader() {
-    if ((header.classList.contains("sticky")) && ($(this).scrollTop() === 0)) {
+    if ((header.classList.contains("sticky")) && ($("body").scrollTop() === 0)) {
         header.classList.remove("sticky");
-    } else if ( (!header.classList.contains("sticky")) && ($(this).scrollTop() < lastScollPosition) && ($(this).scrollTop() > header.offsetHeight) ) {
+    } else if ( (!header.classList.contains("sticky")) && ($("body").scrollTop() < lastScollPosition) && ($("body").scrollTop() > header.offsetHeight) ) {
         headerSlideIn();
-    } else if ( ($("header").css("top") === "0px") && ($(this).scrollTop() > lastScollPosition) ) {
+    } else if ( ($("header").css("top") === "0px") && ($("body").scrollTop() > lastScollPosition) ) {
         headerSlideOut();
     }
-    lastScollPosition = $(this).scrollTop();
+    lastScollPosition = $("body").scrollTop();
 }
 
 // Event: Mouse over header
