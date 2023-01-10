@@ -1,4 +1,7 @@
-<?php include("inc/header.php"); ?>
+<?php
+    include("inc/header.php");
+    include("inc/query.php");
+?>
 
             <main>
                 <!-- Carousel -->
@@ -177,61 +180,37 @@
                         <h1>Latest News</h1>
                         <a class="hidden show-sm" href="#"><h3 class="viewall">View All &rarr;</h3></a>
                         <div class="flex-container">
-                            
-                                <div class="news-item web-design">
-                                    <a href="#" class="news-tag">News</a>
-                                    <a href="#" class="news-card">
-                                        <img class="news-image" src="img/news/1.jpg" alt="">
-                                        <div class="wrapper90pc">
-                                            <h4>October Notables 2022</h4>
-                                            <p>Each month, various departments recognise those employees who have excelled in their work and helped...</p>
-                                            <div class="btn">Read More</div>
-                                            <hr>
-                                            <img class="icon" src="img/netmatters-icon.png" alt="">
-                                            <ul>
-                                                <li>Posted by Netmatters</li>
-                                                <li>8th November 2022</li>
-                                            </ul>
-                                        </div>
-                                    </a>
-                                </div>
+<?php
+    foreach(query("SELECT * FROM news ORDER BY date DESC LIMIT 3") as $row) {
 
-                                <div class="news-item digital-marketing">
-                                    <a href="#" class="news-tag">Case Studies</a>
-                                    <a href="#" class="news-card">
-                                        <img class="news-image" src="img/news/2.jpg" alt="">
-                                        <div class="wrapper90pc">
-                                            <h4>Tourism & Leisure - Increasing Revenue with a...</h4>
-                                            <p>The Client Searles Leisure Resort, on the beautiful North Norfolk coast, is an award-winning UK holi...</p>
-                                            <div class="btn">Read More</div>
-                                            <hr>
-                                            <img class="icon" src="img/netmatters-icon.png" alt="">
-                                            <ul>
-                                                <li>Posted by Netmatters</li>
-                                                <li>3rd November 2022</li>
-                                            </ul>
-                                        </div>
-                                    </a>
-                                </div>
+        if (strlen($row["title"]) >= 45) {
+            $row["title"] = substr($row["title"], 0, 45) . "...";
+        }
 
-                                <div class="news-item bespoke-software">
-                                    <a href="#" class="news-tag">News</a>
-                                    <a href="#" class="news-card">
-                                        <img class="news-image" src="img/news/3.jpg" alt="">
-                                        <div class="wrapper90pc">
-                                            <h4>Business Automation: Take Your Business to th...</h4>
-                                            <p>In this article we explain everything you need to know about business automation, and why your busin...</p>
-                                            <div class="btn">Read More</div>
-                                            <hr>
-                                            <img class="icon" src="img/netmatters-icon.png" alt="">
-                                            <ul>
-                                                <li>Posted by Netmatters</li>
-                                                <li>28th October 2022</li>
-                                            </ul>
-                                        </div>
-                                    </a>
-                                </div>
+        if (strlen($row["description"]) >= 100) {
+            $row["description"] = substr($row["description"], 0, 100) . "...";
+        }
 
+        echo
+ "                          <div class=\"news-item " . htmlspecialchars($row["class"]) . "\">\n"
+."                              <a href=\"#\" class=\"news-tag\">" . htmlspecialchars($row["tag"]) . "</a>\n"
+."                              <a  href=\"#\" class=\"news-card\">\n"
+."                                  <img class=\"news-image\" src=\"img/news/" . $row["id"] . ".jpg\" alt=\"\">\n"
+."                                  <div class=\"wrapper90pc\">\n"
+."                                      <h4>" . htmlspecialchars($row["title"]) . "</h4>\n"
+."                                      <p>" . htmlspecialchars($row["description"]) . "</p>\n"
+."                                      <div class=\"btn\">Read More</div>\n"
+."                                      <hr>\n"
+."                                      <img class=\"icon\" src=\"img/" . htmlspecialchars($row["author"]) . "-icon.png\" alt=\"\">\n"
+."                                      <ul>\n"
+."                                          <li>Posted by " . htmlspecialchars($row["author"]) . "</li>\n"
+."                                          <li>" . date("jS F Y", strtotime($row["date"])) . "</li>\n"
+."                                      </ul>\n"
+."                                  </div>\n"
+."                              </a>\n"
+."                          </div>\n";
+    }
+?>
                         </div>
                         <a class="hide-sm" href="#"><h3 class="viewall">View All &rarr;</h3></a>
                         <!-- News Footer -->
