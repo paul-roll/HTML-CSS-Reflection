@@ -32,6 +32,7 @@ echo"                                </ul>\n";
 echo"                                <p>" . $office["phone"] . "</p>\n";
 echo"                                <div class='btn'>View More</div>\n";
 echo"                           </div>\n";
+echo"<iframe width='100%' height='315px' id='mapcanvas' src='https://maps.google.com/maps?q=Netmatters," . $office["address"][4] . "&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=&amp;output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'><div style='overflow:hidden;'><div id='gmap_canvas' style='height:100%;width:100%;'></div></div></iframe>";
 echo"                        </div>\n";
 } ?>
                         </div>
