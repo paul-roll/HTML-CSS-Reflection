@@ -1,8 +1,14 @@
+<?php
+    spl_autoload_register(function ($class) {
+        include 'inc/' . $class . '.class.php';
+    });
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
     <head>
-        <title>Full Service Digital Agency | Cambridgeshire & Norfolk | Netmatters</title>
+        <title><?php echo $pagetitle; ?> | Netmatters</title>
 	<link rel="shortcut icon" href="/img/favicon.ico">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">

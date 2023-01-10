@@ -1,10 +1,6 @@
 <?php
+    $pagetitle = "Full Service Digital Agency | Cambridgeshire & Norfolk";
     include("inc/header.php");
-
-    spl_autoload_register(function ($class) {
-        include 'inc/' . $class . '.class.php';
-    });
-
 ?>
 
             <main>
