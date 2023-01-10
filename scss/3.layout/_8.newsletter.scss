@@ -1,9 +1,9 @@
 // ==========================================================================
-// Email Layout
+// Newsletter Layout
 // ==========================================================================
 
-.email {
-    @include section("email");
+.newsletter {
+    @include section("newsletter");
 
     h2 {
         font-weight: 400;
