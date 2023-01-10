@@ -1,6 +1,10 @@
 <?php
     include("inc/header.php");
-    include("inc/query.php");
+
+    spl_autoload_register(function ($class) {
+        include 'inc/' . $class . '.class.php';
+    });
+
 ?>
 
             <main>
@@ -181,15 +185,16 @@
                         <a class="hidden show-sm" href="#"><h3 class="viewall">View All &rarr;</h3></a>
                         <div class="flex-container">
 <?php
-    foreach(query("SELECT * FROM news ORDER BY date DESC LIMIT 3") as $row) {
+    if (!empty($query = query::select("*", "news", "ORDER BY date DESC LIMIT 3"))) {
+        foreach($query as $row) {
 
-        if (strlen($row["title"]) >= 45) {
-            $row["title"] = substr($row["title"], 0, 45) . "...";
-        }
+            if (strlen($row["title"]) >= 45) {
+                $row["title"] = substr($row["title"], 0, 45) . "...";
+            }
 
-        if (strlen($row["description"]) >= 100) {
-            $row["description"] = substr($row["description"], 0, 100) . "...";
-        }
+            if (strlen($row["description"]) >= 100) {
+                $row["description"] = substr($row["description"], 0, 100) . "...";
+            }
 
         echo
  "                          <div class=\"news-item " . htmlspecialchars($row["class"]) . "\">\n"
@@ -209,6 +214,7 @@
 ."                                  </div>\n"
 ."                              </a>\n"
 ."                          </div>\n";
+        }
     }
 ?>
                         </div>
