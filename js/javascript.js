@@ -278,15 +278,18 @@ function expandCookie(i) {
 // ==========================================================================
 
 // Function: When the header (narrow screens) search button is clicked
-$("#search1 button").on("click", function() {
+$("#search1 button").on("click", function(e) {
+    e.preventDefault();
     if ( $("#search1 input").val() ) {
         alert(`do search: ${$("#search1 input").val()}`);
         $("#search1 input").val("");
     }
 });
 
+
 // Function: When the header (wider screens) search button is clicked
-$("#search2 button").on("click", function() {
+$("#search2 button").on("click", function(e) {
+    e.preventDefault();
 
     // do a search if there is input
     if ( $("#search2 input").val() ) {
