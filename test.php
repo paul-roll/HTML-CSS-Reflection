@@ -8,37 +8,37 @@
                         <h1>Latest News</h1>
                         <a class="hidden show-sm" href="#"><h3 class="viewall">View All &rarr;</h3></a>
                         <div class="flex-container">
-                            
-                            <?php
-                                foreach(query("SELECT * FROM news") as $row) {
+<?php
+    foreach(query("SELECT * FROM news ORDER BY date DESC LIMIT 3") as $row) {
 
-                                    if (strlen($row["title"]) >= 45) {
-                                        $row["title"] = substr($row["title"], 0, 45) . "...";
-                                    }
-                        
-                                    if (strlen($row["description"]) >= 100) {
-                                        $row["description"] = substr($row["description"], 0, 100) . "...";
-                                    }
-                        
-                                    echo '        <div class="news-item ' . htmlspecialchars($row["class"]) . '">
-                                <a href="#" class="news-tag">' . htmlspecialchars($row["tag"]) . '</a>
-                                <a href="#" class="news-card">
-                                    <img class="news-image" src="img/news/' . $row["id"] . '.jpg" alt="">
-                                    <div class="wrapper90pc">
-                                        <h4>' . htmlspecialchars($row["title"]) . '</h4>
-                                        <p>' . htmlspecialchars($row["description"]) . '</p>
-                                        <div class="btn">Read More</div>
-                                        <hr>
-                                        <img class="icon" src="img/netmatters-icon.png" alt="">
-                                        <ul>
-                                            <li>Posted by ' . htmlspecialchars($row["author"]) . '</li>
-                                            <li>' . date("jS F Y", strtotime($row["date"])) . '</li>
-                                        </ul>
-                                    </div>
-                                </a>
-                            </div>';
-                                }
-                            ?>
+        if (strlen($row["title"]) >= 45) {
+            $row["title"] = substr($row["title"], 0, 45) . "...";
+        }
+
+        if (strlen($row["description"]) >= 100) {
+            $row["description"] = substr($row["description"], 0, 100) . "...";
+        }
+
+        echo
+ "                          <div class=\"news-item " . htmlspecialchars($row["class"]) . "\">\n"
+."                              <a href=\"#\" class=\"news-tag\">" . htmlspecialchars($row["tag"]) . "</a>\n"
+."                              <a  href=\"#\" class=\"news-card\">\n"
+."                                  <img class=\"news-image\" src=\"img/news/" . $row["id"] . ".jpg\" alt=\"\">\n"
+."                                  <div class=\"wrapper90pc\">\n"
+."                                      <h4>" . htmlspecialchars($row["title"]) . "</h4>\n"
+."                                      <p>" . htmlspecialchars($row["description"]) . "</p>\n"
+."                                      <div class=\"btn\">Read More</div>\n"
+."                                      <hr>\n"
+."                                      <img class=\"icon\" src=\"img/netmatters-icon.png\" alt=\"\">\n"
+."                                      <ul>\n"
+."                                          <li>Posted by " . htmlspecialchars($row["author"]) . "</li>\n"
+."                                          <li>" . date("jS F Y", strtotime($row["date"])) . "</li>\n"
+."                                      </ul>\n"
+."                                  </div>\n"
+."                              </a>\n"
+."                          </div>\n";
+    }
+?>
 
                         </div>
                         <a class="hide-sm" href="#"><h3 class="viewall">View All &rarr;</h3></a>
