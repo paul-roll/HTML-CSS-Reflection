@@ -1,0 +1,141 @@
+// ==========================================================================
+// News Layout
+// ==========================================================================
+
+.offices {
+    @include section("offices");
+
+    @include h1-viewall();
+
+    .news-image {       // resize image to be 100% of its container width
+        width: 100%;
+    }
+
+    .icon {
+        float: left;
+        padding: 20px;
+        padding-left: 0;    // remove left padding to keep in line with margins
+    }
+
+    hr {
+        margin-top: 30px;
+        border: none;
+        border-bottom: 1px solid lighten($color-grey, 20%);
+    }
+
+    ul {
+        margin: 30px;
+        li {
+            font-size: 0.875em; // 14px
+        }
+    }
+
+    .flex-container {       // flex container for news cards
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        @media (min-width: $breakpoint-md) {        // At screen width 992+
+            flex-direction: row;                        // Change direction (from column) to row
+        }
+    }
+
+    .news-item {        // flex items for news cards
+        flex: 1 0;
+        border: 1px solid lighten($color-grey, 20%);
+        margin-top: 15px;
+        margin-bottom: 30px;
+        box-shadow:0 0 40px darken(white, 10%);
+        position: relative;
+        transition: top 0.5s;   // transition effect
+        top: 0;                 // transition startpoint
+        &:hover {
+            top: -10px;         // transition endpoint
+        }
+    }
+
+    .news-card:hover {
+        text-decoration: none;      // remove hover underline from the card
+    }
+
+    .news-item h4 {
+        min-height: 3em; // 48px    // make single line titles have the same dimensions as double lines
+    }
+
+    p {
+        color: darken($color-grey, 20%);
+    }
+
+    @each $service, $color in $service-colors {     // Loop through each service to assign colors
+        .#{$service} {
+            .btn {
+                @include btn($color-white, $color, $hover: true);
+            }
+            h4 {
+                color: $color;
+            }
+            .news-tag {
+                background-color: $color;
+            }
+        }
+    }
+
+}
+
+
+
+.news-footer .flex-footer-container{                          // flex container for the news footer (clients)
+    margin: 30px 10px;
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    gap: 40px;
+    img {
+        width: 100%;            // resize images to be the size of its container
+        filter: grayscale(1);   // greyscale filter by default
+        &:hover {
+            filter: none;       // remove filter on hover
+        }
+    }
+    > div {                             // each flex item 
+        position: relative;
+        &:hover {
+            .arrow, .box {
+                display: block;         // on hover show the arrow and box classes for this group
+            }
+        }
+    }
+    
+    $arrow-width: 100px;                                    // define width of the arrow
+    $box-width: 240px;                                      // define width of the box
+    .arrow {
+        position: absolute;
+        height: 0;
+        left: calc(50% - (#{$arrow-width} / 2));            // center: place it in the middle of the relative then offset by half the width of itself
+        width: $arrow-width;
+        bottom: calc(100% + 15px);                          // place it on the top edge of the relative, plus an extra 15px
+        border-left: ($arrow-width / 2) solid transparent;
+        border-right: ($arrow-width / 2) solid transparent;
+        border-top: ($arrow-width / 2) solid;
+    }
+    .box {
+        position: absolute;
+        bottom: calc(100% + (#{$arrow-width} / 2) + 15px);  // place it on the top edge of the relative, plus half the width of arrow plus an extra 15px          
+        width: $box-width;
+        left: calc(50% - (#{$box-width} / 2));              // center: place it in the middle of the relative then offset by half the width of itself
+        background-color: $color-tuna;
+        text-align: center;
+        h4, p, hr {
+            margin: 15px 0;
+            padding: 0 10px;
+            color: $color-white;
+        }
+        h4 {
+            font-size: 1.125em; // 18px
+        }
+        hr {
+            border-width: 3px;
+            width: 1%;
+            margin: 0 auto;
+        }
+    }
+}

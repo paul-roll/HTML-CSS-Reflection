@@ -2,6 +2,12 @@
     spl_autoload_register(function ($class) {
         include 'inc/' . $class . '.class.php';
     });
+    include ("inc/functions.php");
+
+    $offices = array();
+    $offices["Cambridge"] = ["office"=>"Cambridge Office", "address"=>["Unit 1.31,", "St John's Innovation Centre,", "Cowley Road, Milton,", "Cambridge,", "CB4 0WS"], "phone"=>"01223 37 57 72"];
+    $offices["Wymondham"] = ["office"=>"Wymondham Office", "address"=>["Unit 15,", "Penfold Drive,", "Gateway 11 Business Park,", "Wymondham, Norfolk,", "NR18 0WZ"], "phone"=>"01603 70 40 20"];
+    $offices["Great Yarmouth"] = ["office"=>"Great Yarmouth Office", "address"=>["Suite F23,", "Beacon Innovation Centre,", "Beacon Park, Gorleston,", "Great Yarmouth, Norfolk,", "NR31 7RA"], "phone"=>"01493 60 32 04"];
 ?>
 
 <!DOCTYPE html>

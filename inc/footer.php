@@ -35,39 +35,27 @@
                             <div class="flex-item">
                                 <h4>Cambridge Office</h4>
                                 <ul>
-                                    <li>Unit 1.31,</li>
-                                    <li>St John's Innovation Centre,</li>
-                                    <li>Cowley Road, Milton,</li>
-                                    <li>Cambridge,</li>
-                                    <li>CB4 0WS</li>
+                                    <?php echoList($offices["Cambridge"]["address"]); ?>
                                     <li>&nbsp;</li>
-                                    <li>Tel: <a href="#">01223 37 57 72</a></li>
+                                    <li>Tel: <a href="#"><?php echo $offices["Cambridge"]["phone"]; ?></a></a></li>
                                 </ul>
                             </div>
 
                             <div class="flex-item">
                                 <h4>Wymondham Office</h4>
                                 <ul>
-                                    <li>Unit 15,</li>
-                                    <li>Penfold Drive,</li>
-                                    <li>Gateway 11 Business Park,</li>
-                                    <li>Wymondham, Norfolk,</li>
-                                    <li>NR18 0WZ</li>
+                                <?php echoList($offices["Wymondham"]["address"]); ?>
                                     <li>&nbsp;</li>
-                                    <li>Tel: <a href="#">01603 70 40 20</a></li>
+                                    <li>Tel: <a href="#"><?php echo $offices["Wymondham"]["phone"]; ?></a></a></li>
                                 </ul>
                             </div>
 
                             <div class="flex-item">
                                 <h4>Great Yarmouth Office</h4>
                                 <ul>
-                                    <li>Suite F23,</li>
-                                    <li>Beacon Innovation Centre,</li>
-                                    <li>Beacon Park, Gorleston,</li>
-                                    <li>Great Yarmouth, Norfolk,</li>
-                                    <li>NR31 7RA</li>
+                                <?php echoList($offices["Great Yarmouth"]["address"]); ?>
                                     <li>&nbsp;</li>
-                                    <li>Tel: <a href="#">01493 60 32 04</a></li>
+                                    <li>Tel: <a href="#"><?php echo $offices["Great Yarmouth"]["phone"]; ?></a></li>
                                 </ul>
                             </div>
                         </div>
