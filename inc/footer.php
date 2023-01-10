@@ -14,7 +14,7 @@
                                     <li><a href="#">Cookie Policy</a></li>
                                     <li><a href="#">Terms & Conditions</a></li>
                                     <li><a href="#">Environmental Policy</a></li>
-                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="contact.php">Contact Us</a></li>
                                 </ul>
                             </div>
                             <div class="flex-item">
@@ -105,7 +105,7 @@
             <div class="hide-md sidebar-narrow">
 
                 <ul>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="contact.php">Contact Us</a></li>
                 </ul>
                 
                 <ul class="bespoke-software">
@@ -231,7 +231,7 @@
             </ul>
 
             <ul>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
                 <li><a href="#"><i class="fa-solid fa-angles-right"></i>Cambridge Office</a></li>
                 <li><a href="#"><i class="fa-solid fa-angles-right"></i>Wymondham Office</a></li>
                 <li><a href="#"><i class="fa-solid fa-angles-right"></i>Great Yarmouth Office</a></li>
