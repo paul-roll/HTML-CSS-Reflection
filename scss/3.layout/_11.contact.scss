@@ -88,6 +88,34 @@
 
     border-radius: 15px;
 
+    p {
+        font-size: 1em;     // 16px
+        color: darken($color-grey, 20%);
+        &.bold {
+            font-weight: 600;
+            color: $color-tuna;
+        }
+        &.email {
+            font-size: 1.625em;     // 26px
+            font-weight: 600;
+            color: $color-wisteria;
+        }
+        &.out-of-hours {
+            margin: 0px;
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    label {
+        font-size: 1em;     // 16px
+        font-weight: 600;
+        color: $color-tuna;
+    }
+
+
+
     .flex-container {       // flex container for news cards
         display: flex;
         flex-direction: column;
@@ -99,7 +127,7 @@
 
     .flex-item {        // flex items for news cards
         // flex: 1 0;
-        border: 1px solid lighten($color-grey, 20%);
+        // border: 1px solid lighten($color-grey, 20%);
         margin-top: 15px;
         &:first-child {
             flex: 1 0;
@@ -113,19 +141,34 @@
         }
     }
 
+
     .flex-form {
         margin: 30px;
         display: flex;
         flex-flow: row wrap;
         // justify-content: center;
         gap: 30px;
+        input {
+            height: 47px;
+        }
+        textarea {
+            height: 100px;
+        }
         > div {
             width: 100%;
             &.half {
-                width: calc(50% - 15px);
+                @media (min-width: $breakpoint-md) {
+                    width: calc(50% - 15px);
+                }
             }
+
             .right {
                 float: right;
+                font-size: 0.85em;
+                color: $color-tuna;
+                .required {
+                    color: $color-chestnut-rose;
+                }
             }
         
         }

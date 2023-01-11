@@ -38,9 +38,4 @@
         margin-top: 20px;
         margin-bottom: 35px;
     }
-
-    label.required::after {      // inject a rose asterix after the labels with a required class
-        content: ' *';
-        color: $color-chestnut-rose;
-    }
 }

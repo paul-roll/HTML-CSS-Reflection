@@ -108,7 +108,7 @@ li {
     outline: 1px dotted;
 }
 
-input[type=text] {      // style all the input text boxes
+input[type=text], textarea {      // style all the input text boxes
     width: 100%;
     padding: 5px 15px;
     font-size: 0.875em; // 14px
@@ -164,6 +164,11 @@ input[type=text] {      // style all the input text boxes
             text-decoration: underline;
         }
     }
+}
+
+label.required::after {      // inject a rose asterix after the labels with a required class
+    content: ' *';
+    color: $color-chestnut-rose;
 }
 
 

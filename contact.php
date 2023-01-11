@@ -35,7 +35,7 @@ echo"                                <div class='btn'>View More</div>\n";
 echo"                           </div>\n";
 
 echo"                        </div>\n";
-echo"<iframe width='100%' height='300px' id='mapcanvas' src='https://maps.google.com/maps?q=Netmatters," . $office["address"][4] . "&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=&amp;output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'><div style='overflow:hidden;'><div id='gmap_canvas' style='height:100%;width:100%;'></div></div></iframe>";
+echo"<iframe width='100%' height='300px' src='https://maps.google.com/maps?q=Netmatters," . $office["address"][4] . "&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=&amp;output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'></iframe>";
 echo"</div>\n";   
 } ?>
                         </div>
@@ -46,7 +46,18 @@ echo"</div>\n";
                 <section class="contact">
                     <div class="wrapper">
                         <div class="flex-container">
-                            <div class="flex-item">X</div>
+                            <div class="flex-item">
+                                <p class="bold">Email us on:</p>
+                                <p class="email">sales@netmatters.com</p>
+                                <p class="bold">Business hours:</p>
+                                <p class="bold">Monday - Friday 07:00 - 18:00 </p>
+                                <p class="bold out-of-hours">Out of Hours IT Support <i class="fa-solid fa-angle-down"></i></p>
+                                <div class="hidden">
+                                    <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
+                                    <p class="bold">Monday - Friday 18:00 - 22:00<br>Saturday 08:00 - 16:00<br>Sunday 10:00 - 18:00</p>
+                                    <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call.</p>
+                                </div>
+                            </div>
                             <div class="flex-item">
                                 <form>
                                     <div class="flex-form">
@@ -55,7 +66,7 @@ echo"</div>\n";
                                             <input id="name" type="text">
                                         </div>
                                         <div class="half">
-                                            <label class="required" for="company">Company Name</label><br>
+                                            <label class="" for="company">Company Name</label><br>
                                             <input id="company" type="text">
                                         </div>
                                         <div class="half">
@@ -72,7 +83,7 @@ echo"</div>\n";
                                         </div>
                                         <div>
                                             <label class="required" for="message">Message</label><br>
-                                            <input id="message" type="text">
+                                            <textarea name="message" cols="50" rows="10" id="message"></textarea>
                                         </div>
 
                                         <div class="checkboxwrapper">
@@ -82,8 +93,8 @@ echo"</div>\n";
                                         </div>
 
                                         <div>
-                                            <input class="left" id="enquiry" type="submit" value="Send Enquiry">
-                                            <div class="right">* Fields Required</div>
+                                            <input id="enquiry" type="submit" value="Send Enquiry">
+                                            <div class="right"><span class="required">*</span> Fields Required</div>
                                         </div>
 
                                     </div>

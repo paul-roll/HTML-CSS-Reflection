@@ -73,6 +73,20 @@ $("header").on("mouseleave", function() {
 });
 
 // ==========================================================================
+// Contact
+// ==========================================================================
+
+// Event: clicked contact out-of-hours
+$(".contact .out-of-hours").on("click", function() {
+    if ( $(".contact .out-of-hours + div").hasClass("hidden") ) {
+        $(".contact .out-of-hours + div").slideDown().removeClass("hidden");
+    } else {
+        $(".contact .out-of-hours + div").slideUp().addClass("hidden");
+    }
+});
+
+
+// ==========================================================================
 // Sidebar
 // ==========================================================================
 
