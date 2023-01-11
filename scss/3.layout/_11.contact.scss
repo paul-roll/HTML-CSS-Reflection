@@ -7,6 +7,29 @@
 
     @include h1-viewall();
 
+    h2 {
+        font-size: 2.25em; //36px
+        font-weight: 400;
+    }
+
+    h3 {
+        font-size: 1.125em;
+        font-weight: 400;
+    }
+
+    li {
+        font-size: 0.8125em; // 14px
+        font-weight: 400;
+        color: darken($color-grey, 10%);
+    }
+
+    p {
+        font-size: 1.625em;
+        font-weight: 700;
+        color: $color-wisteria;
+    }
+
+
     .news-image {       // resize image to be 100% of its container width
         width: 100%;
     }
@@ -23,12 +46,6 @@
         border-bottom: 1px solid lighten($color-grey, 20%);
     }
 
-    ul {
-        margin: 30px;
-        li {
-            font-size: 0.875em; // 14px
-        }
-    }
 
     .flex-container {       // flex container for news cards
         display: flex;
@@ -39,11 +56,11 @@
         }
     }
 
-    .news-item {        // flex items for news cards
+    .office-item {        // flex items for news cards
+        border-radius: 0 0 15px 15px;
         flex: 1 0;
         border: 1px solid lighten($color-grey, 20%);
         margin-top: 15px;
-        margin-bottom: 30px;
         box-shadow:0 0 40px darken(white, 10%);
         position: relative;
         transition: top 0.5s;   // transition effect
@@ -51,32 +68,17 @@
         &:hover {
             top: -10px;         // transition endpoint
         }
+        > div {
+            margin: 30px;
+        }
     }
 
     .news-card:hover {
         text-decoration: none;      // remove hover underline from the card
     }
 
-    .news-item h4 {
-        min-height: 3em; // 48px    // make single line titles have the same dimensions as double lines
-    }
-
-    p {
-        color: darken($color-grey, 20%);
-    }
-
-    @each $service, $color in $service-colors {     // Loop through each service to assign colors
-        .#{$service} {
-            .btn {
-                @include btn($color-white, $color, $hover: true);
-            }
-            h4 {
-                color: $color;
-            }
-            .news-tag {
-                background-color: $color;
-            }
-        }
+    .btn {
+        @include btn($color-white, $color-wisteria, $hover: true);
     }
 
 }
