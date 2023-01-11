@@ -76,6 +76,11 @@ $("header").on("mouseleave", function() {
 // Contact
 // ==========================================================================
 
+// Event: clicked contact message delete
+$(".contact .message i").on("click", function(e) {
+    $(e.target).parent().parent().remove();
+});
+
 // Event: clicked contact out-of-hours
 $(".contact .out-of-hours").on("click", function() {
     if ( $(".contact .out-of-hours + div").hasClass("hidden") ) {

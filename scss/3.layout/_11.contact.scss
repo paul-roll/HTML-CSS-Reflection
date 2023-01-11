@@ -86,8 +86,6 @@
 
 .contact {
 
-    border-radius: 15px;
-
     p {
         font-size: 1em;     // 16px
         color: darken($color-grey, 20%);
@@ -134,7 +132,7 @@
         }
         &:last-child {
             border-radius: 15px;
-            background-color: $color-alto;
+            background-color: #eee;
             @media (min-width: $breakpoint-lg) {
                 width: 770px;
             }
@@ -174,6 +172,44 @@
         }
         #enquiry {
             @include btn($color-white, $color-wisteria, $hover: true);
+        }
+        .message {
+            border: 1px solid;
+            padding: 15px;
+            p {
+                margin: 0;
+            }
+            i {
+                float: right;
+                cursor: pointer;
+                padding-top: 5px;
+            }
+            &.success {
+                background-color: #2ecc71;
+                border-color: darken(#2ecc71, 5%);
+                p {
+                    color: $color-white;
+                }
+                i {
+                    color: darken(#2ecc71, 20%);
+                    &:hover {
+                        color: $color-white;
+                    }
+                }
+            }
+            &.error {
+                background-color: #f2dede;
+                border-color: darken(#f2dede, 5%);
+                p {
+                    color: darken(#f2dede, 50%);
+                }
+                i {
+                    color: $color-grey;
+                    &:hover {
+                        color: darken($color-grey, 20%);
+                    }
+                }
+            }
         }
     }
 }

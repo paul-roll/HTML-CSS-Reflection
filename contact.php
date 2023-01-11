@@ -1,6 +1,11 @@
 <?php
     $pagetitle = "Contact Us";
     include("inc/header.php");
+
+    $validation = array();
+    $validation[] = [0, "validation.phone"]; //testing line
+    $validation[] = [0, "The message must be at least 5 characters."]; //testing line
+    $validation[] = [1, "Your message has been sent!"]; //testing line
 ?>
 
             <main>
@@ -61,6 +66,7 @@ echo"</div>\n";
                             <div class="flex-item">
                                 <form>
                                     <div class="flex-form">
+                                        <?php echoValidation($validation); ?>
                                         <div class="half">
                                             <label class="required" for="name">Your Name</label><br>
                                             <input id="name" type="text">
