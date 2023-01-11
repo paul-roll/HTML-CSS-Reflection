@@ -30,7 +30,7 @@
     }
 
 
-    .news-image {       // resize image to be 100% of its container width
+    .office-image {       // resize image to be 100% of its container width
         width: 100%;
     }
 
@@ -84,60 +84,53 @@
 }
 
 
+.contact {
 
-.news-footer .flex-footer-container{                          // flex container for the news footer (clients)
-    margin: 30px 10px;
-    display: flex;
-    justify-content: space-around;
-    max-width: 100%;
-    gap: 40px;
-    img {
-        width: 100%;            // resize images to be the size of its container
-        filter: grayscale(1);   // greyscale filter by default
-        &:hover {
-            filter: none;       // remove filter on hover
+    border-radius: 15px;
+
+    .flex-container {       // flex container for news cards
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        @media (min-width: $breakpoint-lg) {        // At screen width ?+
+            flex-direction: row-reverse;                        // Change direction (from column) to row
         }
     }
-    > div {                             // each flex item 
-        position: relative;
-        &:hover {
-            .arrow, .box {
-                display: block;         // on hover show the arrow and box classes for this group
+
+    .flex-item {        // flex items for news cards
+        // flex: 1 0;
+        border: 1px solid lighten($color-grey, 20%);
+        margin-top: 15px;
+        &:first-child {
+            flex: 1 0;
+        }
+        &:last-child {
+            border-radius: 15px;
+            background-color: $color-alto;
+            @media (min-width: $breakpoint-lg) {
+                width: 770px;
             }
         }
     }
-    
-    $arrow-width: 100px;                                    // define width of the arrow
-    $box-width: 240px;                                      // define width of the box
-    .arrow {
-        position: absolute;
-        height: 0;
-        left: calc(50% - (#{$arrow-width} / 2));            // center: place it in the middle of the relative then offset by half the width of itself
-        width: $arrow-width;
-        bottom: calc(100% + 15px);                          // place it on the top edge of the relative, plus an extra 15px
-        border-left: ($arrow-width / 2) solid transparent;
-        border-right: ($arrow-width / 2) solid transparent;
-        border-top: ($arrow-width / 2) solid;
-    }
-    .box {
-        position: absolute;
-        bottom: calc(100% + (#{$arrow-width} / 2) + 15px);  // place it on the top edge of the relative, plus half the width of arrow plus an extra 15px          
-        width: $box-width;
-        left: calc(50% - (#{$box-width} / 2));              // center: place it in the middle of the relative then offset by half the width of itself
-        background-color: $color-tuna;
-        text-align: center;
-        h4, p, hr {
-            margin: 15px 0;
-            padding: 0 10px;
-            color: $color-white;
+
+    .flex-form {
+        margin: 30px;
+        display: flex;
+        flex-flow: row wrap;
+        // justify-content: center;
+        gap: 30px;
+        > div {
+            width: 100%;
+            &.half {
+                width: calc(50% - 15px);
+            }
+            .right {
+                float: right;
+            }
+        
         }
-        h4 {
-            font-size: 1.125em; // 18px
-        }
-        hr {
-            border-width: 3px;
-            width: 1%;
-            margin: 0 auto;
+        #enquiry {
+            @include btn($color-white, $color-wisteria, $hover: true);
         }
     }
 }

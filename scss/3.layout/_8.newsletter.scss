@@ -33,47 +33,6 @@
         }
     }
 
-    .checkboxwrapper {
-        display: flex;
-        #checkbox {             // style the checkbox
-            display: none;
-        }
-
-        #checkbox + *::before {
-            cursor: pointer;
-            margin-right: 20px;
-            padding: 5px;
-            content: "";
-            display: inline-block;
-            width: 1rem;
-            height: 1rem;
-            border-radius: 3px;
-            border-style: solid;
-            border-width: 3px;
-            border-color: $color-tuna;
-        }
-
-        #checkbox:checked + *::before {
-            content: "\f00c";
-            color: white;
-            text-align: center;
-            background: $color-tuna;
-            border-color: $color-tuna;
-          }
-          #checkbox:checked + * {
-            color: $color-tuna;
-          }
-
-        .checkbox-label {
-            cursor: pointer;
-            flex: 1 0;      // make the label dynamic so that the checkbox size can remain fixed.
-            a {
-                text-decoration: underline;
-            }
-        }
-    }
-
-
     #subscribe {
         @include btn($color-white, $color-tuna, $hover: true);
         margin-top: 20px;
