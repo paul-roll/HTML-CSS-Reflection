@@ -128,7 +128,7 @@ function validateInput(type, input) {
 
 // Event focus loss
 $(".contact input, .contact textarea").on("focusout", function(e) {
-    if ($(e.target).val()) {
+    if (($(e.target).val()) || ($(e.target).hasClass("set"))) {
         $(e.target).addClass("set");
 
         if (validateInput(e.target.getAttribute("type"), $(e.target).val())) {
@@ -153,7 +153,8 @@ $(".contact input, .contact textarea").on("input", function(e) {
 // Event Submit
 $(".contact #enquiry").on("click", function(e) {
     e.preventDefault();
-    $('form :visible[class*=has-err]:first').focus();
+    $(".contact input, .contact textarea").addClass("set").trigger("focusout");
+    $('.contact :visible[class*=has-err]:first').focus();
 });
 
 
