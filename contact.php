@@ -2,11 +2,69 @@
     $pagetitle = "Contact Us";
     include("inc/header.php");
 
-    $validation = array();
-    $validation[] = [0, "validation.phone"]; //testing line
-    $validation[] = [0, "The message must be at least 5 characters."]; //testing line
-    $validation[] = [1, "Your message has been sent!"]; //testing line
+    // validate
+    $name = $company = $email = $phone = $subject = $message = "";
+    $validationErrors = array();
+
+    //Sanitize, Trim, Lowercase, Capital first
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+        $name = ucfirst(strtolower(trim(filter_input(INPUT_POST,"name",FILTER_SANITIZE_SPECIAL_CHARS))));
+        if ($nameErr = validateString($name, "Your Name")) {
+            $validationErrors["name"] = [0, $nameErr];
+        }
+
+        $company = ucfirst(strtolower(trim(filter_input(INPUT_POST,"company",FILTER_SANITIZE_SPECIAL_CHARS))));
+        if ($companyErr = validateString($company, "Company Name")) {
+            $validationErrors["company"] = [0, $companyErr];
+        }
+
+        $email = strtolower(trim(filter_input(INPUT_POST,"email",FILTER_SANITIZE_EMAIL)));
+        if ($emailErr = validateEmail($email)) {
+            $validationErrors["email"] = [0, $emailErr];
+        }
+
+        $phone = str_replace([" ", "-"], "", trim(filter_input(INPUT_POST,"phone",FILTER_SANITIZE_SPECIAL_CHARS)));
+        if ($phoneErr = validatePhone($phone)) {
+            $validationErrors["phone"] = [0, $phoneErr];
+        }
+
+        $subject = ucfirst(strtolower(trim(filter_input(INPUT_POST,"subject",FILTER_SANITIZE_SPECIAL_CHARS))));
+        if ($subjectErr = validateString($subject, "Subject")) {
+            $validationErrors["subject"] = [0, $subjectErr];
+        }
+
+        $message = trim(filter_input(INPUT_POST,"message",FILTER_SANITIZE_SPECIAL_CHARS));
+        if ($messageErr = validateMessage($message)) {
+            $validationErrors["message"] = [0, $messageErr];
+        }
+
+        if (isset($_POST['checkbox'])) {
+            $checkbox = true;
+        }
+
+        // show errors
+        if ($validationErrors) {
+            // has errors
+            var_dump("error");
+        } else {
+            // push to database
+            var_dump("database");
+        }
+
+    }
+
+
+
+
+
+    // $validation = array();
+    // $validation[] = [0, "validation.phone"]; //testing line
+    // $validation[] = [0, "The message must be at least 5 characters."]; //testing line
+    // $validation[] = [1, "Your message has been sent!"]; //testing line
 ?>
+
+
 
             <main>
 
@@ -60,37 +118,37 @@ echo"</div>\n";
                                     <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call.</p>
                                 </div>
                             </div>
-                            <div class="flex-item">
-                                <form>
+                            <div class="flex-item" id="form">
+                                <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>#form" id="contact">
                                     <div class="flex-form">
-                                        <?php echoValidation($validation); ?>
+                                        <?php echoValidation($validationErrors); ?>
                                         <div class="half">
                                             <label class="required" for="name">Your Name</label><br>
-                                            <input id="name" type="text">
+                                            <input id="name" name="name" type="text" value="<?php echo $name; ?>">
                                         </div>
                                         <div class="half">
                                             <label class="" for="company">Company Name</label><br>
-                                            <input id="company" type="text">
+                                            <input id="company" name="company" type="text" value="<?php echo $company; ?>">
                                         </div>
                                         <div class="half">
                                             <label class="required" for="email">Your Email</label><br>
-                                            <input id="email" type="email">
+                                            <input id="email" name="email" type="email" value="<?php echo $email; ?>">
                                         </div>
                                         <div class="half">
                                             <label class="required" for="phone">Your Telephone Number</label><br>
-                                            <input id="phone" type="text">
+                                            <input id="phone" name="phone" type="text" value="<?php echo $phone; ?>">
                                         </div>
                                         <div>
                                             <label class="required" for="subject">Subject</label><br>
-                                            <input id="subject" type="text">
+                                            <input id="subject" name="subject" type="text" value="<?php echo $subject; ?>">
                                         </div>
                                         <div>
                                             <label class="required" for="message">Message</label><br>
-                                            <textarea name="message" cols="50" rows="10" id="message"></textarea>
+                                            <textarea id="message" name="message" cols="50" rows="10"><?php echo $message; ?></textarea>
                                         </div>
 
                                         <div class="checkboxwrapper">
-                                            <input id="checkbox" type="checkbox">
+                                            <input id="checkbox" name="checkbox" type="checkbox" <?php if (isset($checkbox)) {echo "checked";}?>>
                                             <label class="fa-solid" for="checkbox"></label>
                                             <label class="checkbox-label" for="checkbox">Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we keep your data safe.</label>
                                         </div>

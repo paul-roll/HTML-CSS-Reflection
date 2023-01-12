@@ -151,10 +151,15 @@ $(".contact input, .contact textarea").on("input", function(e) {
 });
 
 // Event Submit
-$(".contact #enquiry").on("click", function(e) {
-    e.preventDefault();
+$("#contact").on("submit", function(e) {
+    
     $(".contact input, .contact textarea").addClass("set").trigger("focusout");
-    $('.contact :visible[class*=has-err]:first').focus();
+    
+    if ($('.contact :visible[class*=has-err]').length) {
+        e.preventDefault();
+        $('.contact :visible[class*=has-err]:first').focus();
+    }
+    
 });
 
 
@@ -448,6 +453,7 @@ $("body").on("scroll", function() {
 // Page Load
 // ==========================================================================
 $(document).ready(function(){
+    lastScollPosition = 0;
     $('.carousel.owl-carousel').owlCarousel({
         loop: true,
         items: 1,
