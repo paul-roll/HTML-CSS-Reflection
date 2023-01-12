@@ -52,7 +52,7 @@ echo"</div>\n";
                                 <p class="bold">Email us on:</p>
                                 <p class="email"><a href="#">sales@netmatters.com</a></p>
                                 <p class="bold">Business hours:</p>
-                                <p class="bold">Monday - Friday 07:00 - 18:00 </p>
+                                <p class="bold">Monday - Friday 07:00 - 18:00</p>
                                 <p class="bold out-of-hours">Out of Hours IT Support <i class="fa-solid fa-angle-down"></i></p>
                                 <div class="hidden">
                                     <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
@@ -74,7 +74,7 @@ echo"</div>\n";
                                         </div>
                                         <div class="half">
                                             <label class="required" for="email">Your Email</label><br>
-                                            <input id="email" type="text">
+                                            <input id="email" type="email">
                                         </div>
                                         <div class="half">
                                             <label class="required" for="phone">Your Telephone Number</label><br>

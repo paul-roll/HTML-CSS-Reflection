@@ -72,6 +72,7 @@ $("header").on("mouseleave", function() {
     }
 });
 
+
 // ==========================================================================
 // Contact
 // ==========================================================================
@@ -89,6 +90,72 @@ $(".contact .out-of-hours").on("click", function() {
         $(".contact .out-of-hours + div").slideUp().addClass("hidden");
     }
 });
+
+
+// ==========================================================================
+// Contact Form Validation
+// ==========================================================================
+
+// Validate Email
+function validateEmail(email) {
+    email = email.replace(/^\s+|\s+$/gm,''); // remove starting and trailing spaces
+    if (!email.match(/^[a-zA-Z0-9-!#$%&'*+.\/=?@^_`{|}~]+@[a-zA-Z0-9-.]+\.[a-zA-Z]{2,}$/)) {   // Far from perfect, catches the general format of emails
+        return false;
+    } else if (email.length > 254) {  // At most 254 characters
+        return false;
+    } else {
+        return true;
+    }
+}
+
+// Validate Form Input
+//e.target.getAttribute("type")
+function validateInput(type, input) {
+    if (type == "email") {
+        if (validateEmail(input)) {
+            return true;
+        } else {
+            return false;
+        }
+    } else {
+        if (input) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
+
+// Event focus loss
+$(".contact input, .contact textarea").on("focusout", function(e) {
+    if ($(e.target).val()) {
+        $(e.target).addClass("set");
+
+        if (validateInput(e.target.getAttribute("type"), $(e.target).val())) {
+            $(e.target).removeClass("has-err");
+        } else {
+            $(e.target).addClass("has-err");
+        }
+    }
+});
+
+// Event update
+$(".contact input, .contact textarea").on("input", function(e) {
+    if ($(e.target).hasClass("set")) {
+        if (validateInput(e.target.getAttribute("type"), $(e.target).val())) {
+            $(e.target).removeClass("has-err");
+        } else {
+            $(e.target).addClass("has-err");
+        }
+    }
+});
+
+// Event Submit
+$(".contact #enquiry").on("click", function(e) {
+    e.preventDefault();
+    $('form :visible[class*=has-err]:first').focus();
+});
+
 
 
 // ==========================================================================
