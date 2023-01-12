@@ -124,27 +124,27 @@ echo"</div>\n";
                                         <?php echoValidation($validationErrors); ?>
                                         <div class="half">
                                             <label class="required" for="name">Your Name</label><br>
-                                            <input id="name" name="name" type="text" value="<?php echo $name; ?>">
+                                            <input id="name" name="name" type="text" value="<?php echo htmlspecialchars($name); ?>">
                                         </div>
                                         <div class="half">
                                             <label class="" for="company">Company Name</label><br>
-                                            <input id="company" name="company" type="text" value="<?php echo $company; ?>">
+                                            <input id="company" name="company" type="text" value="<?php echo htmlspecialchars($company); ?>">
                                         </div>
                                         <div class="half">
                                             <label class="required" for="email">Your Email</label><br>
-                                            <input id="email" name="email" type="email" value="<?php echo $email; ?>">
+                                            <input id="email" name="email" type="email" value="<?php echo htmlspecialchars($email); ?>">
                                         </div>
                                         <div class="half">
                                             <label class="required" for="phone">Your Telephone Number</label><br>
-                                            <input id="phone" name="phone" type="text" value="<?php echo $phone; ?>">
+                                            <input id="phone" name="phone" type="text" value="<?php echo htmlspecialchars($phone); ?>">
                                         </div>
                                         <div>
                                             <label class="required" for="subject">Subject</label><br>
-                                            <input id="subject" name="subject" type="text" value="<?php echo $subject; ?>">
+                                            <input id="subject" name="subject" type="text" value="<?php echo htmlspecialchars($subject); ?>">
                                         </div>
                                         <div>
                                             <label class="required" for="message">Message</label><br>
-                                            <textarea id="message" name="message" cols="50" rows="10"><?php echo $message; ?></textarea>
+                                            <textarea id="message" name="message" cols="50" rows="10"><?php echo htmlspecialchars($message); ?></textarea>
                                         </div>
 
                                         <div class="checkboxwrapper">
