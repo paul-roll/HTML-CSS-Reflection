@@ -78,7 +78,7 @@
     }
 
     .btn {
-        @include btn($color-white, $color-wisteria, $hover: true);
+        @include btn($color-white, $color-wisteria, 0.9em, $padding2: 30px, $hover: true);
     }
 
 }

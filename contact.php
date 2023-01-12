@@ -27,18 +27,15 @@
 <?php foreach ($offices as $office) {
 echo"<div>\n";    
 echo"                        <div class='office-item'>\n";
-echo"                            <a href='#'>\n";
-echo"                                <img class='office-image' src='img/offices/" . $office["office"] . ".jpg' alt=''>\n";
-echo"                            </a>\n";
+echo"                            <a href='#'><img class='office-image' src='img/offices/" . $office["office"] . ".jpg' alt=''></a>\n";
 echo"                            <div>\n";
-echo"                                <h3>" . $office["office"] . "</h3>\n";
+echo"                                <h3><a href='#'>" . $office["office"] . "</a></h3>\n";
 echo"                                <ul>\n";
     echoList($office["address"]);
 echo"                                </ul>\n";
-echo"                                <p>" . $office["phone"] . "</p>\n";
-echo"                                <div class='btn'>View More</div>\n";
+echo"                                <p><a href='#'>" . $office["phone"] . "</a></p>\n";
+echo"                                <a href='#'><div class='btn'>View More</div></a>\n";
 echo"                           </div>\n";
-
 echo"                        </div>\n";
 echo"<iframe width='100%' height='300px' src='https://maps.google.com/maps?q=Netmatters," . $office["address"][4] . "&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=&amp;output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'></iframe>";
 echo"</div>\n";   
@@ -53,7 +50,7 @@ echo"</div>\n";
                         <div class="flex-container">
                             <div class="flex-item">
                                 <p class="bold">Email us on:</p>
-                                <p class="email">sales@netmatters.com</p>
+                                <p class="email"><a href="#">sales@netmatters.com</a></p>
                                 <p class="bold">Business hours:</p>
                                 <p class="bold">Monday - Friday 07:00 - 18:00 </p>
                                 <p class="bold out-of-hours">Out of Hours IT Support <i class="fa-solid fa-angle-down"></i></p>
