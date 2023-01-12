@@ -11,18 +11,18 @@
             <main>
 
                 <!-- Breadcrumb -->
-                <section class="breadcrumb">
+                <div class="breadcrumb">
                     <div class="wrapper">
-                        <p>Home / Our Offices</p>
-                        <!-- Wrapper margins too big -->
-
+                        <p><a href="index.php">Home</a> / Our Offices</p>
                     </div>
-                </section>
+                </div>
 
                 <!-- Offices -->
                 <section class="offices">
+                    <div class="title">
+                        <h2 class="wrapper">Our Offices</h2>
+                    </div>
                     <div class="wrapper">
-                        <h2>Our Offices</h2>
                         <div class="flex-container">
 <?php foreach ($offices as $office) {
 echo"<div>\n";    

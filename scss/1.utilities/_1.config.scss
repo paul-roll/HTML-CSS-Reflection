@@ -34,6 +34,7 @@ $color-cerise: #D93175;
 
 // Maps
 $background-colors: (
+    'default':      $color-white,
     'header':       $color-white,
     'nav':          $color-tuna,
     'carousel':     $color-tuna, // unknown as its concealed
@@ -45,6 +46,7 @@ $background-colors: (
 );
 
 $section-colors: (
+    'default':      $color-tuna,
     'header':       $color-tuna,
     'nav':          $color-white,
     'carousel':     $color-white,
