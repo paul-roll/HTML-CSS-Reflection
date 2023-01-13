@@ -102,7 +102,7 @@ function array_to_table($array)
 	foreach($array as $row) {
 		$table .= "<tr>";
 		foreach($row as $value) {
-			$table .= "<td>$value</td>";
+			$table .= "<td>" . htmlspecialchars($value) . "</td>";
 		}
 		$table .= "</tr>";
 	}
