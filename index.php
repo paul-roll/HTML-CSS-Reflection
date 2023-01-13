@@ -202,7 +202,7 @@
 ."                                      <p>" . htmlspecialchars($row["description"]) . "</p>\n"
 ."                                      <div class=\"btn\">Read More</div>\n"
 ."                                      <hr>\n"
-."                                      <img class=\"icon\" src=\"img/" . htmlspecialchars($row["author"]) . "-icon.png\" alt=\"\">\n"
+."                                      <img class=\"icon\" src=\"img/" . strtolower(htmlspecialchars($row["author"])) . "-icon.png\" alt=\"\">\n"
 ."                                      <ul>\n"
 ."                                          <li>Posted by " . htmlspecialchars($row["author"]) . "</li>\n"
 ."                                          <li>" . date("jS F Y", strtotime($row["date"])) . "</li>\n"
