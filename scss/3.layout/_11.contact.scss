@@ -118,6 +118,8 @@
 
     @include section("default");
 
+    margin-bottom: 35px;
+
     p {
         font-size: 1em;     // 16px
         color: darken($color-grey, 20%);

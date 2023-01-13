@@ -5,6 +5,8 @@
 .newsletter {
     @include section("newsletter");
 
+    padding-top: 30px;
+
     h2 {
         font-weight: 400;
     }
