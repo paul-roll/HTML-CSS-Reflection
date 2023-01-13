@@ -42,7 +42,6 @@
                 // push to database
 
                 if (empty(query::select("*", "contact", "WHERE name = '" . $contactName . "' AND message = '" . $contactMessage . "'"))) {
-                    var_dump("x");
                     $sql = array();
                     $sql["name"] = $contactName;
                     $sql["company"] = $contactCompany;
