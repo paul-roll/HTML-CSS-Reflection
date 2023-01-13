@@ -2,7 +2,7 @@
 // Variables
 // ==========================================================================
 let scrollLocked = {
-    "header": false,
+    "header": true,
     "sidebar": false,
 };
 const header = document.getElementsByTagName("header")[0]; // pointer to the page header
@@ -453,6 +453,7 @@ $("body").on("scroll", function() {
 // ==========================================================================
 $(document).ready(function(){
     lastScollPosition = 0;
+    scrollLock("header", false);
     $('.carousel.owl-carousel').owlCarousel({
         loop: true,
         items: 1,
