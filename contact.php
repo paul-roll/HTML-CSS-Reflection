@@ -59,6 +59,7 @@
             } else  {
                 $sql["marketing"] = "no";
             }
+            $sql["datetime"] = getUTC();
             query::insert("contact", $sql);
 
             // Clear table

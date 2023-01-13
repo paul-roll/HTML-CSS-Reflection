@@ -93,7 +93,8 @@ function validateMessage($message)
 }
 
 //function to build a simple table out of a sql SELECT query
-function array_to_table($array) {
+function array_to_table($array)
+{
 	$table = "<table align=\"center\" border=1>";
 	foreach($array[0] as $key=> $val){
 		$table .= "<th>$key</th>";
@@ -107,4 +108,10 @@ function array_to_table($array) {
 	}
 	$table .= "</table></div>";
 	return $table;
+}
+
+function getUTC()
+{
+    $now = new DateTime('now', new DateTimeZone('UTC'));
+    return $now->format(DateTimeInterface::W3C);
 }

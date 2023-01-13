@@ -12,9 +12,8 @@
 
                 <!-- Secttion -->
                 <section class="section">
-                    <?php
-                        echo array_to_table(query::select("*", "contact", "ORDER BY id DESC"));
-                    ?>
+                    <h3 align="center">Contact Table</h3>
+                    <?php echo array_to_table(query::select("*", "contact", "ORDER BY id DESC")); ?>
                 </section>
                 <br>
             </main>
