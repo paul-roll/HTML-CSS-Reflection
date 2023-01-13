@@ -2,69 +2,74 @@
     $pagetitle = "Contact Us";
     include("inc/header.php");
 
-    // validate
-    $name = $company = $email = $phone = $subject = $message = "";
+    $contactName = $contactCompany = $contactEmail = $contactPhone = $contactSubject = $contactMessage = "";
     $validationErrors = array();
 
-    //Sanitize, Trim, Lowercase, Capital first
+
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // only validate when contact form was the one submitted
+        if (filter_input(INPUT_POST,"contact") == "Send Enquiry") {
 
-        $name = ucfirst(strtolower(trim(filter_input(INPUT_POST,"name",FILTER_SANITIZE_SPECIAL_CHARS))));
-        if ($nameErr = validateString($name, "Your Name")) {
-            $validationErrors["name"] = [0, $nameErr];
-        }
+            $contactName = ucfirst(strtolower(trim(filter_input(INPUT_POST,"contact-name",FILTER_SANITIZE_SPECIAL_CHARS))));
+            $contactCompany = ucfirst(strtolower(trim(filter_input(INPUT_POST,"contact-company",FILTER_SANITIZE_SPECIAL_CHARS))));
+            $contactEmail = strtolower(trim(filter_input(INPUT_POST,"contact-email",FILTER_SANITIZE_EMAIL)));
+            $contactPhone = str_replace([" ", "-"], "", trim(filter_input(INPUT_POST,"contact-phone",FILTER_SANITIZE_SPECIAL_CHARS)));
+            $contactSubject = ucfirst(strtolower(trim(filter_input(INPUT_POST,"contact-subject",FILTER_SANITIZE_SPECIAL_CHARS))));
+            $contactMessage = trim(filter_input(INPUT_POST,"contact-message",FILTER_SANITIZE_SPECIAL_CHARS));
 
-        $company = ucfirst(strtolower(trim(filter_input(INPUT_POST,"company",FILTER_SANITIZE_SPECIAL_CHARS))));
-        if ($companyErr = validateString($company, "Company Name")) {
-            $validationErrors["company"] = [0, $companyErr];
-        }
-
-        $email = strtolower(trim(filter_input(INPUT_POST,"email",FILTER_SANITIZE_EMAIL)));
-        if ($emailErr = validateEmail($email)) {
-            $validationErrors["email"] = [0, $emailErr];
-        }
-
-        $phone = str_replace([" ", "-"], "", trim(filter_input(INPUT_POST,"phone",FILTER_SANITIZE_SPECIAL_CHARS)));
-        if ($phoneErr = validatePhone($phone)) {
-            $validationErrors["phone"] = [0, $phoneErr];
-        }
-
-        $subject = ucfirst(strtolower(trim(filter_input(INPUT_POST,"subject",FILTER_SANITIZE_SPECIAL_CHARS))));
-        if ($subjectErr = validateString($subject, "Subject")) {
-            $validationErrors["subject"] = [0, $subjectErr];
-        }
-
-        $message = trim(filter_input(INPUT_POST,"message",FILTER_SANITIZE_SPECIAL_CHARS));
-        if ($messageErr = validateMessage($message)) {
-            $validationErrors["message"] = [0, $messageErr];
-        }
-
-        if (isset($_POST['checkbox'])) {
-            $checkbox = true;
-        }
-
-        // If no errors
-        if (!$validationErrors) {
-            $validationErrors["success"] = [1, "Your message has been sent!"];
-            // push to database
-            $sql = array();
-            $sql["name"] = $name;
-            $sql["company"] = $company;
-            $sql["email"] = $email;
-            $sql["phone"] = $phone;
-            $sql["subject"] = $subject;
-            $sql["message"] = $message;
-            if (isset($checkbox)) {
-                $sql["marketing"] = "yes";
-            } else  {
-                $sql["marketing"] = "no";
+            if ($contactNameErr = validateString($contactName, "Your Name")) {
+                $validationErrors["contact-name"] = [0, $contactNameErr];
             }
-            $sql["datetime"] = getUTC();
-            query::insert("contact", $sql);
+            if ($contactCompanyErr = validateString($contactCompany, "Company Name")) {
+                $validationErrors["contact-company"] = [0, $contactCompanyErr];
+            }
+            if ($contactEmailErr = validateEmail($contactEmail)) {
+                $validationErrors["contact-email"] = [0, $contactEmailErr];
+            }
+            if ($contactPhoneErr = validatePhone($contactPhone)) {
+                $validationErrors["contact-phone"] = [0, $contactPhoneErr];
+            }
+            if ($contactSubjectErr = validateString($contactSubject, "Subject")) {
+                $validationErrors["contact-subject"] = [0, $contactSubjectErr];
+            }
+            if ($contactMessageErr = validateMessage($contactMessage)) {
+                $validationErrors["contact-message"] = [0, $contactMessageErr];
+            }
+            if (isset($_POST["contact-checkbox"])) {
+                $contactCheckbox = true;
+            }
 
-            // Clear table
-            $name = $company = $email = $phone = $subject = $message = "";
-            $checkbox = null;
+            // If no errors
+            if (!$validationErrors) {
+                $validationErrors["success"] = [1, "Your message has been sent!"];
+                // push to database
+
+                if (empty(query::select("*", "contact", "WHERE name = '" . $contactName . "' AND message = '" . $contactMessage . "'"))) {
+                    var_dump("x");
+                    $sql = array();
+                    $sql["name"] = $contactName;
+                    $sql["company"] = $contactCompany;
+                    $sql["email"] = $contactEmail;
+                    $sql["phone"] = $contactPhone;
+                    $sql["subject"] = $contactSubject;
+                    $sql["message"] = $contactMessage;
+                    $sql["datetime"] = getUTC();
+                    query::insert("contact", $sql);
+                }
+
+                if ( (isset($contactCheckbox)) && (empty(query::select("*", "marketing", "WHERE email = '" . $contactEmail . "'"))) ) {
+                    $sql = array();
+                    $sql["name"] = $contactName;
+                    $sql["email"] = $contactEmail;
+                    $sql["datetime"] = getUTC();
+                    query::insert("marketing", $sql);
+                }
+
+
+                // Clear table
+                $contactName = $contactCompany = $contactEmail = $contactPhone = $contactSubject = $contactMessage = "";
+                $contactCheckbox = null;
+            }
         }
 
     }
@@ -123,43 +128,44 @@ echo"</div>\n";
                                     <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call.</p>
                                 </div>
                             </div>
-                            <div class="flex-item" id="form">
-                                <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>#form" id="contact">
+                            <div class="flex-item" id="contact-form">
+                                <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>#contact-form" id="contact">
+                                <input type="hidden" id="hiddenField"  />
                                     <div class="flex-form">
-                                        <?php echoValidation($validationErrors); ?>
+                                    <?php echoValidation($validationErrors); ?>
                                         <div class="half">
-                                            <label class="required" for="name">Your Name</label><br>
-                                            <input id="name" name="name" type="text" value="<?php echo htmlspecialchars($name); ?>">
+                                            <label class="required" for="contact-name">Your Name</label><br>
+                                            <input id="contact-name" name="contact-name" type="text" value="<?php echo ($contactName); ?>">
                                         </div>
                                         <div class="half">
-                                            <label class="" for="company">Company Name</label><br>
-                                            <input id="company" name="company" type="text" value="<?php echo htmlspecialchars($company); ?>">
+                                            <label class="" for="contact-company">Company Name</label><br>
+                                            <input id="contact-company" name="contact-company" type="text" value="<?php echo $contactCompany; ?>">
                                         </div>
                                         <div class="half">
-                                            <label class="required" for="email">Your Email</label><br>
-                                            <input id="email" name="email" type="email" value="<?php echo htmlspecialchars($email); ?>">
+                                            <label class="required" for="contact-email">Your Email</label><br>
+                                            <input id="contact-email" name="contact-email" type="email" value="<?php echo $contactEmail; ?>">
                                         </div>
                                         <div class="half">
-                                            <label class="required" for="phone">Your Telephone Number</label><br>
-                                            <input id="phone" name="phone" type="text" value="<?php echo htmlspecialchars($phone); ?>">
+                                            <label class="required" for="contact-phone">Your Telephone Number</label><br>
+                                            <input id="contact-phone" name="contact-phone" type="text" value="<?php echo $contactPhone; ?>">
                                         </div>
                                         <div>
-                                            <label class="required" for="subject">Subject</label><br>
-                                            <input id="subject" name="subject" type="text" value="<?php echo htmlspecialchars($subject); ?>">
+                                            <label class="required" for="contact-subject">Subject</label><br>
+                                            <input id="contact-subject" name="contact-subject" type="text" value="<?php echo $contactSubject; ?>">
                                         </div>
                                         <div>
-                                            <label class="required" for="message">Message</label><br>
-                                            <textarea id="message" name="message" cols="50" rows="10"><?php echo htmlspecialchars($message); ?></textarea>
+                                            <label class="required" for="contact-message">Message</label><br>
+                                            <textarea id="contact-message" name="contact-message" cols="50" rows="10"><?php echo $contactMessage; ?></textarea>
                                         </div>
 
                                         <div class="checkboxwrapper">
-                                            <input id="checkbox" name="checkbox" type="checkbox" <?php if (isset($checkbox)) {echo "checked";}?>>
-                                            <label class="fa-solid" for="checkbox"></label>
-                                            <label class="checkbox-label" for="checkbox">Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we keep your data safe.</label>
+                                            <input id="contact-checkbox" name="contact-checkbox" type="checkbox" <?php if (isset($contactCheckbox)) {echo "checked";}?>>
+                                            <label class="fa-solid" for="contact-checkbox"></label>
+                                            <label class="checkbox-label" for="contact-checkbox">Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we keep your data safe.</label>
                                         </div>
 
                                         <div>
-                                            <input id="enquiry" type="submit" value="Send Enquiry">
+                                            <input id="contact-submit" type="submit" value="Send Enquiry" name="contact">
                                             <div class="right"><span class="required">*</span> Fields Required</div>
                                         </div>
 

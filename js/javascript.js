@@ -78,7 +78,7 @@ $("header").on("mouseleave", function() {
 // ==========================================================================
 
 // Event: clicked contact message delete
-$(".contact .message i").on("click", function(e) {
+$(".message i").on("click", function(e) {
     $(e.target).parent().parent().remove();
 });
 
@@ -150,7 +150,7 @@ $(".contact input, .contact textarea").on("input", function(e) {
     }
 });
 
-// Event Submit
+// Event Contact Submit
 $("#contact").on("submit", function(e) {
     
     $(".contact input, .contact textarea").addClass("set").trigger("focusout");
@@ -161,7 +161,6 @@ $("#contact").on("submit", function(e) {
     }
     
 });
-
 
 
 // ==========================================================================

@@ -33,9 +33,13 @@
         }
     }
 
-    #subscribe {
+    #newsletter-submit {
         @include btn($color-white, $color-tuna, $hover: true);
         margin-top: 20px;
         margin-bottom: 35px;
+    }
+
+    .message {
+        margin-bottom: 20px;
     }
 }
