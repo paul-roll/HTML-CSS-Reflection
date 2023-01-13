@@ -20,9 +20,6 @@
             if ($contactNameErr = validateString($contactName, "Your Name")) {
                 $validationErrors["contact-name"] = [0, $contactNameErr];
             }
-            if ($contactCompanyErr = validateString($contactCompany, "Company Name")) {
-                $validationErrors["contact-company"] = [0, $contactCompanyErr];
-            }
             if ($contactEmailErr = validateEmail($contactEmail)) {
                 $validationErrors["contact-email"] = [0, $contactEmailErr];
             }
