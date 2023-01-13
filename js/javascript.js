@@ -127,7 +127,7 @@ function validateInput(type, input) {
 }
 
 // Event focus loss
-$(".contact input, .contact textarea").on("focusout", function(e) {
+$(".contact input:not(#contact-company), .contact textarea").on("focusout", function(e) {
     if (($(e.target).val()) || ($(e.target).hasClass("set"))) {
         $(e.target).addClass("set");
 
@@ -140,7 +140,7 @@ $(".contact input, .contact textarea").on("focusout", function(e) {
 });
 
 // Event update
-$(".contact input, .contact textarea").on("input", function(e) {
+$(".contact input:not(#contact-company), .contact textarea").on("input", function(e) {
     if ($(e.target).hasClass("set")) {
         if (validateInput(e.target.getAttribute("type"), $(e.target).val())) {
             $(e.target).removeClass("has-err");
@@ -153,7 +153,7 @@ $(".contact input, .contact textarea").on("input", function(e) {
 // Event Contact Submit
 $("#contact").on("submit", function(e) {
     
-    $(".contact input, .contact textarea").addClass("set").trigger("focusout");
+    $(".contact input:not(#contact-company), .contact textarea").addClass("set").trigger("focusout");
     
     if ($('.contact :visible[class*=has-err]').length) {
         e.preventDefault();
