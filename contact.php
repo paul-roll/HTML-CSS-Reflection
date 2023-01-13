@@ -43,28 +43,32 @@
             $checkbox = true;
         }
 
-        // show errors
-        if ($validationErrors) {
-            // has errors
-            var_dump("error");
-        } else {
+        // If no errors
+        if (!$validationErrors) {
+            $validationErrors["success"] = [1, "Your message has been sent!"];
             // push to database
-            var_dump("database");
+            $sql = array();
+            $sql["name"] = $name;
+            $sql["company"] = $company;
+            $sql["email"] = $email;
+            $sql["phone"] = $phone;
+            $sql["subject"] = $subject;
+            $sql["message"] = $message;
+            if (isset($checkbox)) {
+                $sql["marketing"] = "yes";
+            } else  {
+                $sql["marketing"] = "no";
+            }
+            query::insert("contact", $sql);
+
+            // Clear table
+            $name = $company = $email = $phone = $subject = $message = "";
+            $checkbox = null;
         }
 
     }
 
-
-
-
-
-    // $validation = array();
-    // $validation[] = [0, "validation.phone"]; //testing line
-    // $validation[] = [0, "The message must be at least 5 characters."]; //testing line
-    // $validation[] = [1, "Your message has been sent!"]; //testing line
 ?>
-
-
 
             <main>
 

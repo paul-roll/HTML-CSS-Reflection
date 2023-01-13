@@ -91,3 +91,20 @@ function validateMessage($message)
         return false;
     }
 }
+
+//function to build a simple table out of a sql SELECT query
+function array_to_table($array) {
+	$table = "<table align=\"center\" border=1>";
+	foreach($array[0] as $key=> $val){
+		$table .= "<th>$key</th>";
+	}
+	foreach($array as $row) {
+		$table .= "<tr>";
+		foreach($row as $value) {
+			$table .= "<td>$value</td>";
+		}
+		$table .= "</tr>";
+	}
+	$table .= "</table></div>";
+	return $table;
+}
