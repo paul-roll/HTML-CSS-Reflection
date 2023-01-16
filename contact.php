@@ -17,7 +17,7 @@
             $contactSubject = ucfirst(strtolower(trim(filter_input(INPUT_POST,"contact-subject",FILTER_SANITIZE_SPECIAL_CHARS))));
             $contactMessage = trim(filter_input(INPUT_POST,"contact-message",FILTER_SANITIZE_SPECIAL_CHARS));
 
-            if ($contactNameErr = validateString($contactName, "Your Name")) {
+            if ($contactNameErr = validateName($contactName)) {
                 $validationErrors["contact-name"] = [0, $contactNameErr];
             }
             if ($contactEmailErr = validateEmail($contactEmail)) {
@@ -26,7 +26,7 @@
             if ($contactPhoneErr = validatePhone($contactPhone)) {
                 $validationErrors["contact-phone"] = [0, $contactPhoneErr];
             }
-            if ($contactSubjectErr = validateString($contactSubject, "Subject")) {
+            if ($contactSubjectErr = validateSubject($contactSubject)) {
                 $validationErrors["contact-subject"] = [0, $contactSubjectErr];
             }
             if ($contactMessageErr = validateMessage($contactMessage)) {

@@ -8,7 +8,7 @@
             $newsletterName = ucfirst(strtolower(trim(filter_input(INPUT_POST,"newsletter-name",FILTER_SANITIZE_SPECIAL_CHARS))));
             $newsletterEmail = strtolower(trim(filter_input(INPUT_POST,"newsletter-email",FILTER_SANITIZE_EMAIL)));
 
-            if ($newsletterNameErr = validateString($newsletterName, "Your Name")) {
+            if ($newsletterNameErr = validateName($newsletterName)) {
                 $validationErrors["newsletter-name"] = [0, $newsletterNameErr];
             }
             if ($newsletterEmailErr = validateEmail($newsletterEmail)) {

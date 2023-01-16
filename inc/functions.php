@@ -22,22 +22,37 @@ function echoValidation($array)
     }
 }
 
-function validateString($string, $token)
+function validateName($string)
 {
     if (empty($string)) {
-        return $token . " is required.";
+        return "Your Name is required.";
       //Must use only letters hyphen, apostrophe and space
       } else if (!preg_match("/^[a-zA-Z-' ]*$/", $string)) {
-        return $token . " contains invalid characters.";
+        return "Your Name contains invalid characters.";
       //Must be at most 35 characters (DB limit)
       } else if (strlen($string) > 254) {
-        return $token . " is too long.";
+        return "Your Name is too long.";
       //Must be at least 2 characters
       } else if (strlen($string) < 2) {
-        return $token . " is too short.";
+        return "Your Name is too short.";
       //Must start and end with a letter
       } else if (!preg_match("/^[a-zA-Z]{1}[a-zA-Z-' ]*[a-zA-Z]{1}$/", $string)) {
-        return $token . " is invalid.";
+        return "Your Name is invalid.";
+      } else {
+        return false;
+      }
+}
+
+function validateSubject($string)
+{
+    if (empty($string)) {
+        return "Subject is required.";
+      //Must be at most 35 characters (DB limit)
+      } else if (strlen($string) > 254) {
+        return "Subject is too long.";
+      //Must be at least 2 characters
+      } else if (strlen($string) < 2) {
+        return "Subject is too short.";
       } else {
         return false;
       }
