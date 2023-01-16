@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 16, 2023 at 07:23 AM
+-- Generation Time: Jan 16, 2023 at 09:09 AM
 -- Server version: 8.0.30
 -- PHP Version: 7.3.33
 
@@ -49,7 +49,10 @@ INSERT INTO `contact` (`id`, `name`, `company`, `email`, `phone`, `subject`, `me
 (51, 'Name goes here', '', 'foo@bar.xx', '01234543123', 'Sooobject', 'mooosarge', '2023-01-13 18:28:11'),
 (52, 'Tamas', 'Varga', 'vargatam@yahoo.com', '07868517308', 'Test', 'This is a test message', '2023-01-15 06:56:15'),
 (53, 'Test', '', 'test@test.test', '00000000000', 'Test', '&#38;lt;script&#38;gt;alert(&#38;#39;1&#38;#39;);&#38;lt;/script&#38;gt;', '2023-01-16 07:15:07'),
-(54, 'Test', '', 'test@test.test', '00000000000', 'Test', '&#60;script&#62;alert(0)&#60;/script&#62;&#13;&#10;&#39;; EXEC sp_MSForEachTable &#39;DROP TABLE ?&#39;; --&#13;&#10;&#39; OR &#39;1&#39;=&#39;1&#13;&#10;&#39; OR 1=1 -- 1&#13;&#10;1&#39;; DROP TABLE contact -- 1&#13;&#10;1;DROP TABLE contact', '2023-01-16 07:17:37');
+(54, 'Test', '', 'test@test.test', '00000000000', 'Test', '&#60;script&#62;alert(0)&#60;/script&#62;&#13;&#10;&#39;; EXEC sp_MSForEachTable &#39;DROP TABLE ?&#39;; --&#13;&#10;&#39; OR &#39;1&#39;=&#39;1&#13;&#10;&#39; OR 1=1 -- 1&#13;&#10;1&#39;; DROP TABLE contact -- 1&#13;&#10;1;DROP TABLE contact', '2023-01-16 07:17:37'),
+(55, 'Asdasd', '', 'asdasd@asd.com', '07479879607', 'Asdasd', 'asdasd', '2023-01-16 08:38:22'),
+(56, 'Mark jason acab', 'Netmatters scsb', 'chiefofstack@gmail.com', '07479879607', 'Test number two', 'This is my second test', '2023-01-16 08:40:46'),
+(57, 'Name test', '', 'email@test.xx', '88888888888', '12345 subject with numbers', 'Message', '2023-01-16 09:08:41');
 
 -- --------------------------------------------------------
 
@@ -71,7 +74,10 @@ CREATE TABLE `marketing` (
 INSERT INTO `marketing` (`id`, `name`, `email`, `datetime`) VALUES
 (2, 'Your name', 'email@address.com', '2023-01-13 14:53:26'),
 (3, 'Newsletter', 'yet@another.email', '2023-01-13 16:41:30'),
-(4, 'Tamas', 'vargatam@yahoo.com', '2023-01-15 06:56:15');
+(4, 'Tamas', 'vargatam@yahoo.com', '2023-01-15 06:56:15'),
+(5, 'Asdasd', 'asdasd@asd.com', '2023-01-16 08:38:22'),
+(6, 'Mark jason acab', 'chiefofstack@gmail.com', '2023-01-16 08:40:46'),
+(7, 'Name test', 'email@test.xx', '2023-01-16 09:08:41');
 
 -- --------------------------------------------------------
 
@@ -123,13 +129,13 @@ ALTER TABLE `marketing`
 -- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
 -- AUTO_INCREMENT for table `marketing`
 --
 ALTER TABLE `marketing`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
