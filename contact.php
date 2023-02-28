@@ -91,7 +91,7 @@
 <?php foreach ($offices as $office) {
 echo"<div>\n";    
 echo"                        <div class='office-item'>\n";
-echo"                            <a href='#'><img class='office-image' src='img/offices/" . $office["office"] . ".jpg' alt=''></a>\n";
+echo"                            <a href='#'><img class='office-image' src='img/offices/" . str_replace(' ', '', $office["office"]) . ".jpg' alt=''></a>\n";
 echo"                            <div>\n";
 echo"                                <h3><a href='#'>" . $office["office"] . "</a></h3>\n";
 echo"                                <ul>\n";
@@ -101,7 +101,7 @@ echo"                                <p><a href='#'>" . $office["phone"] . "</a>
 echo"                                <a href='#'><div class='btn'>View More</div></a>\n";
 echo"                           </div>\n";
 echo"                        </div>\n";
-echo"<iframe width='100%' height='300px' src='https://maps.google.com/maps?q=Netmatters," . $office["address"][4] . "&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=&amp;output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'></iframe>";
+echo"<iframe style='width:100%;border:0;overflow:hidden;margin:0' height='300' src='https://maps.google.com/maps?q=Netmatters," . str_replace(' ', '', $office["address"][4]) . "&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=&amp;output=embed'></iframe>";
 echo"</div>\n";   
 } ?>
                         </div>
@@ -126,7 +126,7 @@ echo"</div>\n";
                             </div>
                             <div class="flex-item" id="contact-form">
                                 <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>#contact-form" id="contact">
-                                <input type="hidden" id="hiddenField"  />
+                                <input type="hidden" id="hiddenField">
                                     <div class="flex-form">
                                     <?php echoValidation($validationErrors); ?>
                                         <div class="half">
