@@ -37,7 +37,7 @@
                                 <ul>
                                     <?php echoList($offices["Cambridge"]["address"]); ?>
                                     <li>&nbsp;</li>
-                                    <li>Tel: <a href="#"><?php echo $offices["Cambridge"]["phone"]; ?></a></a></li>
+                                    <li>Tel: <a href="#"><?php echo $offices["Cambridge"]["phone"]; ?></a></li>
                                 </ul>
                             </div>
 
@@ -46,7 +46,7 @@
                                 <ul>
                                 <?php echoList($offices["Wymondham"]["address"]); ?>
                                     <li>&nbsp;</li>
-                                    <li>Tel: <a href="#"><?php echo $offices["Wymondham"]["phone"]; ?></a></a></li>
+                                    <li>Tel: <a href="#"><?php echo $offices["Wymondham"]["phone"]; ?></a></li>
                                 </ul>
                             </div>
 
